@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "module3.html",
+    "href": "module3.html",
+    "title": "🐬 Module 3: Exploring Regression Modeling",
+    "section": "",
+    "text": "Thursday, July 10, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nSimple linear regression\nCorrelation\n\n🖥️ Daily practice 🖥️\n\nSimple linear regression and correlation (due M 07/14)\n\n📃 In-class quiz 📃 \n\nModule 2\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nMultiple regression\n\n🖥️ Daily practice 🖥️\n\nMultiple regression (due M 07/21)\n\n📃 In-class quiz 📃 \n\nSimple linear regression\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 3 (due W 07/23)\n\n📃 In-class quiz 📃 \n\nMultiple regression"
+  },
+  {
+    "objectID": "module0.html",
+    "href": "module0.html",
+    "title": "📝 Module 0: Review & R Foundations",
+    "section": "",
+    "text": "Tuesday, June 17, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nReview of STA2023\nIntroduction to R\n\n🖥️ Daily practice 🖥️\n\nIntroduction to R (due M 06/23)\n\n📃 In-class quiz 📃 \n\nGet to Know You\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025\n\n\n\n\n\n🖥️ Group Effort 🖥️\n\nUgly graph competition\nPresentation at the end of class\n\n📃 In-class quiz 📃\n\nModule 4"
+  },
+  {
+    "objectID": "module1.html",
+    "href": "module1.html",
+    "title": "🌱 Module 1: Exploring Continuous Outcomes in Two Groups",
+    "section": "",
+    "text": "Thursday, June 19, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nTwo-sample t-test (independent data)\nPaired t-test (dependent data)\n\n🖥️ Daily practice 🖥️\n\nTwo-sample means (due M 06/23)\n\n📃 In-class quiz 📃 \n\nSummary statistics\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nt-test assumptions\nWilcoxons (nonparametric alternative to t-test)\n\n🖥️ Daily practice 🖥️\n\nTwo-sample medians (due M 06/30)\n\n📃 In-class quiz 📃 \n\nTwo-sample means\n\n\n\n\n\n\n\n\n\n\nThursday, June 26, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 1 (due W 07/03)\n\n📃 In-class quiz 📃 \n\nTwo-sample medians"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Abbreviated Syllabus",
+    "section": "",
+    "text": "Note: this is an abbreviated syllabus. The full syllabus is available through Classmate and/or Canvas.\n\nInstructor Information\n\nDr. Samantha Seals\nOffice: 4/344\n\n\n\nMeeting Times and Location\n\nTR 11:00 am-1:40 pm\n\n11:00 am–12:15 pm: Lecture\n12:30 pm–1:15 pm: Daily practice\n1:15 pm–1:40 pm: Daily quiz\n\nPhysical classroom: 4/406\nZoom classroom: see Canvas or full syllabus for link\n\n\n\nOffice Hours\n\nMonday: 2:00–4:00 pm (Central)\nWednesday: 2:00–4:00 pm (Central)\nOther times by appointment\n\n\n\nGrading and Evaluation\nThe course grade will be determined as follows:\n\nDaily practice (25%): Each meeting day, students will complete an activity using Quarto and R. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nDaily quizzes (10%): Each meeting day, students will complete a timed quiz on Canvas. Time will be given during class for completion.\nAssignments (40%): Every module will finish with an assignment to demonstrate the knowledge gained. These will be like the daily practice, but putting everything in the module together. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nFinal Exam (25%): The final exam will be a timed concepts-based exam. While there may be some calculations needed, you will not be processing raw data. The final exam will be on Canvas on August 7, 2025. All students will have 3 hours to complete the exam.\n\n\n\nLate Policy\nAssigments have due dates, however, the dropboxes will not close until the end of the semester. All students are automatically granted “extensions” without question.\nNote that if there is not a submission when I go to grade (after the initial deadline), I will assign a zero (0) and request that you submit the assignment when you are able to. This is only for record keeping purposes. There is no penalty for submitting late and a full grade will be given upon review of your submission.\nExtensions are not available for daily practice, daily quizzes, or the final exam."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me\nThis is where you can add information about yourself or your project 💖"
+  },
+  {
+    "objectID": "hyp_test_template.html",
+    "href": "hyp_test_template.html",
+    "title": "STA4173 - Biostatistics - Summer 2025",
+    "section": "",
+    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA4173 - Biostatistics - Summer 2025",
+    "section": "",
+    "text": "📝 Module 0: Review & R Foundations\n\n\n\n\n\nIn this introductory module, we will review essential concepts from STA2023 (Elements of Statistics) and get set up with the tools used throughout the course. We’ll cover:\n\nSummary statistics and data visualizations.\nBasics of statistical inference:\n\nConfidence intervals for one mean,\nHypothesis testing for one mean.\n\nGetting started with R, RStudio, and Quarto.\n\nBasic R syntax: vectors & data frames/tibbles, functions, and the tidyverse.\nYour first Quarto document.\n\n\n\n\n\n\n\n\n\n\n\n🌱 Module 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\nIn this module, we explore methods for comparing continuous outcomes between two groups. We’ll cover:\n\nTwo-sample t-test for independent samples\n\nPaired t-test for dependent samples\n\nAssumptions on t-tests and how to assess\nWilcoxon rank-sum test\n\nWilcoxon signed-rank test\n\n\n\n\n\n\n\n\n\n\n🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\nIn this module, we explore methods for comparing continuous outcomes between three or more groups. We’ll cover:\n\nOne-way ANOVA\nTwo-way ANOVA\nAssumptions on ANOVA and how to assess\nPosthoc testing (multiple comparisons)\nProfile plots\n\n\n\n\n\n\n\n\n\n\n🐬 Module 3: Exploring Regression Modeling\n\n\n\n\n\nIn this module, we’ll explore describing the relationship between two continuous variables. We’ll cover:\n\nBivariate correlation\n\nPearson’s\nSpearman’s\n\nSimple linear regression\nMultiple regression\nAssumptions on regression and how to assess\nRegression diagnostics\n\n\n\n\n\n\n\n\n\n\n🐢 Module 4: Exploring Categorical Outcomes\n\n\n\n\n\nIn this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (Elements of Statistics):\n\nOne-sample proportions\nTwo-sample proportions\n\nWe will continue by expanding our knowledge:\n\n\\(\\chi^2\\) goodness-of-fit\n\\(\\chi^2\\) test for independence\nLogistic regression"
+  },
+  {
+    "objectID": "files/slides/test.html#test",
+    "href": "files/slides/test.html#test",
+    "title": "Untitled",
+    "section": "Test",
+    "text": "Test\ntest\n\\[y = mx+b\\]"
+  },
+  {
+    "objectID": "module4.html",
+    "href": "module4.html",
+    "title": "🐢 Module 4: Exploring Categorical Outcomes",
+    "section": "",
+    "text": "Tuesday, July 22, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nOne- and two-sample proportions\nContingency tables\n\n🖥️ Daily practice 🖥️\n\nProportions and contingency tables (due M 07/28)\n\n📃 In-class quiz 📃 \n\nModule 3\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nLogistic regression\n\n🖥️ Daily practice 🖥️\n\nLogistic regression (due M 07/28)\n\n📃 In-class quiz 📃 \n\nProportions\n\n\n\n\n\n\n\n\n\n\nTuesday, July 29, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 4 (due M 08/04)\n\n📃 In-class quiz 📃 \n\nLogistic regression"
+  },
+  {
+    "objectID": "get_help.html",
+    "href": "get_help.html",
+    "title": "Looking for help?",
+    "section": "",
+    "text": "How do I typeset a hypothesis test?\n\nHere is a basic template for typesetting hypothesis tests in Quarto: hyp_test_template.qmd\nRemember to update subscripts when you are editing existing code.\n\nDo you need help with your assignment?\n\nDouble check the slides for necessary code. Note that the headers of slides often match language used in the assignments.\nHave you googled the error message you saw?\nHave you asked your classmates (& Dr. Seals) on Discord? Truly, others have the same question, I promise! Do not be afraid to share a screenshot of your code and any corresponding output or error message.\n\nWhy did I lose points?\n\nPlease check the rubric; I try to give enough feedback for you to determine how to fix your assignment.\nIf clarification is still needed, please do not hesitate to come see me during office hours.\n\nIs there tutoring?\n\nNo, there is no University-provided tutoring.\nHowever, my research students are great resources. Please reach out to me if you are interested in hiring one of my students for tutoring."
+  },
+  {
+    "objectID": "module2.html",
+    "href": "module2.html",
+    "title": "🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups",
+    "section": "",
+    "text": "Tuesday, July 1, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nOne-way ANOVA and posthoc testing\nANOVA assumptions and Kruskal-Wallis\n\n🖥️ Daily practice 🖥️\n\nOne-way ANOVA (due M 07/07)\n\n📃 In-class quiz 📃 \n\nModule 1\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nTwo-way ANOVA\n\n🖥️ Daily practice 🖥️\n\nTwo-way ANOVA (due M 07/07)\n\n📃 In-class quiz 📃 \n\nOne-way ANOVA\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 2 (due M 07/14)\n\n📃 In-class quiz 📃 \n\nTwo-way ANOVA"
+  }
+]

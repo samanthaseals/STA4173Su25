@@ -1,0 +1,51 @@
+---
+title: "🌱 Module 1: Exploring Continuous Outcomes in Two Groups"
+format: html
+---
+
+::: {.callout-tip title="Thursday, June 19, 2025" collapse="true" open="true"}
+
+**📝 Lectures 📝** 
+
+- Two-sample *t*-test (independent data)
+- Paired *t*-test (dependent data)
+
+**🖥️ Daily practice 🖥️**
+
+- Two-sample means (due M 06/23)
+
+**📃 In-class quiz 📃 ** 
+
+- Summary statistics
+
+:::
+
+::: {.callout-tip title="Tuesday, June 24, 2025" collapse="true" open="true"}
+
+**📝 Lectures 📝** 
+
+- *t*-test assumptions
+- Wilcoxons (nonparametric alternative to *t*-test)
+
+**🖥️ Daily practice 🖥️**
+
+- Two-sample medians (due M 06/30)
+
+**📃 In-class quiz 📃 ** 
+
+- Two-sample means
+
+:::
+
+::: {.callout-tip title="Thursday, June 26, 2025" collapse="true" open="true"}
+
+**🖥️ Daily practice 🖥️**
+
+- Assignment 1 (due W 07/03)
+
+**📃 In-class quiz 📃 ** 
+
+- Two-sample medians
+
+
+:::

@@ -1,0 +1,34 @@
+---
+title: "📝 Module 0: Review & R Foundations"
+format: html
+---
+
+::: {.callout-tip title="Tuesday, June 17, 2025" collapse="true" open="true"}
+
+**📝 Lectures 📝** 
+
+- Review of STA2023
+- Introduction to R
+
+**🖥️ Daily practice 🖥️**
+
+- Introduction to R (due M 06/23)
+
+**📃 In-class quiz 📃 ** 
+
+- Get to Know You
+
+:::
+
+::: {.callout-tip title="Thursday, July 31, 2025" collapse="true" open="true"}
+
+**🖥️ Group Effort 🖥️**
+
+- Ugly graph competition
+- *Presentation* at the end of class
+
+**📃 In-class quiz 📃** 
+
+- Module 4
+
+:::

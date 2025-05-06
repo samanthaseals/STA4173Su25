@@ -1,0 +1,29 @@
+project:
+  type: website
+
+website:
+  title: "STA4173 - Biostatistics - Summer 2025"
+  navbar:
+    left:
+      - text: Modules
+        menu: 
+          - text: "Module 0: Review & R Foundations"
+            href: module0.qmd
+          - text: "Module 1: Continuous outcomes: Comparing two groups"
+            href: module1.qmd
+          - text: "Module 2: Continuous outcomes: Comparing three or more groups"
+            href: module2.qmd
+          - text: "Module 3: Continuous outcomes: Regression and correlation"
+            href: module3.qmd
+          - text: "Module 4: Categorical outcomes"
+            href: module4.qmd        
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: get_help.qmd
+        text: Need Help?
+        
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: false

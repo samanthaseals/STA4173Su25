@@ -1,0 +1,14 @@
+---
+title: "Untitled"
+format:
+  revealjs:
+    theme: default  # or leave blank
+editor: source
+---
+
+## Test
+
+test 
+
+$$y = mx+b$$
+

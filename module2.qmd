@@ -1,0 +1,50 @@
+---
+title: "🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups"
+format: html
+---
+
+::: {.callout-tip title="Tuesday, July 1, 2025" collapse="true" open="true"}
+
+
+**📝 Lectures 📝** 
+
+- One-way ANOVA and posthoc testing
+- ANOVA assumptions and Kruskal-Wallis
+
+**🖥️ Daily practice 🖥️**
+
+- One-way ANOVA (due M 07/07)
+
+**📃 In-class quiz 📃 ** 
+
+- Module 1
+
+:::
+
+::: {.callout-tip title="Thursday, July 3, 2025" collapse="true" open="true"}
+
+**📝 Lectures 📝** 
+
+- Two-way ANOVA
+
+**🖥️ Daily practice 🖥️**
+
+- Two-way ANOVA (due M 07/07)
+
+**📃 In-class quiz 📃 ** 
+
+- One-way ANOVA
+
+:::
+
+::: {.callout-tip title="Tuesday, July 8, 2025" collapse="true" open="true"}
+
+**🖥️ Daily practice 🖥️**
+
+- Assignment 2 (due M 07/14)
+
+**📃 In-class quiz 📃 ** 
+
+- Two-way ANOVA
+
+:::

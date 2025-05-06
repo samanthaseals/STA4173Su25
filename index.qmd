@@ -1,0 +1,66 @@
+---
+title: "STA4173 - Biostatistics - Summer 2025"
+format: html
+---
+
+::: {.callout-tip title="📝 Module 0: Review & R Foundations" collapse="true" open="true"}
+In this introductory module, we will review essential concepts from STA2023 (*Elements of Statistics*) and get set up with the tools used throughout the course. We'll cover:
+
+- Summary statistics and data visualizations.
+- Basics of statistical inference:
+    - Confidence intervals for one mean,
+    - Hypothesis testing for one mean.
+- Getting started with R, [RStudio](https://rstudio.hmcse.uwf.edu), and Quarto.
+    - Basic R syntax: vectors & data frames/tibbles, functions, and the [tidyverse](https://www.tidyverse.org/).
+    - Your first Quarto document.
+
+:::
+
+::: {.callout-tip collapse="true" title="🌱 Module 1: Exploring Continuous Outcomes in Two Groups"}
+In this module, we explore methods for comparing continuous outcomes between two groups. We'll cover:
+
+- Two-sample *t*-test for independent samples  
+- Paired *t*-test for dependent samples  
+- Assumptions on *t*-tests and how to assess
+- Wilcoxon rank-sum test  
+- Wilcoxon signed-rank test
+  
+:::
+
+::: {.callout-tip collapse="true" title="🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups"}
+In this module, we explore methods for comparing continuous outcomes between three or more groups. We'll cover:
+
+- One-way ANOVA 
+- Two-way ANOVA
+- Assumptions on ANOVA and how to assess
+- Posthoc testing (multiple comparisons) 
+- Profile plots
+  
+:::
+
+::: {.callout-tip collapse="true" title="🐬 Module 3: Exploring Regression Modeling"}
+In this module, we'll explore describing the relationship between two continuous variables. We'll cover:
+
+- Bivariate correlation
+    - Pearson's
+    - Spearman's 
+- Simple linear regression
+- Multiple regression
+- Assumptions on regression and how to assess
+- Regression diagnostics
+  
+:::
+
+::: {.callout-tip collapse="true" title="🐢 Module 4: Exploring Categorical Outcomes"}
+In this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (*Elements of Statistics*):
+
+- One-sample proportions
+- Two-sample proportions
+
+We will continue by expanding our knowledge:
+
+- $\chi^2$ goodness-of-fit
+- $\chi^2$ test for independence
+- Logistic regression
+  
+:::
