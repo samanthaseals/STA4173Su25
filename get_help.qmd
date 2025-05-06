@@ -5,7 +5,7 @@ format: html
 
 **How do I typeset a hypothesis test?**
 
-- Here is a basic template for typesetting hypothesis tests in Quarto: hyp_test_template.qmd
+- Here is a basic template for typesetting hypothesis tests in Quarto: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/hyp_test_template.qmd">template.qmd</a>
 - Remember to update subscripts when you are editing existing code.
 
 **Do you need help with your assignment?**
