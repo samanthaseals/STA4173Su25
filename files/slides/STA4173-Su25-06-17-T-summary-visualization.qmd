@@ -1,0 +1,1388 @@
+---
+title: "STA2023 Review:<br>Point Estimation<br>Data Visualization"
+subtitle: "June 17, 2025<br>Tuesday"
+execute:
+  echo: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+## Introduction: Topics
+
+- Basic descriptives:
+    - Continuous variables:
+        - Mean
+        - Median
+        - Variance and standard deviation
+        - Range and interquartile range
+    - Categorical variables:
+        - Count
+        - Overall percentage
+        - Row percentage
+        - Column percentage
+        
+```{r}
+#| echo: false
+source('/Users/sseals/Library/CloudStorage/GoogleDrive-sseals@uwf.edu/Shared drives/HMCSE-EES-Computational Geomorphology and Modeling Lab/8-Samantha stuff/classpackage/2025-05 additions.R')
+```
+
+## Introduction: Data
+
+- We will be using data from the kingdom of [Equestria](https://en.wikipedia.org/wiki/Equestria) (yes, from [My Little Pony](https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic)).
+
+- [Mane Six](https://equestripedia.org/wiki/Mane_Six):
+    - Twilight Sparkle (Unicorn $\to$ Alicorn)
+    - Applejack (Earth Pony)
+    - Fluttershy (Pegasus)
+    - Pinkie Pie (Earth Pony)
+    - Rainbow Dash (Pegasus)
+    - Rarity (Unicorn)
+
+## Introduction: Data
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(gsheet)
+library(DT)
+library(janitor)
+mlp_data <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1fgkPVXXmif9sXP1Gg7BEeRfKO3tayn1vvb2ep7eQqjs/edit?gid=0#gid=0")
+datatable(mlp_data,
+          options = list(pageLength = 4, # how many obs shown on slide
+                 scrollX = TRUE, # can scroll across cols
+                 lengthChange = FALSE), # cannot change number of rows shown
+          rownames = TRUE) # include row number
+```
+
+## Introduction: Data
+
+```{r}
+#| echo: false
+mlp_data <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1fgkPVXXmif9sXP1Gg7BEeRfKO3tayn1vvb2ep7eQqjs/edit?gid=0#gid=0")
+datatable(mlp_data,
+          options = list(pageLength = 3, # how many obs shown on slide
+                 scrollX = FALSE, # can scroll across cols
+                 lengthChange = FALSE, # cannot change number of rows shown
+                 info = FALSE, # no info about number of obs
+                 searching = FALSE, # no search bar
+                 ordering = FALSE, # no ordering
+                 dom = 't'),  # just display the table
+          rownames = FALSE) # do not include row number
+```
+
+- Name: the pony's name
+- Type: type of pony (Earth, Pegasus, Unicorn, Alicorn)
+- Sex: sex/age of pony (Coal, Filly, Stallion, Mare)
+- Flying speed: average flying speed (km/hr) for winged ponies
+- Friendship: a harmony index from friendship activities (0-10)
+- Magical energy: measured magical energy output (sparkles) for magical ponies
+- Tail shimmer: how much light reflected by the pony's tail (lux)
+
+## Types of Variables: Qualitative
+
+- A **qualitative** or **categorical** variable classifies an observation into one of two or more groups or categories.
+    - Nominal: purely qualitative and unordered
+    - Ordinal: data can be ranked, but intervals between ranks may not be equivalent
+    
+- Examples:
+    - satisfaction rating
+    - favorite color
+    - type of pet
+    - education level
+    - blood type
+    
+## Types of Variables: Quantitative    
+
+- A **quantitative** or **continuous** variable takes numerical values for which arithmetic operations such as adding and averaging make sense; typically has a unit of measure. 
+    - Interval: meaningful differences between values, but no true zero point
+    - Ratio: meaningful differences and a true zero point
+
+- Examples:
+    - age (years)
+    - temperature (Celsius)
+    - daily hours of sleep
+    - ACT or SAT score
+    - height (inches)
+
+## Types of Variables: Example
+
+```{r}
+#| echo: false
+mlp_data <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1fgkPVXXmif9sXP1Gg7BEeRfKO3tayn1vvb2ep7eQqjs/edit?gid=0#gid=0")
+datatable(mlp_data,
+          options = list(pageLength = 3, # how many obs shown on slide
+                 scrollX = FALSE, # can scroll across cols
+                 lengthChange = FALSE, # cannot change number of rows shown
+                 info = FALSE, # no info about number of obs
+                 searching = FALSE, # no search bar
+                 ordering = FALSE, # no ordering
+                 dom = 't'),  # just display the table
+          rownames = FALSE) # do not include row number
+```
+
+- Name: the pony's name
+- Type: type of pony (Earth, Pegasus, Unicorn, Alicorn)
+- Sex: sex/age of pony (Coal, Filly, Stallion, Mare)
+- Flying speed: average flying speed (km/hr) for winged ponies
+- Friendship: a harmony index from friendship activities (0-10)
+- Magical energy: measured magical energy output (sparkles) for magical ponies
+- Tail shimmer: how much light reflected by the pony's tail (lux)
+
+## Describing Data: Why?
+
+- Why do we describe data? We want to tell a story!
+    - Summarize *n* observations into a single description
+    - Understand what is in the data
+    - Spot patterns, missing data, or outliers
+    - Compare groups or spot differences or oddities
+    
+## Describing Data: How?    
+
+- How do we describe data?
+    - Numbers
+        - Frequency table
+        - Mean & standard deviation
+        - Median & IQR
+    - Graphs
+        - Bar charts
+        - Box plots
+        - Histograms
+  
+## Point Estimation: Mean
+
+- **Mean:** the average of a set of values
+
+$$
+\bar{y} = \frac{\sum_{i=1}^n y_i}{n}
+$$
+
+- Find the mean for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100}
+
+$$
+\bar{y} = \frac{\sum_{i=1}^n y_i}{n} = \frac{10 + 20 + 30 + 40 + 100}{5} = 40
+$$
+
+- The average flying speed for winged ponies is 40 km/hr.
+
+## Point Estimation: Median
+
+- **Median:** The middle value in an ordered dataset. 
+    - When we have an even number of observations, we average the two middle.
+
+- Find the median for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100}
+    - First, we sort the data: {10, 20, 30, 40, 100}
+    - Then, find the middle number: 30
+    
+- The median flying speed for winged ponies is 30 km/hr.    
+
+## Point Estimation: Variance
+
+- **Variance:** A measure of spread; the average of squared differences from the mean.
+    - Higher variance = data has more spread.
+    - In the original units of the data.
+    
+$$
+s_y^2 = \frac{\sum_iy_i^2 - (\sum_iy_i)^2/n}{n-1}
+$$
+    
+- Find the variance for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100}    
+
+$$
+s_y^2 = \frac{\sum_iy_i^2 - (\sum_iy_i)^2/n}{n-1} = \frac{(10^2+...+100^2)-(10+...+100)^2/5}{4} = 1250
+$$
+
+- The variance is 1250 (km/hr)^2^
+    
+## Point Estimation: Standard Deviation    
+    
+- **Standard Deviation:** A measure of spread; the average distance from the mean. 
+    - Higher standard deviation = data has more spread.
+    - Same units as the data.
+
+$$
+s_y = \sqrt{s_y^2}
+$$
+
+- Find the standard deviation for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100} 
+
+$$
+s_y = \sqrt{s^2_y} = \sqrt{1250} \approx 35.36
+$$
+
+- The standard deviation is 35.36 km/hr.
+
+## Point Estimation: Range
+
+- **Range:** difference between the maximum and minimum values
+
+$$
+\text{range} = \text{max}(y) - \text{min}(y)
+$$
+
+- Find the range for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100} 
+
+$$
+\begin{align*}
+\text{range} = \text{max}(y) - \text{min}(y) = 100 - 10 = 90
+\end{align*}
+$$
+
+- The range of the flying speeds is 90 km/hr.
+
+## Point Estimation: Interquartile Range
+
+- **Interquartile Range (IQR):** range of the middle 50% of the data. 
+
+$$
+\text{IQR} = \text{P}_{75} − \text{P}_{25}
+$$
+
+- Find the IQR for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100} 
+    - Recall that the median is 30.
+    - We then find $P_{25}$ using {10, 20} and $P_{75}$ using {40, 100} 
+    - Thus, $P_{25} = 15$ and $P_{75} = 70$.
+    
+$$
+\begin{align*}
+\text{IQR} = \text{P}_{75} − \text{P}_{25} = 70 - 15 = 55
+\end{align*}
+$$ 
+
+- The IQR of the flying speeds is 55 km/hr.
+
+## Point Estimation: Proportion
+
+- **Proportion:** a type of mean for categorical data
+    - Often expressed as a percentage  
+    - Useful for categorical responses
+    
+$$
+\hat{p} = \frac{\sum_{i=1}^n y_i}{n},
+$$
+
+- Note that in this case, 
+
+$$
+y_i = 
+\begin{cases}
+  1 & \text{if in category }i \\
+  0 & \text{otherwise}
+\end{cases}
+$$
+
+## Point Estimation: Proportion
+
+- Find the proportion of ponies that have wings in the following sample: {Y, N, Y, Y, N, Y} 
+
+- Count the number of "Y" responses and divide by total:
+
+$$
+\hat{p} = \frac{\sum_{i=1}^n y_i}{n} = \frac{4}{6} \approx 0.67
+$$
+
+- The proportion of ponies with wings is 0.667 (or 66.7%).
+
+## Point Estimation: Frequency Table
+
+- **Frequency table:** A table showing how often each value appears in a dataset.
+    - Useful for categorical responses.
+    - For each category, $i$, we report $n_i$ ($\%_i$)
+
+- Find the freqency table for the following sample of 8 ponies:  {Earth, Pegasus, Unicorn, Earth, Pegasus, Pegasus, Unicorn, Alicorn}
+
+:::{.columns}
+::: {.column width="40%"}
+- Frequencies:
+    - Alicorn: $n_{\text{A}} = 1$
+    - Earth: $n_{\text{E}} = 2$
+    - Pegasus: $n_{\text{P}} = 3$
+    - Unicorn: $n_{\text{U}} = 2$
+    
+:::
+
+::: {.column width="50%"}
+- Proportions:
+    - Alicorn: $\hat{p}_{\text{A}} = 1/8 = 0.125$
+    - Earth: $\hat{p}_{\text{E}} = 2/8 = 0.250$
+    - Pegasus: $\hat{p}_{\text{P}} = 3/8 = 0.375$
+    - Unicorn: $\hat{p}_{\text{U}} = 2/8 = 0.250$ 
+    
+:::
+:::
+
+## Point Estimation: Frequency Table
+
+- Putting this into a table,
+
+```{r}
+#| echo: false
+labels <- c("Pony Type", "n (%)")
+tibble(pony_type = haven::labelled(c("Alicorn", "Earth", "Pegasus", "Unicorn"),
+                                   label = labels[1]),
+                        n_pct = haven::labelled(c("1 (12.5%)", "2 (25.0%)", "3 (37.5%)", "2 (25.5%)"), 
+                                                label = labels[2])) %>% 
+  datatable(options = list(pageLength = 4,
+                           scrollX = FALSE,
+                           lengthChange = FALSE,
+                           info = FALSE,
+                           searching = FALSE,
+                           ordering = FALSE,
+                           dom = 't'),
+            rownames = FALSE)
+```
+
+## Point Estimation: Contingency Table
+
+- **Contingency table:** A table that summarizes two qualitative variables and their overlap.
+
+- We will not concern ourselves with the derivation, but will rely on R.
+
+- Consider this data,
+
+```{r}
+#| echo: false
+tibble(pony_id = LETTERS[1:8],
+       pony_type = c("Earth", "Pegasus", "Unicorn", "Pegasus", "Alicorn", "Earth", "Pegasus", "Unicorn"),
+       flying_status = c("No", "Yes", "No", "Yes", "Yes", "No", "Yes", "No")
+) %>%
+    datatable(options = list(pageLength = 4,
+                             scrollX = FALSE,
+                             lengthChange = FALSE,
+                             info = FALSE,
+                             searching = FALSE,
+                             ordering = FALSE),
+              rownames = FALSE)
+```
+
+## Point Estimation: Contingency Table
+
+- The resulting contingency table would look someting like this:
+    - We are using *column totals* as our denominators.
+    
+```{r}
+#| echo: false
+tibble(pony_id = LETTERS[1:8],
+       pony_type = c("Earth", "Pegasus", "Unicorn", "Pegasus", "Alicorn", "Earth", "Pegasus", "Unicorn"),
+       flying_status = c("No", "Yes", "No", "Yes", "Yes", "No", "Yes", "No")
+) %>%
+  n_pct(pony_type, flying_status, rows = 4)
+```
+
+## Graphs: Box Plots
+
+- Box plots display the distribution of a continuous variable using the five number summary:
+    - Whisker: Minimum
+    - Beginning of box: 25^th^ percentile (first quartile; Q1, P25)
+    - "Middle" of box: Median (50th percentile, second quartile; Q2, P50)
+    - End of box: 75^th^ percentile (third quartile; Q3, P75)
+    - Whisker: Maximum
+
+- We use box and whisker plots to get an idea of the *spread* and *skewness* of the data.
+
+- Note: there are different ways to define the whiskers.
+    - I use the min/max as whiskers when sketching by hand.
+    - `ggplot()` uses 1.75 $\times$ IQR.
+    
+## Graphs: Box Plots
+
+- Describe this box plot:
+
+<center>
+```{r}
+#| echo: false
+tibble(x = c(10, 11, 11, 12, 12, 12, 13, 13, 14)) %>% 
+  ggplot(aes(x = x)) +
+  geom_boxplot(fill = "#F9E79F") + 
+  labs(x = "Number of Apples Eaten") +
+  theme_bw() + 
+  theme_minimal() +
+  theme(axis.ticks.y = element_blank()) 
+```
+</center>
+
+## Graphs: Box Plots
+
+- Describe this box plot:
+
+<center>
+```{r}
+#| echo: false
+tibble(x = c(5, 6, 6, 7, 7, 8, 9, 15, 20)) %>% 
+  ggplot(aes(x = x)) +
+  geom_boxplot(fill = "#A00000") + 
+  labs(x = "Number of Apples Eaten") +
+  theme_bw() + 
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) 
+```
+</center>
+
+## Graphs: Box Plots
+
+- Describe this box plot:
+
+<center>
+```{r}
+#| echo: false
+tibble(x = c(1, 2, 3, 4, 5, 5, 5, 6, 6, 6)) %>% 
+  ggplot(aes(x = x)) +
+  geom_boxplot(fill = "#FFD7B5") + 
+  labs(x = "Number of Apples Eaten") +
+  theme_bw() + 
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank()) 
+```
+</center>
+
+## Graphs: Box Plots
+
+- Describe this box plot:
+
+<center>
+```{r}
+#| echo: false
+tibble(count = c(20, 21, 22, 22, 23, 24, 25, 25, 26,
+                 10, 15, 18, 22, 23, 24, 28, 32, 35),
+       spread = c(rep("Adults",9), 
+                  rep("Juveniles",9))) %>% 
+  ggplot(aes(x = spread, y = count, fill = spread)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("Adults" = "#A8D03B", "Juveniles" = "#F26C4F")) +
+  labs(y = "Number of Apples Eaten",
+       x = "Pony Age Group") +
+  theme_bw() +
+  theme(legend.position = "none")
+```
+</center>
+
+
+## Graphs: Histograms
+
+- Histograms show the distribution of a continuous variable.
+    - What is the *shape* of the distribution?
+    - Is the distribution symmetric? Skewed? How skewed? 
+
+- Values are grouped into intervals ("bins"), then the bin height demonstrates how many values fall into that interval.
+
+- This allows us to quickly see if there are any oddities.
+    - Increased proportion of a specific value/bin.
+        - Zero inflation? Value used to indicate missing?
+    - Any values that are "out in the tail".
+        - Outlier? Data entry error?
+        
+## Graphs: Histograms
+
+```{r}
+#| echo: false
+set.seed(18662)
+df <- bind_rows(tibble(value = rnorm(100, mean = 50, sd = 10), type = "Symmetric"),
+                tibble(value = rexp(100, rate = 1/10) + 30, type = "Right Skewed"),
+                tibble(value = 80 - rexp(100, rate = 1/10), type = "Left Skewed"),
+                tibble(value = c(rnorm(50, 40, 5), rnorm(50, 70, 5)), type = "Bimodal"),
+                tibble(value = runif(100, min = 30, max = 70), type = "Uniform"))
+```
+
+- Describe the histogram:
+
+<center>
+```{r}
+#| echo: false
+df %>% 
+  filter(type == "Symmetric") %>%
+  ggplot(aes(x = value)) +
+  geom_histogram(bins = 15, fill = "#FF2C8B", color = "#4A145D") +
+  theme_bw() +
+  labs(y = "Number of Ponies",
+       x = "Magic Ability Score")
+```
+<center>
+
+## Graphs: Histograms
+
+- Describe the histogram:
+
+<center>
+```{r}
+#| echo: false
+df %>% 
+  filter(type == "Left Skewed") %>%
+  ggplot(aes(x = value)) +
+  geom_histogram(bins = 15, fill = "#88CCF1", color = "#0072CE") +
+  theme_bw() +
+  labs(y = "Number of Ponies",
+       x = "Magic Ability Score")
+```
+<center>
+
+## Graphs: Histograms
+
+- Describe the histogram:
+
+<center>
+```{r}
+#| echo: false
+df %>% 
+  filter(type == "Uniform") %>%
+  ggplot(aes(x = value)) +
+  geom_histogram(bins = 15, fill = "#F4A460", color = "#5C3A21") +
+  theme_bw() +
+  labs(y = "Number of Ponies",
+       x = "Magic Ability Score")
+```
+<center>
+
+## Graphs: Histograms
+
+- Describe the histogram:
+
+<center>
+```{r}
+#| echo: false
+df %>% 
+  filter(type == "Right Skewed") %>%
+  ggplot(aes(x = value)) +
+  geom_histogram(bins = 15, fill = "#8B5FBF", color = "#5C2D91") +
+  theme_bw() +
+  labs(y = "Number of Ponies",
+       x = "Magic Ability Score")
+```
+<center>
+
+## Graphs: Histograms
+
+- Describe the histogram:
+
+<center>
+```{r}
+#| echo: false
+df %>% 
+  filter(type == "Bimodal") %>%
+  ggplot(aes(x = value)) +
+  geom_histogram(bins = 15, fill = "#FFF1A8", color = "#F7BFD8") +
+  theme_bw() +
+  labs(y = "Number of Ponies",
+       x = "Magic Ability Score")
+```
+<center>
+
+## Graphs: Bar Graphs
+
+- Bar graphs display the distribution of categorical data.
+    - The frequency or proportion of observations is displayed on the bar graph.
+    
+- Bar graphs usually have categories on the *x*-axis and counts or proportions on the *y*-axis.
+    - Note that we could flip the axes to create a vertical bar graph.
+    
+- Note that the bars are *separated* on the *x*-axis to indicate the lack of continuity.
+
+## Graphs: Bar Graphs
+
+- Consider the bar graph, below.
+
+<center>
+```{r}
+#| echo: false
+df <- tibble(fruit = c("Apple", "Banana", "Cherry", "Plum"),
+             count = c(23, 17, 35, 10))
+
+df %>% ggplot(aes(x = fruit, y = count)) +
+  geom_col(fill = "#F9A602", color = "#5C3A21") +
+  labs(x = "Fruit",
+       y = "Number of Ponies") +
+  theme_bw()
+```
+</center>
+
+## Graphs: Side-by-Side Bar Graphs
+
+- Consider the bar graph, below.
+
+<center>
+```{r}
+#| echo: false
+tibble(FavoriteFruit = c("Apples", "Bananas", "Cherries", "Grapes", "Mangoes", "Pears"),
+       Earth = c(6, 6, 2, 6, 2, 6),
+       Pegasus = c(6, 3, 4, 2, 3, 4)) %>%
+  pivot_longer(cols = c(Earth, Pegasus), 
+               names_to = "Type", 
+               values_to = "Count") %>%
+  ggplot(aes(x = FavoriteFruit, 
+             y = Count, 
+             fill = Type)) +
+  geom_col(position = "dodge", 
+           color = "black") +
+  labs(x = "Favorite Fruit",
+       y = "Number of Ponies",
+       fill = "Pony Type") +
+  scale_fill_manual(values = c("Earth" = "#A0522D",
+                               "Pegasus" = "#87CEEB")) + 
+  theme_bw()
+```
+</center>
+
+## Graphs: Stacked Bar Graphs
+
+- Consider the bar graph, below.
+
+<center>
+```{r}
+#| echo: false
+set.seed(10576)
+groups <- c("Earth", "Pegasus", "Unicorn")
+fruits <- c("Apples", "Bananas", "Cherries", "Grapes", "Pears", "Mangoes")
+pony_data <- tibble(Pony = paste0("Pony_", 1:300),
+                    Group = rep(groups, each = 100),
+                    FavoriteFruit = sample(fruits,
+                                           size = 300,
+                                           replace = TRUE,
+                                           prob = c(0.25, 0.20, 0.15, 0.15, 0.15, 0.10))) 
+pony_data %>%
+  count(Group, FavoriteFruit) %>%
+  ggplot(aes(x = Group, y = n, fill = FavoriteFruit)) +
+  geom_col(position = "stack", color = "black") +
+  labs(x = "Pony Type",
+       y = "Number of Ponies",
+       fill = "Favorite Fruit") +
+  scale_fill_manual(values = c("Apples" = "#ED1C24",
+                               "Bananas" = "#FFF200",
+                               "Cherries" = "#F7941D",
+                               "Grapes" = "#00A651",
+                               "Pears" = "#662D91",
+                               "Mangoes" = "#0072CE")) +
+  theme_bw()
+```
+</center>
+
+## Graphs: Histograms vs Bar Graphs
+
+- We have now reviewed two "bar style" graphs that we see regularly: histograms and bar graphs.
+
+- We use *histograms* to see the distribution of continuous variables.
+    - The *x*-axis represents numeric intervals.
+    - The bars touch each other to represent continuity.
+
+- We use *bar graphs* to see the distribution of categorical variables.
+    - The *x*-axis represents categories.
+    - The bars do not touch each other, implying distinct categories.
+
+## Graphs: Scatterplots
+
+- Scatterplots allow us to look at the relationship between two continuous variables.
+    - Each point on the graph represents one observation.
+
+- What statisticians use scatterplots for:
+    - Explore patterns (aka trends or  relationships).
+        - Linear relationships.
+        - Non-linear relationships.
+    - Detect clusters of observations.
+    - Find oddities in the data (outliers).
+
+- When we describe the relationship, we are really answering the question, "As *x* increases, what happens to *y*?"
+
+## Graphs: Scatterplots
+
+- Consider the scatterplot, below.
+
+<center>
+```{r}
+#| echo: false
+set.seed(672166)
+tibble(Pony = paste0("Pegasus_", 1:30),
+       WingPower = rnorm(30, mean = 700, sd = 100),
+       FlightSpeed = rnorm(30, mean = 80, sd = 10)) %>%
+  mutate(FlightSpeed = FlightSpeed + 0.05 * (WingPower - mean(WingPower))) %>%
+  ggplot(aes(x = WingPower, y = FlightSpeed)) +
+  geom_point(size = 2) +
+  labs(x = "Wing Power",
+       y = "Flight Speed (km/h)") +
+  theme_bw()
+```
+</center>
+
+## Graphs: Scatterplots
+
+- Consider the scatterplot, below.
+
+<center>
+```{r}
+#| echo: false
+set.seed(561187)
+tibble(Pony = paste0("Earth_", 1:30),
+       HoursWorked = rnorm(30, mean = 6, sd = 1.5),
+       ApplesBucked = rnorm(30, mean = 300, sd = 50)) %>%
+  mutate(ApplesBucked = ApplesBucked + 25 * (HoursWorked - mean(HoursWorked)))  %>%
+  ggplot(aes(x = HoursWorked, y = ApplesBucked)) +
+  geom_point(size = 2) +
+  labs(x = "Hours Worked",
+       y = "Apples Bucked") +
+  theme_bw()
+```
+</center>
+
+## Graphs: Scatterplots
+
+- Consider the scatterplot, below.
+
+<center>
+```{r}
+#| echo: false
+set.seed(561187)
+tibble(Pony = paste0("Earth_", 1:30),
+       HoursWorked = rnorm(30, mean = 6, sd = 1.5),
+       ApplesBucked = rnorm(30, mean = 300, sd = 50)) %>%
+  mutate(ApplesBucked = ApplesBucked + 25 * (HoursWorked - mean(HoursWorked)))  %>%
+  ggplot(aes(x = HoursWorked, y = ApplesBucked)) +
+  geom_point(size = 2) +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Hours Worked",
+       y = "Apples Bucked") +
+  theme_bw()
+```
+</center>
+
+## Graphs: Scatterplots
+
+- Consider the scatterplot, below.
+
+<center>
+```{r}
+#| echo: false
+set.seed(9876)
+tibble(HoursPracticed = seq(0, 10, length.out = 50),
+       SpellAccuracy = 60 + 20 * HoursPracticed - 2 * HoursPracticed^2 + rnorm(50, sd = 5)) %>%
+  ggplot(aes(x = HoursPracticed, y = SpellAccuracy)) +
+  geom_point(size = 2) +
+  labs(x = "Hours of Magic Practice",
+       y = "Spell Accuracy (%)") +
+  theme_bw()
+```
+</center>
+
+
+## Graphs: Scatterplots
+
+- Consider the scatterplot, below.
+
+<center>
+```{r}
+#| echo: false
+set.seed(9876)
+tibble(HoursPracticed = seq(0, 10, length.out = 50),
+       SpellAccuracy = 60 + 20 * HoursPracticed - 2 * HoursPracticed^2 + rnorm(50, sd = 5)) %>%
+  ggplot(aes(x = HoursPracticed, y = SpellAccuracy)) +
+  geom_point(size = 2) +
+  geom_smooth(method = "loess", se = FALSE) +
+  labs(x = "Hours of Magic Practice",
+       y = "Spell Accuracy (%)") +
+  theme_bw()
+```
+</center>
+
+## <!-- Blank slide title -->
+
+<div style="display: flex; justify-content: center; align-items: center; height: 70vh; font-size: 5em; color: #4b0082;"><b>Break time!</b></div>
+
+## Introduction to R
+
+-   In this course, we will review formulas, but we will use R for computational purposes.
+    -   Remember to refer to the lecture notes for specific code needed.
+    -   Code is also available on this course's [GitHub repository](http://github.com/samanthaseals/STA4173Su25).
+    
+- You can install R and RStudio if you wish; both are free.
+    - [R](https://cran.rstudio.com/) from CRAN.
+    - [RStudio](https://posit.co/download/rstudio-desktop/) from Posit.
+
+- We also have access to the [Posit Workbench](https://rstudio.hmcse.uwf.edu/) ("the server") through HMCSE.
+
+- I know that this is probably the first time you are seeing R (or any sort of programming).
+    - That is why we have "R lab" time built in to our course. 
+    - Remember that I am not looking for perfection, but for competency. 
+    
+## Introduction to R
+
+- Please download today's activity from Canvas and [log into the server](https://rstudio.hmcse.uwf.edu/).
+    - Click on "New session"
+    - Click on "Create session"
+    
+- Upload today's activity to the server:
+    - In the bottom right pane, click on the white square with a golden up arrow on in
+    - Click on "Choose file"
+    - Select the downloaded file
+    - Click "Open"
+    - Click "OK"
+    
+- Open today's activity on the server:
+    - In the bottom right pane, scroll to the bottom
+    - Click on the name of the .qmd file for today's activity
+
+## Introduction to R: .R scripts
+    
+- .R scripts:     
+    - Only allows code
+        - Can comment out code using pound sign
+    - Can run code line-by-line  
+    - Can run multiple lines of code at a time
+    - Results output to Console window pane (bottom left)
+    
+- I use .R scripts for my day-to-day analyses    
+    
+## Introduction to R: .qmd file
+    
+- .qmd files:    
+    - Allow both text and code
+        - Can comment out text using html code
+        - Can comment out code in chunk using pound sign
+    - Uses "code chunks" to evaluate code
+        - Button: run all chunks before
+        - Button: run this chunk
+        - Ctrl+enter / cmd+return: line-by-line
+    - Rendering results in .html file  
+    
+- I use .qmd files to create sharable documents 
+    - Reproducible research forever and always
+
+## Introduction to R: Disclaimer!
+
+- My major disclaimer as a biostatistician: I am a statistician first, programmer second.
+    - My expertise is in statistics, not programming.
+    - I do not know everything about R.
+    - I do not claim to write the most efficient code.
+    - Our goal is to correctly apply statistics to answer research questions using data.
+        - R is a *tool* for us to apply statistics.
+    
+- My major disclaimer as a professor: yes, I know this is likely the first time you are seeing R or programming in general.
+    - We have "R lab" time built into the course.
+    - Code you need to answer questions will be provided in lecture.
+        - This means you must revisit lecture slides to find the code you need.
+    
+## Introduction to R: Dr. Seals's Expectations
+    
+- I expect students to *try their best*. This includes:
+    - referring back to lectures as needed.
+    - asking when you have a question.
+    - using the resources provided to *learn*.
+    
+- You must know how to answer questions using R.
+
+- You will not be expected to write code beyond what is shown in class.
+    - Note: Sometimes I include <u>bonus</u> questions...
+
+- When grading, I am looking for *competency*.
+    - What is the appropriate analysis for the question at hand?
+    - What are the assumptions of the analysis? Do we meet them?
+    - Are the correct conclusions drawn given the information provided?
+    
+## Functions in R: base R vs. packages
+
+- R functions are like baking recipes. They:
+    - Takes input (ingredients, or data),
+    - Does something with it (follow recipe, or perform calculations),
+    - Gives back a result (baked good, or statistics).
+
+- Some functions in R are available as soon as you open RStudio (this is "base R").
+    - e.g., `mean()`, `sd()`
+
+- Other functions are *not* available and must be called in after you start RStudio (these are "packages").
+    - e.g., after I call in `library(tidyverse)`, I can use `summarize(mean(), sd())`
+    - We will always need `library(tidyverse)` because of `%>%` (pipe operator).
+
+## Functions in R: tidyverse
+
+- `library(tidyverse)` is a collection of R packages designed for data science.
+    - All packages share a common philosophy and are meant to work together.
+    - This is ideal for using the "same syntax" - I promise it's better than base R!
+
+- Core `library(tidyverse)` packages we will use:
+    - `library(readr)`: read in data files
+    - `library(dplyr)`: manipulate and summarize data
+    - `library(ggplot2)`: create data visualizations
+
+- If you are interested, there are resources:
+    - `library(tidyverse)` website: [https://www.tidyverse.org/](https://www.tidyverse.org/)
+    - <u>R for Data Science</u> (free textbook): [https://r4ds.hadley.nz/](https://r4ds.hadley.nz/)
+    
+## Functions in R: Summarizing Continuous Data
+
+- We will use `mean_median()` from `library(classpackage)` to summarize continuous variables.
+    - It will return both the mean (standard deviation) and median (IQR).
+
+```{r mean_median() syntax}
+#| eval: false
+dataset_name %>% 
+  mean_median(var1, var2, ...)
+```
+
+- We can add `group_by()` from `library(tidyverse)` to split the summaries by categories.
+
+```{r mean_median() group_by()}
+#| eval: false
+dataset_name %>% 
+  group_by(grouping_var1, grouping_var2, ...) %>% 
+  mean_median(var1, var2, ...)
+```
+
+## Functions in R: Summarizing Continuous Data
+
+- Let's use `mean_median()` to summarize the MLP dataset.
+
+```{r}
+#| eval: false
+mlp_data %>% 
+  mean_median(friendship, tail_shimmer, magical_energy)
+```
+
+## Functions in R: Summarizing Continuous Data
+
+- Let's use `mean_median()` to summarize the MLP dataset.
+
+```{r}
+mlp_data %>% 
+  mean_median(friendship, tail_shimmer, magical_energy)
+```
+
+## Functions in R: Summarizing Continuous Data
+
+- Let's use `mean_median()` to summarize the MLP dataset by pony type.
+
+```{r}
+#| eval: false
+mlp_data %>% 
+  group_by(type) %>%
+  mean_median(friendship, tail_shimmer, magical_energy)
+```
+
+## Functions in R: Summarizing Continuous Data
+
+- Let's use `mean_median()` to summarize the MLP dataset by pony type.
+
+```{r}
+mlp_data %>% 
+  group_by(type) %>%
+  mean_median(friendship, tail_shimmer, magical_energy)
+```
+
+
+## Functions in R: Summarizing Categorical Data
+
+- We will use `n_pct()` from `library(classpackage)` to summarize categorical variables.
+
+- For one variable -- this returns $n_i \ (\%_i)$:
+
+```{r n_pct() one var syntax}
+#| eval: false
+dataset_name %>% 
+  n_pct(var1)
+```
+
+- For two variables -- this returns $n_{ij} \ (\%_{\text{col}})$:
+    
+```{r n_pct() two var syntax}
+#| eval: false
+dataset_name %>% 
+  n_pct(var1, var2) 
+```    
+
+## Functions in R: Summarizing Categorical Data
+
+- Let's use `n_pct()` to summarize the MLP dataset.
+
+```{r}
+#| eval: false
+mlp_data %>% 
+  n_pct(type, rows = 4)
+```
+
+## Functions in R: Summarizing Categorical Data
+
+- Let's use `n_pct()` to summarize the MLP dataset.
+
+```{r}
+mlp_data %>% 
+  n_pct(type, rows = 4)
+```
+
+
+## Functions in R: Summarizing Categorical Data
+
+- Let's use `n_pct()` to summarize the MLP dataset.
+
+```{r}
+#| eval: false
+mlp_data %>% 
+  n_pct(friendship, type, rows = 4)
+```
+
+## Functions in R: Summarizing Categorical Data
+
+- Let's use `n_pct()` to summarize the MLP dataset.
+
+```{r}
+mlp_data %>% 
+  n_pct(friendship, type, rows = 4)
+```
+
+## Graphs in R: Using `ggplot()`
+
+- We will construct data visualizations using `library(ggplot2)`, which loads in when we load `library(tidyverse)`.
+
+- This package allows us to create a layered visualization.
+    - `ggplot()` creates the base layer.
+    - `geom_X()` creates the individual pieces.
+        - `geom_point()` creates a scatterplot.
+        - `geom_line()` creates connected lines.
+        - `geom_bar()` creates a bar chart.
+        - `geom_histogram()` creates a histogram.
+
+## Graphs in R: Using `ggplot()`
+
+- We use `ggplot()` because it is *very* flexible - it allows us to customize every part of the graph.
+    - Note that customization is less important in this course, but incredibly important in real life.
+    
+- The [R Graphics Cookbook](https://r-graphics.org/) is a great place to get basic code for graphs.
+
+- Remember that I do not expect you to memorize code. **I** do not have the code memorized.
+    - Things I regularly ask Google for help with:
+        - How to suppress the legend.
+        - How to specify the tickmarks on the axis.
+        - How to change the font size.
+        
+## Graphs in R: The `ggplot()` Layer
+
+- Calling `ggplot()` creates the initial layer the graph lasagna.
+
+<center>
+```{r}
+mlp_data %>% ggplot()
+```
+</center>
+
+## Graphs in R: The `ggplot()` Layer
+
+- We specify the aesthetics through `aes()` in `ggplot()`.
+
+<center>
+```{r}
+mlp_data %>% ggplot(aes(x = tail_shimmer, y = flying_speed))
+```
+</center>
+
+## Graphs in R: Overriding Defaults
+
+- We can override plot defaults using additional layers.
+
+<center>
+```{r}
+mlp_data %>% 
+  ggplot(aes(x = tail_shimmer, y = flying_speed)) +
+  labs(x = "Tail Shimmer",
+       y = "Flying Speed") +
+  theme_bw()
+```
+</center>
+        
+
+
+## Graphs in R: Box Plots        
+
+- Construct a box plot for the tail shimmer of the ponies (*tail_shimmer*).
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>% ggplot(aes(x = tail_shimmer)) +
+  geom_boxplot() +
+  labs(x = "Tail Shimmer") +
+  theme_bw() +
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())
+```
+</center>
+
+## Graphs in R: Box Plots        
+
+- Construct a box plot for the tail shimmer of the ponies (*tail_shimmer*).
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>% ggplot(aes(x = tail_shimmer)) +
+  geom_boxplot() +
+  labs(x = "Tail Shimmer") +
+  theme_bw() +
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())
+```
+</center>
+
+## Graphs in R: Box Plots        
+
+- Construct a box plot for the tail shimmer of the ponies (*tail_shimmer*).
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>% ggplot(aes(y = tail_shimmer)) +
+  geom_boxplot() +
+  labs(y = "Tail Shimmer") +
+  theme_bw() +
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())
+```
+</center>
+
+## Graphs in R: Box Plots        
+
+- Construct a box plot for the tail shimmer of the ponies (*tail_shimmer*).
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>% ggplot(aes(y = tail_shimmer)) +
+  geom_boxplot() +
+  labs(y = "Tail Shimmer") +
+  theme_bw() +
+  theme(axis.ticks.x = element_blank(),
+        axis.text.x = element_blank())
+```
+</center>
+
+## Graphs in R: Histograms
+
+- Construct a histogram for the flying speed of ponies (*flying_speed*).
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>% ggplot(aes(x = flying_speed)) +
+  geom_histogram(bins = 15, 
+                 color = "#2E7D32", 
+                 fill = "#4CAF50") +
+  labs(x = "Flying Speed", 
+       y = "Number of Ponies") +
+  theme_bw() 
+```
+
+## Graphs in R: Histograms
+
+- Describe the histogram of the flying speed of ponies (*flying_speed*):
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>% ggplot(aes(x = flying_speed)) +
+  geom_histogram(bins = 15, 
+                 color = "#2E7D32", 
+                 fill = "#4CAF50") +
+  labs(x = "Flying Speed", 
+       y = "Number of Ponies") +
+  theme_bw() 
+```
+
+## Graphs in R: Histograms
+
+- Construct a histogram for the magical energy of ponies (*magical_energy*).
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>% ggplot(aes(x = magical_energy)) +
+  geom_histogram(bins = 15, 
+                 color = "#8B6C42", 
+                 fill = "#F0E9DD") +
+  labs(x = "Magical Energy",
+       y = "Number of Ponies") +
+  theme_bw() 
+```
+
+## Graphs in R: Histograms
+
+- Describe the histogram of the magical energy of ponies (*magical_energy*):
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>% ggplot(aes(x = magical_energy)) +
+  geom_histogram(bins = 15, 
+                 color = "#8B6C42", 
+                 fill = "#F0E9DD") +
+  labs(x = "Magical Energy",
+       y = "Number of Ponies") +
+  theme_bw() 
+```
+
+
+## Graphs in R: Bar Graphs
+
+- Construct a bar graph for the combined age and sex of ponies.
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>%
+  count(sex) %>%
+  ggplot(aes(x = sex, y = n)) +
+  geom_col() +
+  labs(x = "Age and Sex of Pony",
+       y = "Number of Ponies")+
+  theme_bw()
+```
+</center>
+
+## Graphs in R: Bar Graphs
+
+- Construct a bar graph for the combined age and sex of ponies.
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>%
+  count(sex) %>%
+  ggplot(aes(x = sex, y = n)) +
+  geom_col() +
+  labs(x = "Age and Sex of Pony",
+       y = "Number of Ponies")+
+  theme_bw()
+```
+</center>
+
+## Graphs in R: Bar Graphs
+
+- Construct a bar graph for the type of pony.
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>%
+  count(type) %>%
+  ggplot(aes(x = type, y = n)) +
+  geom_col() +
+  labs(x = "Type of Pony",
+       y = "Number of Ponies")+
+  theme_bw()
+```
+
+## Graphs in R: Bar Graphs
+
+- Construct a bar graph for the type of pony.
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>%
+  count(type) %>%
+  ggplot(aes(x = type, y = n)) +
+  geom_col() +
+  labs(x = "Type of Pony",
+       y = "Number of Ponies")+
+  theme_bw()
+```
+</center>
+
+## Graphs in R: Scatterplots
+
+- Construct a scatterplot with magical energy (*magical_energy*) on the *x*-axis and tail shimmer (*tail_shimmer*) on the *y*-axis.
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>% ggplot(aes(y = tail_shimmer, x = magical_energy)) +
+  geom_point(size = 2) +
+  labs(x = "Magical Energy",
+       y = "Tail Shimmer") +
+  theme_bw()
+```
+</center>
+
+## Graphs in R: Scatterplots
+
+- Construct a scatterplot with magical energy (*magical_energy*) on the *x*-axis and tail shimmer (*tail_shimmer*) on the *y*-axis.
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>% ggplot(aes(y = tail_shimmer, x = magical_energy)) +
+  geom_point(size = 2) +
+  labs(x = "Magical Energy",
+       y = "Tail Shimmer") +
+  theme_bw()
+```
+</center>
+
+## Graphs in R: Scatterplots
+
+- Construct a scatterplot with magical energy (*magical_energy*) on the *x*-axis and flying speed (*flying_speed*) on the *y*-axis.
+
+<center>
+```{r}
+#| eval: false
+mlp_data %>% ggplot(aes(x = flying_speed, y = tail_shimmer)) +
+  geom_point(size = 2) +
+  labs(y = "Tail Shimmer",
+       x = "Flying Speed (km/h)") +
+  theme_bw()
+```
+</center>
+
+## Graphs in R: Scatterplots
+
+- Construct a scatterplot with magical energy (*magical_energy*) on the *x*-axis and flying speed (*flying_speed*) on the *y*-axis.
+
+<center>
+```{r}
+#| echo: false
+mlp_data %>% ggplot(aes(x = flying_speed, y = tail_shimmer)) +
+  geom_point(size = 2) +
+  labs(y = "Tail Shimmer",
+       x = "Flying Speed (km/h)") +
+  theme_bw()
+```
+</center>
+
+## Wrap Up
+
+- We have covered ("reminded" ourselves of) a lot today!
+    - Always remember that I do not expect you to:
+        - Memorize code.
+        - Produce code in a timed environment.
+        - Automatically know how to do these things.
+    - I do expect you to:
+        - Use your resources (lecture slides, GitHub website, Discord).
+        - Try your best.
+        
+## Wrap Up        
+
+- Today's lecture:
+    - Basic summaization of data.
+    - Basic data visualization.
+    - Introductory R.
+    
+- Next class:   
+    - Review of statistical inference.
+    - Confidence intervals and hypothesis tests.
+        - One sample means.
+        - Two sample means.
+            - Independent data.
+            - Dependent data.
+
+## Wrap Up    
+
+- Daily activity: the .qmd we worked on during class.
+    - Due date: Monday, June 23, 2025.
+
+- You will upload the resulting .html file on Canvas. 
+    - Please refer to the help guide on the Biostat website if you need help with submission.
+
+    
