@@ -1,0 +1,729 @@
+---
+title: "STA2023 Review<br>Confidence Intervals<br>Hypothesis Testing"
+subtitle: "June 19, 2025<br>Thursday"
+execute:
+  echo: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+        
+## Introduction: Topics
+
+- Statistical inference:
+    - Confidence intervals
+    - Hypothesis testing
+    
+- We will focus on the following scenarios today:
+    - One-sample mean ($\mu$)
+    - Two-sample mean, independent data ($\mu_1-\mu_2$)
+    - Two-sample mean, dependent data ($\mu_d$)
+
+```{r}
+#| echo: false
+source('/Users/sseals/Library/CloudStorage/GoogleDrive-sseals@uwf.edu/Shared drives/HMCSE-EES-Computational Geomorphology and Modeling Lab/8-Samantha stuff/classpackage/2025-05 additions.R')
+```
+
+## Introduction: Data
+
+- We are using data from the kingdom of [Equestria](https://en.wikipedia.org/wiki/Equestria) from [My Little Pony](https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic).
+
+- [Mane Six](https://equestripedia.org/wiki/Mane_Six):
+    - Twilight Sparkle (Unicorn $\to$ Alicorn)
+    - Applejack (Earth Pony)
+    - Fluttershy (Pegasus)
+    - Pinkie Pie (Earth Pony)
+    - Rainbow Dash (Pegasus)
+    - Rarity (Unicorn)
+    
+## Confidence Intervals
+
+- **Point estimate:** The single value of a statistic that estimates the value of a parameter.
+
+- **Confidence interval:** A range of plausible values for the parameter based on values observed in the sample. 
+
+
+$$
+\text{point estimate} \pm \text{margin of error}
+$$
+
+- What is the point estimate of:
+    - $\mu$
+    - $\sigma$
+    - $\pi$ (or $p$)
+    - $\mu_1-\mu_2$
+    - $\pi_1-\pi_2$
+
+## Confidence Intervals
+
+- We have different intervals based on the *level of confidence*.
+    - **Level of confidence:** The probability that the interval will capture the true parameter value in repeated samples. i.e., the  success rate for the method.
+
+<center><img src="images/L02a.png"></center>
+
+## Confidence Intervals
+
+- Because CIs are a range of values, we will use interval notation,
+
+<center>(lower bound, upper bound)</center>
+
+- where
+    - lower bound = point estimate -- margin of error 
+    - upper bound = point estimate + margin of error
+- Make sure to state your confidence intervals in numeric order.
+    - i.e., the lower bound must be the smaller number and the upper bound must be the larger number.
+    
+## Confidence Intervals: One-Sample Mean
+
+$(1-\alpha)100\%$ confidence interval for $\mu$:
+
+$$
+\bar{x} \pm t_{\alpha/2,\text{ df}} \sqrt{\frac{s^2}{n}}
+$$
+
+- where
+    - $\bar{x}$ is the sample mean of $x$
+    - $t_{\alpha/2,\text{ df}}$ is the critical value of $t$, where $\text{df} = n-1$
+    - $s^2$ is the sample variance of $x$
+    - $n$ is the sample size
+    
+## Confidence Intervals: One-Sample Mean (R)  
+
+- We will use the `one_mean_CI` function from CLASS PACKAGE to find the confidence interval.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% one_mean_CI(continuous = continuous_variable,
+                             confidence = confidence_level)
+```
+
+- For the entered variable (*continuous*), we will see:
+    - Point estimate for $\mu$
+    - Point estimate for $\sigma$
+    - Confidence interval for $\mu$ at the specified level (*confidence*)
+    
+## Confidence Intervals: One-Sample Mean   
+
+```{r}
+#| echo: false
+set.seed(8651)
+wing_flap <- tibble(pony_names = c("Rainbow Dash", "Soarin", "Spitfire", "Cloudchaser", "Fleetfoot", "Lightning Dust", "Windy Whistles", "Stormy Skies", "Gusty Gale", "Zephyr Breeze", "Skydancer", "Aero Ace", "Nimbus Sprint", "Breeze Wing", "Flash Fly", "Twister Tail", "Sirensong", "Aero Wave", "Sky Dancer", "Gale Gust", "Storm Strider", "Cyclone Swift", "Wind Whirl", "Jet Stream", "Flurry Flap"),
+                    wing_flap_rate = round(rnorm(n = length(pony_names), mean = 50, sd = 8),1),
+                    target = if_else(wing_flap_rate>=50, "Above", "Below"),
+                    apples = if_else(target == "Above", round(rnorm(n = length(pony_names), mean = 25, sd = 2)), round(rnorm(n = length(pony_names), mean = 15, sd = 3))))
+```
+
+- In the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today's young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony's wing‐flap rate (in flaps/minute).
+
+- A sample of our dataset: <br>
+
+```{r}
+#| echo: false
+set.seed(58157)
+wing_flap %>% slice_sample(n=5)
+```
+
+## Confidence Intervals: One-Sample Mean 
+
+- Let's find a 95% confidence interval for wing-flap rates.
+
+```{r}
+wing_flap %>% one_mean_CI(wing_flap_rate)
+```
+
+- Thus, the 95% CI for $\mu$ is (49.13, 55.46).
+
+## Statistical Inference: Confidence Intervals
+
+- We have learned that confidence intervals give a plausible range for an unknown population parameter at a chosen confidence level.
+    - e.g., 95% CI for $\mu$; 99% CI for $\pi$
+    
+- What if we want to directly answer questions?
+    - e.g., is the average wing-flap rate still 50 flaps/min?
+    
+- We can use confidence intervals to answer these questions!   
+    - We will compare the interval to the question.
+    
+- Recall that the 95% CI for mean wing-flap rate was (49.13, 55.46). Has the standard rate of 50 flaps/min changed?    
+
+## Statistical Inference: Hypothesis Testing
+
+- We can also answer research questions more formally using hypothesis testing.
+
+- All hypothesis tests have the same components:
+    - Hypotheses
+    - Test Statistic
+    - $p$-Value
+    - Rejection Region
+    - Conclusion
+    - Interpretation
+    
+- This process uses *probability* to make a determination, rather than looking at the *interval estimate*.    
+
+## Hypothesis Testing
+    
+- Hypothesis testing has several key components.
+    - **Hypotheses:**
+        - Null hypothesis ($H_0$): A statement of "no different than expected." 
+        - Alternative hypothesis ($H_1$ or $H_{\text{A}}$): What we are investigating; this represents a change, effect, or difference.
+    - **Test Statistic and $p$-Value:** 
+        - Test statistic: A single number calculated from the sample, measuring how far the observed data are from what is expected under the null.
+        - $p$-value: The probability of observing data as (or more) extreme than ours, assuming the null is true.
+        
+## Hypothesis Testing
+    
+- Hypothesis testing has several key components.  
+    - **Rejection Region:**
+        - We will always use the same rejection region: $p < \alpha$.
+    - **Conclusion and Interpretation:** 
+        - Conclusion: reject or fail to reject the null based on the calculated $p$-value and rejection region.
+        - Interpretation: Give context to your results. Interpret in terms of the alternative hypothesis.
+
+## Hypothesis Testing
+
+- **One sample tests**:
+    - Two-tailed test
+        - $H_0:$ parameter = some value
+        - $H_1:$ parameter $\ne$ some value
+    - Left-tailed test
+        - $H_0:$ parameter $\ge$ some value
+        - $H_1:$ parameter $<$ some value
+    - Right-tailed test
+        - $H_0:$ parameter $\le$ some value
+        - $H_1:$ parameter $>$ some value 
+
+## Hypothesis Testing
+
+- After stating our hypotheses, we will construct a test statistic. 
+- The choice of test statistic depends on:
+    1.  The hypotheses being tested.
+    2. Assumptions made about the data.
+- The value of the test statistic depends on the sample data. 
+    -  If we were to draw a different sample, we would find a different value for the test statistic.
+- We will use the test statistic on our way to drawing conclusions about the hypotheses.
+
+## Hypothesis Testing
+
+- After constructing test statistics, we will find the corresponding *p*-value.
+    - ***p*-value**: the probability of observing what we've observed or something more extreme, assuming the null hypothesis is true.
+- Finding a *p*-value depends on the distribution being used. 
+    - One-sample mean: $t$ distribution.
+    - One-sample proportion: $z$ distribution.
+- We will compare the *p*-value to $\alpha$ in order to draw conclusions.
+    - Reject $H_0$ if $p < \alpha$.
+
+## Hypothesis Testing
+
+- Once we've found the *p*-value, we can draw a conclusion. 
+    - If $p < \alpha$, we **reject** $H_0$.
+        -  There is sufficient evidence to suggest that $H_1$ is true.
+    - If $p \ge \alpha$, we **fail to reject** $H_0$.
+        - There is <u>not</u> sufficient evidence to suggest that $H_1$ is true.
+
+## Hypothesis Testing
+
+- For all hypothesis tests,
+    - Rejection Region: Reject $H_0$ if $p < \alpha$.
+    - Conclusion: [Reject or fail to reject] $H_0$.
+    - Interpretation: There [is or is not] sufficient evidence to suggest [alternative hypothesis in words].
+
+<center>
+<span style="color: #dd0030; font-size: 3.5em; font-weight: bold;">
+  We <b>NEVER</b> accept $H_0$.
+</span>   
+</center>
+
+## Practical vs. Statistical Significance
+
+- Hypothesis testing depends on <u>sample size</u>.
+    - As the sample size increases, our *p*-values decrease necessarily. 
+    - As *p*-values decrease, we are more likely to reject the null hypothesis.
+        - This means that are we rejecting based on <u>sample size</u> and not the size of the effect!
+
+- We must ask ourselves if the value we are testing against makes practical sense. 
+    - A new weight loss medication where the average amount of weight loss was 1 lb over 6 months.
+    - A new weight loss medication where the average amount of weight lost was 15 lb over 6 months.
+    - A new teaching method that raised final exam scores by 2 points.
+    - A new teaching method that raised final exam scores by 15 points.
+
+## Hypothesis Testing: One Sample Mean
+
+- **Hypotheses: Two Tailed**
+    - $H_0: \ \mu=\mu_0$
+    - $H_1: \ \mu \ne \mu_0$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ \mu \ge \mu_0$
+    - $H_1: \ \mu < \mu_0$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ \mu \le \mu_0$
+    - $H_1: \ \mu > \mu_0$    
+    
+    
+## Hypothesis Testing: One Sample Mean
+
+- **Test Statistic:**
+
+$$
+t_0 = \frac{\bar{x} - \mu_0}{\sqrt{\frac{s^2}{n}} } \sim t_{\text{df}},
+$$
+
+- where
+    - $\bar{x}$ is the mean of $x$
+    - $\mu_0$ is the hypothesized value of $\mu$
+    - $s^2$ is the variance of $x$
+    - $n$ is the sample size
+    - $\text{df} = n-1$
+
+## Hypothesis Testing: One Sample Mean
+
+- **$p$-value: Two Tailed**
+
+$$p = 2\times P\left[t_{\text{df}} \ge |t_0|\right]$$
+
+- **$p$-value: Left Tailed**    
+
+$$p = P\left[t_{\text{df}} \le t_0\right]$$
+    
+- **$p$-value: Right Tailed**    
+
+$$p = P\left[t_{\text{df}} \ge t_0\right]$$
+
+## Hypothesis Testing: One Sample Mean (R)
+
+- We will use the `one_mean_HT` function from CLASS PACKAGE to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% one_mean_HT(continuous = continuous_variable, 
+                             mu = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+- For the entered variable (*continuous*), we will see:
+    - Hypotheses (based on *hypothesized_value* and *alternative*)
+    - Test statistic and p-value
+    - Conclusion
+    
+## Hypothesis Testing: One Sample Mean    
+
+- Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the $\alpha=0.10$ level.
+
+- What is being tested? <br><br><br><br>
+
+- What is the direction of the test? How do you know? <br><br><br><br>
+
+- What is the hypothesized value? How do you know? <br><br><br><br>
+
+- What are the corresponding hypotheses?
+
+## Hypothesis Testing: One Sample Mean 
+
+- Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the $\alpha=0.10$ level.
+
+- How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% one_mean_HT(continuous = continuous_variable, 
+                             mu = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+## Hypothesis Testing: One Sample Mean 
+
+- Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the $\alpha=0.10$ level.
+
+- Our updated code should look like:
+
+```{r}
+#| eval: false
+wing_flap %>% one_mean_HT(wing_flap_rate,
+                          mu = 50,
+                          alternative = "two",
+                          alpha = 0.1) 
+```
+
+## Hypothesis Testing: One Sample Mean 
+
+- Running the code,
+
+```{r}
+wing_flap %>% one_mean_HT(wing_flap_rate,
+                          mu = 50,
+                          alternative = "two",
+                          alpha = 0.1) 
+```
+
+## Hypothesis Testing: One Sample Mean  
+
+- **Hypotheses:**
+    - $H_0: \ \mu = 50$
+    - $H_1: \ \mu \ne 50$
+
+- **Test Statistic and *p*-Value**
+    - $t_0 = 1.497$, $p = 0.147$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.10$
+    
+- **Conclusion and interpretation**
+    - Fail to reject ($p \text{ vs } \alpha \to 0.147 > 0.10$). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min.
+    
+## Two Samples - Dependent or Independent?
+
+## Dependent vs. Independent Data
+
+- **Independent data:** Observations in one group (or sample) do not influence or relate to observations in another group.
+    - Examples:
+        - Comparing the cruising speeds of a random sample of Pegasi vs. a random sample of Unicorns  flying a short course.
+      - Measuring friendship lesson quiz scores for a group of Cutie Mark Crusaders vs. a different group of Wonderbolts Cadets.
+
+- **Dependent (Paired) Data**  
+  - Definition: Each observation in one sample is meaningfully “paired” with exactly one observation in the other sample. Often arises when you measure the same subject twice or naturally match subjects.  
+  - Example 1: Pre-test and post-test scores for the _same_ group of students (each student’s “before” score is paired with their “after” score).  
+  - Example 2: Blood pressure measured in patients before and after administering a medication—each patient’s “before” reading is paired with their “after” reading.  
+  - Example 3: Twin studies, where you compare cholesterol levels of one twin to the other twin—each twin pair forms a dependent pair.
+
+## Dependent vs. Independent Data (MLP Examples)
+
+- **Independent Data**  
+  - Definition: Observations in one group do _not_ influence or relate to observations in another group.  
+  - MLP Example 1: 
+
+- **Dependent (Paired) Data**  
+  - Definition: Each observation in one sample is meaningfully “paired” with exactly one observation in the other sample (e.g., same subject measured twice or paired subjects).  
+  - MLP Example 1: Twilight Sparkle’s magic‐proficiency score _before_ and _after_ Princess Celestia’s advanced spell workshop—each “before” score is paired with that same pony’s “after” score.  
+  - MLP Example 2: Applejack’s apple‐yield (in bushels) from Sweet Apple Acres in Spring vs. Fall of the same year—each data point is “paired” by season for the same farm.  
+  - MLP Example 3: Comparing the “Wonderbolts Tryouts” performance score of Spitfire vs. her twin sister [hypothetical]—each twin pair is matched, making the data paired.
+
+---
+
+*Note:*  
+- When data are **independent**, use an independent two‐sample _t_-test (or Chi-square of independence).  
+- When data are **dependent**, use a paired _t_-test (or McNemar’s test for matched binary outcomes).
+
+
+---
+
+*Note:*  
+- When data are **independent**, you would use methods like a two‐sample (independent) _t_-test or χ² test of independence.  
+- When data are **dependent**, you would use a paired _t_-test (for continuous outcomes) or McNemar’s test (for a binary outcome in matched pairs).
+    
+## Confidence Intervals: Two Independent Means
+
+$(1-\alpha)100\%$ confidence interval for $\mu_1-\mu_2$:
+
+$$
+(\bar{x}_1 - \bar{x}_2) \pm t_{\alpha/2} \sqrt{\frac{s_1^2 }{n_1} + \frac{s_2^2}{n_2}}
+$$
+
+- where $t_{\alpha/2}$ has $\text{min}(n_1-1, n_2-1)$ degrees of freedom. 
+
+- where
+    - $\bar{x}_i$ is the sample mean for group $i$
+    - $t_{\alpha/2,\text{ df}}$ is the critical value of $t$, where $\text{df} = \text{min}(n_1-1, n_2-1)$
+    - $s_i^2$ is the sample variance for group $i$
+    - $n_i$ is the sample size of group $i$
+
+## Confidence Intervals: Two Independent Means (R)
+
+- We will use the `two_mean_CI` function from CLASS PACKAGE to find the confidence interval.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% two_mean_CI(grouping = grouping_variable,
+                             continuous = continuous_variable, 
+                             confidence = confidence_level)
+```
+
+## Confidence Intervals: Two Independent Means
+
+- The Pegasus trainers insist that a healthy Pony munches through 25 apples per day to stay strong and energetic. Looking for differences between those that are above and below target wing-flap rates, a researcher visits the apple stands at Sweet Apple Acres and records the exact number of apples each of the Pegasi in training eats in a typical day. 
+
+- Use the wing-flap data to estimate the difference in apple consumption (*apples*) betwen those that are above or below the target rate (*target*). Estimate using a 95% confidence interval.
+
+- How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% two_mean_CI(grouping = grouping_variable,
+                             continuous = continuous_variable, 
+                             confidence = confidence_level)
+```
+
+## Confidence Intervals: Two Independent Means
+
+- The Pegasus trainers insist that a healthy Pony munches through 25 apples per day to stay strong and energetic. Looking for differences between those that are above and below target wing-flap rates, a researcher visits the apple stands at Sweet Apple Acres and records the exact number of apples each of the Pegasi in training eats in a typical day. 
+
+- Use the wing-flap data to estimate the difference in apple consumption (*apples*) betwen those that are above or below the target rate (*target*). Estimate using a 95% confidence interval.
+
+- Our updated code should look like:
+
+```{r}
+#| eval: false
+wing_flap %>% two_mean_CI(grouping = target,
+                          continuous = apples, 
+                          confidence = 0.95)
+```
+
+## Confidence Intervals: Two Independent Means
+
+- Running the code,
+
+```{r}
+wing_flap %>% two_mean_CI(grouping = target,
+                          continuous = apples, 
+                          confidence = 0.95)
+
+```
+
+- Thus, the 95% CI for $\mu_{\text{above}} - \mu_{\text{below}}$ is (8.13, 11.98).
+    - The pegasi above the target wing-flap rate eat, on average, somewhere between 8 and 12 more apples than those below the target wing-flap rate.
+    
+## Hypothesis Testing: Two Independent Means
+
+- **Hypotheses: Two Tailed**
+    - $H_0: \ \mu_1-\mu_2=\mu_0$
+    - $H_1: \ \mu_1-\mu_2 \ne \mu_0$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ \mu_1-\mu_2 \ge \mu_0$
+    - $H_1: \ \mu_1-\mu_2 < \mu_0$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ \mu_1-\mu_2 \le \mu_0$
+    - $H_1: \ \mu_1-\mu_2 > \mu_0$  
+
+## Hypothesis Testing: Two Independent Means
+
+**Test Statistic:**
+
+$$
+t_0 = \frac{(\bar{x}_1-\bar{x}_2)-\mu_0}{{\sqrt{\frac{s_1^2}{n_1} + \frac{s^2_2}{n_2}}}}
+$$
+
+- where
+    - $\bar{x}_i$ is the mean for group $i$
+    - $\mu_0$ is the hypothesized value of $\mu$
+    - $s_i^2$ is the sample variance for group $i$
+    - $n_i$ is the sample size of group $i$    
+    - $\text{df} = \text{min}(n_1-1, n_2-1)$
+    
+## Hypothesis Testing: Two Independent Means
+
+***p*-Value:**
+
+- **$p$-value: Two Tailed**
+
+$$p = 2\times P\left[t_{\text{df}} \ge |t_0|\right]$$
+
+- **$p$-value: Left Tailed**    
+
+$$p = P\left[t_{\text{df}} \le t_0\right]$$
+    
+- **$p$-value: Right Tailed**    
+
+$$p = P\left[t_{\text{df}} \ge t_0\right]$$
+
+## Hypothesis Testing: Two Independent Means (R)
+
+- We will use the `two_mean_HT` function from CLASS PACKAGE to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% two_mean_HT(grouping = grouping_variable,
+                             continuous = continuous_variable, 
+                             mu = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+- For the entered variable (*continuous*), we will see:
+    - Hypotheses (based on *hypothesized_value* and *alternative*)
+    - Test statistic and p-value
+    - Conclusion
+    
+- **Note!** When looking at the grouping variable, R will subtract in alphabetic/numeric order. 
+
+## Hypothesis Testing: Two Independent Means
+
+- Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the $\alpha=0.05$ level.
+
+- What is being tested? <br><br><br><br>
+
+- What is the direction of the test? How do you know? <br><br><br><br>
+
+- What is the hypothesized value? How do you know? <br><br><br><br>
+
+- What are the corresponding hypotheses?
+
+## Hypothesis Testing: Two Independent Means
+
+- Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the $\alpha=0.05$ level.
+
+- How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% two_mean_HT(grouping = grouping_variable,
+                             continuous = continuous_variable, 
+                             mu = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two Independent Means
+
+- Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the $\alpha=0.05$ level.
+
+- Our updated code should look like:
+
+```{r}
+#| eval: false
+wing_flap %>% two_mean_HT(grouping = target,
+                          continuous = apples, 
+                          mu = 5, 
+                          alternative = "greater", 
+                          alpha = 0.05)
+```
+
+## Hypothesis Testing: Two Independent Means
+
+- Running the code,
+
+```{r}
+wing_flap %>% two_mean_HT(grouping = target,
+                          continuous = apples, 
+                          mu = 5, 
+                          alternative = "greater", 
+                          alpha = 0.05)
+```
+
+## Hypothesis Testing: Two Independent Means
+
+- **Hypotheses:**
+    - $H_0: \ \mu_{\text{above}} - \mu_{\text{below}} \le 5$
+    - $H_1: \ \mu_{\text{above}} - \mu_{\text{below}} > 5$
+
+- **Test Statistic and *p*-Value**
+    - $t_0 = 5.445$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    
+- **Conclusion and interpretation**
+    - Fail to reject ($p \text{ vs } \alpha \to p < 0.001 < 0.05$). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target.
+
+## START HERE 
+
+
+
+
+
+## Two Dependent Means: Summary Statistics
+
+-   We are now interested in comparing two **dependent** groups.
+
+-   We assume that the two groups come from the same population and are going to examine the difference,
+
+$$
+d = y_{i, 1} - y_{i, 2}
+$$
+
+-   After drawing samples, we have the following,
+    -   $\bar{d}$ estimates $\mu_d$,
+    -   $s^2_d$ estimates $\sigma^2_d$, and
+    -   $n$ is the sample size.
+    
+## Two Dependent Means: Summary Statistics (R)  
+
+## Two Dependent Means: Summary Statistics
+
+## Confidence Intervals: Dependent Means
+
+$\mathbf{(1-\boldsymbol\alpha)100\%}$ confidence interval for $\mathbf{\boldsymbol\mu_d}$
+
+$$ \bar{d} \pm t_{\alpha/2} \frac{s_d}{\sqrt{n}} $$
+
+-   where $t_{\alpha/2}$ has $n-1$ degrees of freedom.
+
+## Confidence Intervals: Dependent Means (R)
+
+## Confidence Intervals: Dependent Means
+
+## Hypothesis Testing: Dependent Means
+
+- $H_0:$ $\mu_d = \mu_0$ $|$ $H_0:$ $\mu_d \le \mu_0$ | $H_0:$ $\mu_d \ge \mu_0$
+- $H_1:$ $\mu_d \ne \mu_0$ | $H_0:$ $\mu_d > \mu_0$ | $H_1:$ $\mu_d < \mu_0$ 
+
+## Hypothesis Testing: Dependent Means
+
+Test Statistic
+$$
+t_0 = \frac{\bar{d}-\mu_0}{\frac{s_d}{\sqrt{n}}}
+$$
+
+## Hypothesis Testing: Dependent Means
+
+*P*-Value
+
+- $p = 2 P[t \ge |t_0|]$ | $p = P[t \ge |t_0|]$ | $p = P[t \le |t_0|]$
+
+
+## Hypothesis Testing: Dependent Means (R)
+
+## Hypothesis Testing: Dependent Means
+
+## Hypothesis Testing: Dependent Means
+
+## Confidence Intervals + Hypothesis Testing
+        
+## Wrap Up        
+
+- Today's lecture:
+    - Statistical inference basics.
+        - Confidence intervals.
+        - Hypothesis testing.
+    - Using both CI and HT to answer research questions.        
+    
+- Next class:   
+    - Assumptions on *t*-tests.
+    - Alternatives to *t*-tests.
+
+## Wrap Up    
+
+- Daily activity: the .qmd we worked on during class.
+    - Due date: Monday, June 23, 2025.
+
+- You will upload the resulting .html file on Canvas. 
+    - Please refer to the help guide on the Biostat website if you need help with submission.
+    
+- Housekeeping:
+    - Are you in the Discord server?
+    - Do you have questions for me?
+    - Do you need my help with anything from Tuesday?

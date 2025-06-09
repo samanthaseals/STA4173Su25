@@ -1,0 +1,212 @@
+/* -----------------------------------------
+   🌸 Fonts: Pacifico (headings), Nunito (body)
+------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@300;700&display=swap');
+
+/* -----------------------------------------
+   🌸 Base Reveal Styling
+------------------------------------------ */
+.reveal {
+  background-color: #f5f0ff !important;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Apply purple only to normal content, not code blocks or their children */
+.reveal p,
+.reveal li,
+.reveal ul,
+.reveal ol,
+.reveal blockquote,
+.reveal th,
+.reveal td,
+.reveal .footer,
+.reveal .callout {
+  color: #4b0082 !important;
+}
+
+.reveal .slide,
+.reveal .title-slide {
+  background-color: #f5f0ff !important;
+  padding: 1.5rem;
+}
+
+/* -----------------------------------------
+   🌸 Headings
+------------------------------------------ */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal .slide h1,
+.reveal .slide h2,
+.reveal .slide h3,
+.reveal .title-slide h1,
+.reveal .title-slide h2 {
+  font-family: 'Nunito', sans-serif !important;
+  color: #4b0082 !important;
+  text-shadow: 1px 1px 1px rgba(255, 105, 180, 0.2);
+}
+
+/* -----------------------------------------
+   🌸 Code Chunks & Inline Code (Use Quarto defaults)
+------------------------------------------ */
+.reveal pre code {
+  background-color: #ffffff !important;
+  font-size: 1.5em !important;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.reveal code {
+  background-color: #ffffff !important;
+  border-radius: 0.3rem;
+  padding: 0.1em 0.3em;
+}
+
+/* -----------------------------------------
+   🌸 Output Chunks
+------------------------------------------ */
+.reveal .cell-output pre,
+.reveal .cell-output {
+  font-size: 0.8em !important;
+  line-height: 1.3em !important;
+  padding: 0.2em!important;
+  border-radius: 0.5rem;
+  white-space: pre-wrap !important;  /* wrap long lines nicely */
+}
+
+/* 🌸 Inline code only (not code chunks) */
+.reveal p code,
+.reveal li code,
+.reveal h1 code,
+.reveal h2 code,
+.reveal h3 code {
+  background-color: #f5f0ff !important;
+  border-radius: 0.3rem;
+  padding: 0.1em 0.3em;
+}
+
+/* -----------------------------------------
+   🌸 Tables – Harmonized with Background & Text
+------------------------------------------ */
+.reveal table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.95em;
+  border: 2px solid #4b0082 !important;
+}
+
+.reveal th {
+  background-color: #c97eb5 !important;
+  color: #4b0082 !important;
+  padding: 0.5em 0.8em;
+  text-align: left;
+  border: 1px solid #4b0082 !important;
+}
+
+.reveal td {
+  color: #4b0082 !important;
+  padding: 0.5em 0.8em;
+  border: 1px solid #4b0082 !important;
+}
+
+.reveal tr:nth-child(odd) td {
+  background-color: #fbe9f2 !important;
+}
+
+.reveal tr:nth-child(even) td {
+  background-color: #fceff7 !important;
+}
+
+/* -----------------------------------------
+   🌸 Links
+------------------------------------------ */
+.reveal a {
+  color: #d36fb4 !important;
+  text-decoration: underline dotted;
+}
+
+.reveal a:hover,
+.reveal a:focus {
+  color: #d36fb4 !important;
+  text-decoration: underline;
+}
+
+/* -----------------------------------------
+   🌸 Callouts & Footer
+------------------------------------------ */
+.reveal .callout {
+  border-left: 5px solid #d36fb4 !important;
+  background-color: #f5f0ff !important;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+}
+
+.reveal .footer {
+  font-size: 0.85em;
+  padding: 0.5em 1em;
+  text-align: right;
+  color: #4b0082 !important;
+}
+
+.reveal .slide-number {
+  color: #4b0082 !important;
+}
+
+/* -----------------------------------------
+   🌸 DataTables Styling
+------------------------------------------ */
+.dataTables_filter input {
+  font-size: 1em;
+  padding: 0.3em;
+}
+
+.dataTable {
+  font-size: 1em;
+}
+
+/* -----------------------------------------
+   🖨️ Chrome Print Fix – Purple Text + Background
+------------------------------------------ */
+@media print {
+  /* Keep background on all slides */
+  .reveal,
+  .reveal .slide,
+  .reveal .title-slide {
+    background-color: #f5f0ff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Apply purple text color to visible content, but NOT code */
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6,
+  .reveal p,
+  .reveal li,
+  .reveal ul,
+  .reveal ol,
+  .reveal th,
+  .reveal td,
+  .reveal blockquote,
+  .reveal .footer,
+  .reveal .callout {
+    color: #4b0082 !important;
+    text-shadow: none !important;
+  }
+
+  /* DO NOT override code chunks or syntax highlighting */
+  pre, code, pre code, code span {
+    background-color: inherit !important;
+  }
+
+  /* Slide number */
+  .reveal .slide-number {
+    color: #4b0082 !important;
+  }
+}
