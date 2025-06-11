@@ -193,7 +193,7 @@
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-3",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nWhat is being tested? \nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
+    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-4",
