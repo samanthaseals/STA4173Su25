@@ -1,0 +1,157 @@
+---
+title: "Practice: Point Estimation & Data Visualization"
+subtitle: "Tuesday, June 17, 2025"
+author: "your name here"
+execute:
+  echo: true
+  warning: false
+  message: false
+format: 
+  html:
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(gsheet)
+mlp_data <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1fgkPVXXmif9sXP1Gg7BEeRfKO3tayn1vvb2ep7eQqjs/edit?gid=0#gid=0")
+```
+
+## Summaries: Continuous Variables
+
+Let's use `mean_median()` to summarize the continuous variables in the MLP dataset.
+
+```{r}
+mlp_data %>% 
+  mean_median(friendship, tail_shimmer, magical_energy)
+```
+
+Let's use `mean_median()` to summarize the continuous variables in the MLP dataset by pony type.
+
+```{r}
+mlp_data %>% 
+  group_by(type) %>%
+  mean_median(friendship, tail_shimmer, magical_energy)
+```
+
+## Summaries: Categorical Variables
+
+Let's use `n_pct()` to summarize the types of ponies in the dataset.
+
+```{r}
+mlp_data %>% 
+  n_pct(type, rows = 4)
+```
+
+Let's use `n_pct()` to describe friendship index by type.
+
+```{r}
+mlp_data %>% 
+  n_pct(friendship, type, rows = 4)
+```
+
+## Graphs: Box Plots
+
+Construct a box plot for the tail shimmer of the ponies (*tail_shimmer*).
+
+<center>
+```{r}
+mlp_data %>% ggplot(aes(x = tail_shimmer)) +
+  geom_boxplot() +
+  labs(x = "Tail Shimmer") +
+  theme_bw() +
+  theme(axis.ticks.y = element_blank(),
+        axis.text.y = element_blank())
+```
+</center>
+
+## Graphs: Histograms
+
+Construct a histogram for the flying speed of ponies (*flying_speed*).
+
+<center>
+```{r}
+mlp_data %>% ggplot(aes(x = flying_speed)) +
+  geom_histogram(bins = 15, 
+                 color = "#2E7D32", 
+                 fill = "#4CAF50") +
+  labs(x = "Flying Speed", 
+       y = "Number of Ponies") +
+  theme_bw() 
+```
+</center>
+
+
+Construct a histogram for the magical energy of ponies (*magical_energy*).
+
+<center>
+```{r}
+mlp_data %>% ggplot(aes(x = magical_energy)) +
+  geom_histogram(bins = 15, 
+                 color = "#8B6C42", 
+                 fill = "#F0E9DD") +
+  labs(x = "Magical Energy",
+       y = "Number of Ponies") +
+  theme_bw() 
+```
+
+## Graphs: Bar Graphs
+
+Construct a bar graph for the combined age and sex of ponies.
+
+<center>
+```{r}
+mlp_data %>%
+  count(sex) %>%
+  ggplot(aes(x = sex, y = n)) +
+  geom_col() +
+  labs(x = "Age and Sex of Pony",
+       y = "Number of Ponies")+
+  theme_bw()
+```
+</center>
+
+Construct a bar graph for the type of pony.
+
+<center>
+```{r}
+mlp_data %>%
+  count(type) %>%
+  ggplot(aes(x = type, y = n)) +
+  geom_col() +
+  labs(x = "Type of Pony",
+       y = "Number of Ponies")+
+  theme_bw()
+```
+
+## Graphs: Scatterplots
+
+Construct a scatterplot with magical energy (*magical_energy*) on the *x*-axis and tail shimmer (*tail_shimmer*) on the *y*-axis.
+
+<center>
+```{r}
+mlp_data %>% ggplot(aes(y = tail_shimmer, x = magical_energy)) +
+  geom_point(size = 2) +
+  labs(x = "Magical Energy",
+       y = "Tail Shimmer") +
+  theme_bw()
+```
+</center>
+
+Construct a scatterplot with magical energy (*magical_energy*) on the *x*-axis and flying speed (*flying_speed*) on the *y*-axis.
+
+<center>
+```{r}
+mlp_data %>% ggplot(aes(x = flying_speed, y = tail_shimmer)) +
+  geom_point(size = 2) +
+  labs(y = "Tail Shimmer",
+       x = "Flying Speed (km/h)") +
+  theme_bw()
+```
+</center>
