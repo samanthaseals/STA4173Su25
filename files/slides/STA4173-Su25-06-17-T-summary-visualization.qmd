@@ -3,6 +3,8 @@ title: "STA2023 Review:<br>Point Estimation<br>Data Visualization"
 subtitle: "June 17, 2025<br>Tuesday"
 execute:
   echo: true
+  warning: false
+  message: false
 format: 
   revealjs:
     theme: default
@@ -34,11 +36,6 @@ editor: source
         - Row percentage
         - Column percentage
         
-```{r}
-#| echo: false
-source('/Users/sseals/Library/CloudStorage/GoogleDrive-sseals@uwf.edu/Shared drives/HMCSE-EES-Computational Geomorphology and Modeling Lab/8-Samantha stuff/classpackage/2025-05 additions.R')
-```
-
 ## Introduction: Data
 
 - We will be using data from the kingdom of [Equestria](https://en.wikipedia.org/wiki/Equestria) (yes, from [My Little Pony](https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic)).
@@ -59,6 +56,7 @@ library(tidyverse)
 library(gsheet)
 library(DT)
 library(janitor)
+library(sstats)
 mlp_data <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1fgkPVXXmif9sXP1Gg7BEeRfKO3tayn1vvb2ep7eQqjs/edit?gid=0#gid=0")
 datatable(mlp_data,
           options = list(pageLength = 4, # how many obs shown on slide
@@ -192,7 +190,7 @@ $$
 
 - **Variance:** A measure of spread; the average of squared differences from the mean.
     - Higher variance = data has more spread.
-    - In the original units of the data.
+    - In *squared* units of the data.
     
 $$
 s_y^2 = \frac{\sum_iy_i^2 - (\sum_iy_i)^2/n}{n-1}
@@ -888,7 +886,7 @@ tibble(HoursPracticed = seq(0, 10, length.out = 50),
 ## Functions in R: base R vs. packages
 
 - R functions are like baking recipes. They:
-    - Takes input (ingredients, or data),
+    - Take input (ingredients, or data),
     - Does something with it (follow recipe, or perform calculations),
     - Gives back a result (baked good, or statistics).
 
@@ -916,7 +914,7 @@ tibble(HoursPracticed = seq(0, 10, length.out = 50),
     
 ## Functions in R: Summarizing Continuous Data
 
-- We will use `mean_median()` from `library(classpackage)` to summarize continuous variables.
+- We will use `mean_median()` from `library(ssstats)` to summarize continuous variables.
     - It will return both the mean (standard deviation) and median (IQR).
 
 ```{r mean_median() syntax}
@@ -977,7 +975,7 @@ mlp_data %>%
 
 ## Functions in R: Summarizing Categorical Data
 
-- We will use `n_pct()` from `library(classpackage)` to summarize categorical variables.
+- We will use `n_pct()` from `library(ssstats)` to summarize categorical variables.
 
 - For one variable -- this returns $n_i \ (\%_i)$:
 

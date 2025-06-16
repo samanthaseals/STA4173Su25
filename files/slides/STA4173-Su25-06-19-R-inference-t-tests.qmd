@@ -3,6 +3,8 @@ title: "STA2023 Review<br>Confidence Intervals<br>Hypothesis Testing"
 subtitle: "June 19, 2025<br>Thursday"
 execute:
   echo: true
+  warning: false
+  message: false
 format: 
   revealjs:
     theme: default
@@ -32,11 +34,6 @@ editor: source
     - Two-sample mean, independent data ($\mu_1-\mu_2$)
     - Two-sample mean, dependent data ($\mu_d$)
 
-```{r}
-#| echo: false
-source('/Users/sseals/Library/CloudStorage/GoogleDrive-sseals@uwf.edu/Shared drives/HMCSE-EES-Computational Geomorphology and Modeling Lab/8-Samantha stuff/classpackage/2025-05 additions.R')
-library(tidyverse)
-```
 
 ## Introduction: Data
 
@@ -122,6 +119,9 @@ dataset_name %>% one_mean_CI(continuous = continuous_variable,
 
 ```{r}
 #| echo: false
+library(ssstats)
+library(tidyverse)
+
 set.seed(8651)
 wing_flap <- tibble(pony_names = c("Rainbow Dash", "Soarin", "Spitfire", "Cloudchaser", "Fleetfoot", "Lightning Dust", "Windy Whistles", "Stormy Skies", "Gusty Gale", "Zephyr Breeze", "Skydancer", "Aero Ace", "Nimbus Sprint", "Breeze Wing", "Flash Fly", "Twister Tail", "Sirensong", "Aero Wave", "Sky Dancer", "Gale Gust", "Storm Strider", "Cyclone Swift", "Wind Whirl", "Jet Stream", "Flurry Flap"),
                     wing_flap_rate = round(rnorm(n = length(pony_names), mean = 50, sd = 8),1),
@@ -330,8 +330,6 @@ dataset_name %>% one_mean_HT(continuous = continuous_variable,
 ## Hypothesis Testing: One Sample Mean    
 
 - Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the $\alpha=0.10$ level.
-
-- What is being tested? <br><br><br><br>
 
 - What is the direction of the test? How do you know? <br><br><br><br>
 
