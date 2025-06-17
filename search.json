@@ -28,6 +28,55 @@
     "text": "Note: this is an abbreviated syllabus. The full syllabus is available through Classmate and/or Canvas.\n\nInstructor Information\n\nDr. Samantha Seals\nOffice: 4/344\n\n\n\nMeeting Times and Location\n\nTR 11:00 am-1:40 pm\n\n11:00 am–12:15 pm: Lecture\n12:30 pm–1:15 pm: Daily practice\n1:15 pm–1:40 pm: Daily quiz\n\nPhysical classroom: 4/406\nZoom classroom: see Canvas or full syllabus for link\n\n\n\nOffice Hours\n\nMonday: 2:00–4:00 pm (Central)\nWednesday: 2:00–4:00 pm (Central)\nOther times by appointment\n\n\n\nGrading and Evaluation\nThe course grade will be determined as follows:\n\nDaily practice (25%): Each meeting day, students will complete an activity using Quarto and R. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nDaily quizzes (10%): Each meeting day, students will complete a timed quiz on Canvas. Time will be given during class for completion.\nAssignments (40%): Every module will finish with an assignment to demonstrate the knowledge gained. These will be like the daily practice, but putting everything in the module together. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nFinal Exam (25%): The final exam will be a timed concepts-based exam. While there may be some calculations needed, you will not be processing raw data. The final exam will be on Canvas on August 7, 2025. All students will have 3 hours to complete the exam.\n\n\n\nLate Policy\nAssigments have due dates, however, the dropboxes will not close until the end of the semester. All students are automatically granted “extensions” without question.\nNote that if there is not a submission when I go to grade (after the initial deadline), I will assign a zero (0) and request that you submit the assignment when you are able to. This is only for record keeping purposes. There is no penalty for submitting late and a full grade will be given upon review of your submission.\nExtensions are not available for daily practice, daily quizzes, or the final exam."
   },
   {
+    "objectID": "files/practice/06-17-summary-practice.html",
+    "href": "files/practice/06-17-summary-practice.html",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "",
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
+    "href": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "",
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
+    "href": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Summaries: Categorical Variables",
+    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)\n\n    type      n (pct)\n Alicorn    41 (1.4%)\n   Earth 1678 (58.4%)\n Pegasus  487 (17.0%)\n Unicorn  665 (23.2%)\n\n\nLet’s use n_pct() to describe friendship index by type.\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)\n\n# A tibble: 4 × 5\n  friendship Alicorn  Earth     Pegasus   Unicorn  \n       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1          1 0 (0.0%) 0 (0.0%)  0 (0.0%)  1 (0.2%) \n2          2 0 (0.0%) 5 (0.3%)  1 (0.2%)  1 (0.2%) \n3          3 0 (0.0%) 14 (0.8%) 6 (1.2%)  13 (2.0%)\n4          4 2 (4.9%) 54 (3.2%) 14 (2.9%) 16 (2.4%)"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-box-plots",
+    "href": "files/practice/06-17-summary-practice.html#graphs-box-plots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Box Plots",
+    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer).\n\n\nmlp_data %&gt;% ggplot(aes(x = tail_shimmer)) +\n  geom_boxplot() +\n  labs(x = \"Tail Shimmer\") +\n  theme_bw() +\n  theme(axis.ticks.y = element_blank(),\n        axis.text.y = element_blank())"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-histograms",
+    "href": "files/practice/06-17-summary-practice.html#graphs-histograms",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Histograms",
+    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed)) +\n  geom_histogram(bins = 15, \n                 color = \"#2E7D32\", \n                 fill = \"#4CAF50\") +\n  labs(x = \"Flying Speed\", \n       y = \"Number of Ponies\") +\n  theme_bw() \n\n\n\n\n\n\n\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy).\n\n\nmlp_data %&gt;% ggplot(aes(x = magical_energy)) +\n  geom_histogram(bins = 15, \n                 color = \"#8B6C42\", \n                 fill = \"#F0E9DD\") +\n  labs(x = \"Magical Energy\",\n       y = \"Number of Ponies\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
+    "href": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Bar Graphs",
+    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nmlp_data %&gt;%\n  count(sex) %&gt;%\n  ggplot(aes(x = sex, y = n)) +\n  geom_col() +\n  labs(x = \"Age and Sex of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a bar graph for the type of pony.\n\n\nmlp_data %&gt;%\n  count(type) %&gt;%\n  ggplot(aes(x = type, y = n)) +\n  geom_col() +\n  labs(x = \"Type of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
+    "href": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Scatterplots",
+    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(y = tail_shimmer, x = magical_energy)) +\n  geom_point(size = 2) +\n  labs(x = \"Magical Energy\",\n       y = \"Tail Shimmer\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed, y = tail_shimmer)) +\n  geom_point(size = 2) +\n  labs(y = \"Tail Shimmer\",\n       x = \"Flying Speed (km/h)\") +\n  theme_bw()"
+  },
+  {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#introduction-topics",
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#introduction-topics",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
@@ -88,7 +137,7 @@
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-2",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Confidence Intervals: One-Sample Mean",
-    "text": "Confidence Intervals: One-Sample Mean\n\nLet’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\nThe point estimate for the mean is x̄ = 52.296.\nThe point estimate for the standard deviation is s = 7.6671.\nThe 95% confidence interval for μ is (49.1312, 55.4608).\n\n\n\nThus, the 95% CI for \\mu is (49.13, 55.46)."
+    "text": "Confidence Intervals: One-Sample Mean\n\nLet’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThus, the 95% CI for \\mu is (49.13, 55.46)."
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#statistical-inference-confidence-intervals",
@@ -214,7 +263,7 @@
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-6",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nRunning the code,\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\n\nNull: H0: μ = 50\n Alternative: H1: μ != 50\nTest statistic: t(24) = 1.497 \np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.147 ≥ α = 0.1)"
+    "text": "Hypothesis Testing: One Sample Mean\n\nRunning the code,\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-7",
@@ -277,7 +326,7 @@
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-3",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Confidence Intervals: Two Independent Means",
-    "text": "Confidence Intervals: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = -10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (8.13, 11.98).\n\nThe pegasi above the target wing-flap rate eat, on average, somewhere between 8 and 12 more apples than those below the target wing-flap rate."
+    "text": "Confidence Intervals: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (8.13, 11.98).\n\nThe pegasi above the target wing-flap rate eat, on average, somewhere between 8 and 12 more apples than those below the target wing-flap rate."
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means",
@@ -333,7 +382,7 @@
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-6",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\n\nNull: H₀: μ₁ − μ₂ = 5 \nAlternative: H₁: μ₁ − μ₂ &gt; 5 \nTest statistic: t(23) = 5.445 \np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p &lt; 0.001 &lt; α = 0.05)"
+    "text": "Hypothesis Testing: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-7",
@@ -487,7 +536,7 @@
     "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-6",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0 \nAlternative: H₁: μ_d ≠ 0 \nTest statistic: t(24) = -0.859 \np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)"
+    "text": "Hypothesis Testing: Two Dependent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-7",
@@ -606,7 +655,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#point-estimation-variance",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Point Estimation: Variance",
-    "text": "Point Estimation: Variance\n\nVariance: A measure of spread; the average of squared differences from the mean.\n\nHigher variance = data has more spread.\nIn the original units of the data.\n\n\n\ns_y^2 = \\frac{\\sum_iy_i^2 - (\\sum_iy_i)^2/n}{n-1}\n\n\nFind the variance for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100}\n\n\ns_y^2 = \\frac{\\sum_iy_i^2 - (\\sum_iy_i)^2/n}{n-1} = \\frac{(10^2+...+100^2)-(10+...+100)^2/5}{4} = 1250\n\n\nThe variance is 1250 (km/hr)2"
+    "text": "Point Estimation: Variance\n\nVariance: A measure of spread; the average of squared differences from the mean.\n\nHigher variance = data has more spread.\nIn squared units of the data.\n\n\n\ns_y^2 = \\frac{\\sum_iy_i^2 - (\\sum_iy_i)^2/n}{n-1}\n\n\nFind the variance for the flying speeds (km/hr) of 5 ponies: {10, 20, 30, 40, 100}\n\n\ns_y^2 = \\frac{\\sum_iy_i^2 - (\\sum_iy_i)^2/n}{n-1} = \\frac{(10^2+...+100^2)-(10+...+100)^2/5}{4} = 1250\n\n\nThe variance is 1250 (km/hr)2"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#point-estimation-standard-deviation",
@@ -669,7 +718,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#point-estimation-contingency-table-1",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Point Estimation: Contingency Table",
-    "text": "Point Estimation: Contingency Table\n\nThe resulting contingency table would look someting like this:\n\nWe are using column totals as our denominators."
+    "text": "Point Estimation: Contingency Table\n\nThe resulting contingency table would look someting like this:\n\nWe are using column totals as our denominators.\n\n\n\n\n# A tibble: 4 × 3\n  pony_type No        Yes      \n  &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1 Alicorn   0 (0.0%)  1 (25.0%)\n2 Earth     2 (50.0%) 0 (0.0%) \n3 Pegasus   0 (0.0%)  3 (75.0%)\n4 Unicorn   2 (50.0%) 0 (0.0%)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#graphs-box-plots",
@@ -879,7 +928,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-base-r-vs.-packages",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: base R vs. packages",
-    "text": "Functions in R: base R vs. packages\n\nR functions are like baking recipes. They:\n\nTakes input (ingredients, or data),\nDoes something with it (follow recipe, or perform calculations),\nGives back a result (baked good, or statistics).\n\nSome functions in R are available as soon as you open RStudio (this is “base R”).\n\ne.g., mean(), sd()\n\nOther functions are not available and must be called in after you start RStudio (these are “packages”).\n\ne.g., after I call in library(tidyverse), I can use summarize(mean(), sd())\nWe will always need library(tidyverse) because of %&gt;% (pipe operator)."
+    "text": "Functions in R: base R vs. packages\n\nR functions are like baking recipes. They:\n\nTake input (ingredients, or data),\nDoes something with it (follow recipe, or perform calculations),\nGives back a result (baked good, or statistics).\n\nSome functions in R are available as soon as you open RStudio (this is “base R”).\n\ne.g., mean(), sd()\n\nOther functions are not available and must be called in after you start RStudio (these are “packages”).\n\ne.g., after I call in library(tidyverse), I can use summarize(mean(), sd())\nWe will always need library(tidyverse) because of %&gt;% (pipe operator)."
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-tidyverse",
@@ -893,7 +942,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-continuous-data",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: Summarizing Continuous Data",
-    "text": "Functions in R: Summarizing Continuous Data\n\nWe will use mean_median() from library(classpackage) to summarize continuous variables.\n\nIt will return both the mean (standard deviation) and median (IQR).\n\n\n\ndataset_name %&gt;% \n  mean_median(var1, var2, ...)\n\n\nWe can add group_by() from library(tidyverse) to split the summaries by categories.\n\n\ndataset_name %&gt;% \n  group_by(grouping_var1, grouping_var2, ...) %&gt;% \n  mean_median(var1, var2, ...)"
+    "text": "Functions in R: Summarizing Continuous Data\n\nWe will use mean_median() from library(ssstats) to summarize continuous variables.\n\nIt will return both the mean (standard deviation) and median (IQR).\n\n\n\ndataset_name %&gt;% \n  mean_median(var1, var2, ...)\n\n\nWe can add group_by() from library(tidyverse) to split the summaries by categories.\n\n\ndataset_name %&gt;% \n  group_by(grouping_var1, grouping_var2, ...) %&gt;% \n  mean_median(var1, var2, ...)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-continuous-data-1",
@@ -907,7 +956,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-continuous-data-2",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: Summarizing Continuous Data",
-    "text": "Functions in R: Summarizing Continuous Data\n\nLet’s use mean_median() to summarize the MLP dataset.\n\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)"
+    "text": "Functions in R: Summarizing Continuous Data\n\nLet’s use mean_median() to summarize the MLP dataset.\n\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-continuous-data-3",
@@ -921,14 +970,14 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-continuous-data-4",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: Summarizing Continuous Data",
-    "text": "Functions in R: Summarizing Continuous Data\n\nLet’s use mean_median() to summarize the MLP dataset by pony type.\n\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)"
+    "text": "Functions in R: Summarizing Continuous Data\n\nLet’s use mean_median() to summarize the MLP dataset by pony type.\n\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-categorical-data",
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-categorical-data",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: Summarizing Categorical Data",
-    "text": "Functions in R: Summarizing Categorical Data\n\nWe will use n_pct() from library(classpackage) to summarize categorical variables.\nFor one variable – this returns n_i \\ (\\%_i):\n\n\ndataset_name %&gt;% \n  n_pct(var1)\n\n\nFor two variables – this returns n_{ij} \\ (\\%_{\\text{col}}):\n\n\ndataset_name %&gt;% \n  n_pct(var1, var2)"
+    "text": "Functions in R: Summarizing Categorical Data\n\nWe will use n_pct() from library(ssstats) to summarize categorical variables.\nFor one variable – this returns n_i \\ (\\%_i):\n\n\ndataset_name %&gt;% \n  n_pct(var1)\n\n\nFor two variables – this returns n_{ij} \\ (\\%_{\\text{col}}):\n\n\ndataset_name %&gt;% \n  n_pct(var1, var2)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-categorical-data-1",
@@ -942,7 +991,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-categorical-data-2",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: Summarizing Categorical Data",
-    "text": "Functions in R: Summarizing Categorical Data\n\nLet’s use n_pct() to summarize the MLP dataset.\n\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)"
+    "text": "Functions in R: Summarizing Categorical Data\n\nLet’s use n_pct() to summarize the MLP dataset.\n\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)\n\n    type      n (pct)\n Alicorn    41 (1.4%)\n   Earth 1678 (58.4%)\n Pegasus  487 (17.0%)\n Unicorn  665 (23.2%)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-categorical-data-3",
@@ -956,7 +1005,7 @@
     "href": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#functions-in-r-summarizing-categorical-data-4",
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Functions in R: Summarizing Categorical Data",
-    "text": "Functions in R: Summarizing Categorical Data\n\nLet’s use n_pct() to summarize the MLP dataset.\n\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)"
+    "text": "Functions in R: Summarizing Categorical Data\n\nLet’s use n_pct() to summarize the MLP dataset.\n\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)\n\n# A tibble: 4 × 5\n  friendship Alicorn  Earth     Pegasus   Unicorn  \n       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1          1 0 (0.0%) 0 (0.0%)  0 (0.0%)  1 (0.2%) \n2          2 0 (0.0%) 5 (0.3%)  1 (0.2%)  1 (0.2%) \n3          3 0 (0.0%) 14 (0.8%) 6 (1.2%)  13 (2.0%)\n4          4 2 (4.9%) 54 (3.2%) 14 (2.9%) 16 (2.4%)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#graphs-in-r-using-ggplot",
@@ -1125,6 +1174,34 @@
     "title": "STA2023 Review:Point EstimationData Visualization",
     "section": "Wrap Up",
     "text": "Wrap Up\n\nDaily activity: the .qmd we worked on during class.\n\nDue date: Monday, June 23, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission."
+  },
+  {
+    "objectID": "files/practice/06-19-inference-practice.html",
+    "href": "files/practice/06-19-inference-practice.html",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "",
+    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
+  },
+  {
+    "objectID": "files/practice/06-19-inference-practice.html#one-sample-mean",
+    "href": "files/practice/06-19-inference-practice.html#one-sample-mean",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "",
+    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
+  },
+  {
+    "objectID": "files/practice/06-19-inference-practice.html#two-independent-means",
+    "href": "files/practice/06-19-inference-practice.html#two-independent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Independent Means",
+    "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
+  },
+  {
+    "objectID": "files/practice/06-19-inference-practice.html#two-dependent-means",
+    "href": "files/practice/06-19-inference-practice.html#two-dependent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means",
+    "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
   },
   {
     "objectID": "module4.html",
