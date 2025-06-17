@@ -3,64 +3,200 @@ title: "STA4173 - Biostatistics - Summer 2025"
 format: html
 ---
 
-::: {.callout-tip title="📝 Module 0: Review & R Foundations" collapse="true" open="true"}
-In this introductory module, we will review essential concepts from STA2023 (*Elements of Statistics*) and get set up with the tools used throughout the course. We'll cover:
+### **Module 0: Review & R Foundations**
 
-- Summary statistics and data visualizations.
-- Basics of statistical inference:
-    - Confidence intervals for one mean,
-    - Hypothesis testing for one mean.
-- Getting started with R, [RStudio](https://rstudio.hmcse.uwf.edu), and Quarto.
-    - Basic R syntax: vectors & data frames/tibbles, functions, and the [tidyverse](https://www.tidyverse.org/).
-    - Your first Quarto document.
+::: {.callout-tip title="Tuesday, June 17, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - Summary statistics 
+    - Data visualization
+    - Introduction to R
+- Slides:
+    - .html: <a href="files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-17-T-summary-visualization.qmd">view code</a>
+- Practice (due M 06/23):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas
 
 :::
 
-::: {.callout-tip collapse="true" title="🌱 Module 1: Exploring Continuous Outcomes in Two Groups"}
-In this module, we explore methods for comparing continuous outcomes between two groups. We'll cover:
+::: {.callout-tip title="Thursday, June 19, 2025:" collapse="true" open="true"}
 
-- Two-sample *t*-test for independent samples  
-- Paired *t*-test for dependent samples  
-- Assumptions on *t*-tests and how to assess
-- Wilcoxon rank-sum test  
-- Wilcoxon signed-rank test
+- <a href="https://nmaahc.si.edu/explore/stories/what-juneteenth">Juneteenth</a> holiday - *campus closed*.
+
+:::
+
+::: {.callout-tip title="Tuesday, June 24, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - Statistical inference: 
+        - Confidence intervals
+        - Hypothesis testing
+    - One-sample mean
+- Slides:
+    - .html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
+
+:::
+
+### **Module 1: Exploring Continuous Outcomes in Two Groups**
+
+::: {.callout-tip title="Tuesday, June 24, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - Two independent means
+    - Two dependent means
+- Slides:
+    - .html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
+- Practice (due M 06/30):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas    
+
+:::
+
+::: {.callout-tip title="Thursday, June 26, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - t-test assumptions
+    - two-sample medians
+        - Wilcoxon rank sum
+        - Wilcoxon signed rank
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due M 06/30):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas   
+
+:::
+
+::: {.callout-tip title="Tuesday, July 1, 2025:" collapse="true" open="true"}
+
+- Project 1 (due M 07/07): see Canvas
   
 :::
 
-::: {.callout-tip collapse="true" title="🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups"}
-In this module, we explore methods for comparing continuous outcomes between three or more groups. We'll cover:
+### **Module 2: Exploring Continuous Outcomes in More Than Two Groups**
 
-- One-way ANOVA 
-- Two-way ANOVA
-- Assumptions on ANOVA and how to assess
-- Posthoc testing (multiple comparisons) 
-- Profile plots
+::: {.callout-tip title="Thursday, July 3, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - One-way ANOVA
+        - posthoc testing
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due M 07/07):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas 
   
 :::
 
-::: {.callout-tip collapse="true" title="🐬 Module 3: Exploring Regression Modeling"}
-In this module, we'll explore describing the relationship between two continuous variables. We'll cover:
+::: {.callout-tip title="Tuesday, July 8, 2025:" collapse="true" open="true"}
 
-- Bivariate correlation
-    - Pearson's
-    - Spearman's 
-- Simple linear regression
-- Multiple regression
-- Assumptions on regression and how to assess
-- Regression diagnostics
+- Topics:
+    - ANOVA assumptions
+    - Kruskal-Wallis
+        - posthoc testing
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due M 07/14):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas
+
+:::
+
+::: {.callout-tip title="Thursday, July 10, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - Two-way ANOVA
+        - posthoc testing
+        - profile plots
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due M 07/14):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas  
+
+:::
+
+::: {.callout-tip title="Tuesday, July 15, 2025:" collapse="true" open="true"}
+
+- Project 2 (due M 07/21): see Canvas
   
 :::
 
-::: {.callout-tip collapse="true" title="🐢 Module 4: Exploring Categorical Outcomes"}
-In this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (*Elements of Statistics*):
+### **Module 3: Exploring Regression Modeling**
 
-- One-sample proportions
-- Two-sample proportions
+::: {.callout-tip title="Thursday, July 17, 2025:" collapse="true" open="true"}
 
-We will continue by expanding our knowledge:
+- Topics:
+    - Simple linear regression
+    - Bivariate correlation
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due M 07/21):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas  
 
-- $\chi^2$ goodness-of-fit
-- $\chi^2$ test for independence
-- Logistic regression
+:::
+
+::: {.callout-tip title="Tuesday, July 22, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - Multiple regression
+    - Regression diagnostics
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due M 07/28):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas  
+
+:::
+
+::: {.callout-tip title="Thursday, July 24, 2025:" collapse="true" open="true"}
+
+- Project 3 (due W 07/30): see Canvas
+- Quiz: see Canvas
+  
+:::
+
+### **Module 4: Exploring Categorical Outcomes**
+
+::: {.callout-tip title="Tuesday, July 29, 2025:" collapse="true" open="true"}
+
+- Topics:
+    - Proportions
+        - One sample
+        - Two sample
+        - More than two samples 
+    - Contingency tables
+- Slides:
+    - .html: 
+    - .qmd: 
+- Practice (due F 08/01):
+    - .html:
+    - .qmd:
+- Quiz: see Canvas  
+
+:::
+
+::: {.callout-tip title="Thursday, July 31, 2025:" collapse="true" open="true"}
+
+- Project 4 (due W 08/06): see Canvas
+- Quiz: see Canvas  
   
 :::

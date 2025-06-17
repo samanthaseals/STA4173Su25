@@ -1,87 +1,605 @@
 [
   {
-    "objectID": "module3.html",
-    "href": "module3.html",
-    "title": "🐬 Module 3: Exploring Regression Modeling",
+    "objectID": "files/get_help.html",
+    "href": "files/get_help.html",
+    "title": "Looking for help?",
     "section": "",
-    "text": "Thursday, July 10, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nSimple linear regression\nCorrelation\n\n🖥️ Daily practice 🖥️\n\nSimple linear regression and correlation (due M 07/14)\n\n📃 In-class quiz 📃 \n\nModule 2\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nMultiple regression\n\n🖥️ Daily practice 🖥️\n\nMultiple regression (due M 07/21)\n\n📃 In-class quiz 📃 \n\nSimple linear regression\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 3 (due W 07/23)\n\n📃 In-class quiz 📃 \n\nMultiple regression"
+    "text": "How do I typeset a hypothesis test?\n\nHere is a basic template for typesetting hypothesis tests in Quarto: template.qmd\nRemember to update subscripts when you are editing existing code.\n\nDo you need help with your assignment?\n\nDouble check the slides for necessary code. Note that the headers of slides often match language used in the assignments.\nHave you googled the error message you saw?\nHave you asked your classmates (& Dr. Seals) on Discord? Truly, others have the same question, I promise! Do not be afraid to share a screenshot of your code and any corresponding output or error message.\n\nWhy did I lose points?\n\nPlease check the rubric; I try to give enough feedback for you to determine how to fix your assignment.\nIf clarification is still needed, please do not hesitate to come see me during office hours.\n\nIs there tutoring?\n\nNo, there is no University-provided tutoring.\nHowever, my research students are great resources. Please reach out to me if you are interested in hiring one of my students for tutoring."
   },
   {
-    "objectID": "module0.html",
-    "href": "module0.html",
-    "title": "📝 Module 0: Review & R Foundations",
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html",
+    "title": "Practice: Point Estimation & Data Visualization",
     "section": "",
-    "text": "Tuesday, June 17, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nSummary statistics and data visualization\nIntroduction to R\nSlides: html file (view), qmd file (code)\n\n🖥️ Daily practice 🖥️\n\nIntroduction to R (due M 06/23)\n\n📃 In-class quiz 📃 \n\nGet to Know You\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025\n\n\n\n\n\n🖥️ Group Effort 🖥️\n\nUgly graph competition\nPresentation at the end of class\n\n📃 In-class quiz 📃\n\nModule 4"
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
   },
   {
-    "objectID": "module1.html",
-    "href": "module1.html",
-    "title": "🌱 Module 1: Exploring Continuous Outcomes in Two Groups",
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
     "section": "",
-    "text": "Thursday, June 19, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nOne-sample t-test\nTwo-sample t-test (independent data)\nPaired t-test (dependent data)\nSlides: html file (view), qmd file (code)\n\n🖥️ Daily practice 🖥️\n\nTwo-sample means (due M 06/23)\n\n📃 In-class quiz 📃 \n\nSummary statistics\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nt-test assumptions\nWilcoxons (nonparametric alternative to t-test)\n\n🖥️ Daily practice 🖥️\n\nTwo-sample medians (due M 06/30)\n\n📃 In-class quiz 📃 \n\nTwo-sample means\n\n\n\n\n\n\n\n\n\n\nThursday, June 26, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 1 (due W 07/03)\n\n📃 In-class quiz 📃 \n\nTwo-sample medians"
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
   },
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Abbreviated Syllabus",
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Summaries: Categorical Variables",
+    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)\n\n    type      n (pct)\n Alicorn    41 (1.4%)\n   Earth 1678 (58.4%)\n Pegasus  487 (17.0%)\n Unicorn  665 (23.2%)\n\n\nLet’s use n_pct() to describe friendship index by type.\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)\n\n# A tibble: 4 × 5\n  friendship Alicorn  Earth     Pegasus   Unicorn  \n       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1          1 0 (0.0%) 0 (0.0%)  0 (0.0%)  1 (0.2%) \n2          2 0 (0.0%) 5 (0.3%)  1 (0.2%)  1 (0.2%) \n3          3 0 (0.0%) 14 (0.8%) 6 (1.2%)  13 (2.0%)\n4          4 2 (4.9%) 54 (3.2%) 14 (2.9%) 16 (2.4%)"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Box Plots",
+    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer).\n\n\nmlp_data %&gt;% ggplot(aes(x = tail_shimmer)) +\n  geom_boxplot() +\n  labs(x = \"Tail Shimmer\") +\n  theme_bw() +\n  theme(axis.ticks.y = element_blank(),\n        axis.text.y = element_blank())"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Histograms",
+    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed)) +\n  geom_histogram(bins = 15, \n                 color = \"#2E7D32\", \n                 fill = \"#4CAF50\") +\n  labs(x = \"Flying Speed\", \n       y = \"Number of Ponies\") +\n  theme_bw() \n\n\n\n\n\n\n\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy).\n\n\nmlp_data %&gt;% ggplot(aes(x = magical_energy)) +\n  geom_histogram(bins = 15, \n                 color = \"#8B6C42\", \n                 fill = \"#F0E9DD\") +\n  labs(x = \"Magical Energy\",\n       y = \"Number of Ponies\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Bar Graphs",
+    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nmlp_data %&gt;%\n  count(sex) %&gt;%\n  ggplot(aes(x = sex, y = n)) +\n  geom_col() +\n  labs(x = \"Age and Sex of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a bar graph for the type of pony.\n\n\nmlp_data %&gt;%\n  count(type) %&gt;%\n  ggplot(aes(x = type, y = n)) +\n  geom_col() +\n  labs(x = \"Type of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Scatterplots",
+    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(y = tail_shimmer, x = magical_energy)) +\n  geom_point(size = 2) +\n  labs(x = \"Magical Energy\",\n       y = \"Tail Shimmer\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed, y = tail_shimmer)) +\n  geom_point(size = 2) +\n  labs(y = \"Tail Shimmer\",\n       x = \"Flying Speed (km/h)\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html",
+    "href": "files/practice/06-17-summary-practice.html",
+    "title": "Practice: Point Estimation & Data Visualization",
     "section": "",
-    "text": "Note: this is an abbreviated syllabus. The full syllabus is available through Classmate and/or Canvas.\n\nInstructor Information\n\nDr. Samantha Seals\nOffice: 4/344\n\n\n\nMeeting Times and Location\n\nTR 11:00 am-1:40 pm\n\n11:00 am–12:15 pm: Lecture\n12:30 pm–1:15 pm: Daily practice\n1:15 pm–1:40 pm: Daily quiz\n\nPhysical classroom: 4/406\nZoom classroom: see Canvas or full syllabus for link\n\n\n\nOffice Hours\n\nMonday: 2:00–4:00 pm (Central)\nWednesday: 2:00–4:00 pm (Central)\nOther times by appointment\n\n\n\nGrading and Evaluation\nThe course grade will be determined as follows:\n\nDaily practice (25%): Each meeting day, students will complete an activity using Quarto and R. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nDaily quizzes (10%): Each meeting day, students will complete a timed quiz on Canvas. Time will be given during class for completion.\nAssignments (40%): Every module will finish with an assignment to demonstrate the knowledge gained. These will be like the daily practice, but putting everything in the module together. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nFinal Exam (25%): The final exam will be a timed concepts-based exam. While there may be some calculations needed, you will not be processing raw data. The final exam will be on Canvas on August 7, 2025. All students will have 3 hours to complete the exam.\n\n\n\nLate Policy\nAssigments have due dates, however, the dropboxes will not close until the end of the semester. All students are automatically granted “extensions” without question.\nNote that if there is not a submission when I go to grade (after the initial deadline), I will assign a zero (0) and request that you submit the assignment when you are able to. This is only for record keeping purposes. There is no penalty for submitting late and a full grade will be given upon review of your submission.\nExtensions are not available for daily practice, daily quizzes, or the final exam."
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type."
   },
   {
-    "objectID": "files/practice/06-24-inference-practice.html",
-    "href": "files/practice/06-24-inference-practice.html",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "objectID": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
+    "href": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
     "section": "",
-    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type."
   },
   {
-    "objectID": "files/practice/06-24-inference-practice.html#one-sample-mean",
-    "href": "files/practice/06-24-inference-practice.html#one-sample-mean",
+    "objectID": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
+    "href": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Summaries: Categorical Variables",
+    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\nLet’s use n_pct() to describe friendship index by type."
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-box-plots",
+    "href": "files/practice/06-17-summary-practice.html#graphs-box-plots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Box Plots",
+    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer)."
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-histograms",
+    "href": "files/practice/06-17-summary-practice.html#graphs-histograms",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Histograms",
+    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy)."
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
+    "href": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Bar Graphs",
+    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nConstruct a bar graph for the type of pony."
+  },
+  {
+    "objectID": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
+    "href": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Scatterplots",
+    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#introduction-topics",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#introduction-topics",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Introduction: Topics",
+    "text": "Introduction: Topics\n\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nWe will focus on the following scenarios today:\n\nOne-sample mean (\\mu)\nTwo-sample mean, independent data (\\mu_1-\\mu_2)\nTwo-sample mean, dependent data (\\mu_d)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#introduction-data",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#introduction-data",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Introduction: Data",
+    "text": "Introduction: Data\n\nWe are using data from the kingdom of Equestria from My Little Pony.\nMane Six:\n\nTwilight Sparkle (Unicorn \\to Alicorn)\nApplejack (Earth Pony)\nFluttershy (Pegasus)\nPinkie Pie (Earth Pony)\nRainbow Dash (Pegasus)\nRarity (Unicorn)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nPoint estimate: The single value of a statistic that estimates the value of a parameter.\nConfidence interval: A range of plausible values for the parameter based on values observed in the sample.\n\n\n\\text{point estimate} \\pm \\text{margin of error}\n\n\nWhat is the point estimate of:\n\n\\mu\n\\sigma\n\\pi (or p)\n\\mu_1-\\mu_2\n\\pi_1-\\pi_2"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nWe have different intervals based on the level of confidence.\n\nLevel of confidence: The probability that the interval will capture the true parameter value in repeated samples. i.e., the success rate for the method."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nBecause CIs are a range of values, we will use interval notation,\n\n\n(lower bound, upper bound)\n\n\nwhere\n\nlower bound = point estimate – margin of error\nupper bound = point estimate + margin of error\n\nMake sure to state your confidence intervals in numeric order.\n\ni.e., the lower bound must be the smaller number and the upper bound must be the larger number."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: One-Sample Mean",
+    "text": "Confidence Intervals: One-Sample Mean\n(1-\\alpha)100\\% confidence interval for \\mu:\n\n\\bar{x} \\pm t_{\\alpha/2,\\text{ df}}\\frac{s}{\\sqrt{n}}\n\n\nwhere\n\n\\bar{x} is the sample mean of x\nt_{\\alpha/2} has n-1 degrees of freedom\ns is the sample standard deviation of x\nn is the sample size"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: One-Sample Mean (R)",
+    "text": "Confidence Intervals: One-Sample Mean (R)\n\nWe will use the one_mean_CI function from library(ssstats) to find the confidence interval.\nGeneric syntax:\n\n\ndataset_name %&gt;% one_mean_CI(continuous = continuous_variable,\n                             confidence = confidence_level)\n\n\nFor the entered variable (continuous), we will see:\n\nPoint estimate for \\mu\nPoint estimate for \\sigma\nConfidence interval for \\mu at the specified level (confidence)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: One-Sample Mean",
+    "text": "Confidence Intervals: One-Sample Mean\n\nIn the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today’s young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony’s wing‐flap rate (in flaps/minute).\nA sample of our dataset:"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-one-sample-mean-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: One-Sample Mean",
+    "text": "Confidence Intervals: One-Sample Mean\n\nLet’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThus, the 95% CI for \\mu is (49.13, 55.46)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#statistical-inference-confidence-intervals",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#statistical-inference-confidence-intervals",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Statistical Inference: Confidence Intervals",
+    "text": "Statistical Inference: Confidence Intervals\n\nWe have learned that confidence intervals give a plausible range for an unknown population parameter at a chosen confidence level.\n\ne.g., 95% CI for \\mu; 99% CI for \\pi\n\nWhat if we want to directly answer questions?\n\ne.g., is the average wing-flap rate still 50 flaps/min?\n\nWe can use confidence intervals to answer these questions!\n\nWe will compare the interval to the question.\n\nRecall that the 95% CI for mean wing-flap rate was (49.13, 55.46). Has the standard rate of 50 flaps/min changed?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#statistical-inference-hypothesis-testing",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#statistical-inference-hypothesis-testing",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Statistical Inference: Hypothesis Testing",
+    "text": "Statistical Inference: Hypothesis Testing\n\nWe can also answer research questions more formally using hypothesis testing.\nAll hypothesis tests have the same components:\n\nHypotheses\nTest Statistic\np-Value\nRejection Region\nConclusion\nInterpretation\n\nThis process uses probability to make a determination, rather than looking at the interval estimate."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nHypothesis testing has several key components.\n\nHypotheses:\n\nNull hypothesis (H_0): A statement of “no different than expected.”\nAlternative hypothesis (H_1 or H_{\\text{A}}): What we are investigating; this represents a change, effect, or difference.\n\nTest Statistic and p-Value:\n\nTest statistic: A single number calculated from the sample, measuring how far the observed data are from what is expected under the null.\np-value: The probability of observing data as (or more) extreme than ours, assuming the null is true."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nHypothesis testing has several key components.\n\nRejection Region:\n\nWe will always use the same rejection region: p &lt; \\alpha.\n\nConclusion and Interpretation:\n\nConclusion: reject or fail to reject the null based on the calculated p-value and rejection region.\nInterpretation: Give context to your results. Interpret in terms of the alternative hypothesis."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nOne sample tests:\n\nTwo-tailed test\n\nH_0: parameter = some value\nH_1: parameter \\ne some value\n\nLeft-tailed test\n\nH_0: parameter \\ge some value\nH_1: parameter &lt; some value\n\nRight-tailed test\n\nH_0: parameter \\le some value\nH_1: parameter &gt; some value"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nAfter stating our hypotheses, we will construct a test statistic.\nThe choice of test statistic depends on:\n\nThe hypotheses being tested.\nAssumptions made about the data.\n\nThe value of the test statistic depends on the sample data.\n\nIf we were to draw a different sample, we would find a different value for the test statistic.\n\nWe will use the test statistic on our way to drawing conclusions about the hypotheses."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-4",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-4",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nAfter constructing test statistics, we will find the corresponding p-value.\n\np-value: the probability of observing what we’ve observed or something more extreme, assuming the null hypothesis is true.\n\nFinding a p-value depends on the distribution being used.\n\nOne-sample mean: t distribution.\nOne-sample proportion: z distribution.\n\nWe will compare the p-value to \\alpha in order to draw conclusions.\n\nReject H_0 if p &lt; \\alpha."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-5",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-5",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nOnce we’ve found the p-value, we can draw a conclusion.\n\nIf p &lt; \\alpha, we reject H_0.\n\nThere is sufficient evidence to suggest that H_1 is true.\n\nIf p \\ge \\alpha, we fail to reject H_0.\n\nThere is not sufficient evidence to suggest that H_1 is true."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-6",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-6",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\nFor all hypothesis tests,\n\nRejection Region: Reject H_0 if p &lt; \\alpha.\nConclusion: [Reject or fail to reject] H_0.\nInterpretation: There [is or is not] sufficient evidence to suggest [alternative hypothesis in words].\n\n\n\n We NEVER accept H_0."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#practical-vs.-statistical-significance",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#practical-vs.-statistical-significance",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Practical vs. Statistical Significance",
+    "text": "Practical vs. Statistical Significance\n\nHypothesis testing depends on sample size.\n\nAs the sample size increases, our p-values decrease necessarily.\nAs p-values decrease, we are more likely to reject the null hypothesis.\n\nThis means that are we rejecting based on sample size and not the size of the effect!\n\n\nWe must ask ourselves if the value we are testing against makes practical sense.\n\nA new weight loss medication where the average amount of weight loss was 1 lb over 6 months.\nA new weight loss medication where the average amount of weight lost was 15 lb over 6 months.\nA new teaching method that raised final exam scores by 2 points.\nA new teaching method that raised final exam scores by 15 points."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nHypotheses: Two Tailed\n\nH_0: \\ \\mu=\\mu_0\nH_1: \\ \\mu \\ne \\mu_0\n\nHypotheses: Left Tailed\n\nH_0: \\ \\mu \\ge \\mu_0\nH_1: \\ \\mu &lt; \\mu_0\n\nHypotheses: Right Tailed\n\nH_0: \\ \\mu \\le \\mu_0\nH_1: \\ \\mu &gt; \\mu_0"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nTest Statistic:\n\n\nt_0 = \\frac{\\bar{x} - \\mu_0}{\\sqrt{\\frac{s^2}{n}} } \\sim t_{\\text{df}},\n\n\nwhere\n\n\\bar{x} is the mean of x\n\\mu_0 is the hypothesized value of \\mu\ns^2 is the variance of x\nn is the sample size\n\\text{df} = n-1"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\np-value: Two Tailed\n\np = 2\\times P\\left[t_{\\text{df}} \\ge |t_0|\\right]\n\np-value: Left Tailed\n\np = P\\left[t_{\\text{df}} \\le t_0\\right]\n\np-value: Right Tailed\n\np = P\\left[t_{\\text{df}} \\ge t_0\\right]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean (R)",
+    "text": "Hypothesis Testing: One Sample Mean (R)\n\nWe will use the one_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% one_mean_HT(continuous = continuous_variable, \n                             mu = hypothesized_value, \n                             alternative = \"alternative_direction\", \n                             alpha = specified_alpha)\n\n\nFor the entered variable (continuous), we will see:\n\nHypotheses (based on hypothesized_value and alternative)\nTest statistic and p-value\nConclusion"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-4",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-4",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% one_mean_HT(continuous = continuous_variable, \n                             mu = hypothesized_value, \n                             alternative = \"alternative_direction\", \n                             alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-5",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-5",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nOur updated code should look like:\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-6",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-6",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nRunning the code,\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-7",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-one-sample-mean-7",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: One Sample Mean",
+    "text": "Hypothesis Testing: One Sample Mean\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#independent-data",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#independent-data",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Independent Data",
+    "text": "Independent Data\n\nIndependent data: Observations in one group (or sample) do not influence or relate to observations in another group.\n\nExamples:\n\nComparing the cruising speeds of a random sample of Pegasi vs. a random sample of Unicorns flying a short course.\nMeasuring friendship lesson quiz scores for a group of Cutie Mark Crusaders vs. a group of Wonderbolts Cadets.\nExamining the graduation rates between Unicorns and Pegasi."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#dependent-data",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#dependent-data",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Dependent Data",
+    "text": "Dependent Data\n\nDependent (paired) data: Each observation in the first sample is paired with exactly one observation in the second sample.\n\nExamples:\n\nStudents’ magic‐proficiency scores before and after Princess Celestia’s advanced spell workshop.\nApplejack’s apple‐yield (in bushels) from Sweet Apple Acres in Spring vs. Fall for the last 10 years.\nComparing the “Wonderbolts Tryouts” performance scores for Spitfire and Skyflare (twins)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#independent-vs.-dependent-data",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#independent-vs.-dependent-data",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Independent vs. Dependent Data",
+    "text": "Independent vs. Dependent Data\n\nAre the following dependent or independent?\n\nRainbow Dash times two separate groups, Pegasi trainees and Unicorn cadets, on the same 200-meter aerial course.\nTwilight Sparkle measures her own spell‐casting accuracy before and after attending Princess Celestia’s advanced magic workshop.\n\nApplejack records bushel counts from Sweet Apple Acres in spring this year and compares them to bushel counts from Sugarcube’s orchard over the same period.\n\nThe Cutie Mark Crusaders each take a friendship-lesson quiz, and their scores are compared to a completely different group of ponies at the School of Friendship.\n\nFluttershy records the heart rates of the same group of critters before and after she plays soothing music for them."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Independent Means",
+    "text": "Confidence Intervals: Two Independent Means\n(1-\\alpha)100\\% confidence interval for \\mu_1-\\mu_2:\n\n(\\bar{x}_1 - \\bar{x}_2) \\pm t_{\\alpha/2} \\sqrt{\\frac{s_1^2 }{n_1} + \\frac{s_2^2}{n_2}}\n\n\nwhere\n\n(\\bar{x}_1-\\bar{x}_2) is the point estimate for \\mu_1-\\mu_2\n\n\\bar{x}_i is the sample mean for group i\n\nt_{\\alpha/2} has \\min(n_1-1, n_2-1) degrees of freedom\ns_i^2 is the sample variance for group i\nn_i is the sample size of group i"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Independent Means (R)",
+    "text": "Confidence Intervals: Two Independent Means (R)\n\nWe will use the independent_mean_CI function from library(ssstats) to find the confidence interval.\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_mean_CI(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     confidence = confidence_level)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Independent Means",
+    "text": "Confidence Intervals: Two Independent Means\n\nThe Pegasus trainers insist that a healthy Pony munches through 25 apples per day to stay strong and energetic. Looking for differences between those that are above and below target wing-flap rates, a researcher visits the apple stands at Sweet Apple Acres and records the exact number of apples each of the Pegasi in training eats in a typical day.\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\nHow should we change the following code?\n\n\ndataset_name %&gt;% independent_mean_CI(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     confidence = confidence_level)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Independent Means",
+    "text": "Confidence Intervals: Two Independent Means\n\nThe Pegasus trainers insist that a healthy Pony munches through 25 apples per day to stay strong and energetic. Looking for differences between those that are above and below target wing-flap rates, a researcher visits the apple stands at Sweet Apple Acres and records the exact number of apples each of the Pegasi in training eats in a typical day.\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\nOur updated code should look like:\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-independent-means-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Independent Means",
+    "text": "Confidence Intervals: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (8.13, 11.98).\n\nThe pegasi above the target wing-flap rate eat, on average, somewhere between 8 and 12 more apples than those below the target wing-flap rate."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\n\nHypotheses: Two Tailed\n\nH_0: \\ \\mu_1-\\mu_2=\\mu_0\nH_1: \\ \\mu_1-\\mu_2 \\ne \\mu_0\n\nHypotheses: Left Tailed\n\nH_0: \\ \\mu_1-\\mu_2 \\ge \\mu_0\nH_1: \\ \\mu_1-\\mu_2 &lt; \\mu_0\n\nHypotheses: Right Tailed\n\nH_0: \\ \\mu_1-\\mu_2 \\le \\mu_0\nH_1: \\ \\mu_1-\\mu_2 &gt; \\mu_0"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\nTest Statistic:\n\nt_0 = \\frac{(\\bar{x}_1-\\bar{x}_2)-\\mu_0}{{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s^2_2}{n_2}}}}\n\n\nwhere\n\n\\bar{x}_i is the mean for group i\n\\mu_0 is the hypothesized difference\ns_i^2 is the sample variance for group i\nn_i is the sample size of group i\n\n\\text{df} = \\text{min}(n_1-1, n_2-1)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\np-Value:\n\np-value: Two Tailed\n\np = 2\\times P\\left[t_{\\text{df}} \\ge |t_0|\\right]\n\np-value: Left Tailed\n\np = P\\left[t_{\\text{df}} \\le t_0\\right]\n\np-value: Right Tailed\n\np = P\\left[t_{\\text{df}} \\ge t_0\\right]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means (R)",
+    "text": "Hypothesis Testing: Two Independent Means (R)\n\nWe will use the independent_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_mean_HT(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     mu = hypothesized_value, \n                                     alternative = \"alternative_direction\", \n                                     alpha = specified_alpha)\n\n\nFor the entered variable (continuous), we will see:\n\nHypotheses (based on hypothesized_value and alternative)\nTest statistic and p-value\nConclusion\n\nNote! When looking at the grouping variable, R will subtract in alphabetic/numeric order."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-4",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-4",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% independent_mean_HT(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     mu = hypothesized_value, \n                                     alternative = \"alternative_direction\", \n                                     alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-5",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-5",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\nOur updated code should look like:\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-6",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-6",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-7",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-7",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Independent Means",
+    "text": "Hypothesis Testing: Two Independent Means\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means: Summary Statistics",
+    "text": "Two Dependent Means: Summary Statistics\n\nWe are now interested in comparing two dependent groups.\nWe assume that the two groups come from the same population and are going to examine the difference,\n\n\nd = y_{i, 1} - y_{i, 2}\n\n\nAfter drawing samples, we have the following,\n\n\\bar{d} estimates \\mu_d,\ns^2_d estimates \\sigma^2_d, and\nn is the sample size."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means: Summary Statistics (R)",
+    "text": "Two Dependent Means: Summary Statistics (R)\n\nWe will use the dependent_mean_median function from library(ssstats) to find the summary statistics for this data.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_mean_median(col1 = first_variable,\n                                       col2 = second_variable)\n\n\nNote that this will compute summary statistics for:\n\nx_d = x_1-x_2\nx_1\nx_2"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means: Summary Statistics",
+    "text": "Two Dependent Means: Summary Statistics\n\nPrincess Celestia has invited two groups of flyers to take part in a brand-new “SkyStride” aerial training camp. Before the camp begins, each pony perches on a floating platform while a team of Wonderbolt engineers use magical sensors to record their baseline wing-flap rate (flaps per second) as they hover in place (pre_training_wfr).\nOver two weeks, trainees attend identical flight drills: precision loops, cloud-weaving obstacle courses, and high-altitude sprints. At camp’s end, each flyer returns to the sensor platforms for post-training measurements (post_training_wfr).\nLet’s find the summary statistics. How should this code be edited?\n\n\ndataset_name %&gt;% dependent_mean_median(col1 = first_variable,\n                                       col2 = second_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means: Summary Statistics",
+    "text": "Two Dependent Means: Summary Statistics\n\nPrincess Celestia has invited two groups of flyers to take part in a brand-new “SkyStride” aerial training camp. Before the camp begins, each pony perches on a floating platform while a team of Wonderbolt engineers use magical sensors to record their baseline wing-flap rate (flaps per second) as they hover in place (pre_training_wfr).\nOver two weeks, trainees attend identical flight drills: precision loops, cloud-weaving obstacle courses, and high-altitude sprints. At camp’s end, each flyer returns to the sensor platforms for post-training measurements (post_training_wfr).\nOur code is as follows:\n\n\nwing_flap %&gt;% dependent_mean_median(col1 = pre_training_wfr, \n                                    col2 = post_training_wfr)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#two-dependent-means-summary-statistics-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means: Summary Statistics",
+    "text": "Two Dependent Means: Summary Statistics\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_median(col1 = pre_training_wfr, \n                                    col2 = post_training_wfr)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\\mathbf{(1-\\boldsymbol\\alpha)100\\%} confidence interval for \\mathbf{\\boldsymbol\\mu_d}\n \\bar{d} \\pm t_{\\alpha/2} \\frac{s_d}{\\sqrt{n}} \n\nwhere\n\n\\bar{d} = \\text{mean}(x_1-x_2) is the point estimate for \\mu_d = \\mu_1-\\mu_2\nt_{\\alpha/2} has n-1 degrees of freedom\ns_d is the sample standard deviation of the difference\nn is the number of pairs of observations"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means (R)",
+    "text": "Confidence Intervals: Two Dependent Means (R)\n\nWe will use the dependent_mean_CI function from library(ssstats) to find the confidence interval.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_mean_CI(col1 = first_group,\n                                   col2 = second_group,\n                                   confidence = confidence_level)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\nHow should we change the following code?\n\n\ndataset_name %&gt;% dependent_mean_CI(col1 = first_group,\n                                   col2 = second_group,\n                                   confidence = confidence_level)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\nOur updated code should look like:\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (-7.16, 5.33)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-4",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-4",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\nWhat happens if we flip the order?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-5",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-5",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\nWhat happens if we flip the order?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (-5.33, 7.16)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-6",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#confidence-intervals-two-dependent-means-6",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Confidence Intervals: Two Dependent Means",
+    "text": "Confidence Intervals: Two Dependent Means\n\nWhen looking at post - pre, the CI was (-7.16, 5.33).\nWhen looking at pre - post, the CI was (-5.33, 7.16).\nWhat is the relationship? \nWhy does the order matter?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\n\nHypotheses: Two Tailed\n\nH_0: \\ \\mu_d=\\mu_0\nH_1: \\ \\mu_d \\ne \\mu_0\n\nHypotheses: Left Tailed\n\nH_0: \\ \\mu_d \\ge \\mu_0\nH_1: \\ \\mu_d &lt; \\mu_0\n\nHypotheses: Right Tailed\n\nH_0: \\ \\mu_d \\le \\mu_0\nH_1: \\ \\mu_d &gt; \\mu_0\n\nNote! \\mu_d = \\mu_1 - \\mu_2"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\nTest statistic:\n\nt_0 = \\frac{\\bar{d}-\\mu_0}{\\frac{s_d}{\\sqrt{n}}} \\sim t_{\\text{df}}\n\n\nwhere\n\n\\bar{d} = \\text{mean}(x_1-x_2) is the point estimate for \\mu_d = \\mu_1-\\mu_2\n\\mu_0 is the hypothesized difference\ns_d is the sample standard deviation of the difference\nn is the number of pairs of observations\n\\text{df} = n-1"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-2",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-2",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\np-Value:\n\np-value: Two Tailed\n\np = 2\\times P\\left[t_{\\text{df}} \\ge |t_0|\\right]\n\np-value: Left Tailed\n\np = P\\left[t_{\\text{df}} \\le t_0\\right]\n\np-value: Right Tailed\n\np = P\\left[t_{\\text{df}} \\ge t_0\\right]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-r",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-r",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means (R)",
+    "text": "Hypothesis Testing: Two Dependent Means (R)\n\nWe will use the dependent_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_mean_HT(col1 = first_group,\n                                   col2 = second_group,\n                                   alternative = \"alternative_direction\",\n                                   mu = hypothesized_diff,\n                                   alpha = alpha_level)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-3",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-3",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-4",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-4",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% dependent_mean_HT(col1 = first_group,\n                                   col2 = second_group,\n                                   alternative = \"alternative_direction\",\n                                   mu = hypothesized_diff,\n                                   alpha = alpha_level)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-5",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-5",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nOur updated code should look like:\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-6",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-6",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-7",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-dependent-means-7",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Hypothesis Testing: Two Dependent Means",
+    "text": "Hypothesis Testing: Two Dependent Means\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#wrap-up",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#wrap-up",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nToday’s lecture:\n\nStatistical inference basics.\n\nConfidence intervals.\nHypothesis testing.\n\nUsing both CI and HT to answer research questions.\n\nNext class:\n\nAssumptions on t-tests.\nAlternatives to t-tests."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#wrap-up-1",
+    "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#wrap-up-1",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nDaily activity: the .qmd we worked on during class.\n\nDue date: Monday, June 23, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nAre you in the Discord server?\nDo you have questions for me?\nDo you need my help with anything from Tuesday?"
+  },
+  {
+    "objectID": "files/hyp_test_template.html",
+    "href": "files/hyp_test_template.html",
+    "title": "STA4173 - Biostatistics - Summer 2025",
     "section": "",
-    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
+    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
   },
   {
-    "objectID": "files/practice/06-24-inference-practice.html#two-independent-means",
-    "href": "files/practice/06-24-inference-practice.html#two-independent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Independent Means",
-    "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
-  },
-  {
-    "objectID": "files/practice/06-24-inference-practice.html#two-dependent-means",
-    "href": "files/practice/06-24-inference-practice.html#two-dependent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means",
-    "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
-  },
-  {
-    "objectID": "files/practice/key/06-24-inference-practice-KEY.html",
-    "href": "files/practice/key/06-24-inference-practice-KEY.html",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STA4173 - Biostatistics - Summer 2025",
     "section": "",
-    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
-  },
-  {
-    "objectID": "files/practice/key/06-24-inference-practice-KEY.html#one-sample-mean",
-    "href": "files/practice/key/06-24-inference-practice-KEY.html#one-sample-mean",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "",
-    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
-  },
-  {
-    "objectID": "files/practice/key/06-24-inference-practice-KEY.html#two-independent-means",
-    "href": "files/practice/key/06-24-inference-practice-KEY.html#two-independent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Independent Means",
-    "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
-  },
-  {
-    "objectID": "files/practice/key/06-24-inference-practice-KEY.html#two-dependent-means",
-    "href": "files/practice/key/06-24-inference-practice-KEY.html#two-dependent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means",
-    "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
+    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nTopics:\n\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 06/30):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nProject 1 (due M 07/07): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/07):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nTopics:\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/14):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/14):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/21):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nProject 3 (due W 07/30): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due F 08/01):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nProject 4 (due W 08/06): see Canvas\nQuiz: see Canvas"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#introduction-topics",
@@ -686,647 +1204,66 @@
     "text": "Wrap Up\n\nDaily activity: the .qmd we worked on during class.\n\nDue date: Monday, June 23, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STA4173 - Biostatistics - Summer 2025",
+    "objectID": "files/syllabus.html",
+    "href": "files/syllabus.html",
+    "title": "Abbreviated Syllabus",
     "section": "",
-    "text": "📝 Module 0: Review & R Foundations\n\n\n\n\n\nIn this introductory module, we will review essential concepts from STA2023 (Elements of Statistics) and get set up with the tools used throughout the course. We’ll cover:\n\nSummary statistics and data visualizations.\nBasics of statistical inference:\n\nConfidence intervals for one mean,\nHypothesis testing for one mean.\n\nGetting started with R, RStudio, and Quarto.\n\nBasic R syntax: vectors & data frames/tibbles, functions, and the tidyverse.\nYour first Quarto document.\n\n\n\n\n\n\n\n\n\n\n\n🌱 Module 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\nIn this module, we explore methods for comparing continuous outcomes between two groups. We’ll cover:\n\nTwo-sample t-test for independent samples\n\nPaired t-test for dependent samples\n\nAssumptions on t-tests and how to assess\nWilcoxon rank-sum test\n\nWilcoxon signed-rank test\n\n\n\n\n\n\n\n\n\n\n🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\nIn this module, we explore methods for comparing continuous outcomes between three or more groups. We’ll cover:\n\nOne-way ANOVA\nTwo-way ANOVA\nAssumptions on ANOVA and how to assess\nPosthoc testing (multiple comparisons)\nProfile plots\n\n\n\n\n\n\n\n\n\n\n🐬 Module 3: Exploring Regression Modeling\n\n\n\n\n\nIn this module, we’ll explore describing the relationship between two continuous variables. We’ll cover:\n\nBivariate correlation\n\nPearson’s\nSpearman’s\n\nSimple linear regression\nMultiple regression\nAssumptions on regression and how to assess\nRegression diagnostics\n\n\n\n\n\n\n\n\n\n\n🐢 Module 4: Exploring Categorical Outcomes\n\n\n\n\n\nIn this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (Elements of Statistics):\n\nOne-sample proportions\nTwo-sample proportions\n\nWe will continue by expanding our knowledge:\n\n\\(\\chi^2\\) goodness-of-fit\n\\(\\chi^2\\) test for independence\nLogistic regression"
+    "text": "Note: this is an abbreviated syllabus. The full syllabus is available through Classmate and/or Canvas.\n\nInstructor Information\n\nDr. Samantha Seals\nOffice: 4/344\n\n\n\nMeeting Times and Location\n\nTR 11:00 am-1:40 pm\n\n11:00 am–12:15 pm: Lecture\n12:30 pm–1:15 pm: Daily practice\n1:15 pm–1:40 pm: Daily quiz\n\nPhysical classroom: 4/406\nZoom classroom: see Canvas or full syllabus for link\n\n\n\nOffice Hours\n\nMonday: 2:00–4:00 pm (Central)\nWednesday: 2:00–4:00 pm (Central)\nOther times by appointment\n\n\n\nGrading and Evaluation\nThe course grade will be determined as follows:\n\nDaily practice (25%): Each meeting day, students will complete an activity using Quarto and R. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nDaily quizzes (10%): Each meeting day, students will complete a timed quiz on Canvas. Time will be given during class for completion.\nProjects (40%): Every module will finish with a project to demonstrate the knowledge gained. These will be like the daily practice, but putting everything in the module together. The resulting .html file should be submitted to the designated dropbox on Canvas by 11:59 pm on the specified date (see Canvas).\nFinal Exam (25%): The final exam will be a timed concepts-based exam. While there may be some calculations needed, you will not be processing raw data. The final exam will be on Canvas on August 7, 2025. All students will have 3 hours to complete the exam.\n\n\n\nLate Policy\nProjects have due dates, however, the dropboxes will not close until the end of the semester. All students are automatically granted “extensions” without question.\nNote that if there is not a submission when I go to grade (after the initial deadline), I will assign a zero (0) and request that you submit the assignment when you are able to. This is only for record keeping purposes. There is no penalty for submitting late and a full grade will be given upon review of your submission.\nExtensions are not available for daily practice, daily quizzes, or the final exam."
   },
   {
-    "objectID": "hyp_test_template.html",
-    "href": "hyp_test_template.html",
-    "title": "STA4173 - Biostatistics - Summer 2025",
-    "section": "",
-    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#introduction-topics",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#introduction-topics",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Introduction: Topics",
-    "text": "Introduction: Topics\n\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nWe will focus on the following scenarios today:\n\nOne-sample mean (\\mu)\nTwo-sample mean, independent data (\\mu_1-\\mu_2)\nTwo-sample mean, dependent data (\\mu_d)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#introduction-data",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#introduction-data",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Introduction: Data",
-    "text": "Introduction: Data\n\nWe are using data from the kingdom of Equestria from My Little Pony.\nMane Six:\n\nTwilight Sparkle (Unicorn \\to Alicorn)\nApplejack (Earth Pony)\nFluttershy (Pegasus)\nPinkie Pie (Earth Pony)\nRainbow Dash (Pegasus)\nRarity (Unicorn)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nPoint estimate: The single value of a statistic that estimates the value of a parameter.\nConfidence interval: A range of plausible values for the parameter based on values observed in the sample.\n\n\n\\text{point estimate} \\pm \\text{margin of error}\n\n\nWhat is the point estimate of:\n\n\\mu\n\\sigma\n\\pi (or p)\n\\mu_1-\\mu_2\n\\pi_1-\\pi_2"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nWe have different intervals based on the level of confidence.\n\nLevel of confidence: The probability that the interval will capture the true parameter value in repeated samples. i.e., the success rate for the method."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nBecause CIs are a range of values, we will use interval notation,\n\n\n(lower bound, upper bound)\n\n\nwhere\n\nlower bound = point estimate – margin of error\nupper bound = point estimate + margin of error\n\nMake sure to state your confidence intervals in numeric order.\n\ni.e., the lower bound must be the smaller number and the upper bound must be the larger number."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: One-Sample Mean",
-    "text": "Confidence Intervals: One-Sample Mean\n(1-\\alpha)100\\% confidence interval for \\mu:\n\n\\bar{x} \\pm t_{\\alpha/2,\\text{ df}}\\frac{s}{\\sqrt{n}}\n\n\nwhere\n\n\\bar{x} is the sample mean of x\nt_{\\alpha/2} has n-1 degrees of freedom\ns is the sample standard deviation of x\nn is the sample size"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: One-Sample Mean (R)",
-    "text": "Confidence Intervals: One-Sample Mean (R)\n\nWe will use the one_mean_CI function from library(ssstats) to find the confidence interval.\nGeneric syntax:\n\n\ndataset_name %&gt;% one_mean_CI(continuous = continuous_variable,\n                             confidence = confidence_level)\n\n\nFor the entered variable (continuous), we will see:\n\nPoint estimate for \\mu\nPoint estimate for \\sigma\nConfidence interval for \\mu at the specified level (confidence)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: One-Sample Mean",
-    "text": "Confidence Intervals: One-Sample Mean\n\nIn the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today’s young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony’s wing‐flap rate (in flaps/minute).\nA sample of our dataset:"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-one-sample-mean-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: One-Sample Mean",
-    "text": "Confidence Intervals: One-Sample Mean\n\nLet’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThus, the 95% CI for \\mu is (49.13, 55.46)."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#statistical-inference-confidence-intervals",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#statistical-inference-confidence-intervals",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Statistical Inference: Confidence Intervals",
-    "text": "Statistical Inference: Confidence Intervals\n\nWe have learned that confidence intervals give a plausible range for an unknown population parameter at a chosen confidence level.\n\ne.g., 95% CI for \\mu; 99% CI for \\pi\n\nWhat if we want to directly answer questions?\n\ne.g., is the average wing-flap rate still 50 flaps/min?\n\nWe can use confidence intervals to answer these questions!\n\nWe will compare the interval to the question.\n\nRecall that the 95% CI for mean wing-flap rate was (49.13, 55.46). Has the standard rate of 50 flaps/min changed?"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#statistical-inference-hypothesis-testing",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#statistical-inference-hypothesis-testing",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Statistical Inference: Hypothesis Testing",
-    "text": "Statistical Inference: Hypothesis Testing\n\nWe can also answer research questions more formally using hypothesis testing.\nAll hypothesis tests have the same components:\n\nHypotheses\nTest Statistic\np-Value\nRejection Region\nConclusion\nInterpretation\n\nThis process uses probability to make a determination, rather than looking at the interval estimate."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nHypothesis testing has several key components.\n\nHypotheses:\n\nNull hypothesis (H_0): A statement of “no different than expected.”\nAlternative hypothesis (H_1 or H_{\\text{A}}): What we are investigating; this represents a change, effect, or difference.\n\nTest Statistic and p-Value:\n\nTest statistic: A single number calculated from the sample, measuring how far the observed data are from what is expected under the null.\np-value: The probability of observing data as (or more) extreme than ours, assuming the null is true."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nHypothesis testing has several key components.\n\nRejection Region:\n\nWe will always use the same rejection region: p &lt; \\alpha.\n\nConclusion and Interpretation:\n\nConclusion: reject or fail to reject the null based on the calculated p-value and rejection region.\nInterpretation: Give context to your results. Interpret in terms of the alternative hypothesis."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nOne sample tests:\n\nTwo-tailed test\n\nH_0: parameter = some value\nH_1: parameter \\ne some value\n\nLeft-tailed test\n\nH_0: parameter \\ge some value\nH_1: parameter &lt; some value\n\nRight-tailed test\n\nH_0: parameter \\le some value\nH_1: parameter &gt; some value"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nAfter stating our hypotheses, we will construct a test statistic.\nThe choice of test statistic depends on:\n\nThe hypotheses being tested.\nAssumptions made about the data.\n\nThe value of the test statistic depends on the sample data.\n\nIf we were to draw a different sample, we would find a different value for the test statistic.\n\nWe will use the test statistic on our way to drawing conclusions about the hypotheses."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-4",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-4",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nAfter constructing test statistics, we will find the corresponding p-value.\n\np-value: the probability of observing what we’ve observed or something more extreme, assuming the null hypothesis is true.\n\nFinding a p-value depends on the distribution being used.\n\nOne-sample mean: t distribution.\nOne-sample proportion: z distribution.\n\nWe will compare the p-value to \\alpha in order to draw conclusions.\n\nReject H_0 if p &lt; \\alpha."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-5",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-5",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nOnce we’ve found the p-value, we can draw a conclusion.\n\nIf p &lt; \\alpha, we reject H_0.\n\nThere is sufficient evidence to suggest that H_1 is true.\n\nIf p \\ge \\alpha, we fail to reject H_0.\n\nThere is not sufficient evidence to suggest that H_1 is true."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-6",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-6",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\nFor all hypothesis tests,\n\nRejection Region: Reject H_0 if p &lt; \\alpha.\nConclusion: [Reject or fail to reject] H_0.\nInterpretation: There [is or is not] sufficient evidence to suggest [alternative hypothesis in words].\n\n\n\n We NEVER accept H_0."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#practical-vs.-statistical-significance",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#practical-vs.-statistical-significance",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Practical vs. Statistical Significance",
-    "text": "Practical vs. Statistical Significance\n\nHypothesis testing depends on sample size.\n\nAs the sample size increases, our p-values decrease necessarily.\nAs p-values decrease, we are more likely to reject the null hypothesis.\n\nThis means that are we rejecting based on sample size and not the size of the effect!\n\n\nWe must ask ourselves if the value we are testing against makes practical sense.\n\nA new weight loss medication where the average amount of weight loss was 1 lb over 6 months.\nA new weight loss medication where the average amount of weight lost was 15 lb over 6 months.\nA new teaching method that raised final exam scores by 2 points.\nA new teaching method that raised final exam scores by 15 points."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nHypotheses: Two Tailed\n\nH_0: \\ \\mu=\\mu_0\nH_1: \\ \\mu \\ne \\mu_0\n\nHypotheses: Left Tailed\n\nH_0: \\ \\mu \\ge \\mu_0\nH_1: \\ \\mu &lt; \\mu_0\n\nHypotheses: Right Tailed\n\nH_0: \\ \\mu \\le \\mu_0\nH_1: \\ \\mu &gt; \\mu_0"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nTest Statistic:\n\n\nt_0 = \\frac{\\bar{x} - \\mu_0}{\\sqrt{\\frac{s^2}{n}} } \\sim t_{\\text{df}},\n\n\nwhere\n\n\\bar{x} is the mean of x\n\\mu_0 is the hypothesized value of \\mu\ns^2 is the variance of x\nn is the sample size\n\\text{df} = n-1"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\np-value: Two Tailed\n\np = 2\\times P\\left[t_{\\text{df}} \\ge |t_0|\\right]\n\np-value: Left Tailed\n\np = P\\left[t_{\\text{df}} \\le t_0\\right]\n\np-value: Right Tailed\n\np = P\\left[t_{\\text{df}} \\ge t_0\\right]"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean (R)",
-    "text": "Hypothesis Testing: One Sample Mean (R)\n\nWe will use the one_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% one_mean_HT(continuous = continuous_variable, \n                             mu = hypothesized_value, \n                             alternative = \"alternative_direction\", \n                             alpha = specified_alpha)\n\n\nFor the entered variable (continuous), we will see:\n\nHypotheses (based on hypothesized_value and alternative)\nTest statistic and p-value\nConclusion"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-4",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-4",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% one_mean_HT(continuous = continuous_variable, \n                             mu = hypothesized_value, \n                             alternative = \"alternative_direction\", \n                             alpha = specified_alpha)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-5",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-5",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\nOur updated code should look like:\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-6",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-6",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nRunning the code,\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-7",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-one-sample-mean-7",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: One Sample Mean",
-    "text": "Hypothesis Testing: One Sample Mean\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#independent-data",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#independent-data",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Independent Data",
-    "text": "Independent Data\n\nIndependent data: Observations in one group (or sample) do not influence or relate to observations in another group.\n\nExamples:\n\nComparing the cruising speeds of a random sample of Pegasi vs. a random sample of Unicorns flying a short course.\nMeasuring friendship lesson quiz scores for a group of Cutie Mark Crusaders vs. a group of Wonderbolts Cadets.\nExamining the graduation rates between Unicorns and Pegasi."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#dependent-data",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#dependent-data",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Dependent Data",
-    "text": "Dependent Data\n\nDependent (paired) data: Each observation in the first sample is paired with exactly one observation in the second sample.\n\nExamples:\n\nStudents’ magic‐proficiency scores before and after Princess Celestia’s advanced spell workshop.\nApplejack’s apple‐yield (in bushels) from Sweet Apple Acres in Spring vs. Fall for the last 10 years.\nComparing the “Wonderbolts Tryouts” performance scores for Spitfire and Skyflare (twins)."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#independent-vs.-dependent-data",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#independent-vs.-dependent-data",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Independent vs. Dependent Data",
-    "text": "Independent vs. Dependent Data\n\nAre the following dependent or independent?\n\nRainbow Dash times two separate groups, Pegasi trainees and Unicorn cadets, on the same 200-meter aerial course.\nTwilight Sparkle measures her own spell‐casting accuracy before and after attending Princess Celestia’s advanced magic workshop.\n\nApplejack records bushel counts from Sweet Apple Acres in spring this year and compares them to bushel counts from Sugarcube’s orchard over the same period.\n\nThe Cutie Mark Crusaders each take a friendship-lesson quiz, and their scores are compared to a completely different group of ponies at the School of Friendship.\n\nFluttershy records the heart rates of the same group of critters before and after she plays soothing music for them."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Independent Means",
-    "text": "Confidence Intervals: Two Independent Means\n(1-\\alpha)100\\% confidence interval for \\mu_1-\\mu_2:\n\n(\\bar{x}_1 - \\bar{x}_2) \\pm t_{\\alpha/2} \\sqrt{\\frac{s_1^2 }{n_1} + \\frac{s_2^2}{n_2}}\n\n\nwhere\n\n(\\bar{x}_1-\\bar{x}_2) is the point estimate for \\mu_1-\\mu_2\n\n\\bar{x}_i is the sample mean for group i\n\nt_{\\alpha/2} has \\min(n_1-1, n_2-1) degrees of freedom\ns_i^2 is the sample variance for group i\nn_i is the sample size of group i"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Independent Means (R)",
-    "text": "Confidence Intervals: Two Independent Means (R)\n\nWe will use the independent_mean_CI function from library(ssstats) to find the confidence interval.\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_mean_CI(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     confidence = confidence_level)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Independent Means",
-    "text": "Confidence Intervals: Two Independent Means\n\nThe Pegasus trainers insist that a healthy Pony munches through 25 apples per day to stay strong and energetic. Looking for differences between those that are above and below target wing-flap rates, a researcher visits the apple stands at Sweet Apple Acres and records the exact number of apples each of the Pegasi in training eats in a typical day.\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\nHow should we change the following code?\n\n\ndataset_name %&gt;% independent_mean_CI(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     confidence = confidence_level)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Independent Means",
-    "text": "Confidence Intervals: Two Independent Means\n\nThe Pegasus trainers insist that a healthy Pony munches through 25 apples per day to stay strong and energetic. Looking for differences between those that are above and below target wing-flap rates, a researcher visits the apple stands at Sweet Apple Acres and records the exact number of apples each of the Pegasi in training eats in a typical day.\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\nOur updated code should look like:\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-independent-means-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Independent Means",
-    "text": "Confidence Intervals: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (8.13, 11.98).\n\nThe pegasi above the target wing-flap rate eat, on average, somewhere between 8 and 12 more apples than those below the target wing-flap rate."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nHypotheses: Two Tailed\n\nH_0: \\ \\mu_1-\\mu_2=\\mu_0\nH_1: \\ \\mu_1-\\mu_2 \\ne \\mu_0\n\nHypotheses: Left Tailed\n\nH_0: \\ \\mu_1-\\mu_2 \\ge \\mu_0\nH_1: \\ \\mu_1-\\mu_2 &lt; \\mu_0\n\nHypotheses: Right Tailed\n\nH_0: \\ \\mu_1-\\mu_2 \\le \\mu_0\nH_1: \\ \\mu_1-\\mu_2 &gt; \\mu_0"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\nTest Statistic:\n\nt_0 = \\frac{(\\bar{x}_1-\\bar{x}_2)-\\mu_0}{{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s^2_2}{n_2}}}}\n\n\nwhere\n\n\\bar{x}_i is the mean for group i\n\\mu_0 is the hypothesized difference\ns_i^2 is the sample variance for group i\nn_i is the sample size of group i\n\n\\text{df} = \\text{min}(n_1-1, n_2-1)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\np-Value:\n\np-value: Two Tailed\n\np = 2\\times P\\left[t_{\\text{df}} \\ge |t_0|\\right]\n\np-value: Left Tailed\n\np = P\\left[t_{\\text{df}} \\le t_0\\right]\n\np-value: Right Tailed\n\np = P\\left[t_{\\text{df}} \\ge t_0\\right]"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means (R)",
-    "text": "Hypothesis Testing: Two Independent Means (R)\n\nWe will use the independent_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_mean_HT(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     mu = hypothesized_value, \n                                     alternative = \"alternative_direction\", \n                                     alpha = specified_alpha)\n\n\nFor the entered variable (continuous), we will see:\n\nHypotheses (based on hypothesized_value and alternative)\nTest statistic and p-value\nConclusion\n\nNote! When looking at the grouping variable, R will subtract in alphabetic/numeric order."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-4",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-4",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% independent_mean_HT(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     mu = hypothesized_value, \n                                     alternative = \"alternative_direction\", \n                                     alpha = specified_alpha)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-5",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-5",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\nOur updated code should look like:\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-6",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-6",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-7",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-independent-means-7",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means: Summary Statistics",
-    "text": "Two Dependent Means: Summary Statistics\n\nWe are now interested in comparing two dependent groups.\nWe assume that the two groups come from the same population and are going to examine the difference,\n\n\nd = y_{i, 1} - y_{i, 2}\n\n\nAfter drawing samples, we have the following,\n\n\\bar{d} estimates \\mu_d,\ns^2_d estimates \\sigma^2_d, and\nn is the sample size."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means: Summary Statistics (R)",
-    "text": "Two Dependent Means: Summary Statistics (R)\n\nWe will use the dependent_mean_median function from library(ssstats) to find the summary statistics for this data.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_mean_median(col1 = first_variable,\n                                       col2 = second_variable)\n\n\nNote that this will compute summary statistics for:\n\nx_d = x_1-x_2\nx_1\nx_2"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means: Summary Statistics",
-    "text": "Two Dependent Means: Summary Statistics\n\nPrincess Celestia has invited two groups of flyers to take part in a brand-new “SkyStride” aerial training camp. Before the camp begins, each pony perches on a floating platform while a team of Wonderbolt engineers use magical sensors to record their baseline wing-flap rate (flaps per second) as they hover in place (pre_training_wfr).\nOver two weeks, trainees attend identical flight drills: precision loops, cloud-weaving obstacle courses, and high-altitude sprints. At camp’s end, each flyer returns to the sensor platforms for post-training measurements (post_training_wfr).\nLet’s find the summary statistics. How should this code be edited?\n\n\ndataset_name %&gt;% dependent_mean_median(col1 = first_variable,\n                                       col2 = second_variable)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means: Summary Statistics",
-    "text": "Two Dependent Means: Summary Statistics\n\nPrincess Celestia has invited two groups of flyers to take part in a brand-new “SkyStride” aerial training camp. Before the camp begins, each pony perches on a floating platform while a team of Wonderbolt engineers use magical sensors to record their baseline wing-flap rate (flaps per second) as they hover in place (pre_training_wfr).\nOver two weeks, trainees attend identical flight drills: precision loops, cloud-weaving obstacle courses, and high-altitude sprints. At camp’s end, each flyer returns to the sensor platforms for post-training measurements (post_training_wfr).\nOur code is as follows:\n\n\nwing_flap %&gt;% dependent_mean_median(col1 = pre_training_wfr, \n                                    col2 = post_training_wfr)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#two-dependent-means-summary-statistics-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Two Dependent Means: Summary Statistics",
-    "text": "Two Dependent Means: Summary Statistics\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_median(col1 = pre_training_wfr, \n                                    col2 = post_training_wfr)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\\mathbf{(1-\\boldsymbol\\alpha)100\\%} confidence interval for \\mathbf{\\boldsymbol\\mu_d}\n \\bar{d} \\pm t_{\\alpha/2} \\frac{s_d}{\\sqrt{n}} \n\nwhere\n\n\\bar{d} = \\text{mean}(x_1-x_2) is the point estimate for \\mu_d = \\mu_1-\\mu_2\nt_{\\alpha/2} has n-1 degrees of freedom\ns_d is the sample standard deviation of the difference\nn is the number of pairs of observations"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means (R)",
-    "text": "Confidence Intervals: Two Dependent Means (R)\n\nWe will use the dependent_mean_CI function from library(ssstats) to find the confidence interval.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_mean_CI(col1 = first_group,\n                                   col2 = second_group,\n                                   confidence = confidence_level)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\nHow should we change the following code?\n\n\ndataset_name %&gt;% dependent_mean_CI(col1 = first_group,\n                                   col2 = second_group,\n                                   confidence = confidence_level)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\nOur updated code should look like:\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (-7.16, 5.33)."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-4",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-4",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\nWhat happens if we flip the order?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-5",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-5",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\nWhat happens if we flip the order?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (-5.33, 7.16)."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-6",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#confidence-intervals-two-dependent-means-6",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Confidence Intervals: Two Dependent Means",
-    "text": "Confidence Intervals: Two Dependent Means\n\nWhen looking at post - pre, the CI was (-7.16, 5.33).\nWhen looking at pre - post, the CI was (-5.33, 7.16).\nWhat is the relationship? \nWhy does the order matter?"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nHypotheses: Two Tailed\n\nH_0: \\ \\mu_d=\\mu_0\nH_1: \\ \\mu_d \\ne \\mu_0\n\nHypotheses: Left Tailed\n\nH_0: \\ \\mu_d \\ge \\mu_0\nH_1: \\ \\mu_d &lt; \\mu_0\n\nHypotheses: Right Tailed\n\nH_0: \\ \\mu_d \\le \\mu_0\nH_1: \\ \\mu_d &gt; \\mu_0\n\nNote! \\mu_d = \\mu_1 - \\mu_2"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\nTest statistic:\n\nt_0 = \\frac{\\bar{d}-\\mu_0}{\\frac{s_d}{\\sqrt{n}}} \\sim t_{\\text{df}}\n\n\nwhere\n\n\\bar{d} = \\text{mean}(x_1-x_2) is the point estimate for \\mu_d = \\mu_1-\\mu_2\n\\mu_0 is the hypothesized difference\ns_d is the sample standard deviation of the difference\nn is the number of pairs of observations\n\\text{df} = n-1"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-2",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-2",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\np-Value:\n\np-value: Two Tailed\n\np = 2\\times P\\left[t_{\\text{df}} \\ge |t_0|\\right]\n\np-value: Left Tailed\n\np = P\\left[t_{\\text{df}} \\le t_0\\right]\n\np-value: Right Tailed\n\np = P\\left[t_{\\text{df}} \\ge t_0\\right]"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-r",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-r",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means (R)",
-    "text": "Hypothesis Testing: Two Dependent Means (R)\n\nWe will use the dependent_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_mean_HT(col1 = first_group,\n                                   col2 = second_group,\n                                   alternative = \"alternative_direction\",\n                                   mu = hypothesized_diff,\n                                   alpha = alpha_level)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-3",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-3",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nWhat is the direction of the test? How do you know? \nWhat is the hypothesized value? How do you know? \nWhat are the corresponding hypotheses?"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-4",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-4",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% dependent_mean_HT(col1 = first_group,\n                                   col2 = second_group,\n                                   alternative = \"alternative_direction\",\n                                   mu = hypothesized_diff,\n                                   alpha = alpha_level)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-5",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-5",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nOur updated code should look like:\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-6",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-6",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-7",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#hypothesis-testing-two-dependent-means-7",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Hypothesis Testing: Two Dependent Means",
-    "text": "Hypothesis Testing: Two Dependent Means\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#wrap-up",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#wrap-up",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Wrap Up",
-    "text": "Wrap Up\n\nToday’s lecture:\n\nStatistical inference basics.\n\nConfidence intervals.\nHypothesis testing.\n\nUsing both CI and HT to answer research questions.\n\nNext class:\n\nAssumptions on t-tests.\nAlternatives to t-tests."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#wrap-up-1",
-    "href": "files/slides/STA4173-Su25-06-19-R-inference-t-tests.html#wrap-up-1",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
-    "section": "Wrap Up",
-    "text": "Wrap Up\n\nDaily activity: the .qmd we worked on during class.\n\nDue date: Monday, June 23, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nAre you in the Discord server?\nDo you have questions for me?\nDo you need my help with anything from Tuesday?"
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html",
-    "href": "files/practice/06-17-summary-practice.html",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "",
-    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type."
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
-    "href": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "",
-    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type."
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
-    "href": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Summaries: Categorical Variables",
-    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\nLet’s use n_pct() to describe friendship index by type."
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html#graphs-box-plots",
-    "href": "files/practice/06-17-summary-practice.html#graphs-box-plots",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Box Plots",
-    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer)."
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html#graphs-histograms",
-    "href": "files/practice/06-17-summary-practice.html#graphs-histograms",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Histograms",
-    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy)."
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
-    "href": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Bar Graphs",
-    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nConstruct a bar graph for the type of pony."
-  },
-  {
-    "objectID": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
-    "href": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Scatterplots",
-    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis."
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "",
-    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "",
-    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Summaries: Categorical Variables",
-    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)\n\n    type      n (pct)\n Alicorn    41 (1.4%)\n   Earth 1678 (58.4%)\n Pegasus  487 (17.0%)\n Unicorn  665 (23.2%)\n\n\nLet’s use n_pct() to describe friendship index by type.\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)\n\n# A tibble: 4 × 5\n  friendship Alicorn  Earth     Pegasus   Unicorn  \n       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1          1 0 (0.0%) 0 (0.0%)  0 (0.0%)  1 (0.2%) \n2          2 0 (0.0%) 5 (0.3%)  1 (0.2%)  1 (0.2%) \n3          3 0 (0.0%) 14 (0.8%) 6 (1.2%)  13 (2.0%)\n4          4 2 (4.9%) 54 (3.2%) 14 (2.9%) 16 (2.4%)"
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Box Plots",
-    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer).\n\n\nmlp_data %&gt;% ggplot(aes(x = tail_shimmer)) +\n  geom_boxplot() +\n  labs(x = \"Tail Shimmer\") +\n  theme_bw() +\n  theme(axis.ticks.y = element_blank(),\n        axis.text.y = element_blank())"
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Histograms",
-    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed)) +\n  geom_histogram(bins = 15, \n                 color = \"#2E7D32\", \n                 fill = \"#4CAF50\") +\n  labs(x = \"Flying Speed\", \n       y = \"Number of Ponies\") +\n  theme_bw() \n\n\n\n\n\n\n\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy).\n\n\nmlp_data %&gt;% ggplot(aes(x = magical_energy)) +\n  geom_histogram(bins = 15, \n                 color = \"#8B6C42\", \n                 fill = \"#F0E9DD\") +\n  labs(x = \"Magical Energy\",\n       y = \"Number of Ponies\") +\n  theme_bw()"
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Bar Graphs",
-    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nmlp_data %&gt;%\n  count(sex) %&gt;%\n  ggplot(aes(x = sex, y = n)) +\n  geom_col() +\n  labs(x = \"Age and Sex of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a bar graph for the type of pony.\n\n\nmlp_data %&gt;%\n  count(type) %&gt;%\n  ggplot(aes(x = type, y = n)) +\n  geom_col() +\n  labs(x = \"Type of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()"
-  },
-  {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Scatterplots",
-    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(y = tail_shimmer, x = magical_energy)) +\n  geom_point(size = 2) +\n  labs(x = \"Magical Energy\",\n       y = \"Tail Shimmer\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed, y = tail_shimmer)) +\n  geom_point(size = 2) +\n  labs(y = \"Tail Shimmer\",\n       x = \"Flying Speed (km/h)\") +\n  theme_bw()"
-  },
-  {
-    "objectID": "files/practice/06-19-inference-practice.html",
-    "href": "files/practice/06-19-inference-practice.html",
+    "objectID": "files/practice/key/06-24-inference-practice-KEY.html",
+    "href": "files/practice/key/06-24-inference-practice-KEY.html",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "",
-    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
+    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
   },
   {
-    "objectID": "files/practice/06-19-inference-practice.html#one-sample-mean",
-    "href": "files/practice/06-19-inference-practice.html#one-sample-mean",
+    "objectID": "files/practice/key/06-24-inference-practice-KEY.html#one-sample-mean",
+    "href": "files/practice/key/06-24-inference-practice-KEY.html#one-sample-mean",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "",
-    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
+    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nwing_flap %&gt;% one_mean_CI(wing_flap_rate)\n\n\n  \n\n\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nwing_flap %&gt;% one_mean_HT(wing_flap_rate,\n                          mu = 50,\n                          alternative = \"two\",\n                          alpha = 0.1) \n\nOne-sample t-test for the population mean:\nNull: H0: μ = 50\nAlternative: H1: μ ≠ 50\nTest statistic: t(24) = 1.497\np-value: p = 0.147\nConclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu = 50\nH_1: \\ \\mu \\ne 50\n\nTest Statistic and p-Value\n\nt_0 = 1.497, p = 0.147\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.147 &gt; 0.10). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min."
   },
   {
-    "objectID": "files/practice/06-19-inference-practice.html#two-independent-means",
-    "href": "files/practice/06-19-inference-practice.html#two-independent-means",
+    "objectID": "files/practice/key/06-24-inference-practice-KEY.html#two-independent-means",
+    "href": "files/practice/key/06-24-inference-practice-KEY.html#two-independent-means",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Two Independent Means",
     "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
   },
   {
-    "objectID": "files/practice/06-19-inference-practice.html#two-dependent-means",
-    "href": "files/practice/06-19-inference-practice.html#two-dependent-means",
+    "objectID": "files/practice/key/06-24-inference-practice-KEY.html#two-dependent-means",
+    "href": "files/practice/key/06-24-inference-practice-KEY.html#two-dependent-means",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Two Dependent Means",
     "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
   },
   {
-    "objectID": "module4.html",
-    "href": "module4.html",
-    "title": "🐢 Module 4: Exploring Categorical Outcomes",
+    "objectID": "files/practice/06-24-inference-practice.html",
+    "href": "files/practice/06-24-inference-practice.html",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "",
-    "text": "Tuesday, July 22, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nOne- and two-sample proportions\nContingency tables\n\n🖥️ Daily practice 🖥️\n\nProportions and contingency tables (due M 07/28)\n\n📃 In-class quiz 📃 \n\nModule 3\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nLogistic regression\n\n🖥️ Daily practice 🖥️\n\nLogistic regression (due M 07/28)\n\n📃 In-class quiz 📃 \n\nProportions\n\n\n\n\n\n\n\n\n\n\nTuesday, July 29, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 4 (due M 08/04)\n\n📃 In-class quiz 📃 \n\nLogistic regression"
+    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
   },
   {
-    "objectID": "get_help.html",
-    "href": "get_help.html",
-    "title": "Looking for help?",
+    "objectID": "files/practice/06-24-inference-practice.html#one-sample-mean",
+    "href": "files/practice/06-24-inference-practice.html#one-sample-mean",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "",
-    "text": "How do I typeset a hypothesis test?\n\nHere is a basic template for typesetting hypothesis tests in Quarto: template.qmd\nRemember to update subscripts when you are editing existing code.\n\nDo you need help with your assignment?\n\nDouble check the slides for necessary code. Note that the headers of slides often match language used in the assignments.\nHave you googled the error message you saw?\nHave you asked your classmates (& Dr. Seals) on Discord? Truly, others have the same question, I promise! Do not be afraid to share a screenshot of your code and any corresponding output or error message.\n\nWhy did I lose points?\n\nPlease check the rubric; I try to give enough feedback for you to determine how to fix your assignment.\nIf clarification is still needed, please do not hesitate to come see me during office hours.\n\nIs there tutoring?\n\nNo, there is no University-provided tutoring.\nHowever, my research students are great resources. Please reach out to me if you are interested in hiring one of my students for tutoring."
+    "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
   },
   {
-    "objectID": "module2.html",
-    "href": "module2.html",
-    "title": "🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups",
-    "section": "",
-    "text": "Tuesday, July 1, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nOne-way ANOVA and posthoc testing\nANOVA assumptions and Kruskal-Wallis\n\n🖥️ Daily practice 🖥️\n\nOne-way ANOVA (due M 07/07)\n\n📃 In-class quiz 📃 \n\nModule 1\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025\n\n\n\n\n\n📝 Lectures 📝\n\nTwo-way ANOVA\n\n🖥️ Daily practice 🖥️\n\nTwo-way ANOVA (due M 07/07)\n\n📃 In-class quiz 📃 \n\nOne-way ANOVA\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025\n\n\n\n\n\n🖥️ Daily practice 🖥️\n\nAssignment 2 (due M 07/14)\n\n📃 In-class quiz 📃 \n\nTwo-way ANOVA"
+    "objectID": "files/practice/06-24-inference-practice.html#two-independent-means",
+    "href": "files/practice/06-24-inference-practice.html#two-independent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Independent Means",
+    "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
+  },
+  {
+    "objectID": "files/practice/06-24-inference-practice.html#two-dependent-means",
+    "href": "files/practice/06-24-inference-practice.html#two-dependent-means",
+    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "section": "Two Dependent Means",
+    "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
   }
 ]

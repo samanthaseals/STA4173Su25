@@ -1,6 +1,6 @@
 ---
 title: "STA2023 Review<br>Confidence Intervals<br>Hypothesis Testing"
-subtitle: "Thursday, June 19, 2025"
+subtitle: "Tuesday, June 24, 2025"
 author: "your name here"
 execute:
   echo: true
@@ -68,9 +68,7 @@ wing_flap <- tibble(pony_names = c("Rainbow Dash", "Soarin", "Spitfire", "Cloudc
 3. Use the wing-flap data to estimate the difference in apple consumption (*apples*) betwen those that are above or below the target rate (*target*). Estimate using a 95% confidence interval.
 
 ```{r}
-wing_flap %>% independent_mean_CI(grouping = target,
-                                  continuous = apples, 
-                                  confidence = 0.95)
+
 ```
 
 - Thus, the 95% CI for $\mu_{\text{above}} - \mu_{\text{below}}$ is (lower_bound, upper_bound).
@@ -79,26 +77,21 @@ wing_flap %>% independent_mean_CI(grouping = target,
 4. Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the $\alpha=0.05$ level.
 
 ```{r}
-wing_flap %>% independent_mean_HT(grouping = target,
-                                  continuous = apples, 
-                                  mu = 5, 
-                                  alternative = "greater", 
-                                  alpha = 0.05)
+
 ```
 
-
 - **Hypotheses:**
-    - $H_0: \ \mu_{\text{above}} - \mu_{\text{below}} \le 5$
-    - $H_1: \ \mu_{\text{above}} - \mu_{\text{below}} > 5$
+    - $H_0: \ $
+    - $H_1: \ $
 
 - **Test Statistic and *p*-Value**
-    - $t_0 = 5.445$, $p < 0.001$
+    - $t_0 = $, $p = $
     
 - **Rejection Region**
-    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    - Reject $H_0$ if $p < \alpha$; $\alpha = $
     
 - **Conclusion and interpretation**
-    - Reject $H_0$ ($p \text{ vs } \alpha \to p < 0.001 < 0.05$). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target.
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math).
 
 ## Two Dependent Means
 
@@ -107,9 +100,7 @@ wing_flap %>% independent_mean_HT(grouping = target,
     - Hint 2: post measurement: *post_training_wfr*, pre measurement: *pre_training_wfr*.
 
 ```{r}
-wing_flap %>% dependent_mean_CI(col1 = post_training_wfr,
-                                col2 = pre_training_wfr,
-                                confidence = 0.99)
+
 ```
 
 - The 99% confidence interval for $\mu_d$ is (lower_bound, upper_bound).
@@ -117,9 +108,7 @@ wing_flap %>% dependent_mean_CI(col1 = post_training_wfr,
 6. What happens if we flip the order of `col1` and `col2`?
 
 ```{r}
-wing_flap %>% dependent_mean_CI(col1 = pre_training_wfr,
-                                col2 = post_training_wfr,
-                                confidence = 0.99)
+
 ```
 
 - The 99% confidence interval for $\mu_d$ is (lower_bound, upper_bound).
@@ -128,20 +117,18 @@ wing_flap %>% dependent_mean_CI(col1 = pre_training_wfr,
 7. Perform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the $\alpha=0.01$ level.
 
 ```{r}
-wing_flap %>% dependent_mean_HT(col1 = post_training_wfr,
-                                col2 = pre_training_wfr,
-                                alpha = 0.01)
+
 ```
 
 - **Hypotheses:**
-    - $H_0: \ \mu_{d} = 0$, where $\mu_d = \mu_{\text{pre}} - \mu_{\text{post}}$
-    - $H_1: \ \mu_d \ne 0$
+    - $H_0: \ $
+    - $H_1: \ $
 
 - **Test Statistic and *p*-Value**
-    - $t_0 = -0.859$, $p = 0.399$
+    - $t_0 = $, $p = $
     
 - **Rejection Region**
-    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.01$
+    - Reject $H_0$ if $p < \alpha$; $\alpha = $
     
 - **Conclusion and interpretation**
-    - Fail to reject $H_0$ ($p \text{ vs } \alpha \to p = 0.399 > 0.05$). There is not sufficient evidence to suggest that training changed wing-flap rates.
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math).

@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -117,39 +88,16 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-modules" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Modules</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
-        <li>
-    <a class="dropdown-item" href="./module0.html">
- <span class="dropdown-text">Module 0: Review &amp; R Foundations</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module1.html">
- <span class="dropdown-text">Module 1: Continuous outcomes: Comparing two groups</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module2.html">
- <span class="dropdown-text">Module 2: Continuous outcomes: Comparing three or more groups</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module3.html">
- <span class="dropdown-text">Module 3: Continuous outcomes: Regression and correlation</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./module4.html">
- <span class="dropdown-text">Module 4: Categorical outcomes</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./files/syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./get_help.html"> 
+    <a class="nav-link" href="./files/get_help.html"> 
 <span class="menu-text">Need Help?</span></a>
   </li>  
 </ul>
@@ -186,139 +134,461 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="📝 Module 0: Review &amp; R Foundations" open="true">
+<section id="module-0-review-r-foundations" class="level3">
+<h3 class="anchored" data-anchor-id="module-0-review-r-foundations"><strong>Module 0: Review &amp; R Foundations</strong></h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, June 17, 2025:" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-📝 Module 0: Review &amp; R Foundations
+Tuesday, June 17, 2025:
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this introductory module, we will review essential concepts from STA2023 (<em>Elements of Statistics</em>) and get set up with the tools used throughout the course. We’ll cover:</p>
 <ul>
-<li>Summary statistics and data visualizations.</li>
-<li>Basics of statistical inference:
+<li>Topics:
 <ul>
-<li>Confidence intervals for one mean,</li>
-<li>Hypothesis testing for one mean.</li>
+<li>Summary statistics</li>
+<li>Data visualization</li>
+<li>Introduction to R</li>
 </ul></li>
-<li>Getting started with R, <a href="https://rstudio.hmcse.uwf.edu">RStudio</a>, and Quarto.
+<li>Slides:
 <ul>
-<li>Basic R syntax: vectors &amp; data frames/tibbles, functions, and the <a href="https://www.tidyverse.org/">tidyverse</a>.</li>
-<li>Your first Quarto document.</li>
+<li>.html: <a href="files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a></li>
+<li>.qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-17-T-summary-visualization.qmd">view code</a></li>
 </ul></li>
+<li>Practice (due M 06/23):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌱 Module 1: Exploring Continuous Outcomes in Two Groups">
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, June 19, 2025:" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🌱 Module 1: Exploring Continuous Outcomes in Two Groups
+Thursday, June 19, 2025:
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this module, we explore methods for comparing continuous outcomes between two groups. We’ll cover:</p>
 <ul>
-<li>Two-sample <em>t</em>-test for independent samples<br>
-</li>
-<li>Paired <em>t</em>-test for dependent samples<br>
-</li>
-<li>Assumptions on <em>t</em>-tests and how to assess</li>
-<li>Wilcoxon rank-sum test<br>
-</li>
-<li>Wilcoxon signed-rank test</li>
+<li><a href="https://nmaahc.si.edu/explore/stories/what-juneteenth">Juneteenth</a> holiday - <em>campus closed</em>.</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, June 24, 2025:" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups
+Tuesday, June 24, 2025:
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this module, we explore methods for comparing continuous outcomes between three or more groups. We’ll cover:</p>
 <ul>
-<li>One-way ANOVA</li>
-<li>Two-way ANOVA</li>
-<li>Assumptions on ANOVA and how to assess</li>
-<li>Posthoc testing (multiple comparisons)</li>
-<li>Profile plots</li>
+<li>Topics:
+<ul>
+<li>Statistical inference:
+<ul>
+<li>Confidence intervals</li>
+<li>Hypothesis testing</li>
+</ul></li>
+<li>One-sample mean</li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a></li>
+<li>.qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a></li>
+</ul></li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐬 Module 3: Exploring Regression Modeling">
+</section>
+<section id="module-1-exploring-continuous-outcomes-in-two-groups" class="level3">
+<h3 class="anchored" data-anchor-id="module-1-exploring-continuous-outcomes-in-two-groups"><strong>Module 1: Exploring Continuous Outcomes in Two Groups</strong></h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, June 24, 2025:" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🐬 Module 3: Exploring Regression Modeling
+Tuesday, June 24, 2025:
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this module, we’ll explore describing the relationship between two continuous variables. We’ll cover:</p>
 <ul>
-<li>Bivariate correlation
+<li>Topics:
 <ul>
-<li>Pearson’s</li>
-<li>Spearman’s</li>
+<li>Two independent means</li>
+<li>Two dependent means</li>
 </ul></li>
-<li>Simple linear regression</li>
-<li>Multiple regression</li>
-<li>Assumptions on regression and how to assess</li>
-<li>Regression diagnostics</li>
+<li>Slides:
+<ul>
+<li>.html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a></li>
+<li>.qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a></li>
+</ul></li>
+<li>Practice (due M 06/30):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐢 Module 4: Exploring Categorical Outcomes">
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, June 26, 2025:" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🐢 Module 4: Exploring Categorical Outcomes
+Thursday, June 26, 2025:
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (<em>Elements of Statistics</em>):</p>
 <ul>
-<li>One-sample proportions</li>
-<li>Two-sample proportions</li>
+<li>Topics:
+<ul>
+<li>t-test assumptions</li>
+<li>two-sample medians
+<ul>
+<li>Wilcoxon rank sum</li>
+<li>Wilcoxon signed rank</li>
+</ul></li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due M 06/30):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
 </ul>
-<p>We will continue by expanding our knowledge:</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, July 1, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tuesday, July 1, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <ul>
-<li><span class="math inline">\(\chi^2\)</span> goodness-of-fit</li>
-<li><span class="math inline">\(\chi^2\)</span> test for independence</li>
-<li>Logistic regression</li>
+<li>Project 1 (due M 07/07): see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="module-2-exploring-continuous-outcomes-in-more-than-two-groups" class="level3">
+<h3 class="anchored" data-anchor-id="module-2-exploring-continuous-outcomes-in-more-than-two-groups"><strong>Module 2: Exploring Continuous Outcomes in More Than Two Groups</strong></h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 3, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Thursday, July 3, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Topics:
+<ul>
+<li>One-way ANOVA
+<ul>
+<li>posthoc testing</li>
+</ul></li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due M 07/07):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, July 8, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tuesday, July 8, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Topics:
+<ul>
+<li>ANOVA assumptions</li>
+<li>Kruskal-Wallis
+<ul>
+<li>posthoc testing</li>
+</ul></li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due M 07/14):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 10, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Thursday, July 10, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Topics:
+<ul>
+<li>Two-way ANOVA
+<ul>
+<li>posthoc testing</li>
+<li>profile plots</li>
+</ul></li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due M 07/14):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, July 15, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tuesday, July 15, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Project 2 (due M 07/21): see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="module-3-exploring-regression-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="module-3-exploring-regression-modeling"><strong>Module 3: Exploring Regression Modeling</strong></h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 17, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Thursday, July 17, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Topics:
+<ul>
+<li>Simple linear regression</li>
+<li>Bivariate correlation</li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due M 07/21):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, July 22, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tuesday, July 22, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Topics:
+<ul>
+<li>Multiple regression</li>
+<li>Regression diagnostics</li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due M 07/28):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 24, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Thursday, July 24, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Project 3 (due W 07/30): see Canvas</li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="module-4-exploring-categorical-outcomes" class="level3">
+<h3 class="anchored" data-anchor-id="module-4-exploring-categorical-outcomes"><strong>Module 4: Exploring Categorical Outcomes</strong></h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, July 29, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tuesday, July 29, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Topics:
+<ul>
+<li>Proportions
+<ul>
+<li>One sample</li>
+<li>Two sample</li>
+<li>More than two samples</li>
+</ul></li>
+<li>Contingency tables</li>
+</ul></li>
+<li>Slides:
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Practice (due F 08/01):
+<ul>
+<li>.html:</li>
+<li>.qmd:</li>
+</ul></li>
+<li>Quiz: see Canvas</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 31, 2025:" open="true">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Thursday, July 31, 2025:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Project 4 (due W 08/06): see Canvas</li>
+<li>Quiz: see Canvas</li>
 </ul>
 </div>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

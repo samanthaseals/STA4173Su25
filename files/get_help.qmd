@@ -1,0 +1,25 @@
+---
+title: "Looking for help?"
+format: html
+---
+
+**How do I typeset a hypothesis test?**
+
+- Here is a basic template for typesetting hypothesis tests in Quarto: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/hyp_test_template.qmd">template.qmd</a>
+- Remember to update subscripts when you are editing existing code.
+
+**Do you need help with your assignment?**
+
+- Double check the slides for necessary code. Note that the headers of slides often match language used in the assignments.
+- Have you googled the error message you saw? 
+- Have you asked your classmates (& Dr. Seals) on Discord? Truly, others have the same question, I promise! Do not be afraid to share a screenshot of your code and any corresponding output or error message.
+
+**Why did I lose points?**
+
+- Please check the rubric; I try to give enough feedback for you to determine how to fix your assignment.
+- If clarification is still needed, please do not hesitate to come see me during office hours.
+
+**Is there tutoring?**
+
+- No, there is no University-provided tutoring. 
+- However, my research students are great resources. Please reach out to me if you are interested in hiring one of my students for tutoring. 
