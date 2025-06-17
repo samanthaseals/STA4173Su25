@@ -56,7 +56,7 @@ library(tidyverse)
 library(gsheet)
 library(DT)
 library(janitor)
-library(sstats)
+library(ssstats)
 mlp_data <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1fgkPVXXmif9sXP1Gg7BEeRfKO3tayn1vvb2ep7eQqjs/edit?gid=0#gid=0")
 datatable(mlp_data,
           options = list(pageLength = 4, # how many obs shown on slide
