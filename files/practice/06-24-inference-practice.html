@@ -8,7 +8,7 @@
 
 <meta name="author" content="your name here">
 
-<title>Practice: Point Estimation &amp; Data Visualization – STA4173 - Biostatistics - Summer 2025</title>
+<title>STA2023 Review Confidence Intervals Hypothesis Testing – STA4173 - Biostatistics - Summer 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -5980,6 +6014,65 @@ window.onload = function() {
 };
 </script>
 
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var head = document.getElementsByTagName("head")[0];
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css";
+      head.appendChild(link);
+
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js";
+      script.async = false;
+      script.addEventListener('load', function() {
+        var mathElements = document.getElementsByClassName("math");
+          var macros = [];
+          for (var i = 0; i < mathElements.length; i++) {
+            var texText = mathElements[i].firstChild;
+            if (mathElements[i].tagName == "SPAN") {
+              window.katex.render(texText.data, mathElements[i], {
+                displayMode: mathElements[i].classList.contains('display'),
+                throwOnError: false,
+                macros: macros,
+                fleqn: false
+              });
+            }
+          }
+      });
+      head.appendChild(script);
+    });
+  </script>
+  
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <style type="text/css">
 
@@ -6088,8 +6181,8 @@ box-shadow: 0 0 0px rgba(0, 0, 0, 0.02);
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Practice: Point Estimation &amp; Data Visualization</h1>
-<p class="subtitle lead">Tuesday, June 17, 2025</p>
+<h1 class="title">STA2023 Review<br>Confidence Intervals<br>Hypothesis Testing</h1>
+<p class="subtitle lead">Thursday, June 19, 2025</p>
 </div>
 
 
@@ -6112,46 +6205,165 @@ box-shadow: 0 0 0px rgba(0, 0, 0, 0.02);
 </header>
 
 
-<section id="summaries-continuous-variables" class="level2">
-<h2 class="anchored" data-anchor-id="summaries-continuous-variables">Summaries: Continuous Variables</h2>
-<p>Let’s use <code>mean_median()</code> to summarize the continuous variables in the MLP dataset.</p>
-<p>Let’s use <code>mean_median()</code> to summarize the continuous variables in the MLP dataset by pony type.</p>
+<section id="one-sample-mean" class="level2">
+<h2 class="anchored" data-anchor-id="one-sample-mean">One-Sample Mean</h2>
+<ol type="1">
+<li>Let’s find a 95% confidence interval for wing-flap rates.</li>
+</ol>
+<ul>
+<li>The 95% CI for <span class="math inline">\mu</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="2" type="1">
+<li>Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the <span class="math inline">\alpha=0.10</span> level.</li>
+</ol>
+<ul>
+<li><strong>Hypotheses:</strong>
+<ul>
+<li><span class="math inline">H_0: \ </span></li>
+<li><span class="math inline">H_1: \ </span></li>
+</ul></li>
+<li><strong>Test Statistic and <em>p</em>-Value</strong>
+<ul>
+<li>$t_0 = $, $p = $</li>
+</ul></li>
+<li><strong>Rejection Region</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; $= $</li>
+</ul></li>
+<li><strong>Conclusion and interpretation</strong>
+<ul>
+<li>Reject or Fail to reject <span class="math inline">H_0</span> ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math).</li>
+</ul></li>
+</ul>
 </section>
-<section id="summaries-categorical-variables" class="level2">
-<h2 class="anchored" data-anchor-id="summaries-categorical-variables">Summaries: Categorical Variables</h2>
-<p>Let’s use <code>n_pct()</code> to summarize the types of ponies in the dataset.</p>
-<p>Let’s use <code>n_pct()</code> to describe friendship index by type.</p>
+<section id="two-independent-means" class="level2">
+<h2 class="anchored" data-anchor-id="two-independent-means">Two Independent Means</h2>
+<ol start="3" type="1">
+<li>Use the wing-flap data to estimate the difference in apple consumption (<em>apples</em>) betwen those that are above or below the target rate (<em>target</em>). Estimate using a 95% confidence interval.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_CI</span>(<span class="at">grouping =</span> target,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">confidence =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556
+The 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)</code></pre>
+</div>
+</div>
+<ul>
+<li>Thus, the 95% CI for <span class="math inline">\mu_{\text{above}} - \mu_{\text{below}}</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="4" type="1">
+<li>Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the <span class="math inline">\alpha=0.05</span> level.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_HT</span>(<span class="at">grouping =</span> target,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">mu =</span> <span class="dv">5</span>, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alternative =</span> <span class="st">&quot;greater&quot;</span>, </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alpha =</span> <span class="fl">0.05</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Two-sample t-test for two independent means and equal variance:
+Null: H₀: μ₁ − μ₂ = 5
+Alternative: H₁: μ₁ − μ₂ &gt; 5
+Test statistic: t(23) = 5.445
+p-value: p &lt; 0.001
+Conclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Hypotheses:</strong>
+<ul>
+<li><span class="math inline">H_0: \ \mu_{\text{above}} - \mu_{\text{below}} \le 5</span></li>
+<li><span class="math inline">H_1: \ \mu_{\text{above}} - \mu_{\text{below}} &gt; 5</span></li>
+</ul></li>
+<li><strong>Test Statistic and <em>p</em>-Value</strong>
+<ul>
+<li><span class="math inline">t_0 = 5.445</span>, <span class="math inline">p &lt; 0.001</span></li>
+</ul></li>
+<li><strong>Rejection Region</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; <span class="math inline">\alpha = 0.05</span></li>
+</ul></li>
+<li><strong>Conclusion and interpretation</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> (<span class="math inline">p \text{ vs } \alpha \to p &lt; 0.001 &lt; 0.05</span>). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target.</li>
+</ul></li>
+</ul>
 </section>
-<section id="graphs-box-plots" class="level2">
-<h2 class="anchored" data-anchor-id="graphs-box-plots">Graphs: Box Plots</h2>
-<p>Construct a box plot for the tail shimmer of the ponies (<em>tail_shimmer</em>).</p>
-<center>
-</center>
-</section>
-<section id="graphs-histograms" class="level2">
-<h2 class="anchored" data-anchor-id="graphs-histograms">Graphs: Histograms</h2>
-<p>Construct a histogram for the flying speed of ponies (<em>flying_speed</em>).</p>
-<center>
-</center>
-<p>Construct a histogram for the magical energy of ponies (<em>magical_energy</em>).</p>
-<center>
-</center></section>
-<section id="graphs-bar-graphs" class="level2">
-<h2 class="anchored" data-anchor-id="graphs-bar-graphs">Graphs: Bar Graphs</h2>
-<p>Construct a bar graph for the combined age and sex of ponies.</p>
-<center>
-</center>
-<p>Construct a bar graph for the type of pony.</p>
-<center>
-</center></section>
-<section id="graphs-scatterplots" class="level2">
-<h2 class="anchored" data-anchor-id="graphs-scatterplots">Graphs: Scatterplots</h2>
-<p>Construct a scatterplot with magical energy (<em>magical_energy</em>) on the <em>x</em>-axis and tail shimmer (<em>tail_shimmer</em>) on the <em>y</em>-axis.</p>
-<center>
-</center>
-<p>Construct a scatterplot with magical energy (<em>magical_energy</em>) on the <em>x</em>-axis and flying speed (<em>flying_speed</em>) on the <em>y</em>-axis.</p>
-<center>
-</center>
+<section id="two-dependent-means" class="level2">
+<h2 class="anchored" data-anchor-id="two-dependent-means">Two Dependent Means</h2>
+<ol start="5" type="1">
+<li>We now want to find the 99% CI for the average improvement in wing-flap rate.
+<ul>
+<li>Hint: improvement can be measured with <em>post</em> - <em>pre</em>.</li>
+<li>Hint 2: post measurement: <em>post_training_wfr</em>, pre measurement: <em>pre_training_wfr</em>.</li>
+</ul></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> post_training_wfr,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The point estimate for the mean difference is x̄ = -1.712.
+The point estimate for the standard deviation of differences is s = 9.9701.
+The 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).</code></pre>
+</div>
+</div>
+<ul>
+<li>The 99% confidence interval for <span class="math inline">\mu_d</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="6" type="1">
+<li>What happens if we flip the order of <code>col1</code> and <code>col2</code>?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> pre_training_wfr,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> post_training_wfr,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The point estimate for the mean difference is x̄ = 1.712.
+The point estimate for the standard deviation of differences is s = 9.9701.
+The 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).</code></pre>
+</div>
+</div>
+<ul>
+<li>The 99% confidence interval for <span class="math inline">\mu_d</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="7" type="1">
+<li>Perform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the <span class="math inline">\alpha=0.01</span> level.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_HT</span>(<span class="at">col1 =</span> post_training_wfr,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">alpha =</span> <span class="fl">0.01</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Paired t-test for the mean of differences:
+Null: H₀: μ_d = 0
+Alternative: H₁: μ_d ≠ 0
+Test statistic: t(24) = -0.859
+p-value: p = 0.399
+Conclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Hypotheses:</strong>
+<ul>
+<li><span class="math inline">H_0: \ \mu_{d} = 0</span>, where <span class="math inline">\mu_d = \mu_{\text{pre}} - \mu_{\text{post}}</span></li>
+<li><span class="math inline">H_1: \ \mu_d \ne 0</span></li>
+</ul></li>
+<li><strong>Test Statistic and <em>p</em>-Value</strong>
+<ul>
+<li><span class="math inline">t_0 = -0.859</span>, <span class="math inline">p = 0.399</span></li>
+</ul></li>
+<li><strong>Rejection Region</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; <span class="math inline">\alpha = 0.01</span></li>
+</ul></li>
+<li><strong>Conclusion and interpretation</strong>
+<ul>
+<li>Fail to reject <span class="math inline">H_0</span> (<span class="math inline">p \text{ vs } \alpha \to p = 0.399 &gt; 0.05</span>). There is not sufficient evidence to suggest that training changed wing-flap rates.</li>
+</ul></li>
+</ul>
 
 
 </section>
