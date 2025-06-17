@@ -249,53 +249,29 @@ window.Quarto = {
 <ol type="1">
 <li>Let’s find a 95% confidence interval for wing-flap rates.</li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">one_mean_CI</span>(wing_flap_rate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["mean"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["sd"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["conf_level"],"name":[3],"type":["chr"],"align":["left"]},{"label":["ci_lower"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["ci_upper"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"52.296","2":"7.6671","3":"95%","4":"49.1312","5":"55.4608"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-</div>
-</div>
 <ul>
 <li>The 95% CI for <span class="math inline">\mu</span> is (lower_bound, upper_bound).</li>
 </ul>
 <ol start="2" type="1">
 <li>Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the <span class="math inline">\alpha=0.10</span> level.</li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">one_mean_HT</span>(wing_flap_rate,</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">mu =</span> <span class="dv">50</span>,</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">alternative =</span> <span class="st">"two"</span>,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">alpha =</span> <span class="fl">0.1</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>One-sample t-test for the population mean:
-Null: H0: μ = 50
-Alternative: H1: μ ≠ 50
-Test statistic: t(24) = 1.497
-p-value: p = 0.147
-Conclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)</code></pre>
-</div>
-</div>
 <ul>
 <li><strong>Hypotheses:</strong>
 <ul>
-<li><span class="math inline">H_0: \ \mu = 50</span></li>
-<li><span class="math inline">H_1: \ \mu \ne 50</span></li>
+<li><span class="math inline">H_0: \ </span></li>
+<li><span class="math inline">H_1: \ </span></li>
 </ul></li>
 <li><strong>Test Statistic and <em>p</em>-Value</strong>
 <ul>
-<li><span class="math inline">t_0 = 1.497</span>, <span class="math inline">p = 0.147</span></li>
+<li>$t_0 = $, $p = $</li>
 </ul></li>
 <li><strong>Rejection Region</strong>
 <ul>
-<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; <span class="math inline">\alpha = 0.10</span></li>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; $= $</li>
 </ul></li>
 <li><strong>Conclusion and interpretation</strong>
 <ul>
-<li>Fail to reject <span class="math inline">H_0</span> (<span class="math inline">p \text{ vs } \alpha \to 0.147 &gt; 0.10</span>). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min.</li>
+<li>Reject or Fail to reject <span class="math inline">H_0</span> ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math).</li>
 </ul></li>
 </ul>
 </section>
@@ -305,9 +281,9 @@ Conclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)</code><
 <li>Use the wing-flap data to estimate the difference in apple consumption (<em>apples</em>) betwen those that are above or below the target rate (<em>target</em>). Estimate using a 95% confidence interval.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_CI</span>(<span class="at">grouping =</span> target,</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">confidence =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_CI</span>(<span class="at">grouping =</span> target,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">confidence =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>The point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556
 The 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)</code></pre>
@@ -320,11 +296,11 @@ The 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)</code></pre
 <li>Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the <span class="math inline">\alpha=0.05</span> level.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_HT</span>(<span class="at">grouping =</span> target,</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">mu =</span> <span class="dv">5</span>, </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alternative =</span> <span class="st">"greater"</span>, </span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alpha =</span> <span class="fl">0.05</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_HT</span>(<span class="at">grouping =</span> target,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">mu =</span> <span class="dv">5</span>, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alternative =</span> <span class="st">"greater"</span>, </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alpha =</span> <span class="fl">0.05</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Two-sample t-test for two independent means and equal variance:
 Null: H₀: μ₁ − μ₂ = 5
@@ -364,9 +340,9 @@ Conclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)</code></p
 </ul></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> post_training_wfr,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> post_training_wfr,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>The point estimate for the mean difference is x̄ = -1.712.
 The point estimate for the standard deviation of differences is s = 9.9701.
@@ -380,9 +356,9 @@ The 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).</
 <li>What happens if we flip the order of <code>col1</code> and <code>col2</code>?</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> pre_training_wfr,</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> post_training_wfr,</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> pre_training_wfr,</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> post_training_wfr,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>The point estimate for the mean difference is x̄ = 1.712.
 The point estimate for the standard deviation of differences is s = 9.9701.
@@ -396,9 +372,9 @@ The 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).</
 <li>Perform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the <span class="math inline">\alpha=0.01</span> level.</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_HT</span>(<span class="at">col1 =</span> post_training_wfr,</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">alpha =</span> <span class="fl">0.01</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_HT</span>(<span class="at">col1 =</span> post_training_wfr,</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">alpha =</span> <span class="fl">0.01</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Paired t-test for the mean of differences:
 Null: H₀: μ_d = 0
