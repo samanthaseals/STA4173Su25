@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STA4173 - Biostatistics - Summer 2025</title>
+<title>🐬 Module 3: Exploring Regression Modeling – STA4173 - Biostatistics - Summer 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -169,7 +140,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">STA4173 - Biostatistics - Summer 2025</h1>
+<h1 class="title">🐬 Module 3: Exploring Regression Modeling</h1>
 </div>
 
 
@@ -186,133 +157,80 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="📝 Module 0: Review &amp; R Foundations" open="true">
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 10, 2025" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-📝 Module 0: Review &amp; R Foundations
+Thursday, July 10, 2025
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this introductory module, we will review essential concepts from STA2023 (<em>Elements of Statistics</em>) and get set up with the tools used throughout the course. We’ll cover:</p>
+<p><strong>📝 Lectures 📝</strong></p>
 <ul>
-<li>Summary statistics and data visualizations.</li>
-<li>Basics of statistical inference:
+<li>Simple linear regression</li>
+<li>Correlation</li>
+</ul>
+<p><strong>🖥️ Daily practice 🖥️</strong></p>
 <ul>
-<li>Confidence intervals for one mean,</li>
-<li>Hypothesis testing for one mean.</li>
-</ul></li>
-<li>Getting started with R, <a href="https://rstudio.hmcse.uwf.edu">RStudio</a>, and Quarto.
+<li>Simple linear regression and correlation (due M 07/14)</li>
+</ul>
+<p><strong>📃 In-class quiz 📃 </strong></p>
 <ul>
-<li>Basic R syntax: vectors &amp; data frames/tibbles, functions, and the <a href="https://www.tidyverse.org/">tidyverse</a>.</li>
-<li>Your first Quarto document.</li>
-</ul></li>
+<li>Module 2</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌱 Module 1: Exploring Continuous Outcomes in Two Groups">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tuesday, July 15, 2025" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🌱 Module 1: Exploring Continuous Outcomes in Two Groups
+Tuesday, July 15, 2025
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this module, we explore methods for comparing continuous outcomes between two groups. We’ll cover:</p>
+<p><strong>📝 Lectures 📝</strong></p>
 <ul>
-<li>Two-sample <em>t</em>-test for independent samples<br>
-</li>
-<li>Paired <em>t</em>-test for dependent samples<br>
-</li>
-<li>Assumptions on <em>t</em>-tests and how to assess</li>
-<li>Wilcoxon rank-sum test<br>
-</li>
-<li>Wilcoxon signed-rank test</li>
+<li>Multiple regression</li>
+</ul>
+<p><strong>🖥️ Daily practice 🖥️</strong></p>
+<ul>
+<li>Multiple regression (due M 07/21)</li>
+</ul>
+<p><strong>📃 In-class quiz 📃 </strong></p>
+<ul>
+<li>Simple linear regression</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups">
+<div class="callout callout-style-default callout-tip callout-titled" title="Thursday, July 17, 2025" open="true">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups
+Thursday, July 17, 2025
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>In this module, we explore methods for comparing continuous outcomes between three or more groups. We’ll cover:</p>
+<p><strong>🖥️ Daily practice 🖥️</strong></p>
 <ul>
-<li>One-way ANOVA</li>
-<li>Two-way ANOVA</li>
-<li>Assumptions on ANOVA and how to assess</li>
-<li>Posthoc testing (multiple comparisons)</li>
-<li>Profile plots</li>
+<li>Assignment 3 (due W 07/23)</li>
 </ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐬 Module 3: Exploring Regression Modeling">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🐬 Module 3: Exploring Regression Modeling
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this module, we’ll explore describing the relationship between two continuous variables. We’ll cover:</p>
+<p><strong>📃 In-class quiz 📃 </strong></p>
 <ul>
-<li>Bivariate correlation
-<ul>
-<li>Pearson’s</li>
-<li>Spearman’s</li>
-</ul></li>
-<li>Simple linear regression</li>
 <li>Multiple regression</li>
-<li>Assumptions on regression and how to assess</li>
-<li>Regression diagnostics</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐢 Module 4: Exploring Categorical Outcomes">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🐢 Module 4: Exploring Categorical Outcomes
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (<em>Elements of Statistics</em>):</p>
-<ul>
-<li>One-sample proportions</li>
-<li>Two-sample proportions</li>
-</ul>
-<p>We will continue by expanding our knowledge:</p>
-<ul>
-<li><span class="math inline">\(\chi^2\)</span> goodness-of-fit</li>
-<li><span class="math inline">\(\chi^2\)</span> test for independence</li>
-<li>Logistic regression</li>
 </ul>
 </div>
 </div>

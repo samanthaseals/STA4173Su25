@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="your name here">
 
-<title>STA4173 - Biostatistics - Summer 2025</title>
+<title>STA2023 Review Confidence Intervals Hypothesis Testing – STA4173 - Biostatistics - Summer 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +21,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-530bf8e59df25186f8bffdc63bad3503.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-530bf8e59df25186f8bffdc63bad3503.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,9 +101,25 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -97,7 +148,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -107,7 +158,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">STA4173 - Biostatistics - Summer 2025</span>
     </a>
   </div>
@@ -123,33 +174,33 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
         <li>
-    <a class="dropdown-item" href="./module0.html">
+    <a class="dropdown-item" href="../../module0.html">
  <span class="dropdown-text">Module 0: Review &amp; R Foundations</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module1.html">
+    <a class="dropdown-item" href="../../module1.html">
  <span class="dropdown-text">Module 1: Continuous outcomes: Comparing two groups</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module2.html">
+    <a class="dropdown-item" href="../../module2.html">
  <span class="dropdown-text">Module 2: Continuous outcomes: Comparing three or more groups</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module3.html">
+    <a class="dropdown-item" href="../../module3.html">
  <span class="dropdown-text">Module 3: Continuous outcomes: Regression and correlation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./module4.html">
+    <a class="dropdown-item" href="../../module4.html">
  <span class="dropdown-text">Module 4: Categorical outcomes</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./get_help.html"> 
+    <a class="nav-link" href="../../get_help.html"> 
 <span class="menu-text">Need Help?</span></a>
   </li>  
 </ul>
@@ -169,13 +220,20 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">STA4173 - Biostatistics - Summer 2025</h1>
+<h1 class="title">STA2023 Review<br>Confidence Intervals<br>Hypothesis Testing</h1>
+<p class="subtitle lead">Thursday, June 19, 2025</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>your name here </p>
+          </div>
+  </div>
     
   
     
@@ -186,139 +244,192 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled" title="📝 Module 0: Review &amp; R Foundations" open="true">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="one-sample-mean" class="level2">
+<h2 class="anchored" data-anchor-id="one-sample-mean">One-Sample Mean</h2>
+<ol type="1">
+<li>Let’s find a 95% confidence interval for wing-flap rates.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">one_mean_CI</span>(wing_flap_rate)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["mean"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["sd"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["conf_level"],"name":[3],"type":["chr"],"align":["left"]},{"label":["ci_lower"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["ci_upper"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"52.296","2":"7.6671","3":"95%","4":"49.1312","5":"55.4608"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
 </div>
-<div class="callout-title-container flex-fill">
-📝 Module 0: Review &amp; R Foundations
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this introductory module, we will review essential concepts from STA2023 (<em>Elements of Statistics</em>) and get set up with the tools used throughout the course. We’ll cover:</p>
 <ul>
-<li>Summary statistics and data visualizations.</li>
-<li>Basics of statistical inference:
+<li>The 95% CI for <span class="math inline">\mu</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="2" type="1">
+<li>Perform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the <span class="math inline">\alpha=0.10</span> level.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">one_mean_HT</span>(wing_flap_rate,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">mu =</span> <span class="dv">50</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                          <span class="at">alternative =</span> <span class="st">"two"</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">alpha =</span> <span class="fl">0.1</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>One-sample t-test for the population mean:
+Null: H0: μ = 50
+Alternative: H1: μ ≠ 50
+Test statistic: t(24) = 1.497
+p-value: p = 0.147
+Conclusion: Fail to reject the null hypothesis (p = 0.1473 ≥ α = 0.1)</code></pre>
+</div>
+</div>
 <ul>
-<li>Confidence intervals for one mean,</li>
-<li>Hypothesis testing for one mean.</li>
+<li><strong>Hypotheses:</strong>
+<ul>
+<li><span class="math inline">H_0: \ \mu = 50</span></li>
+<li><span class="math inline">H_1: \ \mu \ne 50</span></li>
 </ul></li>
-<li>Getting started with R, <a href="https://rstudio.hmcse.uwf.edu">RStudio</a>, and Quarto.
+<li><strong>Test Statistic and <em>p</em>-Value</strong>
 <ul>
-<li>Basic R syntax: vectors &amp; data frames/tibbles, functions, and the <a href="https://www.tidyverse.org/">tidyverse</a>.</li>
-<li>Your first Quarto document.</li>
+<li><span class="math inline">t_0 = 1.497</span>, <span class="math inline">p = 0.147</span></li>
+</ul></li>
+<li><strong>Rejection Region</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; <span class="math inline">\alpha = 0.10</span></li>
+</ul></li>
+<li><strong>Conclusion and interpretation</strong>
+<ul>
+<li>Fail to reject <span class="math inline">H_0</span> (<span class="math inline">p \text{ vs } \alpha \to 0.147 &gt; 0.10</span>). There is not sufficient evidence to suggest that the average wing-flap rate has changed from the historical value of 50 flaps/min.</li>
 </ul></li>
 </ul>
+</section>
+<section id="two-independent-means" class="level2">
+<h2 class="anchored" data-anchor-id="two-independent-means">Two Independent Means</h2>
+<ol start="3" type="1">
+<li>Use the wing-flap data to estimate the difference in apple consumption (<em>apples</em>) betwen those that are above or below the target rate (<em>target</em>). Estimate using a 95% confidence interval.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_CI</span>(<span class="at">grouping =</span> target,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">confidence =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556
+The 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)</code></pre>
 </div>
 </div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🌱 Module 1: Exploring Continuous Outcomes in Two Groups">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🌱 Module 1: Exploring Continuous Outcomes in Two Groups
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this module, we explore methods for comparing continuous outcomes between two groups. We’ll cover:</p>
 <ul>
-<li>Two-sample <em>t</em>-test for independent samples<br>
-</li>
-<li>Paired <em>t</em>-test for dependent samples<br>
-</li>
-<li>Assumptions on <em>t</em>-tests and how to assess</li>
-<li>Wilcoxon rank-sum test<br>
-</li>
-<li>Wilcoxon signed-rank test</li>
+<li>Thus, the 95% CI for <span class="math inline">\mu_{\text{above}} - \mu_{\text{below}}</span> is (lower_bound, upper_bound).</li>
 </ul>
+<ol start="4" type="1">
+<li>Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the <span class="math inline">\alpha=0.05</span> level.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">independent_mean_HT</span>(<span class="at">grouping =</span> target,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">continuous =</span> apples, </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">mu =</span> <span class="dv">5</span>, </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alternative =</span> <span class="st">"greater"</span>, </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">alpha =</span> <span class="fl">0.05</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Two-sample t-test for two independent means and equal variance:
+Null: H₀: μ₁ − μ₂ = 5
+Alternative: H₁: μ₁ − μ₂ &gt; 5
+Test statistic: t(23) = 5.445
+p-value: p &lt; 0.001
+Conclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)</code></pre>
 </div>
 </div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🐚 Module 2: Exploring Continuous Outcomes in More Than Two Groups
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this module, we explore methods for comparing continuous outcomes between three or more groups. We’ll cover:</p>
 <ul>
-<li>One-way ANOVA</li>
-<li>Two-way ANOVA</li>
-<li>Assumptions on ANOVA and how to assess</li>
-<li>Posthoc testing (multiple comparisons)</li>
-<li>Profile plots</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐬 Module 3: Exploring Regression Modeling">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🐬 Module 3: Exploring Regression Modeling
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this module, we’ll explore describing the relationship between two continuous variables. We’ll cover:</p>
+<li><strong>Hypotheses:</strong>
 <ul>
-<li>Bivariate correlation
-<ul>
-<li>Pearson’s</li>
-<li>Spearman’s</li>
+<li><span class="math inline">H_0: \ \mu_{\text{above}} - \mu_{\text{below}} \le 5</span></li>
+<li><span class="math inline">H_1: \ \mu_{\text{above}} - \mu_{\text{below}} &gt; 5</span></li>
 </ul></li>
-<li>Simple linear regression</li>
-<li>Multiple regression</li>
-<li>Assumptions on regression and how to assess</li>
-<li>Regression diagnostics</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="🐢 Module 4: Exploring Categorical Outcomes">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-🐢 Module 4: Exploring Categorical Outcomes
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>In this module, we will begin exploring categorical outcomes. We will begin by reviewing analyses learned in STA2023 (<em>Elements of Statistics</em>):</p>
+<li><strong>Test Statistic and <em>p</em>-Value</strong>
 <ul>
-<li>One-sample proportions</li>
-<li>Two-sample proportions</li>
-</ul>
-<p>We will continue by expanding our knowledge:</p>
+<li><span class="math inline">t_0 = 5.445</span>, <span class="math inline">p &lt; 0.001</span></li>
+</ul></li>
+<li><strong>Rejection Region</strong>
 <ul>
-<li><span class="math inline">\(\chi^2\)</span> goodness-of-fit</li>
-<li><span class="math inline">\(\chi^2\)</span> test for independence</li>
-<li>Logistic regression</li>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; <span class="math inline">\alpha = 0.05</span></li>
+</ul></li>
+<li><strong>Conclusion and interpretation</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> (<span class="math inline">p \text{ vs } \alpha \to p &lt; 0.001 &lt; 0.05</span>). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target.</li>
+</ul></li>
 </ul>
+</section>
+<section id="two-dependent-means" class="level2">
+<h2 class="anchored" data-anchor-id="two-dependent-means">Two Dependent Means</h2>
+<ol start="5" type="1">
+<li>We now want to find the 99% CI for the average improvement in wing-flap rate.
+<ul>
+<li>Hint: improvement can be measured with <em>post</em> - <em>pre</em>.</li>
+<li>Hint 2: post measurement: <em>post_training_wfr</em>, pre measurement: <em>pre_training_wfr</em>.</li>
+</ul></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> post_training_wfr,</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The point estimate for the mean difference is x̄ = -1.712.
+The point estimate for the standard deviation of differences is s = 9.9701.
+The 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).</code></pre>
 </div>
 </div>
+<ul>
+<li>The 99% confidence interval for <span class="math inline">\mu_d</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="6" type="1">
+<li>What happens if we flip the order of <code>col1</code> and <code>col2</code>?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_CI</span>(<span class="at">col1 =</span> pre_training_wfr,</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> post_training_wfr,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">confidence =</span> <span class="fl">0.99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The point estimate for the mean difference is x̄ = 1.712.
+The point estimate for the standard deviation of differences is s = 9.9701.
+The 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).</code></pre>
 </div>
+</div>
+<ul>
+<li>The 99% confidence interval for <span class="math inline">\mu_d</span> is (lower_bound, upper_bound).</li>
+</ul>
+<ol start="7" type="1">
+<li>Perform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the <span class="math inline">\alpha=0.01</span> level.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>wing_flap <span class="sc">%&gt;%</span> <span class="fu">dependent_mean_HT</span>(<span class="at">col1 =</span> post_training_wfr,</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">col2 =</span> pre_training_wfr,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                                <span class="at">alpha =</span> <span class="fl">0.01</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Paired t-test for the mean of differences:
+Null: H₀: μ_d = 0
+Alternative: H₁: μ_d ≠ 0
+Test statistic: t(24) = -0.859
+p-value: p = 0.399
+Conclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Hypotheses:</strong>
+<ul>
+<li><span class="math inline">H_0: \ \mu_{d} = 0</span>, where <span class="math inline">\mu_d = \mu_{\text{pre}} - \mu_{\text{post}}</span></li>
+<li><span class="math inline">H_1: \ \mu_d \ne 0</span></li>
+</ul></li>
+<li><strong>Test Statistic and <em>p</em>-Value</strong>
+<ul>
+<li><span class="math inline">t_0 = -0.859</span>, <span class="math inline">p = 0.399</span></li>
+</ul></li>
+<li><strong>Rejection Region</strong>
+<ul>
+<li>Reject <span class="math inline">H_0</span> if <span class="math inline">p &lt; \alpha</span>; <span class="math inline">\alpha = 0.01</span></li>
+</ul></li>
+<li><strong>Conclusion and interpretation</strong>
+<ul>
+<li>Fail to reject <span class="math inline">H_0</span> (<span class="math inline">p \text{ vs } \alpha \to p = 0.399 &gt; 0.05</span>). There is not sufficient evidence to suggest that training changed wing-flap rates.</li>
+</ul></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
