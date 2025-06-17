@@ -5,7 +5,7 @@ website:
   title: "STA4173 - Biostatistics - Summer 2025"
   navbar:
     left:
-      - href: index.qmd
+      - href: files/schedule.qmd
         text: Schedule
       - href: files/syllabus.qmd
         text: Syllabus

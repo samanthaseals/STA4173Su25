@@ -1,202 +1,30 @@
 ---
-title: "STA4173 - Biostatistics - Summer 2025"
+title: ""
 format: html
 ---
 
-### **Module 0: Review & R Foundations**
+# STA4173 Biostatistics Summer 2025
 
-::: {.callout-tip title="Tuesday, June 17, 2025:" collapse="true" open="true"}
+Welcome to STA4173 - Biostatistics for the Summer 2025 semester! This course
 
-- Topics:
-    - Summary statistics 
-    - Data visualization
-    - Introduction to R
-- Slides:
-    - .html: <a href="files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a>
-    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-17-T-summary-visualization.qmd">view code</a>
-- Practice (due M 06/23):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas
+- is an 8-week <u>synchronous</u> (live) course with students both on campus and on Zoom.
+- is a senior-level second course in applied statistics. 
+- has been designed for STEM majors, not solely those majoring in mathematics and/or minoring in statistics.
 
-:::
+Housekeeping:
 
-::: {.callout-tip title="Thursday, June 19, 2025:" collapse="true" open="true"}
+- Please join the Discord server (link on Canvas and in syllabus).
+    - It is expected that students will engage on Discord while learning the course material.
+- Please enter class with an open mind and willingness to learn.
+- You may join Zoom for office hours by *scheduling an appointment* with me on Navigate.
+- There are no formal tests during the semester. Instead, you will complete projects to demonstrate your understanding.
+- There *is* a final exam at the end of the semester.
+    - I will not ask you to provide code in a timed environment.
+    - I will have all code/output relevant to questions as part of the exam. (i.e., you will interpret the output.)
 
-- <a href="https://nmaahc.si.edu/explore/stories/what-juneteenth">Juneteenth</a> holiday - *campus closed*.
+**Contacting Dr. Seals:** The optimal ways to contact me are either 
 
-:::
+- email through UWF Gmail (sseals at uwf dot edu) 
+- direct message on Discord
 
-::: {.callout-tip title="Tuesday, June 24, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Statistical inference: 
-        - Confidence intervals
-        - Hypothesis testing
-    - One-sample mean
-- Slides:
-    - .html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
-    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
-
-:::
-
-### **Module 1: Exploring Continuous Outcomes in Two Groups**
-
-::: {.callout-tip title="Tuesday, June 24, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Two independent means
-    - Two dependent means
-- Slides:
-    - .html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
-    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
-- Practice (due M 06/30):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas    
-
-:::
-
-::: {.callout-tip title="Thursday, June 26, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - t-test assumptions
-    - two-sample medians
-        - Wilcoxon rank sum
-        - Wilcoxon signed rank
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 06/30):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas   
-
-:::
-
-::: {.callout-tip title="Tuesday, July 1, 2025:" collapse="true" open="true"}
-
-- Project 1 (due M 07/07): see Canvas
-  
-:::
-
-### **Module 2: Exploring Continuous Outcomes in More Than Two Groups**
-
-::: {.callout-tip title="Thursday, July 3, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - One-way ANOVA
-        - posthoc testing
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/07):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas 
-  
-:::
-
-::: {.callout-tip title="Tuesday, July 8, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - ANOVA assumptions
-    - Kruskal-Wallis
-        - posthoc testing
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/14):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas
-
-:::
-
-::: {.callout-tip title="Thursday, July 10, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Two-way ANOVA
-        - posthoc testing
-        - profile plots
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/14):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas  
-
-:::
-
-::: {.callout-tip title="Tuesday, July 15, 2025:" collapse="true" open="true"}
-
-- Project 2 (due M 07/21): see Canvas
-  
-:::
-
-### **Module 3: Exploring Regression Modeling**
-
-::: {.callout-tip title="Thursday, July 17, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Simple linear regression
-    - Bivariate correlation
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/21):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas  
-
-:::
-
-::: {.callout-tip title="Tuesday, July 22, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Multiple regression
-    - Regression diagnostics
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/28):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas  
-
-:::
-
-::: {.callout-tip title="Thursday, July 24, 2025:" collapse="true" open="true"}
-
-- Project 3 (due W 07/30): see Canvas
-- Quiz: see Canvas
-  
-:::
-
-### **Module 4: Exploring Categorical Outcomes**
-
-::: {.callout-tip title="Tuesday, July 29, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Proportions
-        - One sample
-        - Two sample
-        - More than two samples 
-    - Contingency tables
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due F 08/01):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas  
-
-:::
-
-::: {.callout-tip title="Thursday, July 31, 2025:" collapse="true" open="true"}
-
-- Project 4 (due W 08/06): see Canvas
-- Quiz: see Canvas  
-  
-:::
+Note that I try to respond within 24 hours, however, it doesn't always happen. If your matter is urgent, please feel free to snag me before or after class.
