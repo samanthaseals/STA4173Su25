@@ -339,6 +339,10 @@ wing_flap %>% independent_qq(continuous = apples,
 
 - introduce variance assumption
 
+## Introduction: Folded *F*
+
+- introduce Folded *F*
+
 ## Variance Assumption: Independent Means (R)
 
 - syntax for folded F
