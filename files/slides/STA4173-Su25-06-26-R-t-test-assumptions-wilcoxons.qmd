@@ -1,0 +1,610 @@
+---
+title: "*t*-Test Assumptions<br>Wilcoxon Rank Sum<br>Wilcoxon Signed Rank"
+subtitle: "June 26, 2025<br>Thursday"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+## Introduction: Topics
+
+- Assumptions on *t*-tests:
+    - One-sample
+        - Normality
+    - Independent samples
+        - Normality
+        - Equal variance
+    - Dependent samples
+        - Normality
+    
+- Nonparametric alternatives
+    - Independent medians ($M_1-M_2$)
+    - Dependent medians ($M_d$)
+    
+```{r}
+#| echo: false
+# remove when ssstats updated
+
+independent_qq <- function(data, continuous, grouping) {
+  # Capture variables using tidy evaluation
+  variable_q <- rlang::enquo(continuous)
+  group_q    <- rlang::enquo(grouping)
+  
+  # Extract column names as characters for later labeling
+  variable_name <- rlang::as_name(variable_q)
+  group_name    <- rlang::as_name(group_q)
+  
+  # Filter out missing group values and get group levels
+  levels_group <- data %>%
+    dplyr::filter(!is.na(!!group_q)) %>%
+    dplyr::pull(!!group_q) %>%
+    unique()
+  
+  if (length(levels_group) != 2) {
+    stop(paste("Grouping variable must have exactly 2 levels. Found:", paste(levels_group, collapse = ", ")))
+  }
+  
+  # Create QQ plots
+  plots <- lapply(levels_group, function(level_val) {
+    ggplot2::ggplot(dplyr::filter(data, !!group_q == level_val),
+                    ggplot2::aes(sample = !!variable_q)) +
+      ggplot2::stat_qq_line(linetype = "dashed", color = "black", linewidth = 1) +
+      ggplot2::stat_qq(color = "#666666") +
+      ggplot2::theme_bw() +
+      ggplot2::labs(title = paste("QQ Plot for", variable_name, "|", group_name, "=", level_val),
+                    x = "Theoretical Quantiles", y = "Sample Quantiles")
+  })
+  
+  # Create histograms
+  plots2 <- lapply(levels_group, function(level_val) {
+    ggplot2::ggplot(dplyr::filter(data, !!group_q == level_val),
+                    ggplot2::aes(x = !!variable_q)) +
+      ggplot2::geom_histogram(color = "black", fill = "#666666", bins = 30) +
+      ggplot2::theme_bw() +
+      ggplot2::labs(title = paste("Histogram for", variable_name, "|", group_name, "=", level_val),
+                    x = variable_name, y = "Count")
+  })
+  
+  # Combine and arrange plots
+  ggpubr::ggarrange(plotlist = c(plots, plots2))
+}
+
+dependent_qq <- function(data, col1, col2) {
+  # Capture expressions
+  var1_q <- rlang::enquo(col1)
+  var2_q <- rlang::enquo(col2)
+  
+  # Get variable names as strings (for labeling)
+  var1_name <- rlang::as_name(var1_q)
+  var2_name <- rlang::as_name(var2_q)
+  
+  # Calculate differences
+  diff_df <- data %>%
+    dplyr::mutate(diff = !!var1_q - !!var2_q) %>%
+    dplyr::select(diff) %>%
+    dplyr::filter(!is.na(diff))
+  
+  # QQ Plot
+  qq_plot <- ggplot2::ggplot(diff_df, ggplot2::aes(sample = diff)) +
+    ggplot2::stat_qq_line(linetype = "dashed", color = "black", linewidth = 1) +
+    ggplot2::stat_qq(color = "#666666") +
+    ggplot2::theme_bw() +
+    ggplot2::labs(
+      title = paste("QQ Plot of Paired Differences:", var1_name, "-", var2_name),
+      x = "Theoretical Quantiles",
+      y = "Sample Quantiles"
+    )
+  
+  # Histogram
+  hist_plot <- ggplot2::ggplot(diff_df, ggplot2::aes(x = diff)) +
+    ggplot2::geom_histogram(color = "black", fill = "#666666", bins = 30) +
+    ggplot2::theme_bw() +
+    ggplot2::labs(
+      title = paste("Histogram of Paired Differences:", var1_name, "-", var2_name),
+      x = "Difference",
+      y = "Count"
+    )
+  
+  # Arrange and return both plots
+  ggpubr::ggarrange(qq_plot, hist_plot, ncol = 2)
+}
+```
+
+## Introduction: Normality Assumption
+
+- All *t*-tests assume approximate normality of the data.
+
+    - In the case of one-sample *t*-tests, the measure of interest must somewhat follow a normal distribution.
+
+    - In the case of two-sample *t*-tests, the measure of interest *in each group* must somewhat follow a normal distribution.
+    
+- Note that a paired *t*-test is technically a one-sample *t*-test, so we will examine normality of the difference. 
+
+## Normality Assumption: Quantile-Quantile Plots
+
+- There are formal tests for normality ([see article here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3693611/)), however, we will not use them.
+    - Tests for normality are not well-endorsed by statisticians.
+    
+- Instead, we will assess normality using a quantile-quantile (Q-Q) plot.
+
+- A Q-Q plot helps us visually check if our data follows a specific distribution (here, the normal).
+    - It compares the quantiles of our sample data to the quantiles of a theoretical distribution (the normal).
+
+- How do we read Q-Q plots?
+    - Each dot represents one observation in our dataset.
+    - If the data follow a normal distribution, we will observe that the dots fall roughly along a straight diagonal line.
+    - We focus on the "middle" of the graph.
+    
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+library(ssstats)
+library(tidyverse)
+library(ggpubr)
+set.seed(187782)
+pegasi_flaps <- tibble(flaps = rnorm(100, mean = 120, sd = 10))
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile Plot") +
+  theme_bw()
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+set.seed(881)
+pegasi_flaps <- tibble(flaps = rexp(100, rate = 1/50))
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile") +
+  theme_bw()
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+set.seed(188277)
+pegasi_flaps <- tibble(flaps = rt(100, df = 3) * 10 + 50)
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile") +
+  theme_bw()
+
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+set.seed(658236)
+pegasi_flaps <- tibble(flaps = rbeta(100, shape1 = 5, shape2 = 1) * 100)
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile") +
+  theme_bw()
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+    
+## Normality Assumption: Independent Means
+
+```{r}
+#| echo: false
+
+set.seed(8651)
+wing_flap <- tibble(pony_names = c("Rainbow Dash", "Soarin", "Spitfire", "Cloudchaser", "Fleetfoot", "Lightning Dust", "Windy Whistles", "Stormy Skies", "Gusty Gale", "Zephyr Breeze", "Skydancer", "Aero Ace", "Nimbus Sprint", "Breeze Wing", "Flash Fly", "Twister Tail", "Sirensong", "Aero Wave", "Sky Dancer", "Gale Gust", "Storm Strider", "Cyclone Swift", "Wind Whirl", "Jet Stream", "Flurry Flap"),
+                    wing_flap_rate = round(rnorm(n = length(pony_names), mean = 50, sd = 8),1),
+                    target = dplyr::if_else(wing_flap_rate>=50, "Above", "Below"),
+                    apples = dplyr::if_else(target == "Above", round(rnorm(n = length(pony_names), mean = 25, sd = 2)), round(rnorm(n = length(pony_names), mean = 15, sd = 3))),
+                    pre_training_wfr = round(rnorm(n = length(pony_names), mean = 50, sd = 8),1),
+                    post_training_wfr =round(rnorm(n = length(pony_names), mean = 50, sd = 4),1))
+```
+
+- Recall our example from last lecture: In the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today's young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony's wing‐flap rate (in flaps/minute). <br>
+
+```{r}
+#| echo: false
+set.seed(9671)
+wing_flap %>% select(-pre_training_wfr, -post_training_wfr) %>% slice_sample(n=5)
+```
+
+## Normality Assumption: Independent Means
+
+- Further, we performed a two-sample *t*-test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi ($\alpha=0.05$). 
+
+```{r}
+wing_flap %>% independent_mean_HT(grouping = target,
+                                  continuous = apples, 
+                                  mu = 5, 
+                                  alternative = "greater", 
+                                  alpha = 0.05)
+```
+
+- Are our results valid?
+
+## Normality Assumption: Independent Means (R)
+
+- We will use the `independent_qq()` function from `library(ssstats)` to assess normality.
+
+```{r}
+#| eval: false
+dataset_name %>% independent_qq(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+- This will provide the the Q-Q plots and the histograms for the two independent groups under consideration.
+
+## Normality Assumption: Independent Means
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+dataset_name %>% independent_qq(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+## Normality Assumption: Independent Means
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+wing_flap %>% independent_qq(continuous = apples,
+                             grouping = target)
+```
+
+## Normality Assumption: Independent Means
+
+- Running the code,
+
+<center>
+```{r}
+wing_flap %>% independent_qq(continuous = apples,
+                             grouping = target)
+```
+</center>
+
+## Introduction: Variance Assumption
+
+- introduce variance assumption
+
+## Variance Assumption: Independent Means (R)
+
+- syntax for folded F
+
+## Variance Assumption: Independent Means 
+
+- example set up
+
+## Variance Assumption: Independent Means
+
+- example set up with correct code
+
+## Variance Assumption: Independent Means 
+
+- code has been run
+
+## Variance Assumption: Independent Means
+
+- HT results
+
+
+## Normality Assumption: Dependent Means
+
+- normality assumption for dependent t
+
+## Normality Assumption: Dependent Means (R)
+
+- syntax for qq
+
+## Normality Assumption: Dependent Means
+
+- example set up
+
+## Normality Assumption: Dependent Means
+
+- example set up with correct code
+
+## Normality Assumption: Dependent Means
+
+- code has been run
+
+## Wrap Up: *t*-Test Assumptions
+
+- **Important note!!** 
+    - *I do not expect you to agree with my assessment of q-q plots!* 
+    - What I do expect is that you know what to do after making your assessment.
+        - Meet assumption $\to$ use *t*-test
+        - Do not meet assumption $\to$ use nonparametric equivalent
+        
+- Next: nonparametrics!        
+
+## Introduction: Nonparametrics
+
+- The *t*-tests we have already learned are considered *parametric* methods.
+
+    - There is a distributional assumption on the test.
+    
+- *Nonparametric* methods do not have distributional assumptions.
+
+    - We typically transform the data to their ranks and then perform calculations.
+
+- Why don't we always use nonparametric methods?
+
+    - They are often less efficient: a larger sample size is required to achieve the same probability of a Type I error.
+    
+    - They discard useful information :(
+    
+## Introduction: Wilcoxon Rank Sum
+
+- introduce W RS
+    
+## Wilcoxon Rank Sum: Ranking Data
+
+- In the nonparametric tests we will be learning, the data will be ranked.
+
+- Let us first consider a simple example, $$x: \ 1, 7, 10, 2, 6, 8$$
+
+- Our first step is to reorder the data: $$x: \ 1, 2, 6, 7, 8, 10$$
+
+- Then, we replace with the ranks: $$R: \ 1, 2, 3, 4, 5, 6$$
+
+## Wilcoxon Rank Sum: Ranking Data
+
+- What if all data values are not unique? We will assign the <u>average</u> rank for that group.
+
+- For example, $$x: \ 9, 8, 8, 0, 3, 4, 4, 8$$
+
+- Let's reorder:$$x: \ 0, 3, 4, 4, 8, 8, 8, 9$$
+
+- Rank ignoring ties:$$R: \ 1, 2, 3, 4, 5, 6, 7, 8$$
+
+- Now, the final rank:$$R: \ 1, 2, 3.5, 3.5, 6, 6, 6, 8$$
+
+## Wilcoxon Rank Sum{.smaller}
+
+**Hypotheses**
+
+- $H_0:$ $M_1 - M_2 = M_0$ | $H_0:$ $M_1 - M_2 \le M_0$ | $H_0:$ $M_1 - M_2 \ge M_0$
+- $H_1:$ $M_1 - M_2 \ne M_0$ | $H_1:$ $M_1 - M_2 > M_0$ | $H_1:$ $M_1 - M_2 < M_0$
+
+**Test Statistic & *p*-Value**
+
+- $T = \sum R_{\text{sample 1}} - \frac{n_1(n_1+1)}{2}$
+- $p =$ (calculated by R :))
+
+**Rejection Region**
+
+- Reject $H_0$ if $p < \alpha$.
+
+**Conclusion/Interpretation**
+
+- [Reject or fail to reject] $H_0$.
+
+- There [is or is not] sufficient evidence to suggest [alternative hypothesis in words].
+
+## Wilcoxon Rank Sum (R)
+
+- syntax
+
+## Wilcoxon Rank Sum: Independent Medians
+
+- example set up
+
+## Wilcoxon Rank Sum: Independent Medians
+
+- example with correct code
+
+## Wilcoxon Rank Sum: Independent Medians
+
+- code has been run
+
+## Wilcoxon Rank Sum: Independent Medians
+
+- HT typeset
+
+# Introduction: Wilcoxon Signed Rank
+
+## Wilcoxon Signed Rank: Ranking Data
+
+- Before ranking, we will find the difference between the paired observations and eliminate any 0 differences.
+
+    - Note 1: elimniating 0 differences is the big difference between the other tests! 
+    
+    - Note 2: because we are eliminating 0 differences, this means that our sample size will update to the number of pairs with a non-0 difference.
+    
+- When ranking, we the differences are ranked based on the absolute value of the difference.
+
+- We also keep the sign of the difference.
+
+    - We will have positive ranks and negative ranks.
+
+| *X* | *Y* | *D* | \|*D*\| | Rank |
+|-----|-----|-----|---------|------|
+| 5   | 8   | -3  | 3       | $-$ 1.5 |
+| 8   | 5   | 3   | 3       | $+$ 1.5  |
+| 4   | 4   | 0   | 0       | ---------   |
+
+## Wilcoxon Signed Rank{.smaller}
+
+**Hypotheses**
+
+- $H_0:$ $M_d = M_0$ | $H_0:$ $M_d \le M_0$ | $H_0:$ $M_d \ge M_0$
+- $H_1:$ $M_d \ne M_0$ | $H_1:$ $M_d > M_0$ | $H_1:$ $M_d < M_0$
+
+**Test Statistic & *p*-Value**
+
+- $T_0 = \min(T+,|T_-|)$ if two-tailed, $T_0 = T_+$ if left-tailed, and $T_0 = |T_-|$ if right-tailed.
+- $p =$ (calculated by R :))
+
+**Rejection Region**
+
+- Reject $H_0$ if $p < \alpha$.
+
+**Conclusion/Interpretation**
+
+- [Reject or fail to reject] $H_0$.
+
+- There [is or is not] sufficient evidence to suggest [alternative hypothesis in words].
+
+## Wilcoxon Signed Rank (R)
+
+- syntax
+
+## Wilcoxon Signed Rank: Dependent Medians
+
+- example set up
+
+## Wilcoxon Signed Rank: Dependent Medians
+
+- example with correct code
+
+## Wilcoxon Signed Rank: Dependent Medians
+
+- code has been run
+
+## Wilcoxon Signed Rank: Dependent Medians
+
+- HT typeset
+
+## Putting It All Together
+
+- When asked to compare two groups, I first must decide:
+    - Independent data?
+    - Dependent data?
+    
+- Then, I must decide:
+    - Do I meet the assumptions for the appropriate *t*-test?
+        - If so $\to$ proceed with *t*-test.
+        - If not $\to$ use nonparametric alternative.
+        
+- Remember the pairings!
+    - Independent *t*-test $\to$ Wilcoxon rank sum.
+    - Dependent *t*-test $\to$ Wilcoxon signed rank.
+    
+## "Use the Appropriate Test": Independent or Dependent?
+
+- Example 1 - independent or dependent?
+
+## "Use the Appropriate Test": *t* or Nonparametric?
+
+- Example 1 - parametric or non?
+
+## "Use the Appropriate Test": Independent or Dependent?
+
+- Example 2 - independent or dependent?
+
+## "Use the Appropriate Test": *t* or Nonparametric?
+
+- Example 2 - parametric or non?
+
+## "Use the Appropriate Test": Independent or Dependent?
+
+- Example 3 - independent or dependent?
+
+## "Use the Appropriate Test": *t* or Nonparametric?
+
+- Example 3 - parametric or non?
+
+## "Use the Appropriate Test": Independent or Dependent?
+
+- Example 4 - independent or dependent?
+
+## "Use the Appropriate Test": *t* or Nonparametric?
+
+- Example 4 - parametric or non?
+
+## Wrap Up        
+
+- Today's lecture:
+    - Normality assumption (all *t*) $\to$ Q-Q plot
+    - Variance assumption (independent *t*) $\to$ folded *F* test
+    - Wilcoxon rank sum (nonparametric equivalent to independent *t*)
+    - Wilcoxon signed rank (nonparametric equivalent to dependent *t*)
+    
+- Next class:   
+    - Project 1!
+
+## Wrap Up    
+
+- Daily activity: .qmd is available on Canvas.
+    - Due date: Monday, June 30, 2025.
+
+- You will upload the resulting .html file on Canvas. 
+    - Please refer to the help guide on the Biostat website if you need help with submission.
+    
+- Housekeeping:
+    - Are you in the Discord server?
+    - Do you have questions for me?
+    - Do you need my help with anything from prior lectures?
