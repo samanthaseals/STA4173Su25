@@ -1326,7 +1326,7 @@ mlp_data %>% ggplot(aes(y = tail_shimmer, x = magical_energy)) +
 <center>
 ```{r}
 #| eval: false
-mlp_data %>% ggplot(aes(x = flying_speed, y = tail_shimmer)) +
+mlp_data %>% ggplot(aes(x = magical_energy, y = flying_speed)) +
   geom_point(size = 2) +
   labs(y = "Tail Shimmer",
        x = "Flying Speed (km/h)") +
@@ -1341,7 +1341,7 @@ mlp_data %>% ggplot(aes(x = flying_speed, y = tail_shimmer)) +
 <center>
 ```{r}
 #| echo: false
-mlp_data %>% ggplot(aes(x = flying_speed, y = tail_shimmer)) +
+mlp_data %>% ggplot(aes(x = magical_energy, y = flying_speed)) +
   geom_point(size = 2) +
   labs(y = "Tail Shimmer",
        x = "Flying Speed (km/h)") +

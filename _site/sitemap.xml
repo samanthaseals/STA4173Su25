@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/schedule.html</loc>
-    <lastmod>2025-06-17T06:58:20.686Z</lastmod>
+    <lastmod>2025-06-21T04:18:28.640Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/06-24-inference-practice.html</loc>
@@ -14,23 +14,27 @@
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/syllabus.html</loc>
-    <lastmod>2025-06-17T06:57:18.367Z</lastmod>
+    <lastmod>2025-06-21T03:18:12.015Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-17-T-summary-visualization.html</loc>
-    <lastmod>2025-06-17T05:33:01.648Z</lastmod>
-  </url>
-  <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/index.html</loc>
-    <lastmod>2025-06-17T07:17:58.287Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-24-T-inference-t-tests.html</loc>
+    <lastmod>2025-06-17T05:50:14.398Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/hyp_test_template.html</loc>
     <lastmod>2025-06-04T19:31:52.204Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-24-T-inference-t-tests.html</loc>
-    <lastmod>2025-06-17T05:50:14.398Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/index.html</loc>
+    <lastmod>2025-06-17T07:17:58.287Z</lastmod>
+  </url>
+  <url>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-17-T-summary-visualization.html</loc>
+    <lastmod>2025-06-21T03:58:24.104Z</lastmod>
+  </url>
+  <url>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html</loc>
+    <lastmod>2025-06-21T03:15:07.678Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/06-17-summary-practice.html</loc>

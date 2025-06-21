@@ -12,12 +12,19 @@ format: html
     - Data visualization
     - Introduction to R
 - Slides:
-    - .html: <a href="files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a>
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a>
     - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-17-T-summary-visualization.qmd">view code</a>
-- Practice (due M 06/23):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas
+- Practice (due <s>M 06/23</s> M 06/30):
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/06-17-T-summary-practice.html">view assignment</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/06-17-T-summary-practice.qmd">view code</a>
+- Quiz: open at 1:15, close end of day F 06/20 
+    - See Canvas
+    
+- Housekeeping from class:
+    - Please join our Discord server if you have not already.
+        - Moving forward, all announcements will be made on Discord.
+    - We did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today's lab.
+        - Dr. Seals will shuffle due dates accordingly... eventually. :) 
 
 :::
 
@@ -29,14 +36,23 @@ format: html
 
 ::: {.callout-tip title="Tuesday, June 24, 2025:" collapse="true" open="true"}
 
+- Catch up:
+    - Lab from T 06/16 (summaries and graphs)
+        - New due date: M 06/30
 - Topics:
+    - Lecture
     - Statistical inference: 
         - Confidence intervals
         - Hypothesis testing
     - One-sample mean
 - Slides:
-    - .html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
     - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
+- Practice (due M 06/30):
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/06-17-T-summary-practice.html">view assignment</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/06-17-T-summary-practice.qmd">view code</a>
+- Quiz: open at 1:15, close end of day F 06/20 
+    - See Canvas
 
 :::
 
@@ -48,11 +64,11 @@ format: html
     - Two independent means
     - Two dependent means
 - Slides:
-    - .html: <a href="files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a>
     - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
 - Practice (due M 06/30):
-    - .html:
-    - .qmd:
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/06-24-T-inference-practice.html">view assignment</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/06-24-T-inference-practice.qmd">view code</a>
 - Quiz: see Canvas    
 
 :::
@@ -61,6 +77,8 @@ format: html
 
 - Topics:
     - t-test assumptions
+        - normality
+        - equal variance
     - two-sample medians
         - Wilcoxon rank sum
         - Wilcoxon signed rank
