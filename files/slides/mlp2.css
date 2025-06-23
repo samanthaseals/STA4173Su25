@@ -74,6 +74,7 @@
   padding: 0.2em!important;
   border-radius: 0.5rem;
   white-space: pre-wrap !important;  /* wrap long lines nicely */
+  margin-top: 0em !important;
 }
 
 /* 🌸 Inline code only (not code chunks) */
