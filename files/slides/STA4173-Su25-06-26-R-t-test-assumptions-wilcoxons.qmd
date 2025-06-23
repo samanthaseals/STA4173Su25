@@ -337,15 +337,106 @@ wing_flap %>% independent_qq(continuous = apples,
 
 ## Introduction: Variance Assumption
 
-- introduce variance assumption
+- In addition to normality, the two-sample *t*-test assumes equal variance between groups.
+    - *Homoskedastic*: same variance
+    - *Heteroskedastic*: different variances
 
-## Introduction: Folded *F*
+- We can check this assumption and easily adjust if the assumption is broken.
 
-- introduce Folded *F*
+- Graphical method: scatterplot of residuals
 
-## Variance Assumption: Independent Means (R)
+- Formal method: test for equal variances (Brown-Forsythe-Levine)
 
-- syntax for folded F
+## Variance Assumption: Residual Plot (R)
+
+- We will use the `plot_residuals()` function from `library(ssstats)` to graphically assess the assumption of equal variance.
+
+```{r}
+#| eval: false
+dataset_name %>% plot_residuals(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+- We should evaluate and compare the lengths of the resulting "lines".
+
+## Variance Assumption: Residual Plot
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+dataset_name %>% plot_residuals(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+## Variance Assumption: Residual Plot
+
+- Let's now look at the normality assumption for our example.
+
+- Our updated code:
+
+<center>
+```{r}
+#| eval: false
+wing_flap %>% plot_residuals(continuous = apples,
+                             grouping = target)
+```
+</center>
+
+## Variance Assumption: Residual Plot
+
+- Running the code,
+
+<center>
+```{r}
+#| eval: false
+wing_flap %>% plot_residuals(continuous = apples,
+                             grouping = target)
+```
+</center>
+
+## Hypothesis Testing: Two or More Variances
+
+- If we believe the assumption may be violated, we can test for equal variance using the Brown-Forsythe-Levine (BFL) test.
+
+- This test is valid for more than two groups (read: we will see it again!)
+
+- **Hypotheses**
+    - $H_0: \ \sigma^2_1 = \sigma^2_2 = ... = \sigma^2_k$
+    - $H_1:$ at least one $\sigma^2_i$ is different.
+    
+## Hypothesis Testing: Two or More Variances
+
+- **Test Statistic:**
+
+$$
+F_0 = \frac{\sum_{i=1}^k n_i(\bar{z}_{i.}-\bar{z}_{..})^2/(k-1)}{\sum_{i=1}^k \sum_{j=1}^{n_i} (z_{ij}-\bar{z}_{i.})^2/(N-k)} \sim F_{\text{df}_{\text{num}}, \text{df}_{\text{den}}}
+$$
+
+- where
+    - $n_i$ is the sample size of group $i$
+    - $\bar{z}_{i.}$ is the median of group $i$ and $\bar{z}_{..}$ is the grand median
+    - $k$ is the number of groups
+    - $N = \sum_{i=1}^k n_i$ is the overall sample size
+    - $\text{df}_{\text{num}} = k-1$, $\text{df}_{\text{den}} = (N-k)$.
+
+## Hypothesis Testing: Two or More Variances
+
+- Note that the BFL is a one-tailed test, which is different than when we are testing means using the $t$ distribution.
+
+- **$p$-value:**
+
+$$p = P\left[F_{\text{df}_{\text{num}}, \text{df}_{\text{den}}} \ge F_0\right]$$
+
+## Hypothesis Testing: Two or More Variances (R)
+
+```{r}
+wing_flap %>% variances_HT(continuous = apples,
+                           grouping = target)
+
+```
 
 ## Variance Assumption: Independent Means 
 
@@ -362,6 +453,10 @@ wing_flap %>% independent_qq(continuous = apples,
 ## Variance Assumption: Independent Means
 
 - HT results
+
+## Variance Assumption: Broken -- Now What?
+
+$$ \text{df}=\frac{ \left( \frac{s^2_1}{n_1} + \frac{s_2^2}{n_2} \right)^2 }{ \frac{(s_1^2/n_1)^2}{n_1-1} + \frac{(s_2^2/n_2)^2}{n_2-1} }$$
 
 
 ## Normality Assumption: Dependent Means

@@ -1264,7 +1264,7 @@
     "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-variance-assumption",
     "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
     "section": "Introduction: Variance Assumption",
-    "text": "Introduction: Variance Assumption\n\nintroduce variance assumption"
+    "text": "Introduction: Variance Assumption\n\nIn addition to normality, the two-sample t-test assumes equal variance between groups.\n\nHomoskedastic: same variance\nHeteroskedastic: different variances\n\nWe can check this assumption and easily adjust if the assumption is broken.\nGraphical method: scatterplot of residuals\nFormal method: test for equal variances (Brown-Forsythe-Levine)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-folded-f",
@@ -1650,5 +1650,75 @@
     "title": "Looking for help?",
     "section": "",
     "text": "How do I typeset a hypothesis test?\n\nHere is a basic template for typesetting hypothesis tests in Quarto: template.qmd\nRemember to update subscripts when you are editing existing code.\n\nDo you need help with your assignment?\n\nDouble check the slides for necessary code. Note that the headers of slides often match language used in the assignments.\nHave you googled the error message you saw?\nHave you asked your classmates (& Dr. Seals) on Discord? Truly, others have the same question, I promise! Do not be afraid to share a screenshot of your code and any corresponding output or error message.\n\nWhy did I lose points?\n\nPlease check the rubric; I try to give enough feedback for you to determine how to fix your assignment.\nIf clarification is still needed, please do not hesitate to come see me during office hours.\n\nIs there tutoring?\n\nNo, there is no University-provided tutoring.\nHowever, my research students are great resources. Please reach out to me if you are interested in hiring one of my students for tutoring."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot",
+    "text": "Variance Assumption: Residual Plot\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\ndataset_name %&gt;% plot_residuals(continuous = continuous_variable,\n                                grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-brown-forsythe-levine",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-brown-forsythe-levine",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Brown-Forsythe-Levine",
+    "text": "Introduction: Brown-Forsythe-Levine\n\nintroduce BFL"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-broken-now-what",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-broken-now-what",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Broken – Now What?",
+    "text": "Variance Assumption: Broken – Now What?\n \\text{df}=\\frac{ \\left( \\frac{s^2_1}{n_1} + \\frac{s_2^2}{n_2} \\right)^2 }{ \\frac{(s_1^2/n_1)^2}{n_1-1} + \\frac{(s_2^2/n_2)^2}{n_2-1} }"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-r",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot (R)",
+    "text": "Variance Assumption: Residual Plot (R)\n\nWe will use the plot_residuals() function from library(ssstats) to graphically assess the assumption of equal variance.\n\n\ndataset_name %&gt;% plot_residuals(continuous = continuous_variable,\n                                grouping = grouping_variable)\n\n\nWe should evaluate and compare the lengths of the resulting “lines”."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-1",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot",
+    "text": "Variance Assumption: Residual Plot\n\nLet’s now look at the normality assumption for our example.\nOur updated code:\n\n\n\nwing_flap %&gt;% plot_residuals(continuous = apples,\n                             grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-2",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot",
+    "text": "Variance Assumption: Residual Plot\n\nRunning the code,\n\n\n\nwing_flap %&gt;% plot_residuals(continuous = apples,\n                             grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nIf we believe the assumption may be violated, we can test for equal variance using the Brown-Forsythe-Levine (BFL) test.\nThis test is valid for more than two groups (read: we will see it again!)\nHypotheses\n\nH_0: \\ \\sigma^2_1 = \\sigma^2_2 = ... = \\sigma^2_k\nH_1: at least one \\sigma^2_i is different."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-1",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nTest Statistic:\n\n\nF_0 = \\frac{\\sum_{i=1}^k n_i(\\bar{z}_{i.}-\\bar{z}_{..})^2/(k-1)}{\\sum_{i=1}^k \\sum_{j=1}^{n_i} (z_{ij}-\\bar{z}_{i.})^2/(N-k)} \\sim F_{\\text{df}_{\\text{num}}, \\text{df}_{\\text{den}}}\n\n\nwhere\n\nn_i is the sample size of group i\n\\bar{z}_{i.} is the median of group i and \\bar{z}_{..} is the grand median\nk is the number of groups\nN = \\sum_{i=1}^k n_i is the overall sample size\n\\text{df}_{\\text{num}} = k-1, \\text{df}_{\\text{den}} = (N-k)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-2",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nNote that the BFL is a one-tailed test, which is different than when we are testing means using the t distribution.\np-value:\n\np = P\\left[F_{\\text{df}_{\\text{num}}, \\text{df}_{\\text{den}}} \\ge F_0\\right]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-r",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances (R)",
+    "text": "Hypothesis Testing: Two or More Variances (R)\n\nwing_flap %&gt;% variances_HT(continuous = apples,\n                           grouping = target)\n\nError in variances_HT(., continuous = apples, grouping = target): could not find function \"variances_HT\""
   }
 ]
