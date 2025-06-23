@@ -836,21 +836,22 @@ wing_flap %>% independent_median_HT(continuous = apples,
                                     alpha = 0.05)
 ```
 
-# Introduction: Wilcoxon Signed Rank
+# Introduction: Two Dependent Medians
 
-## Wilcoxon Signed Rank: Ranking Data
+- The Wilcoxon Signed Rank test is a nonparametric alternative to the dependent *t*-test.
+
+- Instead of examining the mean of the difference, we will now turn to examining the ranks of the differences.
 
 - Before ranking, we will find the difference between the paired observations and eliminate any 0 differences.
 
     - Note 1: elimniating 0 differences is the big difference between the other tests! 
-    
     - Note 2: because we are eliminating 0 differences, this means that our sample size will update to the number of pairs with a non-0 difference.
+    
+## Two Dependent Medians: Ranking Data    
     
 - When ranking, we the differences are ranked based on the absolute value of the difference.
 
-- We also keep the sign of the difference.
-
-    - We will have positive ranks and negative ranks.
+- Then, ranks can be identified as "positive" or "negative" based on the direction of the difference.
 
 | *X* | *Y* | *D* | \|*D*\| | Rank |
 |-----|-----|-----|---------|------|
@@ -858,45 +859,57 @@ wing_flap %>% independent_median_HT(continuous = apples,
 | 8   | 5   | 3   | 3       | $+$ 1.5  |
 | 4   | 4   | 0   | 0       | ---------   |
 
-## Wilcoxon Signed Rank{.smaller}
+- In this (very basic) example, we started with $n=3$, but reduced to $n=2$ due to the 0 difference of the third observation.
 
-**Hypotheses**
+## Hypothesis Testing: Two Dependent Medians
 
-- $H_0:$ $M_d = M_0$ | $H_0:$ $M_d \le M_0$ | $H_0:$ $M_d \ge M_0$
-- $H_1:$ $M_d \ne M_0$ | $H_1:$ $M_d > M_0$ | $H_1:$ $M_d < M_0$
+- **Hypotheses: Two Tailed**
+    - $H_0: \ M_d=M_0$
+    - $H_1: \ M_d \ne M_0$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ M_d \ge M_0$
+    - $H_1: \ M_d < M_0$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ M_d \le M_0$
+    - $H_1: \ M_d > M_0$  
+    
+- **Note!** $M_d = M_1 - M_2$  
 
-**Test Statistic & *p*-Value**
+## Hypothesis Testing: Two Dependent Medians
 
-- $T_0 = \min(T+,|T_-|)$ if two-tailed, $T_0 = T_+$ if left-tailed, and $T_0 = |T_-|$ if right-tailed.
-- $p =$ (calculated by R :))
+- **Test Statistic**
 
-**Rejection Region**
+$$
+T_0 =
+\begin{cases}
+  R_+ = \text{sum of positive ranks} & \text{if left-tailed} \\
+  R_- = \text{sum of negative ranks} & \text{if right-tailed} \\
+  \min(R_+, R_-) & \text{if two-tailed}
+\end{cases}
+$$
 
-- Reject $H_0$ if $p < \alpha$.
+- **$p$-Value** is calculated by R.
 
-**Conclusion/Interpretation**
 
-- [Reject or fail to reject] $H_0$.
-
-- There [is or is not] sufficient evidence to suggest [alternative hypothesis in words].
-
-## Wilcoxon Signed Rank (R)
+## Hypothesis Testing: Two Dependent Medians (R)
 
 - syntax
 
-## Wilcoxon Signed Rank: Dependent Medians
+## Hypothesis Testing: Two Dependent Medians
 
 - example set up
 
-## Wilcoxon Signed Rank: Dependent Medians
+## Hypothesis Testing: Two Dependent Medians
 
 - example with correct code
 
-## Wilcoxon Signed Rank: Dependent Medians
+## Hypothesis Testing: Two Dependent Medians
 
 - code has been run
 
-## Wilcoxon Signed Rank: Dependent Medians
+## Hypothesis Testing: Two Dependent Medians
 
 - HT typeset
 

@@ -1881,5 +1881,68 @@
     "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
     "section": "Two Independent Groups: Means vs. Medians",
     "text": "Two Independent Groups: Means vs. Medians\n\nLet’s compare the R output for the two different tests we have learned.\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#two-dependent-medians-rank-data",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#two-dependent-medians-rank-data",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Dependent Medians: Rank Data",
+    "text": "Two Dependent Medians: Rank Data\n\nWhen ranking, we the differences are ranked based on the absolute value of the difference.\nThen, ranks can be identified as “positive” or “negative” based on the direction of the difference.\n\n\n\n\nX\nY\nD\n|D|\nRank\n\n\n\n\n5\n8\n-3\n3\n- 1.5\n\n\n8\n5\n3\n3\n+ 1.5\n\n\n4\n4\n0\n0\n———\n\n\n\n\nIn this (very basic) example, we started with n=3, but reduced to n=2 due to the 0 difference of the third observation."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nHypotheses: Two Tailed\n\nH_0: \\ M_d=M_0\nH_1: \\ M_d \\ne M_0\n\nHypotheses: Left Tailed\n\nH_0: \\ M_d \\ge M_0\nH_1: \\ M_d &lt; M_0\n\nHypotheses: Right Tailed\n\nH_0: \\ M_d \\le M_0\nH_1: \\ M_d &gt; M_0\n\nNote! M_d = M_1 - M_2"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-r",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians (R)",
+    "text": "Hypothesis Testing: Two Dependent Medians (R)\n\nsyntax"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-1",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nTest Statistic\n\n\nT_0 =\n\\begin{cases}\n  R_+ = \\text{sum of positive ranks} & \\text{if left-tailed} \\\\\n  R_- = \\text{sum of negative ranks} & \\text{if right-tailed} \\\\\n  \\min(R_+, R_-) & \\text{if two-tailed}\n\\end{cases}\n\n\np-Value is calculated by R."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-2",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nexample set up"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-3",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nexample with correct code"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-4",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\ncode has been run"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#two-dependent-medians-ranking-data",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#two-dependent-medians-ranking-data",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Dependent Medians: Ranking Data",
+    "text": "Two Dependent Medians: Ranking Data\n\nWhen ranking, we the differences are ranked based on the absolute value of the difference.\nThen, ranks can be identified as “positive” or “negative” based on the direction of the difference.\n\n\n\n\nX\nY\nD\n|D|\nRank\n\n\n\n\n5\n8\n-3\n3\n- 1.5\n\n\n8\n5\n3\n3\n+ 1.5\n\n\n4\n4\n0\n0\n———\n\n\n\n\nIn this (very basic) example, we started with n=3, but reduced to n=2 due to the 0 difference of the third observation."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-5",
+    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-5",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nHT typeset"
   }
 ]
