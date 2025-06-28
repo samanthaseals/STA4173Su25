@@ -1,0 +1,327 @@
+---
+title: "Module 1 Review"
+subtitle: "July 8, 2025<br>Tuesday"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+## Putting It All Together
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(ssstats)
+```
+
+- When asked to compare two groups, I first must decide:
+    - Independent data?
+    - Dependent data?
+    
+- Then, I must decide:
+    - Do I meet the assumptions for the appropriate *t*-test?
+        - If so $\to$ proceed with *t*-test.
+        - If not $\to$ use nonparametric alternative.
+        
+- Remember the pairings!
+    - Independent *t*-test $\to$ Wilcoxon rank sum.
+    - Dependent *t*-test $\to$ Wilcoxon signed rank.
+
+## "Use the Appropriate Test": Example 1
+
+- Researchers in Equestria are interested in whether the habitat environment influences the growth of baby seaponies. Specifically, they want to compare the growth rates of baby seaponies living in Coral Reef habitats to those living in Kelp Forest habitats. 
+- The seaponies in each habitat grow under natural conditions, and each baby seapony belongs to only one habitat: either the Coral Reef or the Kelp Forest. After a full season, researchers record the growth rate (in centimeters per month) for each seapony. 
+- The goal is to determine whether the average growth rates differ between the two habitats.
+- Use the apporpriate hypothesis test to answer the researchers' question. Test at the $\alpha=0.05$ level.
+
+- Is this independent or dependent data? <!-- independent -->
+
+## "Use the Appropriate Test": Example 1
+
+- Should we use a *t*-test or a nonparametric test?
+
+<center>
+```{r}
+#| echo: false
+set.seed(67888946)
+seapony_growth <- tibble(habitat = rep(c("Coral Reef", "Kelp Forest"), 
+                                       each = 50),
+                         growth = c(rnorm(50, mean = 12, sd = 2),  # Coral Reef
+                                    rnorm(50, mean = 14, sd = 2))) # Kelp Forest
+seapony_growth %>% independent_qq(continuous = growth,
+                                  grouping = habitat)
+```
+</center>
+
+## "Use the Appropriate Test": Example 1
+
+- Because we are using the two-sample *t*-test, we need to examine the variance assumption.
+
+```{r}
+#| echo: false
+seapony_growth %>% variances_HT(continuous = growth,
+                                grouping = habitat)
+```
+
+- Did we break the variance assumption?
+
+## "Use the Appropriate Test": Example 1
+
+- Researchers in Equestria are interested in whether the habitat environment influences the growth of baby seaponies. Specifically, they want to compare the growth rates of baby seaponies living in Coral Reef habitats to those living in Kelp Forest habitats. 
+- The seaponies in each habitat grow under natural conditions, and each baby seapony belongs to only one habitat: either the Coral Reef or the Kelp Forest. 
+- After a full season, researchers record the growth rate (in centimeters per month) for each seapony. The goal is to determine whether the average growth rates differ between the two habitats. Test at the $\alpha=0.05$ level.
+
+- What hypotheses are we testing?
+
+## "Use the Appropriate Test": Example 1
+
+- Running the test,
+
+```{r}
+seapony_growth %>% independent_mean_HT(continuous = growth,
+                                       grouping = habitat,
+                                       mu = 0,
+                                       alternative = "two.sided",
+                                       alpha = 0.05)
+```
+
+## "Use the Appropriate Test": Example 1
+
+- **Hypotheses:**
+    - $H_0: \ \mu_{\text{coral}} = \mu_{\text{kelp}}$
+    - $H_1: \ \mu_{\text{coral}} \ne \mu_{\text{kelp}}$
+
+- **Test Statistic and *p*-Value**
+    - $t_0 = -7.415$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p < 0.001 < 0.05$). There is sufficient evidence to suggest that seaponies living in Coral Reef vs. Kelp Forest are growing at different rates.
+
+## "Use the Appropriate Test": Example 2
+
+- Rarity has created a new type of wing armor designed to protect dragons during flight without reducing their wing strength. 
+- To test the effectiveness of her design, Spike measures the wing strength of each dragon before putting on the armor. The dragons are then fitted with Rarity's wing armor, and their wing strength is measured again while wearing the armor. 
+- The goal is to determine whether the wing armor has a significant effect on dragon wing strength.
+- Use the apporpriate hypothesis test to answer the researchers' question. Test at the $\alpha=0.01$ level.
+
+- Is this independent or dependent data? <!-- dependent -->
+
+## "Use the Appropriate Test": Example 2
+
+- Should we use a *t*-test or a nonparametric test?
+
+<center>
+```{r}
+#| echo: false
+set.seed(989160)
+dragon_wings <- tibble(dragon = 1:120,
+                       before = rnorm(120, mean = 50, sd = 5),
+                       after = before + rgamma(120, shape = 1, scale = 2), 
+                       difference = after - before) 
+dragon_wings %>% dependent_qq(col1 = after,
+                              col2 = before)
+```
+</center>
+
+## "Use the Appropriate Test": Example 2
+
+- Rarity has created a new type of wing armor designed to protect dragons during flight without reducing their wing strength. 
+- To test the effectiveness of her design, Spike measures the wing strength of each dragon before putting on the armor. The dragons are then fitted with Rarity's wing armor, and their wing strength is measured again while wearing the armor. 
+- The goal is to determine whether the wing armor has a significant effect on dragon wing strength.
+- Use the apporpriate hypothesis test to answer the researchers' question. Test at the $\alpha=0.01$ level.
+
+- What hypotheses are we testing?
+
+## "Use the Appropriate Test": Example 2
+
+- Running the test,
+
+```{r}
+dragon_wings %>% dependent_median_HT(col1 = after,
+                                     col2 = before,
+                                     alternative = "greater",
+                                     m = 0,
+                                     alpha = 0.01)
+```
+
+## "Use the Appropriate Test": Example 2
+
+- **Hypotheses:**
+    - $H_0: \ M_{\text{after}} \le M_{\text{before}}$
+    - $H_1: \ M_{\text{after}} > M_{\text{before}}$
+
+- **Test Statistic and *p*-Value**
+    - $T_0 = 7260$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.01$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p < 0.001 < 0.01$). There is sufficient evidence to suggest that wing armor increases dragon wing strength.
+
+## "Use the Appropriate Test": Example 3
+
+- Seaponies are studying how quickly they can escape from predators in different environments. They compare escape times in two distinct locations: Shark Areas, where predators are common and seaponies must be on high alert, and Calm Coves, where predators are rare, and seaponies may be more relaxed. 
+- The seaponies in each area are different individuals: no seapony is measured in both locations. 
+- The goal is to determine whether the typical escape time differs between seaponies in Shark Areas and those in Calm Coves.
+- Use the apporpriate hypothesis test to answer the researchers' question. Test at the $\alpha=0.01$ level.
+
+- Is this independent or dependent data? <!-- independent -->
+
+## "Use the Appropriate Test": Example 3
+
+- Should we use a *t*-test or a nonparametric test?
+
+<center>
+```{r}
+#| echo: false
+set.seed(977321)
+escape_times <- tibble(area = rep(c("Shark Area", "Calm Cove"), each = 200),
+                       time = c(rgamma(200, shape = 3, scale = 50), # Shark Area 
+                                rgamma(200, shape = 2, scale = 45))) # Calm Cove (right-skewed, faster escapes)
+escape_times %>% independent_qq(continuous = time,
+                                grouping = area)
+```
+</center>
+
+## "Use the Appropriate Test": Example 3
+
+- Seaponies are studying how quickly they can escape from predators in different environments. They compare escape times in two distinct locations: Shark Areas, where predators are common and seaponies must be on high alert, and Calm Coves, where predators are rare, and seaponies may be more relaxed. 
+- The seaponies in each area are different individuals: no seapony is measured in both locations. 
+- The goal is to determine whether the typical escape time differs between seaponies in Shark Areas and those in Calm Coves.
+- Use the apporpriate hypothesis test to answer the researchers' question. Test at the $\alpha=0.01$ level.
+
+- What hypotheses are we testing?
+
+## "Use the Appropriate Test": Example 3
+
+- Running the test,
+
+```{r}
+escape_times %>% independent_median_HT(continuous = time,
+                                       grouping = area,
+                                       alternative = "two",
+                                       m = 0,
+                                       alpha = 0.01)
+```
+
+## "Use the Appropriate Test": Example 3
+
+- **Hypotheses:**
+    - $H_0: \ M_{\text{shark}} = M_{\text{calm}}$
+    - $H_1: \ M_{\text{shark}}\ne M_{\text{calm}}$
+
+- **Test Statistic and *p*-Value**
+    - $T_0 = 10152$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.01$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p < 0.001 < 0.01$). There is sufficient evidence to suggest a difference in escape times.
+
+## "Use the Appropriate Test": Example 4
+
+- Fluttershy has developed a magical serum that she believes will help butterflies grow longer, stronger wings. 
+- To test her serum, she carefully measures the wing lengths of each butterfly before applying the treatment. After giving the serum time to work, she measures the same butterflies again to see if their wings have grown. 
+- Fluttershy’s goal is to determine whether the magical serum causes a significant change in butterfly wing length.
+- Use the apporpriate hypothesis test to answer Fluttershy's question. Test at the $\alpha=0.05$ level.
+
+- Is this independent or dependent data? <!-- dependent -->
+
+## "Use the Appropriate Test": Example 4
+
+- Should we use a *t*-test or a nonparametric test?
+
+<center>
+```{r}
+#| echo: false
+set.seed(1866)
+butterfly_wings <- tibble(butterfly = 1:150,
+                          before = rnorm(150, mean = 8, sd = 0.5),
+                          after = rnorm(150, mean = 9, sd = 0.5),
+                          difference = after - before)
+butterfly_wings %>% dependent_qq(col1 = after,
+                                 col2 = before)
+```
+</center>
+
+## "Use the Appropriate Test": Example 4
+
+- Fluttershy has developed a magical serum that she believes will help butterflies grow longer, stronger wings. 
+- To test her serum, she carefully measures the wing lengths of each butterfly before applying the treatment. After giving the serum time to work, she measures the same butterflies again to see if their wings have grown. 
+- Fluttershy’s goal is to determine whether the magical serum causes a significant change in butterfly wing length.
+- Use the apporpriate hypothesis test to answer Fluttershy's question. Test at the $\alpha=0.05$ level.
+
+- What hypotheses are we testing?
+
+## "Use the Appropriate Test": Example 4
+
+- Running the test,
+
+```{r}
+butterfly_wings %>% dependent_mean_HT(col1 = after,
+                                      col2 = before,
+                                      alternative = "greater",
+                                      m = 0,
+                                      alpha = 0.05)
+```
+
+## "Use the Appropriate Test": Example 2
+
+- **Hypotheses:**
+    - $H_0: \ \mu_{\text{after}} \le \mu_{\text{before}}$
+    - $H_1: \ \mu_{\text{after}} > \mu_{\text{before}}$
+
+- **Test Statistic and *p*-Value**
+    - $t_0 = 15.757$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p < 0.001 < 0.05$). There is sufficient evidence to suggest that serum use is associated with increased wing length.
+
+## Wrap Up        
+
+- Today's review:
+    - Independent data, normal $\to$ two-sample *t*-test
+    - Independent data, not normal $\to$ Wilcoxon rank sum
+    - Dependent data, normal $\to$ paired *t*-test
+    - Dependent data, not normal $\to$ Wilcoxon signed rank
+    
+- Next class:   
+    - Comparing three or more means
+    - Pairwise comparisons
+
+## Wrap Up    
+
+- Project 1: see Canvas for .qmd file
+    - Due date: Monday, July 14, 2025.
+
+- You will upload the resulting .html file on Canvas. 
+    - Please refer to the help guide on the Biostat website if you need help with submission.
+    
+- Housekeeping:
+    - Do you have questions for me?
+    - Do you need my help with anything from prior lectures?
