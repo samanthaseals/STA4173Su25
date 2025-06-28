@@ -4,7 +4,7 @@
     "href": "files/schedule.html",
     "title": "Tentative Schedule",
     "section": "",
-    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23 M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\nHousekeeping from class:\n\nPlease join our Discord server if you have not already.\n\nMoving forward, all announcements will be made on Discord.\n\nWe did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today’s lab.\n\nDr. Seals will shuffle due dates accordingly… eventually. :)\n\n\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nCatch up:\n\nLab from T 06/16 (summaries and graphs)\n\nNew due date: M 06/30\n\n\nTopics:\n\nLecture\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\n\nnormality\nequal variance\n\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 06/30):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nProject 1 (due M 07/07): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/07):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nTopics:\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/14):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/14):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/21):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nProject 3 (due W 07/30): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due F 08/01):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nProject 4 (due W 08/06): see Canvas\nQuiz: see Canvas"
+    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23 M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\nHousekeeping from class:\n\nPlease join our Discord server if you have not already.\n\nMoving forward, all announcements will be made on Discord.\n\nWe did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today’s lab.\n\nDr. Seals has corrected all dropboxes and corresponding due dates on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nCatch up:\n\nLab from T 06/16 (summaries and graphs)\n\nNew due date: M 06/30\n\n\nTopics:\n\nLecture\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\n\nnormality\nequal variance\n\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 07/07):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nIndependence Day holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nReview topics:\n\ntwo-sample t-test\ndependent t-test\nWilcoxon rank sum test\nWilcoxon signed rank test\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nProject 1 (due M 07/14): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/14):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/21):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nReview topics:\n\none-way ANOVA\nKruskal-Wallis\ntwo-way ANOVA\n\nSlides:\n\n.html:\n.qmd:\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nReview topics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nProject 3 (due M 07/28): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 08/04):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nReview topics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nProject 4 (due M 08/04): see Canvas\nQuiz: see Canvas"
   },
   {
     "objectID": "files/practice/06-24-inference-practice.html",
@@ -553,11 +553,466 @@
     "text": "Wrap Up\n\nDaily activity: the .qmd we worked on during class.\n\nDue date: Monday, June 23, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nAre you in the Discord server?\nDo you have questions for me?\nDo you need my help with anything from Tuesday?"
   },
   {
-    "objectID": "files/hyp_test_template.html",
-    "href": "files/hyp_test_template.html",
-    "title": "STA4173 - Biostatistics - Summer 2025",
-    "section": "",
-    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-topics",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-topics",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Topics",
+    "text": "Introduction: Topics\n\nAssumptions on t-tests:\n\nOne-sample\n\nNormality\n\nIndependent samples\n\nNormality\nEqual variance\n\nDependent samples\n\nNormality\n\n\nNonparametric alternatives\n\nIndependent medians (M_1-M_2)\nDependent medians (M_d)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-normality-assumption",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-normality-assumption",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Normality Assumption",
+    "text": "Introduction: Normality Assumption\n\nAll t-tests assume approximate normality of the data.\n\nIn the case of one-sample t-tests, the measure of interest must somewhat follow a normal distribution.\nIn the case of two-sample t-tests, the measure of interest in each group must somewhat follow a normal distribution.\n\nNote that a paired t-test is technically a one-sample t-test, so we will examine normality of the difference."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Quantile-Quantile Plots",
+    "text": "Normality Assumption: Quantile-Quantile Plots\n\nThere are formal tests for normality (see article here), however, we will not use them.\n\nTests for normality are not well-endorsed by statisticians.\n\nInstead, we will assess normality using a quantile-quantile (Q-Q) plot.\nA Q-Q plot helps us visually check if our data follows a specific distribution (here, the normal).\n\nIt compares the quantiles of our sample data to the quantiles of a theoretical distribution (the normal).\n\nHow do we read Q-Q plots?\n\nEach dot represents one observation in our dataset.\nIf the data follow a normal distribution, we will observe that the dots fall roughly along a straight diagonal line.\nWe focus on the “middle” of the graph."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Quantile-Quantile Plots",
+    "text": "Normality Assumption: Quantile-Quantile Plots"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Quantile-Quantile Plots",
+    "text": "Normality Assumption: Quantile-Quantile Plots"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Quantile-Quantile Plots",
+    "text": "Normality Assumption: Quantile-Quantile Plots"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-4",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Quantile-Quantile Plots",
+    "text": "Normality Assumption: Quantile-Quantile Plots"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Independent Means",
+    "text": "Normality Assumption: Independent Means\n\nRecall our example from last lecture:\n\nIn the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today’s young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony’s wing‐flap rate (in flaps/minute)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Independent Means",
+    "text": "Normality Assumption: Independent Means\n\nFurther, we performed a two-sample t-test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi (\\alpha=0.05).\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nAre our results valid?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-r",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Independent Means (R)",
+    "text": "Normality Assumption: Independent Means (R)\n\nWe will use the independent_qq() function from library(ssstats) to assess normality.\n\n\ndataset_name %&gt;% independent_qq(continuous = continuous_variable,\n                                grouping = grouping_variable)\n\n\nThis will provide the the Q-Q plots and the histograms for the two independent groups under consideration."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Independent Means",
+    "text": "Normality Assumption: Independent Means\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\ndataset_name %&gt;% independent_qq(continuous = continuous_variable,\n                                grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Independent Means",
+    "text": "Normality Assumption: Independent Means\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\nwing_flap %&gt;% independent_qq(continuous = apples,\n                             grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-4",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Independent Means",
+    "text": "Normality Assumption: Independent Means\n\nRunning the code,\n\n\n\nwing_flap %&gt;% independent_qq(continuous = apples,\n                             grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-variance-assumption",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-variance-assumption",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Variance Assumption",
+    "text": "Introduction: Variance Assumption\n\nIn addition to normality, the two-sample t-test assumes equal variance between groups.\n\nHomoskedastic: same variance\nHeteroskedastic: different variances\n\nWe can check this assumption and easily adjust if the assumption is broken.\nGraphical method: scatterplot of residuals\nFormal method: test for equal variances (Brown-Forsythe-Levine)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-r",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot (R)",
+    "text": "Variance Assumption: Residual Plot (R)\n\nWe will use the plot_residuals() function from library(ssstats) to graphically assess the assumption of equal variance.\n\n\ndataset_name %&gt;% plot_residuals(continuous = continuous_variable,\n                                grouping = grouping_variable)\n\n\nWe should evaluate and compare the lengths of the resulting “lines”."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot",
+    "text": "Variance Assumption: Residual Plot\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\ndataset_name %&gt;% plot_residuals(continuous = continuous_variable,\n                                grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot",
+    "text": "Variance Assumption: Residual Plot\n\nLet’s now look at the normality assumption for our example.\nOur updated code:\n\n\n\nwing_flap %&gt;% plot_residuals(continuous = apples,\n                             grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-residual-plot-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Residual Plot",
+    "text": "Variance Assumption: Residual Plot\n\nRunning the code,\n\n\n\nwing_flap %&gt;% plot_residuals(continuous = apples,\n                             grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nIf we believe the assumption may be violated, we can test for equal variance using the Brown-Forsythe-Levine (BFL) test.\nThis test is valid for more than two groups (read: we will see it again!)\nHypotheses\n\nH_0: \\ \\sigma^2_1 = \\sigma^2_2 = ... = \\sigma^2_k\nH_1: at least one \\sigma^2_i is different."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nTest Statistic:\n\n\nF_0 = \\frac{\\sum_{i=1}^k n_i(\\bar{z}_{i.}-\\bar{z}_{..})^2/(k-1)}{\\sum_{i=1}^k \\sum_{j=1}^{n_i} (z_{ij}-\\bar{z}_{i.})^2/(N-k)} \\sim F_{\\text{df}_{\\text{num}}, \\text{df}_{\\text{den}}}\n\n\nwhere\n\nn_i is the sample size of group i\n\\bar{z}_{i.} is the median of group i and \\bar{z}_{..} is the grand median\nk is the number of groups\nN = \\sum_{i=1}^k n_i is the overall sample size\n\\text{df}_{\\text{num}} = k-1, \\text{df}_{\\text{den}} = (N-k)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nNote that the BFL is a one-tailed test, which is different than when we are testing means using the t distribution.\np-value:\n\np = P\\left[F_{\\text{df}_{\\text{num}}, \\text{df}_{\\text{den}}} \\ge F_0\\right]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-r",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances (R)",
+    "text": "Hypothesis Testing: Two or More Variances (R)\n\nWe will use the variances_HT() function from library(ssstats).\n\n\ndataset_name %&gt;% variances_HT(continuous = continuous_variable,\n                              grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nLet’s now test the variance assumption for our example.\nHow should we change the code for our dataset?\n\n\ndataset_name %&gt;% variances_HT(continuous = continuous_variable,\n                              grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-4",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nLet’s now test the variance assumption for our example.\nOur updated code is:\n\n\nwing_flap %&gt;% variances_HT(continuous = apples,\n                           grouping = target)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-5",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-5",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nRunning the code,\n\n\nwing_flap %&gt;% variances_HT(continuous = apples,\n                           grouping = target)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Above = σ²_Below \nAlternative: At least one variance is different \nTest statistic: F(1,23) = 0.063 \np-value: p = 0.804\nConclusion: Fail to reject the null hypothesis (p = 0.8045 ≥ α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-6",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-or-more-variances-6",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two or More Variances",
+    "text": "Hypothesis Testing: Two or More Variances\n\nHypotheses:\n\nH_0: \\ \\sigma^2_{\\text{Above}} = \\sigma^2_{\\text{Below}}\nH_1: \\ \\sigma^2_{\\text{Above}} \\ne \\sigma^2_{\\text{Below}}\n\nTest Statistic and p-Value\n\nF_0 = 0.063, p = 0.805\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.10\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.805 &gt; 0.10). There is not sufficient evidence to suggest that the variances of those above and below the target are different. That is, the variance assumption holds."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-broken-now-what",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#variance-assumption-broken-now-what",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Variance Assumption: Broken – Now What?",
+    "text": "Variance Assumption: Broken – Now What?\n\nWhat do we do if we have actually broken the variance assumption?\nIf the normality assumption holds, we can use Satterthwaite’s approximation for degrees of freedom.\n\nEverything about the two-sample t-test is the same, other than the calculation of the degrees of freedom.\n\n\n \\text{df}=\\frac{ \\left( \\frac{s^2_1}{n_1} + \\frac{s_2^2}{n_2} \\right)^2 }{ \\frac{(s_1^2/n_1)^2}{n_1-1} + \\frac{(s_2^2/n_2)^2}{n_2-1} }\n\nRemember the original df of \\min(n_1-1, n_2-1)…"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#confidence-interval-two-independent-means-with-unequal-variances",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#confidence-interval-two-independent-means-with-unequal-variances",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Confidence Interval: Two Independent Means with Unequal Variances",
+    "text": "Confidence Interval: Two Independent Means with Unequal Variances\n\nWe will still use the independent_mean_CI function from library(ssstats) to find the confidence interval…\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_mean_CI(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     confidence = confidence_level,\n                                     variance = \"unequal\")\n\n\nNote the variance argument at the end."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-means-with-unequal-variances",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-means-with-unequal-variances",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Means with Unequal Variances",
+    "text": "Hypothesis Testing: Two Independent Means with Unequal Variances\n\nWe will use the independent_mean_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_mean_HT(grouping = grouping_variable,\n                                     continuous = continuous_variable, \n                                     mu = hypothesized_value, \n                                     alternative = \"alternative_direction\", \n                                     alpha = specified_alpha,\n                                     variance = \"unequal\")\n\n\nNote the variance argument at the end."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Comparisons: Two Independent Means",
+    "text": "Comparisons: Two Independent Means\n\nLet’s look at the 90% CI for our example under both ways of calculating degrees of freedom:\nAssuming equal variance:\n\n\nwing_flap %&gt;% independent_mean_CI(continuous = apples,\n                                  grouping = target,\n                                  confidence = 0.90,\n                                  var = \"equal\")\n\n\nAssuming unequal variance:\n\n\nwing_flap %&gt;% independent_mean_CI(continuous = apples,\n                                  grouping = target,\n                                  confidence = 0.90,\n                                  var = \"unequal\")"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Comparisons: Two Independent Means",
+    "text": "Comparisons: Two Independent Means\n\nLet’s look at the 90% CI for our example under both ways of calculating degrees of freedom:\nAssuming equal variance:\n\n\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 90% confidence interval for μ₁ − μ₂ is (8.4642, 11.647)\n\n\n\nAssuming unequal variance:\n\n\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 90% confidence interval for μ₁ − μ₂ is (8.3697, 11.7415)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Comparisons: Two Independent Means",
+    "text": "Comparisons: Two Independent Means\n\nLet’s look at the hypothesis test results for our example under both ways of calculating degrees of freedom (\\alpha = 0.10):\nAssuming equal variance,\n\n\nwing_flap %&gt;% independent_mean_HT(continuous = apples,\n                                  grouping = target,\n                                  confidence = 0.90,\n                                  variance = \"equal\")\n\n\nAssuming unequal variance,\n\n\nwing_flap %&gt;% independent_mean_HT(continuous = apples,\n                                  grouping = target,\n                                  confidence = 0.90,\n                                  variance = \"unequal\")"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#comparisons-two-independent-means-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Comparisons: Two Independent Means",
+    "text": "Comparisons: Two Independent Means\n\nAssuming equal variance,\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 0\nAlternative: H₁: μ₁ − μ₂ ≠ 0\nTest statistic: t(23) = 10.829\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.1)\n\n\n\nAssuming unequal variance,\n\n\n\nTwo-sample t-test for two independent means and unequal variance:\nNull: H₀: μ₁ − μ₂ = 0\nAlternative: H₁: μ₁ − μ₂ ≠ 0\nTest statistic: t(15.06) = 10.454\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.1)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means",
+    "text": "Normality Assumption: Dependent Means\n\nLet’s now look at when we are examining dependent means.\n\nMust be able to link observations using an identifier.\n\nRecall that we are actually examining the difference between the two groups, d = x_1-x_2.\n\nWe want to know about the normality of d and not x_1 and x_2.\nThere is no variance assumption with this test.\n\nAs a reminder, how do we read Q-Q plots?\n\nEach dot represents one observation (difference) in our dataset.\nIf the data follow a normal distribution, we will observe that the dots fall roughly along a straight diagonal line.\nWe focus on the “middle” of the graph."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means",
+    "text": "Normality Assumption: Dependent Means\n\nRecall our example from last lecture:\n\nPrincess Celestia has invited two groups of flyers to take part in a brand-new “SkyStride” aerial training camp. Before the camp begins, each pony perches on a floating platform while a team of Wonderbolt engineers use magical sensors to record their baseline wing-flap rate (flaps per second) as they hover in place (pre_training_wfr).\nOver two weeks, trainees attend identical flight drills: precision loops, cloud-weaving obstacle courses, and high-altitude sprints. At camp’s end, each flyer returns to the sensor platforms for post-training measurements (post_training_wfr)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means",
+    "text": "Normality Assumption: Dependent Means\n\nFurther, we performed a dependent t-test to determine if there is a difference in wing-flap rate pre- and post-training (\\alpha=0.01).\n\n\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)\n\n\n\nAre our results valid?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-r",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means (R)",
+    "text": "Normality Assumption: Dependent Means (R)\n\nWe will use the dependent_qq() function from library(ssstats) to assess normality.\n\n\ndataset_name %&gt;% dependent_qq(col1 = first_group,\n                              col2 = second_group)\n\n\nThis will provide the the Q-Q plot and the histogram for the difference between the two groups."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means",
+    "text": "Normality Assumption: Dependent Means\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\ndataset_name %&gt;% dependent_qq(col1 = first_group,\n                              col2 = second_group)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-4",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means",
+    "text": "Normality Assumption: Dependent Means\n\nLet’s now look at the normality assumption for our example.\nOur updated code,\n\n\nwing_flap %&gt;% dependent_qq(col1 = post_training_wfr,\n                           col2 = pre_training_wfr)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-5",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-5",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Normality Assumption: Dependent Means",
+    "text": "Normality Assumption: Dependent Means\n\nRunning the code,"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up-t-test-assumptions",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up-t-test-assumptions",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Wrap Up: t-Test Assumptions",
+    "text": "Wrap Up: t-Test Assumptions\n\nImportant note!!\n\nI do not expect you to agree with my assessment of q-q plots!\nWhat I do expect is that you know what to do after making your assessment.\n\nTwo indepdent means:\n\nNormality and variance met \\to pooled t-test.\nNormality met but variance not met \\to Satterthwaite’s approximation for df.\nNormality not met for independent means \\to Wilcoxon rank sum.\n\nTwo dependent means:\n\nNormality met \\to dependent t-test.\nNormality not met \\to Wilcoxon signed rank.\n\n…. nonparametrics?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-nonparametrics",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-nonparametrics",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Nonparametrics",
+    "text": "Introduction: Nonparametrics\n\nThe t-tests we have already learned are considered parametric methods.\n\nThere is a distributional assumption on the test.\n\nNonparametric methods do not have distributional assumptions.\n\nWe typically transform the data to their ranks and then perform calculations.\n\nWhy don’t we always use nonparametric methods?\n\nThey are often less efficient: a larger sample size is required to achieve the same probability of a Type I error.\nThey discard useful information :("
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-two-independent-medians",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-two-independent-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Two Independent Medians",
+    "text": "Introduction: Two Independent Medians\n\nThe Wilcoxon Rank Sum test is a nonparametric alternative to the two-sample t-test.\nInstead of comparing group means, we will now turn to comparing the ranks of the data.\nLet us first consider a simple example, x: \\ 1, 7, 10, 2, 6, 8\nOur first step is to reorder the data: x: \\ 1, 2, 6, 7, 8, 10\nThen, we replace with the ranks: R: \\ 1, 2, 3, 4, 5, 6"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-medians-ranking-data",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-medians-ranking-data",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Independent Medians: Ranking Data",
+    "text": "Two Independent Medians: Ranking Data\n\nWhat if all data values are not unique? We will assign the average rank for that group.\nFor example, x: \\ 9, 8, 8, 0, 3, 4, 4, 8\nLet’s reorder:x: \\ 0, 3, 4, 4, 8, 8, 8, 9\nRank ignoring ties:R: \\ 1, 2, 3, 4, 5, 6, 7, 8\nNow, the final rank:R: \\ 1, 2, 3.5, 3.5, 6, 6, 6, 8"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians",
+    "text": "Hypothesis Testing: Two Independent Medians\n\nHypotheses: Two Tailed\n\nH_0: \\ M_1-M_2 = M_0\nH_1: \\ M_1-M_2 \\ne M_0\n\nHypotheses: Left Tailed\n\nH_0: \\ M_1-M_2 \\ge M_0\nH_1: \\ M_1-M_2 &lt; M_0\n\nHypotheses: Right Tailed\n\nH_0: \\ M_1-M_2 \\le M_0\nH_1: \\ M_1-M_2 &gt; M_0"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians",
+    "text": "Hypothesis Testing: Two Independent Medians\n\nT_0 = \\sum R_{\\text{1}} - \\frac{n_1(n_1+1)}{2}\n\n\nT = \\sum R_{\\text{sample 1}} - \\frac{n_1(n_1+1)}{2}\nwhere\n\n\\sum R_1 is the sum of the ranks for the first group\nn_1 is the sample size of the first group\n\nNote that p = (calculated by R :))"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-r",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians (R)",
+    "text": "Hypothesis Testing: Two Independent Medians (R)\n\nWe will use the independent_median_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% independent_median_HT(continuous = continuous_variable,\n                                       grouping = grouping_variable,\n                                       alternative = \"alternative_direction\",\n                                       m = hypothesized difference,\n                                       alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians",
+    "text": "Hypothesis Testing: Two Independent Medians\n\nRecall our example:\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\nHow should we change the following code?\n\n\ndataset_name %&gt;% independent_median_HT(continuous = continuous_variable,\n                                       grouping = grouping_variable,\n                                       alternative = \"alternative_direction\",\n                                       m = hypothesized_difference,\n                                       alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians",
+    "text": "Hypothesis Testing: Two Independent Medians\n\nRecall our example:\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\nOur updated code,\n\n\nwing_flap %&gt;% independent_median_HT(continuous = apples,\n                                    grouping = target,\n                                    alternative = \"greater\",\n                                    m = 5,\n                                    alpha = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-4",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians",
+    "text": "Hypothesis Testing: Two Independent Medians\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_median_HT(continuous = apples,\n                                    grouping = target,\n                                    alternative = \"greater\",\n                                    m = 5,\n                                    alpha = 0.05)\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-5",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-5",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Independent Medians",
+    "text": "Hypothesis Testing: Two Independent Medians\n\nHypotheses:\n\nH_0: \\ M_{\\text{above}} - M_{\\text{below}} \\le 5\nH_1: \\ M_{\\text{above}} - M_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nT_0 = 135.5, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target eat 5 more apples than those below target."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-groups-means-vs.-medians",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-groups-means-vs.-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Independent Groups: Means vs. Medians",
+    "text": "Two Independent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\nwing_flap %&gt;% independent_mean_HT(continuous = apples, \n                                  grouping = target,\n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\n\nWilcoxon rank sum for independent medians:\n\n\nwing_flap %&gt;% independent_median_HT(continuous = apples,\n                                    grouping = target,\n                                    mu = 5,\n                                    alternative = \"greater\",\n                                    alpha = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-groups-means-vs.-medians-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-groups-means-vs.-medians-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Independent Groups: Means vs. Medians",
+    "text": "Two Independent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-two-dependent-medians",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-two-dependent-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Introduction: Two Dependent Medians",
+    "text": "Introduction: Two Dependent Medians\n\nThe Wilcoxon Signed Rank test is a nonparametric alternative to the dependent t-test.\nInstead of examining the mean of the difference, we will now turn to examining the ranks of the differences.\nBefore ranking, we will find the difference between the paired observations and eliminate any 0 differences.\n\nNote 1: elimniating 0 differences is the big difference between the other tests!\nNote 2: because we are eliminating 0 differences, this means that our sample size will update to the number of pairs with a non-0 difference."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-medians-ranking-data",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-medians-ranking-data",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Dependent Medians: Ranking Data",
+    "text": "Two Dependent Medians: Ranking Data\n\nWhen ranking, we the differences are ranked based on the absolute value of the difference.\nThen, ranks can be identified as “positive” or “negative” based on the direction of the difference.\n\n\n\n\nX\nY\nD\n|D|\nRank\n\n\n\n\n5\n8\n-3\n3\n- 1.5\n\n\n8\n5\n3\n3\n+ 1.5\n\n\n4\n4\n0\n0\n———\n\n\n\n\nIn this (very basic) example, we started with n=3, but reduced to n=2 due to the 0 difference of the third observation."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nHypotheses: Two Tailed\n\nH_0: \\ M_d=M_0\nH_1: \\ M_d \\ne M_0\n\nHypotheses: Left Tailed\n\nH_0: \\ M_d \\ge M_0\nH_1: \\ M_d &lt; M_0\n\nHypotheses: Right Tailed\n\nH_0: \\ M_d \\le M_0\nH_1: \\ M_d &gt; M_0\n\nNote! M_d = M_1 - M_2"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nTest Statistic\n\n\nT_0 =\n\\begin{cases}\n  R_+ = \\text{sum of positive ranks} & \\text{if left-tailed} \\\\\n  R_- = \\text{sum of negative ranks} & \\text{if right-tailed} \\\\\n  \\min(R_+, R_-) & \\text{if two-tailed}\n\\end{cases}\n\n\np-Value is calculated by R."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-r",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-r",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians (R)",
+    "text": "Hypothesis Testing: Two Dependent Medians (R)\n\nWe will use the dependent_median_HT function from library(ssstats) to perform the necessary calculations for the hypothesis test.\nGeneric syntax:\n\n\ndataset_name %&gt;% dependent_median_HT(col1 = first_group,\n                                     col2 = second_group,\n                                     alternative = \"alternative_direction\",\n                                     m = hypothesized_value,\n                                     alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-2",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-2",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% dependent_median_HT(col1 = first_group,\n                                     col2 = second_group,\n                                     alternative = \"alternative_direction\",\n                                     m = hypothesized_value,\n                                     alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-3",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-3",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\nOur updated code,\n\n\nwing_flap %&gt;% dependent_median_HT(col1 = pre_training_wfr,\n                                  col2 = post_training_wfr,\n                                  alternative = \"two\",\n                                  m = 0,\n                                  alpha = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-4",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-4",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nRunning the code,\n\n\nwing_flap %&gt;% dependent_median_HT(col1 = pre_training_wfr,\n                                  col2 = post_training_wfr,\n                                  alternative = \"two\",\n                                  m = 0,\n                                  alpha = 0.01)\n\nWilcoxon Signed-Rank Test for the median of differences:\nNull: H₀: M_d = 0\nAlternative: H₁: M_d ≠ 0\nTest statistic: T = 188\np-value: p = 0.501\nConclusion: Fail to reject the null hypothesis (p = 0.5011 ≥ α = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-5",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-dependent-medians-5",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Hypothesis Testing: Two Dependent Medians",
+    "text": "Hypothesis Testing: Two Dependent Medians\n\nHypotheses:\n\nH_0: \\ M_{\\text{d}} = 0, where M_{\\text{d}} = M_{\\text{pre}}-M_{\\text{post}}\nH_1: \\ M_{\\text{d}} \\ne 0\n\nTest Statistic and p-Value\n\nT_0 = 188, p = 0.501\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.501 &gt; 0.01). There is not sufficient evidence to suggest that there is a difference in wing-flap rate."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-groups-means-vs.-medians",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-groups-means-vs.-medians",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Dependent Groups: Means vs. Medians",
+    "text": "Two Dependent Groups: Means vs. Medians\n\nt-test for dependent means:\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                alternative = \"two\",\n                                m = 0,\n                                alpha = 0.01)\n\n\nWilcoxon signed for dependent medians:\n\n\nwing_flap %&gt;% dependent_median_HT(col1 = pre_training_wfr,\n                                  col2 = post_training_wfr,\n                                  alternative = \"two\",\n                                  m = 0,\n                                  alpha = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-groups-means-vs.-medians-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-groups-means-vs.-medians-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Two Dependent Groups: Means vs. Medians",
+    "text": "Two Dependent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nToday’s lecture:\n\nNormality assumption (all t) \\to Q-Q plot\nVariance assumption (independent t) \\to folded F test\nWilcoxon rank sum (nonparametric equivalent to independent t)\nWilcoxon signed rank (nonparametric equivalent to dependent t)\n\nNext class:\n\nReview of Module 1\nProject 1!"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up-1",
+    "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up-1",
+    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nDaily activity: .qmd is available on Canvas.\n\nDue date: Monday, July 6, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nDo you have questions for me?\nDo you need my help with anything from prior lectures?"
   },
   {
     "objectID": "index.html",
@@ -565,6 +1020,13 @@
     "title": "STA4173 Biostatistics Summer 2025",
     "section": "",
     "text": "STA4173 Biostatistics Summer 2025\nWelcome to STA4173 - Biostatistics for the Summer 2025 semester! This course\n\nis an 8-week synchronous (live) course with students both on campus and on Zoom.\nis a senior-level second course in applied statistics.\nhas been designed for STEM majors, not solely those majoring in mathematics and/or minoring in statistics.\n\nHousekeeping:\n\nPlease join the Discord server (link on Canvas and in syllabus).\n\nIt is expected that students will engage on Discord while learning the course material.\n\nPlease enter class with an open mind and willingness to learn.\nYou may join Zoom for office hours by scheduling an appointment with me on Navigate.\nThere are no formal tests during the semester. Instead, you will complete projects to demonstrate your understanding.\nThere is a final exam at the end of the semester.\n\nI will not ask you to provide code in a timed environment.\nI will have all code/output relevant to questions as part of the exam. (i.e., you will interpret the output.)\n\n\nContacting Dr. Seals: The optimal ways to contact me are either\n\nemail through UWF Gmail (sseals at uwf dot edu)\ndirect message on Discord\n\nNote that I try to respond within 24 hours, however, it doesn’t always happen. If your matter is urgent, please feel free to snag me before or after class."
+  },
+  {
+    "objectID": "files/hyp_test_template.html",
+    "href": "files/hyp_test_template.html",
+    "title": "STA4173 - Biostatistics - Summer 2025",
+    "section": "",
+    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#introduction-topics",
@@ -1169,382 +1631,172 @@
     "text": "Wrap Up\n\nDaily activity: the .qmd we worked on during class.\n\nDue date: Monday, June 23, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission."
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-topics",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-topics",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Introduction: Topics",
-    "text": "Introduction: Topics\n\nAssumptions on t-tests:\n\nOne-sample\n\nNormality\n\nIndependent samples\n\nNormality\nEqual variance\n\nDependent samples\n\nNormality\n\n\nNonparametric alternatives\n\nIndependent medians (M_1-M_2)\nDependent medians (M_d)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-normality-assumption",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-normality-assumption",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Introduction: Normality Assumption",
-    "text": "Introduction: Normality Assumption\n\nAll t-tests assume approximate normality of the data.\n\nIn the case of one-sample t-tests, the measure of interest must somewhat follow a normal distribution.\nIn the case of two-sample t-tests, the measure of interest in each group must somewhat follow a normal distribution.\n\nNote that a paired t-test is technically a one-sample t-test, so we will examine normality of the difference."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Quantile-Quantile Plots",
-    "text": "Normality Assumption: Quantile-Quantile Plots\n\nThere are formal tests for normality (see article here), however, we will not use them.\n\nTests for normality are not well-endorsed by statisticians.\n\nInstead, we will assess normality using a quantile-quantile (Q-Q) plot.\nA Q-Q plot helps us visually check if our data follows a specific distribution (here, the normal).\n\nIt compares the quantiles of our sample data to the quantiles of a theoretical distribution (the normal).\n\nHow do we read Q-Q plots?\n\nEach dot represents one observation in our dataset.\nIf the data follow a normal distribution, we will observe that the dots fall roughly along a straight diagonal line.\nWe focus on the “middle” of the graph."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Quantile-Quantile Plots",
-    "text": "Normality Assumption: Quantile-Quantile Plots"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Quantile-Quantile Plots",
-    "text": "Normality Assumption: Quantile-Quantile Plots"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Quantile-Quantile Plots",
-    "text": "Normality Assumption: Quantile-Quantile Plots"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-4",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-quantile-quantile-plots-4",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Quantile-Quantile Plots",
-    "text": "Normality Assumption: Quantile-Quantile Plots"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Independent Means",
-    "text": "Normality Assumption: Independent Means\n\nRecall our example from last lecture: In the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today’s young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony’s wing‐flap rate (in flaps/minute)."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Independent Means",
-    "text": "Normality Assumption: Independent Means\n\nFurther, we performed a two-sample t-test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi (\\alpha=0.05).\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nAre our results valid?"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-r",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-r",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Independent Means (R)",
-    "text": "Normality Assumption: Independent Means (R)\n\nWe will use the independent_qq() function from library(ssstats) to assess normality.\n\n\ndataset_name %&gt;% independent_qq(continuous = continuous_variable,\n                                grouping = grouping_variable)\n\n\nThis will provide the the Q-Q plots and the histograms for the two independent groups under consideration."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Independent Means",
-    "text": "Normality Assumption: Independent Means\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\ndataset_name %&gt;% independent_qq(continuous = continuous_variable,\n                                grouping = grouping_variable)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Independent Means",
-    "text": "Normality Assumption: Independent Means\n\nLet’s now look at the normality assumption for our example.\nHow should we change the code for our dataset?\n\n\nwing_flap %&gt;% independent_qq(continuous = apples,\n                             grouping = target)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-4",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-4",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Independent Means",
-    "text": "Normality Assumption: Independent Means\n\nRunning the code,\n\n\n\nwing_flap %&gt;% independent_qq(continuous = apples,\n                             grouping = target)"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-variance-assumption",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-variance-assumption",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Introduction: Variance Assumption",
-    "text": "Introduction: Variance Assumption\n\nintroduce variance assumption"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-folded-f",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-folded-f",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Introduction: Folded F",
-    "text": "Introduction: Folded F\n\nintroduce Folded F"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-r",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-r",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Variance Assumption: Independent Means (R)",
-    "text": "Variance Assumption: Independent Means (R)\n\nsyntax for folded F"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Variance Assumption: Independent Means",
-    "text": "Variance Assumption: Independent Means\n\nexample set up"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Variance Assumption: Independent Means",
-    "text": "Variance Assumption: Independent Means\n\nexample set up with correct code"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Variance Assumption: Independent Means",
-    "text": "Variance Assumption: Independent Means\n\ncode has been run"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#variance-assumption-independent-means-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Variance Assumption: Independent Means",
-    "text": "Variance Assumption: Independent Means\n\nHT results"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Dependent Means",
-    "text": "Normality Assumption: Dependent Means\n\nnormality assumption for dependent t"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-r",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-r",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Dependent Means (R)",
-    "text": "Normality Assumption: Dependent Means (R)\n\nsyntax for qq"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Dependent Means",
-    "text": "Normality Assumption: Dependent Means\n\nexample set up"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Dependent Means",
-    "text": "Normality Assumption: Dependent Means\n\nexample set up with correct code"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#normality-assumption-dependent-means-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Normality Assumption: Dependent Means",
-    "text": "Normality Assumption: Dependent Means\n\ncode has been run"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wrap-up-t-test-assumptions",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wrap-up-t-test-assumptions",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wrap Up: t-Test Assumptions",
-    "text": "Wrap Up: t-Test Assumptions\n\nImportant note!!\n\nI do not expect you to agree with my assessment of q-q plots!\nWhat I do expect is that you know what to do after making your assessment.\n\nMeet assumption \\to use t-test\nDo not meet assumption \\to use nonparametric equivalent\n\n\nNext: nonparametrics!"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-nonparametrics",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-nonparametrics",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Introduction: Nonparametrics",
-    "text": "Introduction: Nonparametrics\n\nThe t-tests we have already learned are considered parametric methods.\n\nThere is a distributional assumption on the test.\n\nNonparametric methods do not have distributional assumptions.\n\nWe typically transform the data to their ranks and then perform calculations.\n\nWhy don’t we always use nonparametric methods?\n\nThey are often less efficient: a larger sample size is required to achieve the same probability of a Type I error.\nThey discard useful information :("
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-wilcoxon-rank-sum",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#introduction-wilcoxon-rank-sum",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Introduction: Wilcoxon Rank Sum",
-    "text": "Introduction: Wilcoxon Rank Sum\n\nintroduce W RS"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-ranking-data",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-ranking-data",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum: Ranking Data",
-    "text": "Wilcoxon Rank Sum: Ranking Data\n\nIn the nonparametric tests we will be learning, the data will be ranked.\nLet us first consider a simple example, x: \\ 1, 7, 10, 2, 6, 8\nOur first step is to reorder the data: x: \\ 1, 2, 6, 7, 8, 10\nThen, we replace with the ranks: R: \\ 1, 2, 3, 4, 5, 6"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-ranking-data-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-ranking-data-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum: Ranking Data",
-    "text": "Wilcoxon Rank Sum: Ranking Data\n\nWhat if all data values are not unique? We will assign the average rank for that group.\nFor example, x: \\ 9, 8, 8, 0, 3, 4, 4, 8\nLet’s reorder:x: \\ 0, 3, 4, 4, 8, 8, 8, 9\nRank ignoring ties:R: \\ 1, 2, 3, 4, 5, 6, 7, 8\nNow, the final rank:R: \\ 1, 2, 3.5, 3.5, 6, 6, 6, 8"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum",
-    "text": "Wilcoxon Rank Sum\nHypotheses\n\nH_0: M_1 - M_2 = M_0 | H_0: M_1 - M_2 \\le M_0 | H_0: M_1 - M_2 \\ge M_0\nH_1: M_1 - M_2 \\ne M_0 | H_1: M_1 - M_2 &gt; M_0 | H_1: M_1 - M_2 &lt; M_0\n\nTest Statistic & p-Value\n\nT = \\sum R_{\\text{sample 1}} - \\frac{n_1(n_1+1)}{2}\np = (calculated by R :))\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha.\n\nConclusion/Interpretation\n\n[Reject or fail to reject] H_0.\nThere [is or is not] sufficient evidence to suggest [alternative hypothesis in words]."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-r",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-r",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum (R)",
-    "text": "Wilcoxon Rank Sum (R)\n\nsyntax"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum: Independent Medians",
-    "text": "Wilcoxon Rank Sum: Independent Medians\n\nexample set up"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum: Independent Medians",
-    "text": "Wilcoxon Rank Sum: Independent Medians\n\nexample with correct code"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum: Independent Medians",
-    "text": "Wilcoxon Rank Sum: Independent Medians\n\ncode has been run"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-rank-sum-independent-medians-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Rank Sum: Independent Medians",
-    "text": "Wilcoxon Rank Sum: Independent Medians\n\nHT typeset"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-ranking-data",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-ranking-data",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank: Ranking Data",
-    "text": "Wilcoxon Signed Rank: Ranking Data\n\nBefore ranking, we will find the difference between the paired observations and eliminate any 0 differences.\n\nNote 1: elimniating 0 differences is the big difference between the other tests!\nNote 2: because we are eliminating 0 differences, this means that our sample size will update to the number of pairs with a non-0 difference.\n\nWhen ranking, we the differences are ranked based on the absolute value of the difference.\nWe also keep the sign of the difference.\n\nWe will have positive ranks and negative ranks.\n\n\n\n\n\nX\nY\nD\n|D|\nRank\n\n\n\n\n5\n8\n-3\n3\n- 1.5\n\n\n8\n5\n3\n3\n+ 1.5\n\n\n4\n4\n0\n0\n———"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank",
-    "text": "Wilcoxon Signed Rank\nHypotheses\n\nH_0: M_d = M_0 | H_0: M_d \\le M_0 | H_0: M_d \\ge M_0\nH_1: M_d \\ne M_0 | H_1: M_d &gt; M_0 | H_1: M_d &lt; M_0\n\nTest Statistic & p-Value\n\nT_0 = \\min(T+,|T_-|) if two-tailed, T_0 = T_+ if left-tailed, and T_0 = |T_-| if right-tailed.\np = (calculated by R :))\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha.\n\nConclusion/Interpretation\n\n[Reject or fail to reject] H_0.\nThere [is or is not] sufficient evidence to suggest [alternative hypothesis in words]."
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-r",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-r",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank (R)",
-    "text": "Wilcoxon Signed Rank (R)\n\nsyntax"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank: Dependent Medians",
-    "text": "Wilcoxon Signed Rank: Dependent Medians\n\nexample set up"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank: Dependent Medians",
-    "text": "Wilcoxon Signed Rank: Dependent Medians\n\nexample with correct code"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank: Dependent Medians",
-    "text": "Wilcoxon Signed Rank: Dependent Medians\n\ncode has been run"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wilcoxon-signed-rank-dependent-medians-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "Wilcoxon Signed Rank: Dependent Medians",
-    "text": "Wilcoxon Signed Rank: Dependent Medians\n\nHT typeset"
-  },
-  {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#putting-it-all-together",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#putting-it-all-together",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#putting-it-all-together",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#putting-it-all-together",
+    "title": "Module 1 Review",
     "section": "Putting It All Together",
     "text": "Putting It All Together\n\nWhen asked to compare two groups, I first must decide:\n\nIndependent data?\nDependent data?\n\nThen, I must decide:\n\nDo I meet the assumptions for the appropriate t-test?\n\nIf so \\to proceed with t-test.\nIf not \\to use nonparametric alternative.\n\n\nRemember the pairings!\n\nIndependent t-test \\to Wilcoxon rank sum.\nDependent t-test \\to Wilcoxon signed rank."
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: Independent or Dependent?",
-    "text": "“Use the Appropriate Test”: Independent or Dependent?\n\nExample 1 - independent or dependent?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 1",
+    "text": "“Use the Appropriate Test”: Example 1\n\nResearchers in Equestria are interested in whether the habitat environment influences the growth of baby seaponies. Specifically, they want to compare the growth rates of baby seaponies living in Coral Reef habitats to those living in Kelp Forest habitats.\nThe seaponies in each habitat grow under natural conditions, and each baby seapony belongs to only one habitat: either the Coral Reef or the Kelp Forest. After a full season, researchers record the growth rate (in centimeters per month) for each seapony.\nThe goal is to determine whether the average growth rates differ between the two habitats.\nUse the apporpriate hypothesis test to answer the researchers’ question. Test at the \\alpha=0.05 level.\nIs this independent or dependent data?"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: t or Nonparametric?",
-    "text": "“Use the Appropriate Test”: t or Nonparametric?\n\nExample 1 - parametric or non?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-1",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-1",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 1",
+    "text": "“Use the Appropriate Test”: Example 1\n\nShould we use a t-test or a nonparametric test?"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: Independent or Dependent?",
-    "text": "“Use the Appropriate Test”: Independent or Dependent?\n\nExample 2 - independent or dependent?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-2",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-2",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 1",
+    "text": "“Use the Appropriate Test”: Example 1\n\nBecause we are using the two-sample t-test, we need to examine the variance assumption.\n\n\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Coral Reef = σ²_Kelp Forest \nAlternative: At least one variance is different \nTest statistic: F(1,98) = 0.008 \np-value: p = 0.928\nConclusion: Fail to reject the null hypothesis (p = 0.9276 ≥ α = 0.05)\n\n\n\nDid we break the variance assumption?"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: t or Nonparametric?",
-    "text": "“Use the Appropriate Test”: t or Nonparametric?\n\nExample 2 - parametric or non?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-3",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-3",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 1",
+    "text": "“Use the Appropriate Test”: Example 1\n\nResearchers in Equestria are interested in whether the habitat environment influences the growth of baby seaponies. Specifically, they want to compare the growth rates of baby seaponies living in Coral Reef habitats to those living in Kelp Forest habitats.\nThe seaponies in each habitat grow under natural conditions, and each baby seapony belongs to only one habitat: either the Coral Reef or the Kelp Forest.\nAfter a full season, researchers record the growth rate (in centimeters per month) for each seapony. The goal is to determine whether the average growth rates differ between the two habitats. Test at the \\alpha=0.05 level.\nWhat hypotheses are we testing?"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: Independent or Dependent?",
-    "text": "“Use the Appropriate Test”: Independent or Dependent?\n\nExample 3 - independent or dependent?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-4",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-4",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 1",
+    "text": "“Use the Appropriate Test”: Example 1\n\nRunning the test,\n\n\nseapony_growth %&gt;% independent_mean_HT(continuous = growth,\n                                       grouping = habitat,\n                                       mu = 0,\n                                       alternative = \"two.sided\",\n                                       alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 0\nAlternative: H₁: μ₁ − μ₂ ≠ 0\nTest statistic: t(98) = -7.415\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric-2",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric-2",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: t or Nonparametric?",
-    "text": "“Use the Appropriate Test”: t or Nonparametric?\n\nExample 3 - parametric or non?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-5",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-1-5",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 1",
+    "text": "“Use the Appropriate Test”: Example 1\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{coral}} = \\mu_{\\text{kelp}}\nH_1: \\ \\mu_{\\text{coral}} \\ne \\mu_{\\text{kelp}}\n\nTest Statistic and p-Value\n\nt_0 = -7.415, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that seaponies living in Coral Reef vs. Kelp Forest are growing at different rates."
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-independent-or-dependent-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: Independent or Dependent?",
-    "text": "“Use the Appropriate Test”: Independent or Dependent?\n\nExample 4 - independent or dependent?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 2",
+    "text": "“Use the Appropriate Test”: Example 2\n\nRarity has created a new type of wing armor designed to protect dragons during flight without reducing their wing strength.\nTo test the effectiveness of her design, Spike measures the wing strength of each dragon before putting on the armor. The dragons are then fitted with Rarity’s wing armor, and their wing strength is measured again while wearing the armor.\nThe goal is to determine whether the wing armor has a significant effect on dragon wing strength.\nUse the apporpriate hypothesis test to answer the researchers’ question. Test at the \\alpha=0.01 level.\nIs this independent or dependent data?"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric-3",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#use-the-appropriate-test-t-or-nonparametric-3",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
-    "section": "“Use the Appropriate Test”: t or Nonparametric?",
-    "text": "“Use the Appropriate Test”: t or Nonparametric?\n\nExample 4 - parametric or non?"
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-1",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-1",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 2",
+    "text": "“Use the Appropriate Test”: Example 2\n\nShould we use a t-test or a nonparametric test?"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wrap-up",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wrap-up",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-2",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-2",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 2",
+    "text": "“Use the Appropriate Test”: Example 2\n\nRarity has created a new type of wing armor designed to protect dragons during flight without reducing their wing strength.\nTo test the effectiveness of her design, Spike measures the wing strength of each dragon before putting on the armor. The dragons are then fitted with Rarity’s wing armor, and their wing strength is measured again while wearing the armor.\nThe goal is to determine whether the wing armor has a significant effect on dragon wing strength.\nUse the apporpriate hypothesis test to answer the researchers’ question. Test at the \\alpha=0.01 level.\nWhat hypotheses are we testing?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-3",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-3",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 2",
+    "text": "“Use the Appropriate Test”: Example 2\n\nRunning the test,\n\n\ndragon_wings %&gt;% dependent_median_HT(col1 = after,\n                                     col2 = before,\n                                     alternative = \"greater\",\n                                     m = 0,\n                                     alpha = 0.01)\n\nWilcoxon Signed-Rank Test for the median of differences:\nNull: H₀: M_d = 0\nAlternative: H₁: M_d &gt; 0\nTest statistic: T = 7260\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-4",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-4",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 2",
+    "text": "“Use the Appropriate Test”: Example 2\n\nHypotheses:\n\nH_0: \\ M_{\\text{after}} \\le M_{\\text{before}}\nH_1: \\ M_{\\text{after}} &gt; M_{\\text{before}}\n\nTest Statistic and p-Value\n\nT_0 = 7260, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.01). There is sufficient evidence to suggest that wing armor increases dragon wing strength."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 3",
+    "text": "“Use the Appropriate Test”: Example 3\n\nSeaponies are studying how quickly they can escape from predators in different environments. They compare escape times in two distinct locations: Shark Areas, where predators are common and seaponies must be on high alert, and Calm Coves, where predators are rare, and seaponies may be more relaxed.\nThe seaponies in each area are different individuals: no seapony is measured in both locations.\nThe goal is to determine whether the typical escape time differs between seaponies in Shark Areas and those in Calm Coves.\nUse the apporpriate hypothesis test to answer the researchers’ question. Test at the \\alpha=0.01 level.\nIs this independent or dependent data?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-1",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-1",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 3",
+    "text": "“Use the Appropriate Test”: Example 3\n\nShould we use a t-test or a nonparametric test?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-2",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-2",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 3",
+    "text": "“Use the Appropriate Test”: Example 3\n\nSeaponies are studying how quickly they can escape from predators in different environments. They compare escape times in two distinct locations: Shark Areas, where predators are common and seaponies must be on high alert, and Calm Coves, where predators are rare, and seaponies may be more relaxed.\nThe seaponies in each area are different individuals: no seapony is measured in both locations.\nThe goal is to determine whether the typical escape time differs between seaponies in Shark Areas and those in Calm Coves.\nUse the apporpriate hypothesis test to answer the researchers’ question. Test at the \\alpha=0.01 level.\nWhat hypotheses are we testing?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-3",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-3",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 3",
+    "text": "“Use the Appropriate Test”: Example 3\n\nRunning the test,\n\n\nescape_times %&gt;% independent_median_HT(continuous = time,\n                                       grouping = area,\n                                       alternative = \"two\",\n                                       m = 0,\n                                       alpha = 0.01)\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ = 0\nAlternative: H₀: M₁ - M₂ = 0\nTest statistic: T = 10152\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-4",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-4",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 3",
+    "text": "“Use the Appropriate Test”: Example 3\n\nHypotheses:\n\nH_0: \\ M_{\\text{shark}} = M_{\\text{calm}}\nH_1: \\ M_{\\text{shark}}\\ne M_{\\text{calm}}\n\nTest Statistic and p-Value\n\nT_0 = 10152, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.01). There is sufficient evidence to suggest a difference in escape times."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 4",
+    "text": "“Use the Appropriate Test”: Example 4\n\nFluttershy has developed a magical serum that she believes will help butterflies grow longer, stronger wings.\nTo test her serum, she carefully measures the wing lengths of each butterfly before applying the treatment. After giving the serum time to work, she measures the same butterflies again to see if their wings have grown.\nFluttershy’s goal is to determine whether the magical serum causes a significant change in butterfly wing length.\nUse the apporpriate hypothesis test to answer Fluttershy’s question. Test at the \\alpha=0.05 level.\nIs this independent or dependent data?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-1",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-1",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 4",
+    "text": "“Use the Appropriate Test”: Example 4\n\nShould we use a t-test or a nonparametric test?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-2",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-2",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 4",
+    "text": "“Use the Appropriate Test”: Example 4\n\nFluttershy has developed a magical serum that she believes will help butterflies grow longer, stronger wings.\nTo test her serum, she carefully measures the wing lengths of each butterfly before applying the treatment. After giving the serum time to work, she measures the same butterflies again to see if their wings have grown.\nFluttershy’s goal is to determine whether the magical serum causes a significant change in butterfly wing length.\nUse the apporpriate hypothesis test to answer Fluttershy’s question. Test at the \\alpha=0.05 level.\nWhat hypotheses are we testing?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-3",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-3",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 4",
+    "text": "“Use the Appropriate Test”: Example 4\n\nRunning the test,\n\n\nbutterfly_wings %&gt;% dependent_mean_HT(col1 = after,\n                                      col2 = before,\n                                      alternative = \"greater\",\n                                      m = 0,\n                                      alpha = 0.05)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d &gt; 0\nTest statistic: t(149) = 15.757\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-5",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-5",
+    "title": "Module 1 Review",
+    "section": "“Use the Appropriate Test”: Example 2",
+    "text": "“Use the Appropriate Test”: Example 2\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{after}} \\le \\mu_{\\text{before}}\nH_1: \\ \\mu_{\\text{after}} &gt; \\mu_{\\text{before}}\n\nTest Statistic and p-Value\n\nt_0 = 15.757, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that serum use is associated with increased wing length."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#wrap-up",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#wrap-up",
+    "title": "Module 1 Review",
     "section": "Wrap Up",
-    "text": "Wrap Up\n\nToday’s lecture:\n\nNormality assumption (all t) \\to Q-Q plot\nVariance assumption (independent t) \\to folded F test\nWilcoxon rank sum (nonparametric equivalent to independent t)\nWilcoxon signed rank (nonparametric equivalent to dependent t)\n\nNext class:\n\nProject 1!"
+    "text": "Wrap Up\n\nToday’s review:\n\nIndependent data, normal \\to two-sample t-test\nIndependent data, not normal \\to Wilcoxon rank sum\nDependent data, normal \\to paired t-test\nDependent data, not normal \\to Wilcoxon signed rank\n\nNext class:\n\nComparing three or more means\nPairwise comparisons"
   },
   {
-    "objectID": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wrap-up-1",
-    "href": "files/slides/STA4173-Su25-06-26-R-t-test-assumptions-wilcoxons.html#wrap-up-1",
-    "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
+    "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#wrap-up-1",
+    "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#wrap-up-1",
+    "title": "Module 1 Review",
     "section": "Wrap Up",
-    "text": "Wrap Up\n\nDaily activity: .qmd is available on Canvas.\n\nDue date: Monday, June 30, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nAre you in the Discord server?\nDo you have questions for me?\nDo you need my help with anything from prior lectures?"
+    "text": "Wrap Up\n\nProject 1: see Canvas for .qmd file\n\nDue date: Monday, July 14, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nDo you have questions for me?\nDo you need my help with anything from prior lectures?"
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html",
