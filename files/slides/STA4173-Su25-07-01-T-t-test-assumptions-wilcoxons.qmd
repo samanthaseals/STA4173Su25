@@ -1,0 +1,1041 @@
+---
+title: "*t*-Test Assumptions<br>Wilcoxon Rank Sum<br>Wilcoxon Signed Rank"
+subtitle: "July 1, 2025<br>Tuesday"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+## Introduction: Topics
+
+- Assumptions on *t*-tests:
+    - One-sample
+        - Normality
+    - Independent samples
+        - Normality
+        - Equal variance
+    - Dependent samples
+        - Normality
+    
+- Nonparametric alternatives
+    - Independent medians ($M_1-M_2$)
+    - Dependent medians ($M_d$)
+
+## Introduction: Normality Assumption
+
+- All *t*-tests assume approximate normality of the data.
+
+    - In the case of one-sample *t*-tests, the measure of interest must somewhat follow a normal distribution.
+
+    - In the case of two-sample *t*-tests, the measure of interest *in each group* must somewhat follow a normal distribution.
+    
+- Note that a paired *t*-test is technically a one-sample *t*-test, so we will examine normality of the difference. 
+
+## Normality Assumption: Quantile-Quantile Plots
+
+- There are formal tests for normality ([see article here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3693611/)), however, we will not use them.
+    - Tests for normality are not well-endorsed by statisticians.
+    
+- Instead, we will assess normality using a quantile-quantile (Q-Q) plot.
+
+- A Q-Q plot helps us visually check if our data follows a specific distribution (here, the normal).
+    - It compares the quantiles of our sample data to the quantiles of a theoretical distribution (the normal).
+
+- How do we read Q-Q plots?
+    - Each dot represents one observation in our dataset.
+    - If the data follow a normal distribution, we will observe that the dots fall roughly along a straight diagonal line.
+    - We focus on the "middle" of the graph.
+    
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+library(ssstats)
+library(tidyverse)
+library(ggpubr)
+set.seed(187782)
+pegasi_flaps <- tibble(flaps = rnorm(100, mean = 120, sd = 10))
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile Plot") +
+  theme_bw()
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+set.seed(881)
+pegasi_flaps <- tibble(flaps = rexp(100, rate = 1/50))
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile") +
+  theme_bw()
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+set.seed(188277)
+pegasi_flaps <- tibble(flaps = rt(100, df = 3) * 10 + 50)
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile") +
+  theme_bw()
+
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+
+## Normality Assumption: Quantile-Quantile Plots
+
+<center>
+```{r}
+#| echo: false
+set.seed(658236)
+pegasi_flaps <- tibble(flaps = rbeta(100, shape1 = 5, shape2 = 1) * 100)
+qq <- pegasi_flaps %>% ggplot(aes(sample = flaps)) +
+  stat_qq_line(color = "gray", linewidth = 1) +
+  stat_qq() +
+  labs(x = "Theoretical Quantiles",
+       y = "Sample Quantiles",
+       title = "Quantile-Quantile") +
+  theme_bw()
+
+hist <- pegasi_flaps %>% ggplot(aes(x = flaps)) +
+  geom_histogram(fill = "gray", color = "black", bins = 10) +
+  labs(title = "Histogram", x = "") + 
+  theme_bw()
+
+ggarrange(qq, hist, ncol = 2)
+```
+</center>
+    
+## Normality Assumption: Independent Means
+
+```{r}
+#| echo: false
+
+set.seed(8651)
+wing_flap <- tibble(pony_names = c("Rainbow Dash", "Soarin", "Spitfire", "Cloudchaser", "Fleetfoot", "Lightning Dust", "Windy Whistles", "Stormy Skies", "Gusty Gale", "Zephyr Breeze", "Skydancer", "Aero Ace", "Nimbus Sprint", "Breeze Wing", "Flash Fly", "Twister Tail", "Sirensong", "Aero Wave", "Sky Dancer", "Gale Gust", "Storm Strider", "Cyclone Swift", "Wind Whirl", "Jet Stream", "Flurry Flap"),
+                    wing_flap_rate = round(rnorm(n = length(pony_names), mean = 50, sd = 8),1),
+                    target = dplyr::if_else(wing_flap_rate>=50, "Above", "Below"),
+                    apples = dplyr::if_else(target == "Above", round(rnorm(n = length(pony_names), mean = 25, sd = 2)), round(rnorm(n = length(pony_names), mean = 15, sd = 3))),
+                    pre_training_wfr = round(rnorm(n = length(pony_names), mean = 50, sd = 8),1),
+                    post_training_wfr =round(rnorm(n = length(pony_names), mean = 50, sd = 4),1))
+```
+
+- Recall our example from last lecture: 
+    - In the skies above Cloudsdale, Pegasus trainers believe that an average healthy Pegasus flaps its wings 50 flaps per minute when cruising. To see if today's young Pegasi conform to that standard, a researcher samples 25 Pegasi at the Cloudsdale Training Grounds and measures each pony's wing‐flap rate (in flaps/minute). <br>
+
+```{r}
+#| echo: false
+set.seed(9671)
+wing_flap %>% select(-pre_training_wfr, -post_training_wfr) %>% slice_sample(n=5)
+```
+
+## Normality Assumption: Independent Means
+
+- Further, we performed a two-sample *t*-test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi ($\alpha=0.05$). 
+
+```{r}
+wing_flap %>% independent_mean_HT(grouping = target,
+                                  continuous = apples, 
+                                  mu = 5, 
+                                  alternative = "greater", 
+                                  alpha = 0.05)
+```
+
+- Are our results valid?
+
+## Normality Assumption: Independent Means (R)
+
+- We will use the `independent_qq()` function from `library(ssstats)` to assess normality.
+
+```{r}
+#| eval: false
+dataset_name %>% independent_qq(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+- This will provide the the Q-Q plots and the histograms for the two independent groups under consideration.
+
+## Normality Assumption: Independent Means
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+dataset_name %>% independent_qq(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+## Normality Assumption: Independent Means
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+wing_flap %>% independent_qq(continuous = apples,
+                             grouping = target)
+```
+
+## Normality Assumption: Independent Means
+
+- Running the code,
+
+<center>
+```{r}
+wing_flap %>% independent_qq(continuous = apples,
+                             grouping = target)
+```
+</center>
+
+## Introduction: Variance Assumption
+
+- In addition to normality, the two-sample *t*-test assumes equal variance between groups.
+    - *Homoskedastic*: same variance
+    - *Heteroskedastic*: different variances
+
+- We can check this assumption and easily adjust if the assumption is broken.
+
+- Graphical method: scatterplot of residuals
+
+- Formal method: test for equal variances (Brown-Forsythe-Levine)
+
+## Variance Assumption: Residual Plot (R)
+
+- We will use the `plot_residuals()` function from `library(ssstats)` to graphically assess the assumption of equal variance.
+
+```{r}
+#| eval: false
+dataset_name %>% plot_residuals(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+- We should evaluate and compare the lengths of the resulting "lines".
+
+## Variance Assumption: Residual Plot
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+dataset_name %>% plot_residuals(continuous = continuous_variable,
+                                grouping = grouping_variable)
+```
+
+## Variance Assumption: Residual Plot
+
+- Let's now look at the normality assumption for our example.
+
+- Our updated code:
+
+<center>
+```{r}
+#| eval: false
+wing_flap %>% plot_residuals(continuous = apples,
+                             grouping = target)
+```
+</center>
+
+## Variance Assumption: Residual Plot
+
+- Running the code,
+
+<center>
+```{r}
+wing_flap %>% plot_residuals(continuous = apples,
+                             grouping = target)
+```
+</center>
+
+## Hypothesis Testing: Two or More Variances
+
+- If we believe the assumption may be violated, we can test for equal variance using the Brown-Forsythe-Levine (BFL) test.
+
+- This test is valid for more than two groups (read: we will see it again!)
+
+- **Hypotheses**
+    - $H_0: \ \sigma^2_1 = \sigma^2_2 = ... = \sigma^2_k$
+    - $H_1:$ at least one $\sigma^2_i$ is different.
+    
+## Hypothesis Testing: Two or More Variances
+
+- **Test Statistic:**
+
+$$
+F_0 = \frac{\sum_{i=1}^k n_i(\bar{z}_{i.}-\bar{z}_{..})^2/(k-1)}{\sum_{i=1}^k \sum_{j=1}^{n_i} (z_{ij}-\bar{z}_{i.})^2/(N-k)} \sim F_{\text{df}_{\text{num}}, \text{df}_{\text{den}}}
+$$
+
+- where
+    - $n_i$ is the sample size of group $i$
+    - $\bar{z}_{i.}$ is the median of group $i$ and $\bar{z}_{..}$ is the grand median
+    - $k$ is the number of groups
+    - $N = \sum_{i=1}^k n_i$ is the overall sample size
+    - $\text{df}_{\text{num}} = k-1$, $\text{df}_{\text{den}} = (N-k)$.
+
+## Hypothesis Testing: Two or More Variances
+
+- Note that the BFL is a one-tailed test, which is different than when we are testing means using the $t$ distribution.
+
+- **$p$-value:**
+
+$$p = P\left[F_{\text{df}_{\text{num}}, \text{df}_{\text{den}}} \ge F_0\right]$$
+
+## Hypothesis Testing: Two or More Variances (R)
+
+- We will use the `variances_HT()` function from `library(ssstats)`.
+
+```{r}
+#| eval: false
+dataset_name %>% variances_HT(continuous = continuous_variable,
+                              grouping = grouping_variable)
+
+```
+
+## Hypothesis Testing: Two or More Variances
+
+- Let's now test the variance assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+dataset_name %>% variances_HT(continuous = continuous_variable,
+                              grouping = grouping_variable)
+
+```
+
+## Hypothesis Testing: Two or More Variances
+
+- Let's now test the variance assumption for our example.
+
+- Our updated code is:
+
+```{r}
+#| eval: false
+wing_flap %>% variances_HT(continuous = apples,
+                           grouping = target)
+
+```
+
+## Hypothesis Testing: Two or More Variances
+
+- Running the code,
+
+```{r}
+wing_flap %>% variances_HT(continuous = apples,
+                           grouping = target)
+```
+
+## Hypothesis Testing: Two or More Variances
+
+- **Hypotheses:**
+    - $H_0: \ \sigma^2_{\text{Above}} = \sigma^2_{\text{Below}}$
+    - $H_1: \ \sigma^2_{\text{Above}} \ne \sigma^2_{\text{Below}}$
+
+- **Test Statistic and *p*-Value**
+    - $F_0 = 0.063$, $p = 0.805$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.10$
+    
+- **Conclusion and interpretation**
+    - Fail to reject $H_0$ ($p \text{ vs } \alpha \to 0.805 > 0.10$). There is not sufficient evidence to suggest that the variances of those above and below the target are different. That is, the variance assumption **holds**.
+
+## Variance Assumption: Broken -- Now What?
+
+- What do we do if we have actually broken the variance assumption?
+
+- If the normality assumption holds, we can use Satterthwaite's approximation for degrees of freedom.
+    - Everything about the two-sample *t*-test is the same, *other* than the calculation of the degrees of freedom.
+
+$$ \text{df}=\frac{ \left( \frac{s^2_1}{n_1} + \frac{s_2^2}{n_2} \right)^2 }{ \frac{(s_1^2/n_1)^2}{n_1-1} + \frac{(s_2^2/n_2)^2}{n_2-1} }$$
+
+- Remember the original df of $\min(n_1-1, n_2-1)$... 
+
+## Confidence Interval: Two Independent Means with Unequal Variances
+
+- We will still use the `independent_mean_CI` function from `library(ssstats)` to find the confidence interval...
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% independent_mean_CI(grouping = grouping_variable,
+                                     continuous = continuous_variable, 
+                                     confidence = confidence_level,
+                                     variance = "unequal")
+```
+
+- Note the `variance` argument at the end.
+
+## Hypothesis Testing: Two Independent Means with Unequal Variances
+
+- We will use the `independent_mean_HT` function from `library(ssstats)` to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% independent_mean_HT(grouping = grouping_variable,
+                                     continuous = continuous_variable, 
+                                     mu = hypothesized_value, 
+                                     alternative = "alternative_direction", 
+                                     alpha = specified_alpha,
+                                     variance = "unequal")
+```
+
+- Note the `variance` argument at the end.
+
+## Comparisons: Two Independent Means
+
+- Let's look at the 90% CI for our example under both ways of calculating degrees of freedom:
+
+- Assuming equal variance:
+```{r}
+#| eval: false
+wing_flap %>% independent_mean_CI(continuous = apples,
+                                  grouping = target,
+                                  confidence = 0.90,
+                                  var = "equal")
+```
+
+- Assuming unequal variance:
+```{r}
+#| eval: false
+wing_flap %>% independent_mean_CI(continuous = apples,
+                                  grouping = target,
+                                  confidence = 0.90,
+                                  var = "unequal")
+```
+
+## Comparisons: Two Independent Means
+
+- Let's look at the 90% CI for our example under both ways of calculating degrees of freedom:
+
+- Assuming equal variance:
+```{r}
+#| echo: false
+wing_flap %>% independent_mean_CI(continuous = apples,
+                                  grouping = target,
+                                  confidence = 0.90,
+                                  var = "equal")
+```
+
+- Assuming unequal variance:
+```{r}
+#| echo: false
+wing_flap %>% independent_mean_CI(continuous = apples,
+                                  grouping = target,
+                                  confidence = 0.90,
+                                  var = "unequal")
+```
+
+## Comparisons: Two Independent Means
+
+- Let's look at the hypothesis test results for our example under both ways of calculating degrees of freedom ($\alpha = 0.10$):
+
+- Assuming equal variance,
+
+```{r}
+#| eval: false
+wing_flap %>% independent_mean_HT(continuous = apples,
+                                  grouping = target,
+                                  confidence = 0.90,
+                                  variance = "equal")
+```
+
+- Assuming unequal variance, 
+
+```{r}
+#| eval: false
+wing_flap %>% independent_mean_HT(continuous = apples,
+                                  grouping = target,
+                                  confidence = 0.90,
+                                  variance = "unequal")
+```
+
+## Comparisons: Two Independent Means
+
+- Assuming equal variance,
+
+```{r}
+#| echo: false
+wing_flap %>% independent_mean_HT(continuous = apples,
+                                  grouping = target,
+                                  alpha = 0.10,
+                                  variance = "equal")
+```
+
+- Assuming unequal variance, 
+
+```{r}
+#| echo: false
+wing_flap %>% independent_mean_HT(continuous = apples,
+                                  grouping = target,
+                                  alpha = 0.10,
+                                  variance = "unequal")
+```
+
+## Normality Assumption: Dependent Means
+
+- Let's now look at when we are examining dependent means.
+    - Must be able to link observations using an identifier.
+
+- Recall that we are actually examining the *difference* between the two groups, $d = x_1-x_2$.
+    - We want to know about the normality of $d$ and **not** $x_1$ and $x_2$.
+    - There is no variance assumption with this test.
+    
+- As a reminder, how do we read Q-Q plots?
+    - Each dot represents one observation (difference) in our dataset.
+    - If the data follow a normal distribution, we will observe that the dots fall roughly along a straight diagonal line.
+    - We focus on the "middle" of the graph.    
+    
+## Normality Assumption: Dependent Means
+
+- Recall our example from last lecture:
+    - Princess Celestia has invited two groups of flyers to take part in a brand-new "SkyStride" aerial training camp. Before the camp begins, each pony perches on a floating platform while a team of Wonderbolt engineers use magical sensors to record their baseline wing-flap rate (flaps per second) as they hover in place (*pre_training_wfr*).
+  - Over two weeks, trainees attend identical flight drills: precision loops, cloud-weaving obstacle courses, and high-altitude sprints. At camp's end, each flyer returns to the sensor platforms for post-training measurements (*post_training_wfr*).
+
+```{r}
+#| echo: false
+set.seed(9671)
+wing_flap %>% select(-pre_training_wfr, -post_training_wfr) %>% slice_sample(n=3)
+```
+
+## Normality Assumption: Dependent Means
+
+- Further, we performed a dependent *t*-test to determine if there is a difference in wing-flap rate pre- and post-training ($\alpha=0.01$).
+
+```{r}
+#| echo: false
+wing_flap %>% dependent_mean_HT(col1 = post_training_wfr,
+                                col2 = pre_training_wfr,
+                                alpha = 0.01)
+```
+
+- Are our results valid?    
+
+## Normality Assumption: Dependent Means (R)
+
+- We will use the `dependent_qq()` function from `library(ssstats)` to assess normality.
+
+```{r}
+#| eval: false
+dataset_name %>% dependent_qq(col1 = first_group,
+                              col2 = second_group)
+```
+
+- This will provide the the Q-Q plot and the histogram for the difference between the two groups.
+
+## Normality Assumption: Dependent Means
+
+- Let's now look at the normality assumption for our example.
+
+- How should we change the code for our dataset?
+
+```{r}
+#| eval: false
+dataset_name %>% dependent_qq(col1 = first_group,
+                              col2 = second_group)
+```
+
+## Normality Assumption: Dependent Means
+
+- Let's now look at the normality assumption for our example.
+
+- Our updated code,
+
+```{r}
+#| eval: false
+wing_flap %>% dependent_qq(col1 = post_training_wfr,
+                           col2 = pre_training_wfr)
+```
+
+## Normality Assumption: Dependent Means
+
+- Running the code,
+
+<center>
+```{r}
+#| echo: false
+wing_flap %>% dependent_qq(col1 = post_training_wfr,
+                           col2 = pre_training_wfr)
+```
+</center>
+
+## Wrap Up: *t*-Test Assumptions
+
+- **Important note!!** 
+    - *I do not expect you to agree with my assessment of q-q plots!* 
+    - What I do expect is that you know what to do after making your assessment.
+    
+- Two indepdent means:
+    - Normality and variance met $\to$ pooled *t*-test.
+    - Normality met but variance not met $\to$ Satterthwaite's approximation for df.
+    - Normality not met for independent means $\to$ Wilcoxon rank sum.
+
+- Two dependent means:
+    - Normality met $\to$ dependent *t*-test.
+    - Normality not met $\to$ Wilcoxon signed rank.
+        
+- .... nonparametrics?
+
+## Introduction: Nonparametrics
+
+- The *t*-tests we have already learned are considered *parametric* methods.
+
+    - There is a distributional assumption on the test.
+    
+- *Nonparametric* methods do not have distributional assumptions.
+
+    - We typically transform the data to their ranks and then perform calculations.
+
+- Why don't we always use nonparametric methods?
+
+    - They are often less efficient: a larger sample size is required to achieve the same probability of a Type I error.
+    
+    - They discard useful information :(
+    
+## Introduction: Two Independent Medians
+
+- The Wilcoxon Rank Sum test is a nonparametric alternative to the two-sample *t*-test.
+
+- Instead of comparing group means, we will now turn to comparing the ranks of the data.
+
+- Let us first consider a simple example, $x: \ 1, 7, 10, 2, 6, 8$
+
+- Our first step is to reorder the data: $x: \ 1, 2, 6, 7, 8, 10$
+
+- Then, we replace with the ranks: $R: \ 1, 2, 3, 4, 5, 6$
+
+## Two Independent Medians: Ranking Data
+
+- What if all data values are not unique? We will assign the <u>average</u> rank for that group.
+
+- For example, $$x: \ 9, 8, 8, 0, 3, 4, 4, 8$$
+
+- Let's reorder:$$x: \ 0, 3, 4, 4, 8, 8, 8, 9$$
+
+- Rank ignoring ties:$$R: \ 1, 2, 3, 4, 5, 6, 7, 8$$
+
+- Now, the final rank:$$R: \ 1, 2, 3.5, 3.5, 6, 6, 6, 8$$
+
+## Hypothesis Testing: Two Independent Medians
+
+- **Hypotheses: Two Tailed**
+    - $H_0: \ M_1-M_2 = M_0$
+    - $H_1: \ M_1-M_2 \ne M_0$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ M_1-M_2 \ge M_0$
+    - $H_1: \ M_1-M_2 < M_0$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ M_1-M_2 \le M_0$
+    - $H_1: \ M_1-M_2 > M_0$  
+    
+## Hypothesis Testing: Two Independent Medians
+
+$$
+T_0 = \sum R_{\text{1}} - \frac{n_1(n_1+1)}{2}
+$$
+
+- $T = \sum R_{\text{sample 1}} - \frac{n_1(n_1+1)}{2}$
+
+- where
+    - $\sum R_1$ is the sum of the ranks for the first group
+    - $n_1$ is the sample size of the first group 
+    
+- Note that $p =$ (calculated by R :))    
+
+## Hypothesis Testing: Two Independent Medians (R)
+
+- We will use the `independent_median_HT` function from `library(ssstats)` to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% independent_median_HT(continuous = continuous_variable,
+                                       grouping = grouping_variable,
+                                       alternative = "alternative_direction",
+                                       m = hypothesized difference,
+                                       alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two Independent Medians
+
+- Recall our example:
+    - Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the $\alpha=0.05$ level.
+
+- How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% independent_median_HT(continuous = continuous_variable,
+                                       grouping = grouping_variable,
+                                       alternative = "alternative_direction",
+                                       m = hypothesized_difference,
+                                       alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two Independent Medians
+
+- Recall our example:
+    - Perform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the $\alpha=0.05$ level.
+
+- Our updated code,
+
+```{r}
+#| eval: false
+wing_flap %>% independent_median_HT(continuous = apples,
+                                    grouping = target,
+                                    alternative = "greater",
+                                    m = 5,
+                                    alpha = 0.05)
+```
+
+## Hypothesis Testing: Two Independent Medians
+
+- Running the code,
+
+```{r}
+wing_flap %>% independent_median_HT(continuous = apples,
+                                    grouping = target,
+                                    alternative = "greater",
+                                    m = 5,
+                                    alpha = 0.05)
+```
+
+## Hypothesis Testing: Two Independent Medians
+
+- **Hypotheses:**
+    - $H_0: \ M_{\text{above}} - M_{\text{below}} \le 5$
+    - $H_1: \ M_{\text{above}} - M_{\text{below}} > 5$
+
+- **Test Statistic and *p*-Value**
+    - $T_0 = 135.5$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p < 0.001 < 0.05$). There is sufficient evidence to suggest that ponies above target eat 5 more apples than those below target.
+    
+## Two Independent Groups: Means vs. Medians
+
+- *t*-test for independent means:
+
+```{r}
+#| eval: false
+#| class: small-code
+wing_flap %>% independent_mean_HT(continuous = apples, 
+                                  grouping = target,
+                                  mu = 5, 
+                                  alternative = "greater", 
+                                  alpha = 0.05)
+```
+
+- Wilcoxon rank sum for independent medians:
+
+```{r}
+#| eval: false
+#| class: small-code
+wing_flap %>% independent_median_HT(continuous = apples,
+                                    grouping = target,
+                                    mu = 5,
+                                    alternative = "greater",
+                                    alpha = 0.05)
+```
+
+## Two Independent Groups: Means vs. Medians
+
+- *t*-test for independent means:
+
+```{r}
+#| echo: false
+#| class: small-code
+wing_flap %>% independent_mean_HT(continuous = apples, 
+                                  grouping = target,
+                                  mu = 5, 
+                                  alternative = "greater", 
+                                  alpha = 0.05)
+```
+
+- Wilcoxon rank sum for independent medians:
+
+```{r}
+#| echo: false
+#| class: small-code
+wing_flap %>% independent_median_HT(continuous = apples,
+                                    grouping = target,
+                                    m = 5,
+                                    alternative = "greater",
+                                    alpha = 0.05)
+```
+
+## Introduction: Two Dependent Medians
+
+- The Wilcoxon Signed Rank test is a nonparametric alternative to the dependent *t*-test.
+
+- Instead of examining the mean of the difference, we will now turn to examining the ranks of the differences.
+
+- Before ranking, we will find the difference between the paired observations and eliminate any 0 differences.
+
+    - Note 1: elimniating 0 differences is the big difference between the other tests! 
+    - Note 2: because we are eliminating 0 differences, this means that our sample size will update to the number of pairs with a non-0 difference.
+    
+## Two Dependent Medians: Ranking Data    
+    
+- When ranking, we the differences are ranked based on the absolute value of the difference.
+
+- Then, ranks can be identified as "positive" or "negative" based on the direction of the difference.
+
+| *X* | *Y* | *D* | \|*D*\| | Rank |
+|-----|-----|-----|---------|------|
+| 5   | 8   | -3  | 3       | $-$ 1.5 |
+| 8   | 5   | 3   | 3       | $+$ 1.5  |
+| 4   | 4   | 0   | 0       | ---------   |
+
+- In this (very basic) example, we started with $n=3$, but reduced to $n=2$ due to the 0 difference of the third observation.
+
+## Hypothesis Testing: Two Dependent Medians
+
+- **Hypotheses: Two Tailed**
+    - $H_0: \ M_d=M_0$
+    - $H_1: \ M_d \ne M_0$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ M_d \ge M_0$
+    - $H_1: \ M_d < M_0$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ M_d \le M_0$
+    - $H_1: \ M_d > M_0$  
+    
+- **Note!** $M_d = M_1 - M_2$  
+
+## Hypothesis Testing: Two Dependent Medians
+
+- **Test Statistic**
+
+$$
+T_0 =
+\begin{cases}
+  R_+ = \text{sum of positive ranks} & \text{if left-tailed} \\
+  R_- = \text{sum of negative ranks} & \text{if right-tailed} \\
+  \min(R_+, R_-) & \text{if two-tailed}
+\end{cases}
+$$
+
+- **$p$-Value** is calculated by R.
+
+## Hypothesis Testing: Two Dependent Medians (R)
+
+- We will use the `dependent_median_HT` function from `library(ssstats)` to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% dependent_median_HT(col1 = first_group,
+                                     col2 = second_group,
+                                     alternative = "alternative_direction",
+                                     m = hypothesized_value,
+                                     alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two Dependent Medians
+
+- Perform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the $\alpha=0.01$ level.
+
+- How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% dependent_median_HT(col1 = first_group,
+                                     col2 = second_group,
+                                     alternative = "alternative_direction",
+                                     m = hypothesized_value,
+                                     alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two Dependent Medians
+
+- Perform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the $\alpha=0.01$ level.
+
+- Our updated code,
+
+```{r}
+#| eval: false
+wing_flap %>% dependent_median_HT(col1 = pre_training_wfr,
+                                  col2 = post_training_wfr,
+                                  alternative = "two",
+                                  m = 0,
+                                  alpha = 0.01)
+```
+
+## Hypothesis Testing: Two Dependent Medians
+
+- Running the code,
+
+```{r}
+wing_flap %>% dependent_median_HT(col1 = pre_training_wfr,
+                                  col2 = post_training_wfr,
+                                  alternative = "two",
+                                  m = 0,
+                                  alpha = 0.01)
+```
+
+## Hypothesis Testing: Two Dependent Medians
+
+- **Hypotheses:**
+    - $H_0: \ M_{\text{d}} = 0$, where $M_{\text{d}} = M_{\text{pre}}-M_{\text{post}}$
+    - $H_1: \ M_{\text{d}} \ne 0$
+
+- **Test Statistic and *p*-Value**
+    - $T_0 = 188$, $p = 0.501$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.01$
+    
+- **Conclusion and interpretation**
+    - Fail to reject $H_0$ ($p \text{ vs } \alpha \to p = 0.501 > 0.01$). There is not sufficient evidence to suggest that there is a difference in wing-flap rate.
+    
+## Two Dependent Groups: Means vs. Medians
+
+- *t*-test for dependent means:
+
+```{r}
+#| eval: false
+#| class: small-code
+wing_flap %>% dependent_mean_HT(col1 = pre_training_wfr,
+                                col2 = post_training_wfr,
+                                alternative = "two",
+                                m = 0,
+                                alpha = 0.01)
+```
+
+- Wilcoxon signed for dependent medians:
+
+```{r}
+#| eval: false
+#| class: small-code
+wing_flap %>% dependent_median_HT(col1 = pre_training_wfr,
+                                  col2 = post_training_wfr,
+                                  alternative = "two",
+                                  m = 0,
+                                  alpha = 0.01)
+```
+
+## Two Dependent Groups: Means vs. Medians
+
+- *t*-test for independent means:
+
+```{r}
+#| echo: false
+#| class: small-code
+wing_flap %>% independent_mean_HT(continuous = apples, 
+                                  grouping = target,
+                                  mu = 5, 
+                                  alternative = "greater", 
+                                  alpha = 0.05)
+```
+
+- Wilcoxon rank sum for independent medians:
+
+```{r}
+#| echo: false
+#| class: small-code
+wing_flap %>% independent_median_HT(continuous = apples,
+                                    grouping = target,
+                                    m = 5,
+                                    alternative = "greater",
+                                    alpha = 0.05)
+```
+    
+
+## Wrap Up        
+
+- Today's lecture:
+    - Normality assumption (all *t*) $\to$ Q-Q plot
+    - Variance assumption (independent *t*) $\to$ folded *F* test
+    - Wilcoxon rank sum (nonparametric equivalent to independent *t*)
+    - Wilcoxon signed rank (nonparametric equivalent to dependent *t*)
+    
+- Next class:   
+    - Review of Module 1
+    - Project 1!
+
+## Wrap Up    
+
+- Daily activity: .qmd is available on Canvas.
+    - Due date: Monday, July 6, 2025.
+
+- You will upload the resulting .html file on Canvas. 
+    - Please refer to the help guide on the Biostat website if you need help with submission.
+    
+- Housekeeping:
+    - Do you have questions for me?
+    - Do you need my help with anything from prior lectures?

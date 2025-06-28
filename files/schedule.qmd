@@ -24,7 +24,7 @@ format: html
     - Please join our Discord server if you have not already.
         - Moving forward, all announcements will be made on Discord.
     - We did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today's lab.
-        - Dr. Seals will shuffle due dates accordingly... eventually. :) 
+        - Dr. Seals has corrected all dropboxes and corresponding due dates on Canvas.
 
 :::
 
@@ -48,32 +48,28 @@ format: html
 - Slides:
     - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
     - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
-- Practice (due M 06/30):
-    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/06-17-T-summary-practice.html">view assignment</a>
-    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/06-17-T-summary-practice.qmd">view code</a>
-- Quiz: open at 1:15, close end of day F 06/20 
-    - See Canvas
+- Quiz: see Canvas
 
 :::
 
 ### **Module 1: Exploring Continuous Outcomes in Two Groups**
 
-::: {.callout-tip title="Tuesday, June 24, 2025:" collapse="true" open="true"}
+::: {.callout-tip title="Thursday, June 26, 2025:" collapse="true" open="true"}
 
 - Topics:
     - Two independent means
     - Two dependent means
 - Slides:
-    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-17-T-summary-visualization.html">view slides</a>
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-24-T-inference-t-tests.html">view slides</a>
     - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-06-24-T-inference-t-tests.qmd">view code</a>
 - Practice (due M 06/30):
-    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/06-24-T-inference-practice.html">view assignment</a>
-    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/06-24-T-inference-practice.qmd">view code</a>
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/06-24-inference-practice.html">view assignment</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/06-24-inference-practice.qmd">view code</a>
 - Quiz: see Canvas    
 
 :::
 
-::: {.callout-tip title="Thursday, June 26, 2025:" collapse="true" open="true"}
+::: {.callout-tip title="Tuesday, July 1, 2025:" collapse="true" open="true"}
 
 - Topics:
     - t-test assumptions
@@ -83,41 +79,42 @@ format: html
         - Wilcoxon rank sum
         - Wilcoxon signed rank
 - Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 06/30):
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html">view slides</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.qmd">view code</a>
+- Practice (due M 07/07):
     - .html:
     - .qmd:
 - Quiz: see Canvas   
 
 :::
 
-::: {.callout-tip title="Tuesday, July 1, 2025:" collapse="true" open="true"}
+::: {.callout-tip title="Thursday, July 3, 2025:" collapse="true" open="true"}
 
-- Project 1 (due M 07/07): see Canvas
+- <a href="https://en.wikipedia.org/wiki/Independence_Day_(United_States)">Independence Day</a> holiday - *campus closed*.
+
+:::
+
+::: {.callout-tip title="Tuesday, July 8, 2025:" collapse="true" open="true"}
+
+- Review topics:
+    - two-sample *t*-test
+    - dependent *t*-test
+    - Wilcoxon rank sum test
+    - Wilcoxon signed rank test
+- Slides:
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-07-08-T-mod1-review.html">view slides</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-07-08-T-mod1-review.qmd">view code</a>
+- Project 1 (due M 07/14): see Canvas
   
 :::
 
 ### **Module 2: Exploring Continuous Outcomes in More Than Two Groups**
 
-::: {.callout-tip title="Thursday, July 3, 2025:" collapse="true" open="true"}
+::: {.callout-tip title="Thursday, July 10, 2025:" collapse="true" open="true"}
 
 - Topics:
     - One-way ANOVA
         - posthoc testing
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/07):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas 
-  
-:::
-
-::: {.callout-tip title="Tuesday, July 8, 2025:" collapse="true" open="true"}
-
-- Topics:
     - ANOVA assumptions
     - Kruskal-Wallis
         - posthoc testing
@@ -127,39 +124,16 @@ format: html
 - Practice (due M 07/14):
     - .html:
     - .qmd:
-- Quiz: see Canvas
-
+- Quiz: see Canvas 
+  
 :::
 
-::: {.callout-tip title="Thursday, July 10, 2025:" collapse="true" open="true"}
+::: {.callout-tip title="Tuesday, July 15, 2025:" collapse="true" open="true"}
 
 - Topics:
     - Two-way ANOVA
         - posthoc testing
         - profile plots
-- Slides:
-    - .html: 
-    - .qmd: 
-- Practice (due M 07/14):
-    - .html:
-    - .qmd:
-- Quiz: see Canvas  
-
-:::
-
-::: {.callout-tip title="Tuesday, July 15, 2025:" collapse="true" open="true"}
-
-- Project 2 (due M 07/21): see Canvas
-  
-:::
-
-### **Module 3: Exploring Regression Modeling**
-
-::: {.callout-tip title="Thursday, July 17, 2025:" collapse="true" open="true"}
-
-- Topics:
-    - Simple linear regression
-    - Bivariate correlation
 - Slides:
     - .html: 
     - .qmd: 
@@ -170,9 +144,26 @@ format: html
 
 :::
 
+::: {.callout-tip title="Thursday, July 17, 2025:" collapse="true" open="true"}
+
+- Review topics:
+    - one-way ANOVA
+    - Kruskal-Wallis
+    - two-way ANOVA
+- Slides:
+    - .html: 
+    - .qmd: 
+- Project 2 (due M 07/21): see Canvas
+
+:::
+
+### **Module 3: Exploring Regression Modeling**
+
 ::: {.callout-tip title="Tuesday, July 22, 2025:" collapse="true" open="true"}
 
 - Topics:
+    - Simple linear regression
+    - Bivariate correlation
     - Multiple regression
     - Regression diagnostics
 - Slides:
@@ -182,14 +173,22 @@ format: html
     - .html:
     - .qmd:
 - Quiz: see Canvas  
-
+  
 :::
 
 ::: {.callout-tip title="Thursday, July 24, 2025:" collapse="true" open="true"}
 
-- Project 3 (due W 07/30): see Canvas
+- Review topics:
+    - Simple linear regression
+    - Bivariate correlation
+    - Multiple regression
+    - Regression diagnostics
+- Slides:
+    - .html: 
+    - .qmd: 
+- Project 3 (due M 07/28): see Canvas
 - Quiz: see Canvas
-  
+
 :::
 
 ### **Module 4: Exploring Categorical Outcomes**
@@ -205,7 +204,7 @@ format: html
 - Slides:
     - .html: 
     - .qmd: 
-- Practice (due F 08/01):
+- Practice (due M 08/04):
     - .html:
     - .qmd:
 - Quiz: see Canvas  
@@ -214,7 +213,17 @@ format: html
 
 ::: {.callout-tip title="Thursday, July 31, 2025:" collapse="true" open="true"}
 
-- Project 4 (due W 08/06): see Canvas
-- Quiz: see Canvas  
+- Review topics:
+    - Proportions
+        - One sample
+        - Two sample
+        - More than two samples 
+    - Contingency tables
+- Slides:
+    - .html: 
+    - .qmd: 
+- Project 4 (due M 08/04): see Canvas
+- Quiz: see Canvas 
   
 :::
+
