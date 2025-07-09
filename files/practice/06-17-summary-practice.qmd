@@ -1,11 +1,11 @@
 ---
-title: "Practice: Point Estimation & Data Visualization"
-subtitle: "Tuesday, June 17, 2025"
+title: "Practice: 06/17/2025"
 author: "your name here"
 execute:
   echo: true
   warning: false
   message: false
+  error: true
 format: 
   html:
     self-contained: true

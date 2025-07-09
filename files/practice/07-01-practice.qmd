@@ -1,0 +1,211 @@
+---
+title: "Practice: 07/01/2025"
+author: "your name here"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  html:
+    df-print: paged
+    self-contained: true
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+```{r set up}
+# use this code chunk to call in all packages the document will need
+library(tidyverse)
+library(ssstats)
+```
+
+## Part 1
+
+**Twilight Sparkle has been working tirelessly on developing a new memory-enhancing spell that she believes could help ponies improve their ability to recall important information. She designs a controlled experiment where each participating pony will complete the same memory test both before and after the spell is cast. By comparing each pony's performance before and after the treatment, Twilight hopes to determine whether her spell truly boosts memory or if any observed changes are simply due to chance. Twilight records the number of items each pony can remember in both sessions and she is particularly interested in whether the differences in memory scores after the spell show consistent improvement across her group of test subjects.**
+
+```{r}
+#| echo: false
+# DO NOT EDIT THIS CHUNK
+set.seed(84279)
+twilight_memory_pt1 <- tibble(pony = paste0("Pony ", 1:150),
+                              before = round(rnorm(150, mean = 12, sd = 3)),
+                              after = before+round(rnorm(150, mean = 3, sd = 2)))
+# DO NOT EDIT THIS CHUNK
+```
+
+**1. Is this independent or dependent data? Why?**
+
+Replace with your answer
+
+**2. Find the appropriate summary statistics for the data.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**3. What is the appropriate *t*-test?**
+
+Replace with your answer
+
+**4. Find the 99% confidence interval for $\boldsymbol{\mu}_1-\boldsymbol{\mu}_2$.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+The 95% CI for $\mu_1-\mu_2$ is (lower bound, upper bound).
+
+**4. Use the appropriate *t*-test, as identified in Q3, to determine if the data imply an improvement in the memory scores.  Test at the $\alpha=0.01$ level.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $t_0 =$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+
+**5. What is the appropriate nonparametric test?**
+
+Replace with your answer
+
+**6. Use the appropriate nonparametric test, as identified in Q5, to determine if the data imply an improvement in the memory scores.  Test at the $\alpha=0.01$ level.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $T_0 =$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+    
+**7. Construct the appropriate QQ plot for this dataset and research question.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**8. Determine which test is appropriate. Provide commentary on the graph in Q7 supporting your answer.**
+
+Replace with your answer
+
+## Part 2
+
+**Twilight Sparkle's new memory-enhancing spell has quickly gained attention across Equestria, and now she wants to conduct a larger study to compare ponies who receive the spell to those who do not. This time, she recruits two groups of ponies: one group will receive the memory-enhancing spell and the other group will not receive any magical intervention, serving as the control group. By comparing the memory scores between these two groups, Twilight hopes to determine whether the spell leads to a meaningful improvement in memory performance when compared to ponies who did not receive the spell.**
+
+```{r}
+#| echo: false
+# DO NOT EDIT THIS CHUNK
+set.seed(75615)
+twilight_memory_pt2 <- tibble(pony = paste0("Pony_", 1:(2 * 100)),
+                              group = rep(c("Control", "Spell"), each = 100),
+                              memory_score = c(rgamma(100, shape = 4, scale = 3), 
+                                               rgamma(100, shape = 4, scale = 4)))
+# DO NOT EDIT THIS CHUNK
+```
+
+**9. Is this independent or dependent data? Why?**
+
+Replace with your answer
+
+**10. Find the appropriate summary statistics for the data.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**11. What is the appropriate *t*-test?**
+
+Replace with your answer
+
+**12. Find the 95% confidence interval for $\boldsymbol{\mu}_1-\boldsymbol{\mu}_2$.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+The 95% CI for $\mu_1-\mu_2$ is (lower bound, upper bound).
+
+**13. Use the appropriate *t*-test, as identified in Q11, to determine if the data imply an improvement in the memory scores. Test at the $\alpha=0.05$ level.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $t_0 =$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+
+**14. What is the appropriate nonparametric test?**
+
+Replace with your answer
+
+**15. Use the appropriate nonparametric test, as identified in Q14, to determine if the data imply an improvement in the memory scores. Test at the $\alpha=0.05$ level.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $T_0 =$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+    
+**16. Construct the appropriate QQ plot for this dataset and research question.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**17. Determine which test is appropriate. Provide commentary on the graph in Q16 supporting your answer.**
+
+Replace with your answer

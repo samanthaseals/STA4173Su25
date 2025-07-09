@@ -1,11 +1,11 @@
 ---
-title: "STA2023 Review<br>Confidence Intervals<br>Hypothesis Testing"
-subtitle: "Tuesday, June 24, 2025"
+title: "Practice: 06/24/2025"
 author: "your name here"
 execute:
   echo: true
   warning: false
   message: false
+  error: true
 format: 
   html:
     df-print: paged
