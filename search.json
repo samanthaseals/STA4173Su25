@@ -4,35 +4,84 @@
     "href": "files/schedule.html",
     "title": "Tentative Schedule",
     "section": "",
-    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23 M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\nHousekeeping from class:\n\nPlease join our Discord server if you have not already.\n\nMoving forward, all announcements will be made on Discord.\n\nWe did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today’s lab.\n\nDr. Seals has corrected all dropboxes and corresponding due dates on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nCatch up:\n\nLab from T 06/16 (summaries and graphs)\n\nNew due date: M 06/30\n\n\nTopics:\n\nLecture\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\n\nnormality\nequal variance\n\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 07/07):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nIndependence Day holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nReview topics:\n\ntwo-sample t-test\ndependent t-test\nWilcoxon rank sum test\nWilcoxon signed rank test\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nProject 1 (due M 07/14): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/14):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/21):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nReview topics:\n\none-way ANOVA\nKruskal-Wallis\ntwo-way ANOVA\n\nSlides:\n\n.html:\n.qmd:\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nReview topics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nProject 3 (due M 07/28): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 08/04):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nReview topics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nProject 4 (due M 08/04): see Canvas\nQuiz: see Canvas"
+    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23 M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\nHousekeeping from class:\n\nPlease join our Discord server if you have not already.\n\nMoving forward, all announcements will be made on Discord.\n\nWe did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today’s lab.\n\nDr. Seals has corrected all dropboxes and corresponding due dates on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nCatch up:\n\nLab from T 06/16 (summaries and graphs)\n\nNew due date: M 06/30\n\n\nTopics:\n\nLecture\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\n\nnormality\nequal variance\n\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 07/07):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nIndependence Day holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nReview topics:\n\ntwo-sample t-test\ndependent t-test\nWilcoxon rank sum test\nWilcoxon signed rank test\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nProject 1 (due M 07/14): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nNote: Dr. Seals under the weather, no live class. Please see Canvas for recorded lectures.\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due W 07/16):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/21):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nReview topics:\n\none-way ANOVA\nKruskal-Wallis\ntwo-way ANOVA\n\nSlides:\n\n.html:\n.qmd:\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nReview topics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nProject 3 (due M 07/28): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 08/04):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nReview topics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nProject 4 (due M 08/04): see Canvas\nQuiz: see Canvas"
   },
   {
     "objectID": "files/practice/06-24-inference-practice.html",
     "href": "files/practice/06-24-inference-practice.html",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "title": "Practice: 06/24/2025",
     "section": "",
     "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
   },
   {
     "objectID": "files/practice/06-24-inference-practice.html#one-sample-mean",
     "href": "files/practice/06-24-inference-practice.html#one-sample-mean",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "title": "Practice: 06/24/2025",
     "section": "",
     "text": "Let’s find a 95% confidence interval for wing-flap rates.\n\n\nThe 95% CI for \\mu is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the wing-flap rate has changed. Test at the \\alpha=0.10 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
   },
   {
     "objectID": "files/practice/06-24-inference-practice.html#two-independent-means",
     "href": "files/practice/06-24-inference-practice.html#two-independent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "title": "Practice: 06/24/2025",
     "section": "Two Independent Means",
     "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
   },
   {
     "objectID": "files/practice/06-24-inference-practice.html#two-dependent-means",
     "href": "files/practice/06-24-inference-practice.html#two-dependent-means",
-    "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
+    "title": "Practice: 06/24/2025",
     "section": "Two Dependent Means",
     "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\n$t_0 = $, $p = $\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; $= $\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 ($p $). There is or is not sufficient evidence to suggest the alternative hypothesis in words (not math)."
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "",
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "",
+    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Summaries: Categorical Variables",
+    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)\n\n    type      n (pct)\n Alicorn    41 (1.4%)\n   Earth 1678 (58.4%)\n Pegasus  487 (17.0%)\n Unicorn  665 (23.2%)\n\n\nLet’s use n_pct() to describe friendship index by type.\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)\n\n# A tibble: 4 × 5\n  friendship Alicorn  Earth     Pegasus   Unicorn  \n       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1          1 0 (0.0%) 0 (0.0%)  0 (0.0%)  1 (0.2%) \n2          2 0 (0.0%) 5 (0.3%)  1 (0.2%)  1 (0.2%) \n3          3 0 (0.0%) 14 (0.8%) 6 (1.2%)  13 (2.0%)\n4          4 2 (4.9%) 54 (3.2%) 14 (2.9%) 16 (2.4%)"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Box Plots",
+    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer).\n\n\nmlp_data %&gt;% ggplot(aes(x = tail_shimmer)) +\n  geom_boxplot() +\n  labs(x = \"Tail Shimmer\") +\n  theme_bw() +\n  theme(axis.ticks.y = element_blank(),\n        axis.text.y = element_blank())"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Histograms",
+    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed)) +\n  geom_histogram(bins = 15, \n                 color = \"#2E7D32\", \n                 fill = \"#4CAF50\") +\n  labs(x = \"Flying Speed\", \n       y = \"Number of Ponies\") +\n  theme_bw() \n\n\n\n\n\n\n\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy).\n\n\nmlp_data %&gt;% ggplot(aes(x = magical_energy)) +\n  geom_histogram(bins = 15, \n                 color = \"#8B6C42\", \n                 fill = \"#F0E9DD\") +\n  labs(x = \"Magical Energy\",\n       y = \"Number of Ponies\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Bar Graphs",
+    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nmlp_data %&gt;%\n  count(sex) %&gt;%\n  ggplot(aes(x = sex, y = n)) +\n  geom_col() +\n  labs(x = \"Age and Sex of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a bar graph for the type of pony.\n\n\nmlp_data %&gt;%\n  count(type) %&gt;%\n  ggplot(aes(x = type, y = n)) +\n  geom_col() +\n  labs(x = \"Type of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()"
+  },
+  {
+    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
+    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
+    "title": "Practice: Point Estimation & Data Visualization",
+    "section": "Graphs: Scatterplots",
+    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(y = tail_shimmer, x = magical_energy)) +\n  geom_point(size = 2) +\n  labs(x = \"Magical Energy\",\n       y = \"Tail Shimmer\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed, y = tail_shimmer)) +\n  geom_point(size = 2) +\n  labs(y = \"Tail Shimmer\",\n       x = \"Flying Speed (km/h)\") +\n  theme_bw()"
   },
   {
     "objectID": "files/practice/key/06-24-inference-practice-KEY.html",
@@ -53,7 +102,7 @@
     "href": "files/practice/key/06-24-inference-practice-KEY.html#two-independent-means",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Two Independent Means",
-    "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
+    "text": "Two Independent Means\n\nUse the wing-flap data to estimate the difference in apple consumption (apples) betwen those that are above or below the target rate (target). Estimate using a 95% confidence interval.\n\n\nwing_flap %&gt;% independent_mean_CI(grouping = target,\n                                  continuous = apples, \n                                  confidence = 0.95)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 10.0556\nThe 95% confidence interval for μ₁ − μ₂ is (8.1347, 11.9764)\n\n\n\nThus, the 95% CI for \\mu_{\\text{above}} - \\mu_{\\text{below}} is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi. Test at the \\alpha=0.05 level.\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ ≤ 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} \\le 5\nH_1: \\ \\mu_{\\text{above}} - \\mu_{\\text{below}} &gt; 5\n\nTest Statistic and p-Value\n\nt_0 = 5.445, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that ponies above target, on average, eat 5 more apples than those below target."
   },
   {
     "objectID": "files/practice/key/06-24-inference-practice-KEY.html#two-dependent-means",
@@ -61,6 +110,27 @@
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Two Dependent Means",
     "text": "Two Dependent Means\n\nWe now want to find the 99% CI for the average improvement in wing-flap rate.\n\nHint: improvement can be measured with post - pre.\nHint 2: post measurement: post_training_wfr, pre measurement: pre_training_wfr.\n\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = -1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-7.2891, 3.8651).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nWhat happens if we flip the order of col1 and col2?\n\n\nwing_flap %&gt;% dependent_mean_CI(col1 = pre_training_wfr,\n                                col2 = post_training_wfr,\n                                confidence = 0.99)\n\nThe point estimate for the mean difference is x̄ = 1.712.\nThe point estimate for the standard deviation of differences is s = 9.9701.\nThe 99% confidence interval for the mean difference μ_d is (-3.8651, 7.2891).\n\n\n\nThe 99% confidence interval for \\mu_d is (lower_bound, upper_bound).\n\n\nPerform the appropriate hypothesis test to determine if there is a difference in wing-flap rate pre- and post-training. Test at the \\alpha=0.01 level.\n\n\nwing_flap %&gt;% dependent_mean_HT(col1 = post_training_wfr,\n                                col2 = pre_training_wfr,\n                                alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(24) = -0.859\np-value: p = 0.399\nConclusion: Fail to reject the null hypothesis (p = 0.3991 ≥ α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_{d} = 0, where \\mu_d = \\mu_{\\text{pre}} - \\mu_{\\text{post}}\nH_1: \\ \\mu_d \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.859, p = 0.399\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.399 &gt; 0.05). There is not sufficient evidence to suggest that training changed wing-flap rates."
+  },
+  {
+    "objectID": "files/practice/07-10-practice.html",
+    "href": "files/practice/07-10-practice.html",
+    "title": "Practice: 07/10/2025",
+    "section": "",
+    "text": "# use this code chunk to call in all packages the document will need\nlibrary(tidyverse)\nlibrary(ssstats)\n## DO NOT EDIT THIS CHUNK ##\nset.seed(917689)\nsinging_data &lt;- tibble(performer = rep(c(\"Mermaids\", \"Fish\", \"Crustaceans\"), each = 50),\n                       volume_db = c(rnorm(50, mean = 88.5, sd = 4.2),\n                                     rnorm(50, mean = 83.1, sd = 2.1),\n                                     rnorm(50, mean = 91.2, sd = 3.7)))\n\ntrill_data &lt;- tibble(performer = c(rep(\"Mermaids\", 60), \n                                   rep(\"Fish Chorus\", 60),\n                                   rep(\"Crustaceans\", 60)),\n                     trills = c(rnorm(60, mean = 6,  sd = 3),\n                                rnorm(60, mean = 9,  sd = 3),\n                                rnorm(60, mean = 14, sd = 3)))\n## DO NOT EDIT THIS CHUNK ##"
+  },
+  {
+    "objectID": "files/practice/07-10-practice.html#part-1",
+    "href": "files/practice/07-10-practice.html#part-1",
+    "title": "Practice: 07/10/2025",
+    "section": "Part 1",
+    "text": "Part 1\nKing Triton is concerned that the different sea creatures in Atlantica are not equally loud during musical rehearsals, which might be affecting the harmony of their performances. To investigate, Sebastian conducts a study (singing_data) measuring the average decibel level (volume) of singing during rehearsals from three types of performers: mermaids, fish chorus, and crustaceans.\nEach group (performer) includes 25 randomly selected performers, and their peak singing volumes (volume_db) are recorded during a standard song.\n1. Check the ANOVA assumptions graphically.\n\n\n2. If necessary, formally test for the variance assumption. Test at the \\alpha=0.05 level.\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n3. Draw conclusions based on your observations. (Do we meet the assumption?)\nReplace with your answer\n4. Which test should we use to look for differences among the performer groups? Why?\nReplace with your answer\n5. Perform the appropriate hypothesis test to determine if the average peak singing volume (volume_db) differs between performance groups (performer).\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nF_0 = OR \\chi_0^2=, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is an exploratory study; do not adjust for \\alpha.\nPairwise differences:\n\nList\nThem\nHere\n\n7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is a confirmatory study; adjust for \\alpha.\nPairwise differences:\n\nList\nThem\nHere"
+  },
+  {
+    "objectID": "files/practice/07-10-practice.html#part-2",
+    "href": "files/practice/07-10-practice.html#part-2",
+    "title": "Practice: 07/10/2025",
+    "section": "Part 2",
+    "text": "Part 2\nSebastian is preparing for Atlantica’s annual musical showcase, where different sections of the underwater ensemble show off their vocal prowess. One feature he’s especially interested in is the number of high-note “trills” performers can hit during a 90-second rehearsal segment.\nTo investigate whether certain performer groups are more impressive than others, Sebastian records (trill_data) the number of trills (trills) performed by randomly selected individuals from each of the following sections (performer): mermaids, fish chorus, and crustaceans.\n1. Check the ANOVA assumptions graphically.\n\n\n2. If necessary, formally test for the variance assumption. Test at the \\alpha=0.05 level.\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n3. Draw conclusions based on your observations. (Do we meet the assumption?)\nReplace with your answer\n4. Which test should we use to look for differences among the performer groups? Why?\nReplace with your answer\n5. Perform the appropriate hypothesis test to determine if the average peak singing volume (volume_db) differs between performance groups (performer).\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nF_0 = OR \\chi_0^2=, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is an exploratory study; do not adjust for \\alpha.\nPairwise differences:\n\nList\nThem\nHere\n\n7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is a confirmatory study; adjust for \\alpha.\nPairwise differences:\n\nList\nThem\nHere"
   },
   {
     "objectID": "files/syllabus.html",
@@ -375,7 +445,7 @@
     "href": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-6",
     "title": "STA2023 ReviewConfidence IntervalsHypothesis Testing",
     "section": "Hypothesis Testing: Two Independent Means",
-    "text": "Hypothesis Testing: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+    "text": "Hypothesis Testing: Two Independent Means\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ ≤ 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-24-T-inference-t-tests.html#hypothesis-testing-two-independent-means-7",
@@ -613,7 +683,7 @@
     "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-1",
     "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
     "section": "Normality Assumption: Independent Means",
-    "text": "Normality Assumption: Independent Means\n\nFurther, we performed a two-sample t-test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi (\\alpha=0.05).\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nAre our results valid?"
+    "text": "Normality Assumption: Independent Means\n\nFurther, we performed a two-sample t-test to determine if the above target pegasi are eating 5 or more apples than the below target pegasi (\\alpha=0.05).\n\n\nwing_flap %&gt;% independent_mean_HT(grouping = target,\n                                  continuous = apples, \n                                  mu = 5, \n                                  alternative = \"greater\", \n                                  alpha = 0.05)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ ≤ 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nAre our results valid?"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#normality-assumption-independent-means-r",
@@ -900,7 +970,7 @@
     "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-4",
     "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
     "section": "Hypothesis Testing: Two Independent Medians",
-    "text": "Hypothesis Testing: Two Independent Medians\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_median_HT(continuous = apples,\n                                    grouping = target,\n                                    alternative = \"greater\",\n                                    m = 5,\n                                    alpha = 0.05)\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+    "text": "Hypothesis Testing: Two Independent Medians\n\nRunning the code,\n\n\nwing_flap %&gt;% independent_median_HT(continuous = apples,\n                                    grouping = target,\n                                    alternative = \"greater\",\n                                    m = 5,\n                                    alpha = 0.05)\n\nWilcoxon Rank Sum Test for two independent medians\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#hypothesis-testing-two-independent-medians-5",
@@ -921,7 +991,7 @@
     "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-independent-groups-means-vs.-medians-1",
     "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
     "section": "Two Independent Groups: Means vs. Medians",
-    "text": "Two Independent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+    "text": "Two Independent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ ≤ 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test for two independent medians\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#introduction-two-dependent-medians",
@@ -998,7 +1068,7 @@
     "href": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#two-dependent-groups-means-vs.-medians-1",
     "title": "t-Test AssumptionsWilcoxon Rank SumWilcoxon Signed Rank",
     "section": "Two Dependent Groups: Means vs. Medians",
-    "text": "Two Dependent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+    "text": "Two Dependent Groups: Means vs. Medians\n\nt-test for independent means:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ ≤ 5\nAlternative: H₁: μ₁ − μ₂ &gt; 5\nTest statistic: t(23) = 5.445\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nWilcoxon rank sum for independent medians:\n\n\n\nWilcoxon Rank Sum Test for two independent medians\nNull: H₀: M₁ - M₂ ≤ 5\nAlternative: H₁: M₁ - M₂ &gt; 5\nTest statistic: T = 135.5\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-01-T-t-test-assumptions-wilcoxons.html#wrap-up",
@@ -1015,6 +1085,41 @@
     "text": "Wrap Up\n\nDaily activity: .qmd is available on Canvas.\n\nDue date: Monday, July 6, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nDo you have questions for me?\nDo you need my help with anything from prior lectures?"
   },
   {
+    "objectID": "files/hyp_test_template.html",
+    "href": "files/hyp_test_template.html",
+    "title": "STA4173 - Biostatistics - Summer 2025",
+    "section": "",
+    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
+  },
+  {
+    "objectID": "files/assignments/Assignment1.html",
+    "href": "files/assignments/Assignment1.html",
+    "title": "Assignment 1 - Summer 2025",
+    "section": "",
+    "text": "In this project, we will be analyzing the state-by-state spending on kids, as generously provided by the Urban Institute. Specifically, we will be investigating library spending that has been adjusted for inflation. To get started, see the starter code available on Canvas.\n1a. Find the summary statistics for library spending in all regions for the following years: 2000, 2005, 2010, and 2015.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n1b. Find the summary statistics for library spending by region for the Northeast and Midwest regions for the following years: 2000, 2005, 2010, and 2015.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n2a. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. Construct the appropriate QQ plot to check assumptions.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n2b. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). Note: If we do not care about the variance assumption here, leave this problem blank.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nRemember to typeset your results (only if you need this test)!\n3. Use the appropriate t-test to determine if there is a difference in library spending between the Northeast and Midwest regions in 2010. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nRemember to typeset your results!\n4. Use the appropriate nonparametric test to determine if there is a difference in library spending between the Northeast and Midwest regions in 2010. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nRemember to typeset your results!\n5. Based on your graph in Q2a, which test should be reported (the t-test or the Wilcoxon)? Explain why you’re choosing the test you’re choosing.\nReplace with your answer\n6a. Suppose we are interested in comparing the 2010 and 2015 spending for all states. Construct the appropriate QQ plot to check assumptions.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n6b. Suppose we are interested in comparing the 2010 and 2015 spending for all states. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). Note: If we do not care about the variance assumption here, leave this problem blank.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nRemember to typeset your results (only if you need this test)!\n7. Use the appropriate t-test to determine if there is a difference in library spending between 2010 and 2015 for all states. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nRemember to typeset your results!\n8. Use the appropriate nonparametric test to determine if there is a difference in library spending between 2010 and 2015 for all states. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nRemember to typeset your results!\n9. Based on your graph in Q6a, which test should be reported (the t-test or the Wilcoxon)? Explain why you’re choosing the test you’re choosing.\nReplace with your answer"
+  },
+  {
+    "objectID": "07-10-practice.html",
+    "href": "07-10-practice.html",
+    "title": "Practice: 07/01/2025",
+    "section": "",
+    "text": "# use this code chunk to call in all packages the document will need\nlibrary(tidyverse)\nlibrary(ssstats)\n## DO NOT EDIT THIS CHUNK ##\nset.seed(917689)\nsinging_data &lt;- tibble(performer = rep(c(\"Mermaids\", \"Fish\", \"Crustaceans\"), each = 50),\n                       volume_db = c(rnorm(50, mean = 88.5, sd = 4.2),\n                                     rnorm(50, mean = 83.1, sd = 2.1),\n                                     rnorm(50, mean = 91.2, sd = 3.7)))\n\ntrill_data &lt;- tibble(performer = c(rep(\"Mermaids\", 60), \n                                   rep(\"Fish Chorus\", 60),\n                                   rep(\"Crustaceans\", 60)),\n                     trills = c(rnorm(60, mean = 6,  sd = 3),\n                                rnorm(60, mean = 9,  sd = 3),\n                                rnorm(60, mean = 14, sd = 3)))\n## DO NOT EDIT THIS CHUNK ##"
+  },
+  {
+    "objectID": "07-10-practice.html#part-1",
+    "href": "07-10-practice.html#part-1",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 1",
+    "text": "Part 1\nKing Triton is concerned that the different sea creatures in Atlantica are not equally loud during musical rehearsals, which might be affecting the harmony of their performances. To investigate, Sebastian conducts a study (singing_data) measuring the average decibel level (volume) of singing during rehearsals from three types of performers: mermaids, fish chorus, and crustaceans.\nEach group (performer) includes 25 randomly selected performers, and their peak singing volumes (volume_db) are recorded during a standard song.\n1. Check the ANOVA assumptions graphically.\n\n\nsinging_data %&gt;% ANOVA_assumptions(continuous = volume_db,\n                                   grouping = performer)\n\n\n\n\n\n\n\n\n\n2. If necessary, formally test for the variance assumption. Test at the \\alpha=0.05 level.\n\nsinging_data %&gt;% variances_HT(continuous = volume_db,\n                              grouping = performer)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Mermaids = σ²_Fish = σ²_Crustaceans \nAlternative: At least one variance is different \nTest statistic: F(2,147) = 10.042 \np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n3. Draw conclusions based on your observations. (Do we meet the assumption?)\nReplace with your answer\n4. Which test should we use to look for differences among the performer groups? Why?\nReplace with your answer\n5. Perform the appropriate hypothesis test to determine if the average peak singing volume (volume_db) differs between performance groups (performer).\n\nsinging_data %&gt;% kruskal_HT(continuous = volume_db,\n                               grouping = performer)\n\nKruskal–Wallis Rank-Sum Test\n\nH₀: M_Crustaceans = M_Fish = M_Mermaids\nH₁: At least one group is different\n\nTest Statistic: X(2) = 81.261,\n p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nF_0 = OR \\chi_0^2=, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is an exploratory study; do not adjust for \\alpha.\n\nsinging_data %&gt;% posthoc_dunn(continuous = volume_db,\n                              grouping = performer,\n                              adjust = FALSE)\n\n              Comparison         Z     p\n1     Crustaceans - Fish  8.771936 0.000\n2 Crustaceans - Mermaids  2.587157 0.010\n3        Fish - Mermaids -6.184779 0.000\n\n\nPairwise differences: - List - Them - Here\n7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is a confirmatory study; adjust for \\alpha.\n\nsinging_data %&gt;% posthoc_dunn(continuous = volume_db,\n                              grouping = performer,\n                              adjust = TRUE)\n\n              Comparison         Z     p\n1     Crustaceans - Fish  8.771936 0.000\n2 Crustaceans - Mermaids  2.587157 0.029\n3        Fish - Mermaids -6.184779 0.000\n\n\nPairwise differences: - List - Them - Here"
+  },
+  {
+    "objectID": "07-10-practice.html#part-2",
+    "href": "07-10-practice.html#part-2",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 2",
+    "text": "Part 2\nSebastian is preparing for Atlantica’s annual musical showcase, where different sections of the underwater ensemble show off their vocal prowess. One feature he’s especially interested in is the number of high-note “trills” performers can hit during a 90-second rehearsal segment.\nTo investigate whether certain performer groups are more impressive than others, Sebastian records (trill_data) the number of trills performed by randomly selected individuals from each of the following sections: mermaids, fish chorus, and crustaceans.\n1. Check the ANOVA assumptions graphically.\n\n\ntrill_data %&gt;% ANOVA_assumptions(continuous = trills, \n                                 grouping = performer)\n\n\n\n\n\n\n\n\n\n2. If necessary, formally test for the variance assumption. Test at the \\alpha=0.05 level.\n\ntrill_data %&gt;% variances_HT(continuous = trills, \n                            grouping = performer)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Mermaids = σ²_Fish Chorus = σ²_Crustaceans \nAlternative: At least one variance is different \nTest statistic: F(2,177) = 0.111 \np-value: p = 0.895\nConclusion: Fail to reject the null hypothesis (p = 0.8952 ≥ α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n3. Draw conclusions based on your observations. (Do we meet the assumption?)\nReplace with your answer\n4. Which test should we use to look for differences among the performer groups? Why?\nReplace with your answer\n5. Perform the appropriate hypothesis test to determine if the average peak singing volume (volume_db) differs between performance groups (performer).\n\nsinging_data %&gt;% kruskal_HT(continuous = volume_db,\n                               grouping = performer)\n\nKruskal–Wallis Rank-Sum Test\n\nH₀: M_Crustaceans = M_Fish = M_Mermaids\nH₁: At least one group is different\n\nTest Statistic: X(2) = 81.261,\n p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nF_0 = OR \\chi_0^2=, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is an exploratory study; do not adjust for \\alpha.\n\nsinging_data %&gt;% posthoc_dunn(continuous = volume_db,\n                              grouping = performer,\n                              adjust = FALSE)\n\n              Comparison         Z     p\n1     Crustaceans - Fish  8.771936 0.000\n2 Crustaceans - Mermaids  2.587157 0.010\n3        Fish - Mermaids -6.184779 0.000\n\n\nPairwise differences: - List - Them - Here\n7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is a confirmatory study; adjust for \\alpha.\n\nsinging_data %&gt;% posthoc_dunn(continuous = volume_db,\n                              grouping = performer,\n                              adjust = TRUE)\n\n              Comparison         Z     p\n1     Crustaceans - Fish  8.771936 0.000\n2 Crustaceans - Mermaids  2.587157 0.029\n3        Fish - Mermaids -6.184779 0.000\n\n\nPairwise differences: - List - Them - Here"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "STA4173 Biostatistics Summer 2025",
@@ -1022,11 +1127,627 @@
     "text": "STA4173 Biostatistics Summer 2025\nWelcome to STA4173 - Biostatistics for the Summer 2025 semester! This course\n\nis an 8-week synchronous (live) course with students both on campus and on Zoom.\nis a senior-level second course in applied statistics.\nhas been designed for STEM majors, not solely those majoring in mathematics and/or minoring in statistics.\n\nHousekeeping:\n\nPlease join the Discord server (link on Canvas and in syllabus).\n\nIt is expected that students will engage on Discord while learning the course material.\n\nPlease enter class with an open mind and willingness to learn.\nYou may join Zoom for office hours by scheduling an appointment with me on Navigate.\nThere are no formal tests during the semester. Instead, you will complete projects to demonstrate your understanding.\nThere is a final exam at the end of the semester.\n\nI will not ask you to provide code in a timed environment.\nI will have all code/output relevant to questions as part of the exam. (i.e., you will interpret the output.)\n\n\nContacting Dr. Seals: The optimal ways to contact me are either\n\nemail through UWF Gmail (sseals at uwf dot edu)\ndirect message on Discord\n\nNote that I try to respond within 24 hours, however, it doesn’t always happen. If your matter is urgent, please feel free to snag me before or after class."
   },
   {
-    "objectID": "files/hyp_test_template.html",
-    "href": "files/hyp_test_template.html",
-    "title": "STA4173 - Biostatistics - Summer 2025",
+    "objectID": "files/assignments/key/Assignment1key.html",
+    "href": "files/assignments/key/Assignment1key.html",
+    "title": "Assignment 1 - Summer 2025",
     "section": "",
-    "text": "Hypotheses:\n\n\\(H_0: \\ \\)\n\\(H_1: \\ \\)\n\nTest Statistic and p-Value\n\n$t_0 = $\n$p = $\n\n\n\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); $= $\n\nConclusion and interpretation\n\nReject (\\(p&lt;\\alpha\\)) or fail to reject (\\(p \\ge \\alpha\\)).\nThere is (reject) or is not (ftr) sufficient evidence to suggest the alternative hypothesis in words."
+    "text": "In this project, we will be analyzing the state-by-state spending on kids, as generously provided by the Urban Institute. Specifically, we will be investigating library spending that has been adjusted for inflation. To get started, see the starter code available on Canvas.\n\n\n\n1a. Find the summary statistics for library spending in all regions for the following years: 2000, 2005, 2010, and 2015.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nall_regions %&gt;% mean_median(y2000, y2005, y2010, y2015)\n\n# A tibble: 4 × 3\n  variable mean_sd             median_iqr         \n  &lt;chr&gt;    &lt;chr&gt;               &lt;chr&gt;              \n1 y2000    170365.3 (210403.4) 94284.0 (197973.0) \n2 y2005    203254.1 (244136.0) 121970.0 (220287.5)\n3 y2010    205501.7 (234078.5) 124954.0 (209843.5)\n4 y2015    206475.8 (237210.8) 131088.0 (211980.5)\n\n\n1b. Find the summary statistics for library spending by region for the following years: 2000, 2005, 2010, and 2015.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nne_mw_only %&gt;% group_by(Region) %&gt;% mean_median(y2000, y2005, y2010, y2015)\n\n# A tibble: 8 × 4\n  Region    variable mean_sd             median_iqr         \n  &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;               &lt;chr&gt;              \n1 Midwest   y2000    204973.1 (184965.1) 153986.0 (237771.5)\n2 Northeast y2000    225917.7 (308950.3) 144411.0 (240548.0)\n3 Midwest   y2005    253297.6 (217860.2) 256921.0 (311636.0)\n4 Northeast y2005    247108.9 (322143.8) 166699.0 (222950.0)\n5 Midwest   y2010    237745.3 (203980.9) 223638.0 (288909.5)\n6 Northeast y2010    240377.4 (271616.6) 168927.0 (239392.0)\n7 Midwest   y2015    237205.5 (198779.3) 209956.0 (273822.5)\n8 Northeast y2015    236386.0 (279866.3) 174435.0 (240292.0)\n\n\n2a. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. Construct the appropriate QQ plot to check assumptions.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nne_mw_only %&gt;% independent_qq(continuous = y2010,\n                              grouping = Region)\n\n\n\n\n\n\n\n\n2b. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). Note: If we do not care about the variance assumption here, leave this problem blank.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nne_mw_only %&gt;% variances_HT(continuous = y2010,\n                              grouping = Region)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Northeast = σ²_Midwest \nAlternative: At least one variance is different \nTest statistic: F(1,18) = 0.179 \np-value: p = 0.677\nConclusion: Fail to reject the null hypothesis (p = 0.677 ≥ α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\sigma^2_{\\text{NE}} = \\sigma_{\\text{MW}}^2\nH_1: \\ \\sigma^2_{\\text{NE}} \\ne \\sigma_{\\text{MW}}^2\n\nTest Statistic and p-Value\n\nF_0 = 0.179, p = 0.677\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to 0.677 &gt; 0.05). There is not sufficient evidence to suggest that the variances are different. That is, we do not break the variance assumption of the two-sample t-test.\n\n\n3. Use the appropriate t-test to determine if there is a difference in library spending between the Northeast and Midwest regions in 2010. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\nne_mw_only %&gt;% independent_mean_HT(continuous = y2010,\n                                   grouping = Region)\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 0\nAlternative: H₁: μ₁ − μ₂ ≠ 0\nTest statistic: t(18) = -0.025\np-value: p = 0.981\nConclusion: Fail to reject the null hypothesis (p = 0.9805 ≥ α = 0.05)\n\n\n\nHypotheses\n\nH_0: \\mu_{\\text{NE}}-\\mu_{\\text{MW}} = 0\nH_1: \\mu_{\\text{NE}}-\\mu_{\\text{MW}} \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.025, p = 0.981\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that the spending in the northeast and midwest regions was different in 2010.\n\n\n4. Use the appropriate nonparametric test to determine if there is a difference in library spending between the Northeast and Midwest regions in 2010. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\nne_mw_only %&gt;% independent_median_HT(continuous = y2010,\n                                     grouping = Region)\n\nWilcoxon Rank Sum Test for two independent medians\nNull: H₀: M₁ - M₂ = 0\nAlternative: H₁: M₁ - M₂ ≠ 0\nTest statistic: T = 53\np-value: p = 0.820\nConclusion: Fail to reject the null hypothesis (p = 0.8197 ≥ α = 0.05)\n\n\n\nHypotheses\n\nH_0: M_{\\text{NE}}-M_{\\text{MW}} = 0\nH_1: M_{\\text{NE}}-M_{\\text{MW}} \\ne 0\n\nTest Statistic and p-Value\n\nT_0 = 53, p = 0.820\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that the spending in the northeast and midwest regions was different in 2010.\n\n\n5. Based on your graph in Q2a, which test should be reported (the t-test or the Wilcoxon)? Explain why you’re choosing the test you’re choosing.\n\nIf normality assumption holds \\to t-test.\nIf normality assumption does not hold \\to Wilcoxon.\n\n6a. Suppose we are interested in comparing the 2010 and 2015 spending for all states. Construct the appropriate QQ plot to check assumptions.\n\nall_regions %&gt;% dependent_qq(col1 = y2010, col2 = y2015)\n\n\n\n\n\n\n\n\n6b. Suppose we are interested in comparing the 2010 and 2015 spending for all states. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). Note: If we do not care about the variance assumption here, leave this problem blank.\n7. Use the appropriate t-test to determine if there is a difference in library spending between 2010 and 2015 for all states. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\nall_regions %&gt;% dependent_mean_HT(col1 = y2010,\n                                  col2 = y2015)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d ≠ 0\nTest statistic: t(50) = -0.224\np-value: p = 0.823\nConclusion: Fail to reject the null hypothesis (p = 0.8235 ≥ α = 0.05)\n\n\n\nHypotheses\n\nH_0: \\mu_{\\text{2010}}-\\mu_{\\text{2015}} = 0\nH_1: \\mu_{\\text{2010}}-\\mu_{\\text{2015}} \\ne 0\n\nTest Statistic and p-Value\n\nt_0 = -0.224; p = 0.823\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that the spending changed between 2010 and 2015.\n\n\n8. Use the appropriate nonparametric test to determine if there is a difference in library spending between 2010 and 2015 for all states. Test at the \\alpha=0.05 level. Remember to typeset the results.\n\nall_regions %&gt;% dependent_median_HT(col1 = y2010,\n                                    col2 = y2015)\n\nWilcoxon Signed-Rank Test for the median of differences:\nNull: H₀: M_d = 0\nAlternative: H₁: M_d ≠ 0\nTest statistic: T = 586\np-value: p = 0.473\nConclusion: Fail to reject the null hypothesis (p = 0.4733 ≥ α = 0.05)\n\n\n\nHypotheses\n\nH_0: M_{\\text{2010}}-M_{\\text{2015}} = 0\nH_1: M_{\\text{2010}}-M_{\\text{2015}} \\ne 0\n\nTest Statistic and p-Value\n\nT_0 = 586; p= 0.473\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that the spending changed between 2000 and 2015.\n\n\n9. Based on your graph in Q6a, which test should be reported (the t-test or the Wilcoxon)? Explain why you’re choosing the test you’re choosing.\n\nIf normality assumption holds \\to t-test.\nIf normality assumption does not hold \\to Wilcoxon."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-topics",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-topics",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Topics",
+    "text": "Introduction: Topics\n\nPrevious: two groups, continuous outcome\nNow: more than two groups, continuous outcome\nOne-way ANOVA\n\nposthoc testing\nassumptions\n\nKruskal-Wallis\n\nposthoc testing"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-analysis-of-variance",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-analysis-of-variance",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Analysis of Variance",
+    "text": "Introduction: Analysis of Variance\n\nWe have previously discussed testing the difference between two groups.\n\nWhat about when there are three or more groups?\n\nWe will use a method called analysis of variance (ANOVA).\n\nThis method partitions the variance of the outcome into variance due to the groups and variance due to “other” factors.\n\nFun fact: the two-sample t-test is a special case of ANOVA.\n\nIf you perform ANOVA when comparing two means, you will obtain the same results as the two-sample t-test."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-analysis-of-variance-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-analysis-of-variance-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Analysis of Variance",
+    "text": "Introduction: Analysis of Variance\n\nFun fact: the two-sample t-test is a special case of ANOVA.\nTwo-sample t-test:\n\n\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ = 0\nAlternative: H₁: μ₁ − μ₂ ≠ 0\nTest statistic: t(98) = 0.52\np-value: p = 0.604\nConclusion: Fail to reject the null hypothesis (p = 0.6041 ≥ α = 0.05)\n\n\n\nIn ANOVA,\n\n\n\nOne-Way ANOVA: \nH₀: μ_A = μ_B\nH₁: At least one group mean is different\nTest Statistic: F(1, 98) = 0.271\np-value: p = 0.604\nConclusion: Fail to reject the null hypothesis (p = 0.6041 ≥ α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA",
+    "text": "One-Way ANOVA\n\nIn one-way ANOVA, we are partitioning the variability in our outcome (SSTotal) into two pieces:\n\nVariability due to the group (SSTreatment),\nVariablity due to “other factors” (SSError).\n\nThink of this like a “catch all” for other sources of error – things we did not adjust for in our model."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: ANOVA Table",
+    "text": "One-Way ANOVA: ANOVA Table\n\nThe computations for ANOVA are more involved than what we’ve seen before.\nAn ANOVA table will be constructed in order to perform the hypothesis test.\n\n\n\n\n\n\n\n\n\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\n\n\n\n\nTreatment\nSSTrt\ndfTrt\nMSTrt\nF0\n\n\nError\nSSE\ndfE\nMSE\n\n\n\nTotal\nSSTot\ndfTot\n\n\n\n\n\n\nOnce this is put together, we can perform the hypothesis test.\n\nOur test statistic is the F_0."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nBefore we begin our computations, it would be helpful if we know\n\n\\bar{x}, \\ \\ n_i, \\ \\ \\bar{x}_i, \\ \\ s_i^2\n\nwhere,\n\n\\bar{x} is the overall mean,\nn_i is the sample size for group i,\n\\bar{x}_i is the mean for group i, and\ns_i^2 is the variance for group i"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nWe begin our computations with the sums of squares:\n\n\n\\begin{align*}\n    \\text{SS}_{\\text{Trt}} &= \\sum_{i=1}^k n_i(\\bar{x}_i-\\bar{x})^2 \\\\\n    \\text{SS}_{\\text{E}} &= \\sum_{i=1}^k (n_i-1)s_i^2 \\\\\n    \\text{SS}_{\\text{Tot}} &= \\text{SS}_{\\text{Trt}} + \\text{SS}_{\\text{E}}\n\\end{align*}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nEach sum of squares has degrees of freedom:\n\n\n\\begin{align*}\n    \\text{df}_{\\text{Trt}} &= k-1\\\\\n    \\text{df}_{\\text{E}} &= n-k\\\\\n    \\text{df}_{\\text{Tot}} &= n-1\n\\end{align*}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nOnce we have the sum of squares and corresponding degrees of freedom, we can compute the mean squares.\nIn the case of one-way ANOVA, \n\\begin{align*}\n  \\text{MS}_{\\text{Trt}} &= \\frac{\\text{SS}_{\\text{Trt}}}{\\text{df}_{\\text{Trt}}} \\\\\n  \\text{MS}_{\\text{E}} &= \\frac{\\text{SS}_{\\text{E}}}{\\text{df}_{\\text{E}}}\n\\end{align*}\n\n\nNote that there is no \\text{MS}_{\\text{Tot}}!"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nA note about mean squares: they are almost always constructed the same way.\n\n\\text{MS}_X = \\frac{\\text{SS}_X}{\\text{df}_E}\n\nThis is important to know for future statistics courses that may have you calculating things by hand."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-5",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-5",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nFinally, we have the test statistic.\nGenerally, we construct an F for ANOVA by dividing the MS of interest by MS_E_,\n\nF_X = \\frac{\\text{MS}_X}{\\text{MS}_{\\text{E}}}\n\nIn one-way ANOVA, we are only constructing the F for treatment,\n\nF_0 = \\frac{\\text{MS}_{\\text{Trt}}}{\\text{MS}_{\\text{E}}}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-6",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-6",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: (Hand) Computations",
+    "text": "One-Way ANOVA: (Hand) Computations\n\nWe are finally done constructing our ANOVA table! As a reminder,\n\n\n\n\n\n\n\n\n\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\n\n\n\n\nTreatment\nSSTrt\ndfTrt\nMSTrt\nF0\n\n\nError\nSSE\ndfE\nMSE\n\n\n\nTotal\nSSTot\ndfTot"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: ANOVA Table (R)",
+    "text": "One-Way ANOVA: ANOVA Table (R)\n\nWe will use the one_way_ANOVA_table() function from library(ssstats) to construct the ANOVA table.\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: ANOVA Table",
+    "text": "One-Way ANOVA: ANOVA Table\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\alpha=0.05 level.\nLet’s first create the ANOVA table. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: ANOVA Table",
+    "text": "One-Way ANOVA: ANOVA Table\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types.\nLet’s first create the ANOVA table. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA_table(continuous = ability_score,\n                                        grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "One-Way ANOVA: ANOVA Table",
+    "text": "One-Way ANOVA: ANOVA Table\n\nRunning the code,\n\n\nmagical_studies %&gt;% one_way_ANOVA_table(continuous = ability_score,\n                                        grouping = pony_type)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOne-Way ANOVA Table\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\n\n\n\n\nTreatment\n503.84\n3\n167.95\n1.53\n\n\nError\n14,963.20\n136\n110.02\n\n\n\n\nTotal\n15,467.04\n139"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way-ANOVA",
+    "text": "Hypothesis Testing: One-Way-ANOVA\n\nIn one-way ANOVA, hypotheses always take the same form:\n\nH_0: \\ \\mu_1 = \\mu_2 = ... = \\mu_k\nH_1: at least one is different\n\nNote: you must fill in the “k” when writing hypotheses!\n\ne.g., if there are four means, your hypotheses are\n\nH_0: \\ \\mu_1 = \\mu_2 = \\mu_3 = \\mu_4\nH_1: at least one is different\n\ne.g., in our MLP example,\n\nH_0: \\ \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{alicorn}} = \\mu_{\\text{pegasus}}\nH_1: at least one is different"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\nTest statistic:\n\nF_0 = \\frac{\\text{MS}_{\\text{Trt}}}{\\text{MS}_{\\text{E}}}\n\np-Value:\n\np = P[F_{k-1,n-k} \\ge F_0]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA (R)",
+    "text": "Hypothesis Testing: One-Way ANOVA (R)\n\nWe will use the one_way_ANOVA() function from library(ssstats) to construct the corresponding hypothesis test.\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. Our updated code,\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = ability_score,\n                                  grouping = pony_type, \n                                  alpha = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nRunning the code,\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = ability_score,\n                                  grouping = pony_type, \n                                  alpha = 0.05)\n\nOne-Way ANOVA: \nH₀: μ_Alicorn = μ_Earth = μ_Pegasus = μ_Unicorn\nH₁: At least one group mean is different\nTest Statistic: F(3, 136) = 1.526\np-value: p = 0.210\nConclusion: Fail to reject the null hypothesis (p = 0.2105 ≥ α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-5",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-5",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nHypotheses\n\nH_0: \\ \\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{pegasus}}\nH_1: at least one \\mu_i is different\n\nTest Statistic and p-Value\n\nF_0 = 1.526\np = 0.210\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.210 &gt; 0.05). There is not sufficient evidence to suggest that there is a difference in magical ability between the types of ponies."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-6",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-6",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s first create the ANOVA table. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-7",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-7",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s first create the ANOVA table. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA_table(continuous = coordination_score,\n                                        grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-8",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-8",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nRunning the code:\n\n\nmagical_studies %&gt;% one_way_ANOVA_table(continuous = coordination_score,\n                                        grouping = pony_type)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOne-Way ANOVA Table\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\n\n\n\n\nTreatment\n3,745.44\n3\n1,248.48\n18.40\n\n\nError\n9,229.82\n136\n67.87\n\n\n\n\nTotal\n12,975.26\n139"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-9",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-9",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-10",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-10",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = coordination_score,\n                                  grouping = pony_type,\n                                  alpha = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-11",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-11",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nRunning the code:\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = coordination_score,\n                                  grouping = pony_type,\n                                  alpha = 0.05)\n\nOne-Way ANOVA: \nH₀: μ_Alicorn = μ_Earth = μ_Pegasus = μ_Unicorn\nH₁: At least one group mean is different\nTest Statistic: F(3, 136) = 18.396\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-12",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-12",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: One-Way ANOVA",
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nHypotheses\n\nH_0: \\ \\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{pegasus}}\nH_1: at least one \\mu_i is different\n\nTest Statistic and p-Value\n\nF_0 = 18.396\np &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that there is a difference in magical coordination between the types of ponies."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Posthoc Testing",
+    "text": "Introduction: Posthoc Testing\n\nThere’s a difference, but what is the difference?\nLet’s look at summary statistics:\n\n\nmagical_studies %&gt;% \n  group_by(pony_type) %&gt;%\n  mean_median(coordination_score)\n\n# A tibble: 4 × 4\n  pony_type variable           mean_sd    median_iqr \n  &lt;chr&gt;     &lt;chr&gt;              &lt;chr&gt;      &lt;chr&gt;      \n1 Alicorn   coordination_score 87.7 (8.5) 88.0 (13.6)\n2 Earth     coordination_score 75.1 (8.4) 75.3 (9.6) \n3 Pegasus   coordination_score 77.6 (8.4) 78.5 (10.0)\n4 Unicorn   coordination_score 84.9 (7.7) 84.3 (11.2)\n\n\n\nCan we definitively say which groups are different…?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Posthoc Testing",
+    "text": "Introduction: Posthoc Testing\n\nRecall our hypotheses in one-way ANOVA,\n\nH_0: \\mu_1 = \\mu_2 = ... = \\mu_k\nH_1: at least one \\mu_i is different\n\nThe F test does not tell us which mean is different… only that a difference exists.\nIn theory, we could perform repeated t tests to determine pairwise differences.\n\nRecall that ANOVA is an extension of the t test… or that the t test is a special case of ANOVA.\nHowever, this will increase the Type I error rate (\\alpha)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Posthoc Testing",
+    "text": "Introduction: Posthoc Testing\n\nRecall that the Type I error rate, \\alpha, is the probability of incorrectly rejecting H_0.\n\ni.e., we are saying there is a difference between the means when there is actually not a difference.\n\nSuppose we are comparing 5 groups.\n\nThis is 10 pairwise comparisons!!\n\n1-2, 1-3, 1-4, 1-5, 2-3, 2-4, 2-5, 3-4, 3-5, 4-5\n\nIf we perform repeated t tests under \\alpha=0.05, we are inflating the Type I error to 0.40! 😵"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Posthoc Testing",
+    "text": "Introduction: Posthoc Testing\n\nWhen performing posthoc comparisons, we can choose one of two paths:\n\nControl the Type I (familywise) error rate.\nDo not control the Type I error rate.\n\nNote that controlling the Type I error rate is more conservative than when we do not control it.\n\n“Conservative” = more difficult to reject.\n\nGenerally, statisticians:\n\ndo not control the Type I error rate if examining the results of pilot/preliminary studies that are exploring for general relationships.\ndo control the Type I error rate if examining the results of confirmatory studies and are attempting to confirm relationships observed in pilot/preliminary studies."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Posthoc Testing",
+    "text": "Introduction: Posthoc Testing\n\nThe posthoc tests we will learn:\n\nTukey’s test\n\nPerforms all pairwise tests and controls the Type I error rate\n\nFisher’s least significant difference\n\nPerforms all pairwise tests but does not control the Type I error rate\n\n\nCaution: we should only perform posthoc tests if we have determined that a general difference exists!\n\ni.e., when we reject when looking at the F test in ANOVA"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s Test",
+    "text": "Posthoc Testing: Tukey’s Test\n\nTukey’s test allows us to do all pairwise comparisons while controlling \\alpha.\nHypotheses\n\nH_0: \\ \\mu_i = \\mu_j\nH_1: \\ \\mu_i \\ne \\mu_j\n\nTest Statistic\n\n\nQ = \\frac{|\\bar{y}_i - \\bar{y}_j|}{\\sqrt{ \\frac{\\text{MS}_{\\text{E}}}{2} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s Test (R)",
+    "text": "Posthoc Testing: Tukey’s Test (R)\n\nWe will use the posthoc_tukey() function from library(ssstats) to perform Tukey’s posthoc test (resulting p are adjusted for multiple comparisons).\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s Test",
+    "text": "Posthoc Testing: Tukey’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Tukey’s posthoc test. How should we update this code?\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s Test",
+    "text": "Posthoc Testing: Tukey’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Tukey’s posthoc test. Our updated code:\n\n\nmagical_studies %&gt;% posthoc_tukey(continuous = coordination_score,\n                                  grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s Test",
+    "text": "Posthoc Testing: Tukey’s Test\n\nRunning the code,\n\n\nmagical_studies %&gt;% posthoc_tukey(continuous = coordination_score,\n                                  grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s Test",
+    "text": "Posthoc Testing: Tukey’s Test\n\nRestating results,\n\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 12.63, p &lt; 0.001)\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 10.18, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 9.83, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 7.38, p = 0.001)\n\\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} (\\bar{x}_d = 2.80, p = 0.487)\n\\mu_{\\text{pegasus}} = \\mu_{\\text{earth}} (\\bar{x}_d = 2.44, p = 0.602)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Fisher’s Test",
+    "text": "Posthoc Testing: Fisher’s Test\n\nFisher’s allows us to test all pairwise comparisons but does not control the \\alpha.\nHypotheses:\n\nH_0: \\ \\mu_i = \\mu_j\nH_1: \\ \\mu_i \\ne \\mu_j\n\nTest Statistic:\n\n\nt = \\frac{|\\bar{y}_i - \\bar{y}_j|}{\\sqrt{ \\text{MS}_{\\text{E}} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Fisher’s Test (R)",
+    "text": "Posthoc Testing: Fisher’s Test (R)\n\nWe will use the posthoc_fisher() function from library(ssstats) to perform Tukey’s posthoc test (resulting p are not adjusted for multiple comparisons).\n\n\ndataset_name %&gt;% posthoc_fisher(continuous = continuous_variable,\n                                grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Fisher’s Test",
+    "text": "Posthoc Testing: Fisher’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Fisher’s posthoc test. How should we update this code?\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Fisher’s Test",
+    "text": "Posthoc Testing: Fisher’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Fisher’s posthoc test. Our updated code:\n\n\nmagical_studies %&gt;% posthoc_fisher(continuous = coordination_score,\n                                   grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Fisher’s Test",
+    "text": "Posthoc Testing: Fisher’s Test\n\nRunning the code,\n\n\nmagical_studies %&gt;% posthoc_fisher(continuous = coordination_score,\n                                   grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Fisher’s Test",
+    "text": "Posthoc Testing: Fisher’s Test\n\nRestating results,\n\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 12.63, p &lt; 0.001)\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 10.18, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 9.83, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 7.38, p &lt; 0.001)\n\\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} (\\bar{x}_d = 2.80, p = 0.151)\n\\mu_{\\text{pegasus}} = \\mu_{\\text{earth}} (\\bar{x}_d = 2.44, p = 0.227)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-vs.-fishers",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-vs.-fishers",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s vs. Fisher’s",
+    "text": "Posthoc Testing: Tukey’s vs. Fisher’s\n\nWe have now learned:\n\nTukey’s test: Performs all pairwise tests and controls the Type I error rate\nFisher’s test: Performs all pairwise tests but does not control the Type I error rate\n\nSometimes Tukey’s and Fisher’s will agree with each other.\n\nThis is the case in our example.\n\nOther times they do not agree – by design, Tukey’s makes it harder to reject.\n\nWe may see more rejections when using Fisher’s."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-vs.-fishers-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-vs.-fishers-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Tukey’s vs. Fisher’s",
+    "text": "Posthoc Testing: Tukey’s vs. Fisher’s\n\nComparing the two side-by-side,\n\n\n\n\n\n\n\n\n\n\nPairwise Comparison\n\\bar{x}_d\nUnadjusted p\nAdjusted p\n\n\n\n\nAlicorn vs. Earth\n12.63\n&lt; 0.001\n&lt; 0.001\n\n\nAlicorn vs. Pegasus\n10.18\n&lt; 0.001\n&lt; 0.001\n\n\nUnicorn vs. Earth\n9.83\n&lt; 0.001\n&lt; 0.001\n\n\nUnicorn vs. Pegasus\n7.38\n&lt; 0.001\n0.001\n\n\nAlicorn vs. Unicorn\n2.80\n0.151\n0.487\n\n\nPegasus vs. Earth\n2.44\n0.227\n0.602"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-anova-assumptions",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-anova-assumptions",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: ANOVA Assumptions",
+    "text": "Introduction: ANOVA Assumptions\n\nWe previously discussed testing three or more means using ANOVA.\nWe also discussed that ANOVA is an extension of the two-sample t-test.\nRecall that the t-test has two assumptions:\n\nEqual variance between groups.\nNormal distribution.\n\nWe will now extend our knowledge of checking assumptions."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Definition",
+    "text": "ANOVA Assumptions: Definition\n\nWe can represent ANOVA with the following model:\n\n y_{ij} = \\mu + \\tau_i + \\varepsilon_{ij} \n\nwhere:\n\ny_{ij} is the j^{\\text{th}} observation in the i^{\\text{th}} group,\n\\mu is the overall (grand) mean,\n\\tau_i is the treatment effect for group i, and\n\\varepsilon_{ij} is the error term for the j^{\\text{th}} observation in the i^{\\text{th}} group."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Definition",
+    "text": "ANOVA Assumptions: Definition\n\nWe assume that the error term follows a normal distribution with mean 0 and a constant variance, \\sigma^2. i.e., \\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\nVery important note: the assumption is on the error term and NOT on the outcome!\nWe will use the residual (the difference between the observed value and the predicted value) to assess assumptions:  e_{ij} = y_{ij} - \\hat{y}_{ij}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Graphical Assessment",
+    "text": "ANOVA Assumptions: Graphical Assessment\n\nNormality: quantile-quantile plot\n\nShould have points close to the 45^\\circ line\nWe will focus on the “center” portion of the plot\n\nVariance: scatterplot of the residuals against the predicted values\n\nShould be “equal spread” between the groups\nNo “pattern”"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Graphical Assessment (R)",
+    "text": "ANOVA Assumptions: Graphical Assessment (R)\n\nLike with t-tests, we will assess these assumptions graphically.\nWe will use the ANOVA_assumptions() function from library(ssstats) to request the graphs necessary to asssess our assumptions.\n\n\ndataset_name %&gt;% ANOVA_assumptions(continuous = continuous_variable,\n                                   grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Graphical Assessment",
+    "text": "ANOVA Assumptions: Graphical Assessment\n\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types.\nLet’s now check the ANOVA assumptions. How should we change the following code?\n\n\ndataset_name %&gt;% ANOVA_assumptions(continuous = continuous_variable,\n                                   grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Graphical Assessment",
+    "text": "ANOVA Assumptions: Graphical Assessment\n\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types.\nLet’s now check the ANOVA assumptions. Our updated code:\n\n\nmagical_studies %&gt;% ANOVA_assumptions(continuous = coordination_score,\n                                      grouping = pony_type))"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Graphical Assessment",
+    "text": "ANOVA Assumptions: Graphical Assessment\n\nRunning the code,\n\n\n\nmagical_studies %&gt;% ANOVA_assumptions(continuous = coordination_score,\n                                      grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Test for Variance (R)",
+    "text": "ANOVA Assumptions: Test for Variance (R)\n\nWe can formally check the variance assumption with the Brown-Forsythe-Levene test (yes, from Module 1!).\nHypotheses\n\nH_0: \\ \\sigma^2_1 = \\sigma^2_2 = ... = \\sigma^2_k\nH_1: at least one \\sigma^2_i is different.\n\nRecall the variances_HT() function from library(ssstats).\n\n\ndataset_name %&gt;% variances_HT(continuous = continuous_variable,\n                              grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Test for Variance",
+    "text": "ANOVA Assumptions: Test for Variance\n\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types.\nLet’s now check the ANOVA assumptions. How should we change the following code?\n\n\ndataset_name %&gt;% variances_HT(continuous = continuous_variable,\n                              grouping = grouping_variable)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Test for Variance",
+    "text": "ANOVA Assumptions: Test for Variance\n\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types.\nLet’s now check the ANOVA assumptions. Our updated code:\n\n\nmagical_studies %&gt;% variances_HT(continuous = coordination_score,\n                                 grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Test for Variance",
+    "text": "ANOVA Assumptions: Test for Variance\n\nRunning the code,\n\n\nmagical_studies %&gt;% variances_HT(continuous = coordination_score,\n                                 grouping = pony_type)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Unicorn = σ²_Pegasus = σ²_Earth = σ²_Alicorn \nAlternative: At least one variance is different \nTest statistic: F(3,136) = 0.185 \np-value: p = 0.906\nConclusion: Fail to reject the null hypothesis (p = 0.9063 ≥ α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "ANOVA Assumptions: Test for Variance",
+    "text": "ANOVA Assumptions: Test for Variance\n\nHypotheses\n\nH_0: \\ \\sigma^2_{\\text{unicorn}} = \\sigma^2_{\\text{pegasus}} = \\sigma^2_{\\text{earth}} = \\sigma^2_{\\text{alicorn}}\nH_1: at least one \\sigma^2_i is different\n\nTest Statistic and p-Value\n\nF_0 = 0.734; p = 0.906\n\nRejection Region\n\nReject if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that the variances are different (i.e., the variance assumption is not broken)."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-kruskal-wallis",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-kruskal-wallis",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Introduction: Kruskal-Wallis",
+    "text": "Introduction: Kruskal-Wallis\n\nWe just discussed the ANOVA assumptions.\n\n\\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\n\nWe also discussed how to assess the assumptions:\n\nGraphically using the ANOVA_assumptions() function.\nConfirming the variance assumption using the BFL (variances_HT()).\n\nIf we break either assumption, we will turn to the nonparametric alternative, the Kruskal-Wallis."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nIf we break ANOVA assumptions, we should implement the nonparametric version, the Kruskal-Wallis.\n\nThe Kruskal-Wallis is an extension of the Wilcoxon rank sum (as ANOVA is an extension of the two-sample t-test).\n\nThe Kruskal-Wallis test determines if k independent samples come from populations with the same distribution.\nHypotheses\n\nH_0: M_1 = ... = M_k\nH_1: at least one M_i is different"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nTest Statistic\n\n\\chi^2_0 = \\frac{12}{n(n+1)} \\sum_{i=1}^k \\frac{R_i^2}{n_i} - 3(n+1)  \\sim \\chi^2_{\\text{df}}\n\nwhere\n\nR_i is the sum of the ranks for group i,\nn_i is the sample size for group i,\nn = \\sum_{i=1}^k n_i = total sample size,\nk is the number of groups, and\n\\text{df} = k-1"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis (R)",
+    "text": "Hypothesis Testing: Kruskal-Wallis (R)\n\nWe will use the kruskal_HT() function from library(ssstats) to perform the Kruskal-Wallis test.\n\n\ndataset_name %&gt;% kruskal_HT(continuous = continuous_variable,\n                            grouping = grouping_variable,\n                            alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nTwilight Sparkle is now conducting an experiment to evaluate the magical pulse activity of a new alchemical potion. She hypothesizes that the potion may affect ponies depending type. To investigate, she carefully measures the number of magical pulses emitted per minute after administering the potion to different ponies.\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful.\nLet’s explore the data first. Due to number of groups, we know either ANOVA or Kruskal-Wallis is required."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nShe collects data (magical_pulse) for each pony and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful.\n\n\nmagical_pulse %&gt;% \n  group_by(pony_type) %&gt;%\n  mean_median(pulse)\n\n# A tibble: 3 × 4\n  pony_type variable mean_sd   median_iqr\n  &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     \n1 Earth     pulse    5.0 (2.3) 4.5 (3.0) \n2 Pegasus   pulse    6.1 (2.2) 5.5 (2.0) \n3 Unicorn   pulse    4.5 (2.2) 4.0 (3.0)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\n\nmagical_pulse %&gt;% ANOVA_assumptions(continuous = pulse,\n                                    grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-5",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-5",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Let’s now perform the appropriate hypothesis test. Test at the \\alpha=0.05 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% kruskal_HT(continuous = continuous_variable,\n                            grouping = grouping_variable,\n                            alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-6",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-6",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Let’s now perform the appropriate hypothesis test. Test at the \\alpha=0.05 level.\nOur updated code,\n\n\nmagical_pulse %&gt;% kruskal_HT(continuous = pulse,\n                             grouping = pony_type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-7",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-7",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nRunning the code,\n\n\nmagical_pulse %&gt;% kruskal_HT(continuous = pulse,\n                             grouping = pony_type)\n\nKruskal–Wallis Rank-Sum Test\n\nH₀: M_Earth = M_Pegasus = M_Unicorn\nH₁: At least one group is different\n\nTest Statistic: X(2) = 10.616,\np = 0.005\nConclusion: Reject the null hypothesis (p = 0.005 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-8",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-8",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Hypothesis Testing: Kruskal-Wallis",
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nHypotheses\n\nH_0: \\ M_{\\text{earth}} = M_{\\text{pegasus}} = M_{\\text{unicorn}}\nH_1: at least one M_i is different\n\nTest Statistic and p-Value\n\n\\chi_0^2 = 10.616; p = 0.005\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p = 0.005 &lt; 0.05). There is sufficient evidence to suggest that there is a difference in pulse between the pony types."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nWe can also perform posthoc testing in the Kruskal-Wallis setting using Dunn’s test.\n\nRather than compare pairwise means, it compares pairwise average ranks.\n\nHypotheses:\n\nH_0: \\ M_{i} = M_{j}\nH_1: \\ M_{i} \\ne M_{j}\n\nTest Statistic:\n\n\nz_0 = \\frac{|\\bar{R}_i - \\bar{R}_j|}{\\sqrt{ \\frac{n(n+1)}{12} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\n!! WAIT !! What about adjusting \\alpha?\nThe function we will be using allows us to turn on/off the adjustment for multiple comparison.\nTo adjust the p-value directly,\n\n\np_{\\text{B}} = \\min(p \\times m,\\ 1)\n\n\nThe adjustment can also be made directly to \\alpha (and not p),\n\n\n\\alpha_{\\text{B}} = \\frac{\\alpha}{m}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-r",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-r",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test (R)",
+    "text": "Posthoc Testing: Dunn’s Test (R)\n\nWe will use the posthoc_dunn() function from library(ssstats) to perform Dunn’s posthoc test.\nWhen we want to adjust \\alpha (Bonferroni):\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE)\n\n\nWhen we do not want to adjust \\alpha:\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we are not interested in adjusting for multiple comparisons (this is an exploratory study). How should we change this code?\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE OR FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-3",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-3",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we are not interested in adjusting for multiple comparisons (this is an exploratory study). Our updated code,\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-4",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-4",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nRunning the code,\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = FALSE)\n\n         Comparison          Z     p\n1   Earth - Pegasus -2.2183479 0.027\n2   Earth - Unicorn  0.9574435 0.338\n3 Pegasus - Unicorn  3.1757915 0.001"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-5",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-5",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nRestating results,\n\nM_{\\text{earth}} \\ne M_{\\text{pegasus}} (p = 0.027)\nM_{\\text{earth}} = M_{\\text{unicorn}} (p = 0.338)\nM_{\\text{pegasus}} \\ne M_{\\text{unicorn}} (p = 0.001)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-6",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-6",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we do want toadjust for multiple comparisons (this is a confirmatory study). How should we change this code?\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE OR FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-7",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-7",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we do want toadjust for multiple comparisons (this is a confirmatory study). How should we change this code?\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = TRUE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-8",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-8",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nRunning the code,\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = TRUE)\n\n         Comparison          Z     p\n1   Earth - Pegasus -2.2183479 0.080\n2   Earth - Unicorn  0.9574435 1.000\n3 Pegasus - Unicorn  3.1757915 0.004"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-9",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-9",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nRestating results,\n\nM_{\\text{earth}} \\ne M_{\\text{pegasus}} (p = 0.080)\nM_{\\text{earth}} = M_{\\text{unicorn}} (p = 1)\nM_{\\text{pegasus}} \\ne M_{\\text{unicorn}} (p = 0.004)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-10",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-10",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Posthoc Testing: Dunn’s Test",
+    "text": "Posthoc Testing: Dunn’s Test\n\nComparing the two side by side,\n\n\n\n\nPairwise Comparison\nUnadjusted p\nAdjusted p\n\n\n\n\nEarth vs. Pegasus\n0.027\n0.080\n\n\nEarth vs. Unicorn\n0.338\n1.000\n\n\nPegasus vs. Unicorn\n0.001\n0.004"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nToday we have covered one-way ANOVA.\n\nOne-way ANOVA table\nTest for equality among k means\nANOVA assumptions\nNonparametric alternative (Kruskal-Wallis)\nPosthoc testing\n\nTukey’s (ANOVA, ajdusted)\nFisher’s (ANOVA, unadjusted)\nDunn’s (Kruskal-Wallis, adjusted or unadjusted)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up-1",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up-1",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nNext class: Two-way ANOVA\n\nANOVA table\nInteraction terms\nMain effects\nProfile plots\nPosthoc testing\n\nThursday next week: Project 2!"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up-2",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up-2",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nDaily activity: .qmd is available on Canvas.\n\nDue date: Monday, July 14, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nQuiz at 1:15!\nDo you have questions for me?\nDo you need my help with anything from prior lectures? Practices? Project 1?"
   },
   {
     "objectID": "files/slides/STA4173-Su25-06-17-T-summary-visualization.html#introduction-topics",
@@ -1740,7 +2461,7 @@
     "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-3",
     "title": "Module 1 Review",
     "section": "“Use the Appropriate Test”: Example 3",
-    "text": "“Use the Appropriate Test”: Example 3\n\nRunning the test,\n\n\nescape_times %&gt;% independent_median_HT(continuous = time,\n                                       grouping = area,\n                                       alternative = \"two\",\n                                       m = 0,\n                                       alpha = 0.01)\n\nWilcoxon Rank Sum Test:\nNull: H₀: M₁ - M₂ = 0\nAlternative: H₀: M₁ - M₂ = 0\nTest statistic: T = 10152\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)"
+    "text": "“Use the Appropriate Test”: Example 3\n\nRunning the test,\n\n\nescape_times %&gt;% independent_median_HT(continuous = time,\n                                       grouping = area,\n                                       alternative = \"two\",\n                                       m = 0,\n                                       alpha = 0.01)\n\nWilcoxon Rank Sum Test for two independent medians\nNull: H₀: M₁ - M₂ = 0\nAlternative: H₁: M₁ - M₂ ≠ 0\nTest statistic: T = 10152\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-3-4",
@@ -1775,7 +2496,7 @@
     "href": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-4-3",
     "title": "Module 1 Review",
     "section": "“Use the Appropriate Test”: Example 4",
-    "text": "“Use the Appropriate Test”: Example 4\n\nRunning the test,\n\n\nbutterfly_wings %&gt;% dependent_mean_HT(col1 = after,\n                                      col2 = before,\n                                      alternative = \"greater\",\n                                      m = 0,\n                                      alpha = 0.05)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d = 0\nAlternative: H₁: μ_d &gt; 0\nTest statistic: t(149) = 15.757\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
+    "text": "“Use the Appropriate Test”: Example 4\n\nRunning the test,\n\n\nbutterfly_wings %&gt;% dependent_mean_HT(col1 = after,\n                                      col2 = before,\n                                      alternative = \"greater\",\n                                      m = 0,\n                                      alpha = 0.05)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d ≤ 0\nAlternative: H₁: μ_d &gt; 0\nTest statistic: t(149) = 15.757\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-08-T-mod1-review.html#use-the-appropriate-test-example-2-5",
@@ -1801,100 +2522,114 @@
   {
     "objectID": "files/practice/06-17-summary-practice.html",
     "href": "files/practice/06-17-summary-practice.html",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "",
     "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type."
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
     "href": "files/practice/06-17-summary-practice.html#summaries-continuous-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "",
     "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type."
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
     "href": "files/practice/06-17-summary-practice.html#summaries-categorical-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "Summaries: Categorical Variables",
     "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\nLet’s use n_pct() to describe friendship index by type."
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html#graphs-box-plots",
     "href": "files/practice/06-17-summary-practice.html#graphs-box-plots",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "Graphs: Box Plots",
     "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer)."
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html#graphs-histograms",
     "href": "files/practice/06-17-summary-practice.html#graphs-histograms",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "Graphs: Histograms",
     "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy)."
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
     "href": "files/practice/06-17-summary-practice.html#graphs-bar-graphs",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "Graphs: Bar Graphs",
     "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nConstruct a bar graph for the type of pony."
   },
   {
     "objectID": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
     "href": "files/practice/06-17-summary-practice.html#graphs-scatterplots",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "title": "Practice: 06/17/2025",
     "section": "Graphs: Scatterplots",
     "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis."
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "objectID": "files/practice/key/07-01-practice-KEY.html",
+    "href": "files/practice/key/07-01-practice-KEY.html",
+    "title": "Practice: 07/01/2025",
     "section": "",
-    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
+    "text": "# use this code chunk to call in all packages the document will need\nlibrary(tidyverse)\nlibrary(ssstats)"
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-continuous-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
+    "objectID": "files/practice/key/07-01-practice-KEY.html#part-1",
+    "href": "files/practice/key/07-01-practice-KEY.html#part-1",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 1",
+    "text": "Part 1\nTwilight Sparkle has been working tirelessly on developing a new memory-enhancing spell that she believes could help ponies improve their ability to recall important information. She designs a controlled experiment where each participating pony will complete the same memory test both before and after the spell is cast. By comparing each pony’s performance before and after the treatment, Twilight hopes to determine whether her spell truly boosts memory or if any observed changes are simply due to chance. Twilight records the number of items each pony can remember in both sessions and she is particularly interested in whether the differences in memory scores after the spell show consistent improvement across her group of test subjects.\n1. Is this independent or dependent data? Why?\nDependent - before and after on the same pony.\n2. Find the appropriate summary statistics for the data.\n\ntwilight_memory_pt1 %&gt;% dependent_mean_median(before, after)\n\n\n  \n\n\n\n3. What is the appropriate t-test?\nDependent t-test.\n4. Find the 99% confidence interval for \\boldsymbol{\\mu}_1-\\boldsymbol{\\mu}_2.\n\ntwilight_memory_pt1 %&gt;% dependent_mean_CI(after, before)\n\nThe point estimate for the mean difference is x̄ = 3.12.\nThe point estimate for the standard deviation of differences is s = 1.8786.\nThe 95% confidence interval for the mean difference μ_d is (2.8169, 3.4231).\n\n\nThe 95% CI for \\mu_1-\\mu_2 is (2.82, 3.42).\n5. Use the appropriate t-test, as identified in Q3, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.01 level.\n\ntwilight_memory_pt1 %&gt;% dependent_mean_HT(after, before,\n                                          alternative = \"greater\",\n                                          alpha = 0.01)\n\nPaired t-test for the mean of differences:\nNull: H₀: μ_d ≤ 0\nAlternative: H₁: μ_d &gt; 0\nTest statistic: t(149) = 20.341\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_d \\le 0\nH_1: \\ \\mu_d &gt; 0\n\nTest Statistic and p-Value\n\nt_0 = 20.341, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.01\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to (&lt; 0.001) &lt; 0.01). There is sufficient evidence to suggest that there has been an improvement in memory scores.\n\n\n6. What is the appropriate nonparametric test?\nWilcoxon signed rank.\n7. Use the appropriate nonparametric test, as identified in Q6, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.01 level.\n\ntwilight_memory_pt1 %&gt;% dependent_median_HT(after, before,\n                                            alternative = \"greater\",\n                                            alpha = 0.01)\n\nWilcoxon Signed-Rank Test for the median of differences:\nNull: H₀: M_d = 0\nAlternative: H₁: M_d &gt; 0\nTest statistic: T = 10425\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)\n\n\n\nHypotheses:\n\nH_0: \\ M_d \\le 0\nH_1: \\ M_d &gt;\n\nTest Statistic and p-Value\n\nT_0 = 10425, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to (&lt; 0.001) &lt; 0.01). There is sufficient evidence to suggest that there has been an improvement in memory scores.\n\n\n8. Construct the appropriate QQ plot for this dataset and research question.\n\ntwilight_memory_pt1 %&gt;% dependent_qq(after, before)\n\n\n\n\n\n\n\n\n9. Determine which test is appropriate. Provide commentary on the graph in Q8 supporting your answer.\nThe nonparametric test – the qq plot shows stair steps and not a 45o line."
+  },
+  {
+    "objectID": "files/practice/key/07-01-practice-KEY.html#part-2",
+    "href": "files/practice/key/07-01-practice-KEY.html#part-2",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 2",
+    "text": "Part 2\nTwilight Sparkle’s new memory-enhancing spell has quickly gained attention across Equestria, and now she wants to conduct a larger study to compare ponies who receive the spell to those who do not. This time, she recruits two groups of ponies: one group will receive the memory-enhancing spell and the other group will not receive any magical intervention, serving as the control group. By comparing the memory scores between these two groups, Twilight hopes to determine whether the spell leads to a meaningful improvement in memory performance when compared to ponies who did not receive the spell.\n10. Is this independent or dependent data? Why?\nIndependent – the two groups are separate. One group received the spell while the other did not.\n11. Find the appropriate summary statistics for the data.\n\ntwilight_memory_pt2 %&gt;% mean_median(memory_score)\n\n# A tibble: 1 × 3\n  variable     mean_sd    median_iqr\n  &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;     \n1 memory_score 13.9 (3.3) 13.9 (4.5)\n\ntwilight_memory_pt2 %&gt;% group_by(group) %&gt;% mean_median(memory_score)\n\n# A tibble: 2 × 4\n  group     variable     mean_sd    median_iqr\n  &lt;chr&gt;     &lt;chr&gt;        &lt;chr&gt;      &lt;chr&gt;     \n1 1-Spell   memory_score 15.7 (2.9) 15.5 (3.3)\n2 2-Control memory_score 12.2 (2.7) 12.0 (3.7)\n\n\n12. What is the appropriate t-test?\nTwo-sample t-test.\n13. Find the 95% confidence interval for \\boldsymbol{\\mu}_1-\\boldsymbol{\\mu}_2.\n\ntwilight_memory_pt2 %&gt;% independent_mean_CI(continuous = memory_score,\n                                            grouping = group)\n\nThe point estimate for the difference in means is x̄₁ − x̄₂ = 3.4847\nThe 95% confidence interval for μ₁ − μ₂ is (2.7027, 4.2668)\n\n\nThe 95% CI for \\mu_1-\\mu_2 is (2.70, 4.27).\n14. Use the appropriate t-test, as identified in Q11, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.05 level.\n\ntwilight_memory_pt2 %&gt;% independent_mean_HT(continuous = memory_score,\n                                            grouping = group,\n                                            alternative = \"greater\")\n\nTwo-sample t-test for two independent means and equal variance:\nNull: H₀: μ₁ − μ₂ ≤ 0\nAlternative: H₁: μ₁ − μ₂ &gt; 0\nTest statistic: t(198) = 8.787\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \\mu_1 - \\mu_2 \\le 0\nH_1: \\ \\mu_1 - \\mu_2 &gt; 0\n\nTest Statistic and p-Value\n\nt_0 = 8.787, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to (&lt;0.001) &lt; 0.05). There is sufficient evidence to suggest an improvement in memory scores.\n\n\n15. What is the appropriate nonparametric test?\nReplace with your answer\n16. Use the appropriate nonparametric test, as identified in Q14, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.05 level.\n\ntwilight_memory_pt2 %&gt;% independent_median_HT(continuous = memory_score,\n                                              grouping = group,\n                                              alternative = \"greater\")\n\nWilcoxon Rank Sum Test for two independent medians\nNull: H₀: M₁ - M₂ ≤ 0\nAlternative: H₁: M₁ - M₂ &gt; 0\nTest statistic: T = 8184\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ M_1 - M_2 \\le 0\nH_1: \\ M_1 - M_2 &gt; 0\n\nTest Statistic and p-Value\n\nT_0 = 8184, p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05\n\nConclusion and interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to (&lt;0.001) &lt; 0.05). There is sufficient evidence to suggest an improvement in memory scores.\n\n\n17. Construct the appropriate QQ plot for this dataset and research question.\n\ntwilight_memory_pt2 %&gt;% independent_qq(continuous = memory_score,\n                                       grouping = group)\n\n\n\n\n\n\n\n\n18. Determine which test is appropriate. Provide commentary on the graph in Q16 supporting your answer.\nThe two-sample t-test; the qq plots and histograms show normality."
+  },
+  {
+    "objectID": "files/practice/key/07-10-practice-KEY.html",
+    "href": "files/practice/key/07-10-practice-KEY.html",
+    "title": "Practice: 07/01/2025",
     "section": "",
-    "text": "Let’s use mean_median() to summarize the continuous variables in the MLP dataset.\n\nmlp_data %&gt;% \n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 3 × 3\n  variable       mean_sd      median_iqr   \n  &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n1 friendship     7.6 (1.6)    8.0 (2.0)    \n2 magical_energy 9.9 (9.6)    7.0 (11.1)   \n3 tail_shimmer   256.6 (65.7) 253.0 (103.0)\n\n\nLet’s use mean_median() to summarize the continuous variables in the MLP dataset by pony type.\n\nmlp_data %&gt;% \n  group_by(type) %&gt;%\n  mean_median(friendship, tail_shimmer, magical_energy)\n\n# A tibble: 12 × 4\n   type    variable       mean_sd      median_iqr   \n   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;        &lt;chr&gt;        \n 1 Alicorn friendship     7.8 (1.3)    8.0 (2.0)    \n 2 Earth   friendship     7.6 (1.6)    8.0 (2.0)    \n 3 Pegasus friendship     7.6 (1.6)    8.0 (2.0)    \n 4 Unicorn friendship     7.5 (1.6)    8.0 (2.0)    \n 5 Alicorn magical_energy 9.0 (8.0)    6.2 (10.9)   \n 6 Earth   magical_energy NaN (NA)     NA (NA)      \n 7 Pegasus magical_energy NaN (NA)     NA (NA)      \n 8 Unicorn magical_energy 9.9 (9.6)    7.0 (11.1)   \n 9 Alicorn tail_shimmer   280.1 (64.5) 297.0 (104.0)\n10 Earth   tail_shimmer   252.2 (65.2) 246.0 (100.0)\n11 Pegasus tail_shimmer   263.5 (67.0) 265.0 (110.0)\n12 Unicorn tail_shimmer   261.2 (65.0) 260.0 (100.0)"
+    "text": "# use this code chunk to call in all packages the document will need\nlibrary(tidyverse)\nlibrary(ssstats)\n## DO NOT EDIT THIS CHUNK ##\nset.seed(917689)\nsinging_data &lt;- tibble(performer = rep(c(\"Mermaids\", \"Fish\", \"Crustaceans\"), each = 50),\n                       volume_db = c(rnorm(50, mean = 88.5, sd = 4.2),\n                                     rnorm(50, mean = 83.1, sd = 2.1),\n                                     rnorm(50, mean = 91.2, sd = 3.7)))\n\ntrill_data &lt;- tibble(performer = c(rep(\"Mermaids\", 60), \n                                   rep(\"Fish Chorus\", 60),\n                                   rep(\"Crustaceans\", 60)),\n                     trills = c(rnorm(60, mean = 6,  sd = 3),\n                                rnorm(60, mean = 9,  sd = 3),\n                                rnorm(60, mean = 14, sd = 3)))\n## DO NOT EDIT THIS CHUNK ##"
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#summaries-categorical-variables",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Summaries: Categorical Variables",
-    "text": "Summaries: Categorical Variables\nLet’s use n_pct() to summarize the types of ponies in the dataset.\n\nmlp_data %&gt;% \n  n_pct(type, rows = 4)\n\n    type      n (pct)\n Alicorn    41 (1.4%)\n   Earth 1678 (58.4%)\n Pegasus  487 (17.0%)\n Unicorn  665 (23.2%)\n\n\nLet’s use n_pct() to describe friendship index by type.\n\nmlp_data %&gt;% \n  n_pct(friendship, type, rows = 4)\n\n# A tibble: 4 × 5\n  friendship Alicorn  Earth     Pegasus   Unicorn  \n       &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    \n1          1 0 (0.0%) 0 (0.0%)  0 (0.0%)  1 (0.2%) \n2          2 0 (0.0%) 5 (0.3%)  1 (0.2%)  1 (0.2%) \n3          3 0 (0.0%) 14 (0.8%) 6 (1.2%)  13 (2.0%)\n4          4 2 (4.9%) 54 (3.2%) 14 (2.9%) 16 (2.4%)"
+    "objectID": "files/practice/key/07-10-practice-KEY.html#part-1",
+    "href": "files/practice/key/07-10-practice-KEY.html#part-1",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 1",
+    "text": "Part 1\nKing Triton is concerned that the different sea creatures in Atlantica are not equally loud during musical rehearsals, which might be affecting the harmony of their performances. To investigate, Sebastian conducts a study (singing_data) measuring the average decibel level (volume) of singing during rehearsals from three types of performers: mermaids, fish chorus, and crustaceans.\nEach group (performer) includes 25 randomly selected performers, and their peak singing volumes (volume_db) are recorded during a standard song.\n1. Check the ANOVA assumptions graphically.\n\n\nsinging_data %&gt;% ANOVA_assumptions(continuous = volume_db,\n                                   grouping = performer)\n\n\n\n\n\n\n\n\n\n2. If necessary, formally test for the variance assumption. Test at the \\alpha=0.05 level.\n\nsinging_data %&gt;% variances_HT(continuous = volume_db,\n                              grouping = performer)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Mermaids = σ²_Fish = σ²_Crustaceans \nAlternative: At least one variance is different \nTest statistic: F(2,147) = 10.042 \np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n3. Draw conclusions based on your observations. (Do we meet the assumption?)\nReplace with your answer\n4. Which test should we use to look for differences among the performer groups? Why?\nReplace with your answer\n5. Perform the appropriate hypothesis test to determine if the average peak singing volume (volume_db) differs between performance groups (performer).\n\nsinging_data %&gt;% kruskal_HT(continuous = volume_db,\n                               grouping = performer)\n\nKruskal–Wallis Rank-Sum Test\n\nH₀: M_Crustaceans = M_Fish = M_Mermaids\nH₁: At least one group is different\n\nTest Statistic: X(2) = 81.261,\n p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nF_0 = OR \\chi_0^2=, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is an exploratory study; do not adjust for \\alpha.\n\nsinging_data %&gt;% posthoc_dunn(continuous = volume_db,\n                              grouping = performer,\n                              adjust = FALSE)\n\n              Comparison         Z     p\n1     Crustaceans - Fish  8.771936 0.000\n2 Crustaceans - Mermaids  2.587157 0.010\n3        Fish - Mermaids -6.184779 0.000\n\n\nPairwise differences: - List - Them - Here\n7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is a confirmatory study; adjust for \\alpha.\n\nsinging_data %&gt;% posthoc_dunn(continuous = volume_db,\n                              grouping = performer,\n                              adjust = TRUE)\n\n              Comparison         Z     p\n1     Crustaceans - Fish  8.771936 0.000\n2 Crustaceans - Mermaids  2.587157 0.029\n3        Fish - Mermaids -6.184779 0.000\n\n\nPairwise differences: - List - Them - Here"
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-box-plots",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Box Plots",
-    "text": "Graphs: Box Plots\nConstruct a box plot for the tail shimmer of the ponies (tail_shimmer).\n\n\nmlp_data %&gt;% ggplot(aes(x = tail_shimmer)) +\n  geom_boxplot() +\n  labs(x = \"Tail Shimmer\") +\n  theme_bw() +\n  theme(axis.ticks.y = element_blank(),\n        axis.text.y = element_blank())"
+    "objectID": "files/practice/key/07-10-practice-KEY.html#part-2",
+    "href": "files/practice/key/07-10-practice-KEY.html#part-2",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 2",
+    "text": "Part 2\nSebastian is preparing for Atlantica’s annual musical showcase, where different sections of the underwater ensemble show off their vocal prowess. One feature he’s especially interested in is the number of high-note “trills” performers can hit during a 90-second rehearsal segment.\nTo investigate whether certain performer groups are more impressive than others, Sebastian records (trill_data) the number of trills performed by randomly selected individuals from each of the following sections: mermaids, fish chorus, and crustaceans.\n1. Check the ANOVA assumptions graphically.\n\n\ntrill_data %&gt;% ANOVA_assumptions(continuous = trills, \n                                 grouping = performer)\n\n\n\n\n\n\n\n\n\n2. If necessary, formally test for the variance assumption. Test at the \\alpha=0.05 level.\n\ntrill_data %&gt;% variances_HT(continuous = trills, \n                            grouping = performer)\n\nBrown-Forsythe-Levene test for equality of variances:\nNull: σ²_Mermaids = σ²_Fish Chorus = σ²_Crustaceans \nAlternative: At least one variance is different \nTest statistic: F(2,177) = 0.111 \np-value: p = 0.895\nConclusion: Fail to reject the null hypothesis (p = 0.8952 ≥ α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n3. Draw conclusions based on your observations. (Do we meet the assumption?)\nReplace with your answer\n4. Which test should we use to look for differences among the performer groups? Why?\nReplace with your answer\n5. Perform the appropriate hypothesis test to determine if the average peak singing volume (volume_db) differs between performance groups (performer).\n\ntrill_data %&gt;% one_way_ANOVA(continuous = trills, \n                             grouping = performer)\n\nOne-Way ANOVA: \nH₀: μ_Crustaceans = μ_Fish Chorus = μ_Mermaids\nH₁: At least one group mean is different\nTest Statistic: F(2, 177) = 116.073\np-value: p &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.05)\n\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nF_0 = OR \\chi_0^2=, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is an exploratory study; do not adjust for \\alpha.\n\ntrill_data %&gt;% posthoc_fisher(continuous = trills, \n                              grouping = performer)\n\n\n  \n\n\n\nPairwise differences: - List - Them - Here\n7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the \\alpha=0.05 level. Assume that this is a confirmatory study; adjust for \\alpha.\n\ntrill_data %&gt;% posthoc_tukey(continuous = trills, \n                             grouping = performer)\n\n\n  \n\n\n\nPairwise differences: - List - Them - Here"
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-histograms",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Histograms",
-    "text": "Graphs: Histograms\nConstruct a histogram for the flying speed of ponies (flying_speed).\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed)) +\n  geom_histogram(bins = 15, \n                 color = \"#2E7D32\", \n                 fill = \"#4CAF50\") +\n  labs(x = \"Flying Speed\", \n       y = \"Number of Ponies\") +\n  theme_bw() \n\n\n\n\n\n\n\n\n\nConstruct a histogram for the magical energy of ponies (magical_energy).\n\n\nmlp_data %&gt;% ggplot(aes(x = magical_energy)) +\n  geom_histogram(bins = 15, \n                 color = \"#8B6C42\", \n                 fill = \"#F0E9DD\") +\n  labs(x = \"Magical Energy\",\n       y = \"Number of Ponies\") +\n  theme_bw()"
+    "objectID": "files/practice/07-01-practice.html",
+    "href": "files/practice/07-01-practice.html",
+    "title": "Practice: 07/01/2025",
+    "section": "",
+    "text": "# use this code chunk to call in all packages the document will need\nlibrary(tidyverse)\nlibrary(ssstats)"
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-bar-graphs",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Bar Graphs",
-    "text": "Graphs: Bar Graphs\nConstruct a bar graph for the combined age and sex of ponies.\n\n\nmlp_data %&gt;%\n  count(sex) %&gt;%\n  ggplot(aes(x = sex, y = n)) +\n  geom_col() +\n  labs(x = \"Age and Sex of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a bar graph for the type of pony.\n\n\nmlp_data %&gt;%\n  count(type) %&gt;%\n  ggplot(aes(x = type, y = n)) +\n  geom_col() +\n  labs(x = \"Type of Pony\",\n       y = \"Number of Ponies\")+\n  theme_bw()"
+    "objectID": "files/practice/07-01-practice.html#part-1",
+    "href": "files/practice/07-01-practice.html#part-1",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 1",
+    "text": "Part 1\nTwilight Sparkle has been working tirelessly on developing a new memory-enhancing spell that she believes could help ponies improve their ability to recall important information. She designs a controlled experiment where each participating pony will complete the same memory test both before and after the spell is cast. By comparing each pony’s performance before and after the treatment, Twilight hopes to determine whether her spell truly boosts memory or if any observed changes are simply due to chance. Twilight records the number of items each pony can remember in both sessions and she is particularly interested in whether the differences in memory scores after the spell show consistent improvement across her group of test subjects.\n1. Is this independent or dependent data? Why?\nReplace with your answer\n2. Find the appropriate summary statistics for the data.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n3. What is the appropriate t-test?\nReplace with your answer\n4. Find the 99% confidence interval for \\boldsymbol{\\mu}_1-\\boldsymbol{\\mu}_2.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nThe 95% CI for \\mu_1-\\mu_2 is (lower bound, upper bound).\n4. Use the appropriate t-test, as identified in Q3, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.01 level.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n5. What is the appropriate nonparametric test?\nReplace with your answer\n6. Use the appropriate nonparametric test, as identified in Q5, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.01 level.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nT_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n7. Construct the appropriate QQ plot for this dataset and research question.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n8. Determine which test is appropriate. Provide commentary on the graph in Q7 supporting your answer.\nReplace with your answer"
   },
   {
-    "objectID": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
-    "href": "files/practice/key/06-17-summary-practice-KEY.html#graphs-scatterplots",
-    "title": "Practice: Point Estimation & Data Visualization",
-    "section": "Graphs: Scatterplots",
-    "text": "Graphs: Scatterplots\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and tail shimmer (tail_shimmer) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(y = tail_shimmer, x = magical_energy)) +\n  geom_point(size = 2) +\n  labs(x = \"Magical Energy\",\n       y = \"Tail Shimmer\") +\n  theme_bw()\n\n\n\n\n\n\n\n\n\nConstruct a scatterplot with magical energy (magical_energy) on the x-axis and flying speed (flying_speed) on the y-axis.\n\n\nmlp_data %&gt;% ggplot(aes(x = flying_speed, y = tail_shimmer)) +\n  geom_point(size = 2) +\n  labs(y = \"Tail Shimmer\",\n       x = \"Flying Speed (km/h)\") +\n  theme_bw()"
+    "objectID": "files/practice/07-01-practice.html#part-2",
+    "href": "files/practice/07-01-practice.html#part-2",
+    "title": "Practice: 07/01/2025",
+    "section": "Part 2",
+    "text": "Part 2\nTwilight Sparkle’s new memory-enhancing spell has quickly gained attention across Equestria, and now she wants to conduct a larger study to compare ponies who receive the spell to those who do not. This time, she recruits two groups of ponies: one group will receive the memory-enhancing spell and the other group will not receive any magical intervention, serving as the control group. By comparing the memory scores between these two groups, Twilight hopes to determine whether the spell leads to a meaningful improvement in memory performance when compared to ponies who did not receive the spell.\n9. Is this independent or dependent data? Why?\nReplace with your answer\n10. Find the appropriate summary statistics for the data.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n11. What is the appropriate t-test?\nReplace with your answer\n12. Find the 95% confidence interval for \\boldsymbol{\\mu}_1-\\boldsymbol{\\mu}_2.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\nThe 95% CI for \\mu_1-\\mu_2 is (lower bound, upper bound).\n13. Use the appropriate t-test, as identified in Q11, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.05 level.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nt_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n14. What is the appropriate nonparametric test?\nReplace with your answer\n15. Use the appropriate nonparametric test, as identified in Q14, to determine if the data imply an improvement in the memory scores. Test at the \\alpha=0.05 level.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n\nHypotheses:\n\nH_0: \\ \nH_1: \\ \n\nTest Statistic and p-Value\n\nT_0 =, p =\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha =\n\nConclusion and interpretation\n\nReject or Fail to reject H_0 (p \\text{ vs } \\alpha \\to). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).\n\n\n16. Construct the appropriate QQ plot for this dataset and research question.\n\n# replace with necessary code\n# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk\n\n17. Determine which test is appropriate. Provide commentary on the graph in Q16 supporting your answer.\nReplace with your answer"
   },
   {
     "objectID": "files/get_help.html",
