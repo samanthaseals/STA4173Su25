@@ -1,0 +1,138 @@
+---
+title: "Assignment 1 - Summer 2025"
+author: "Dr. Seals"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  html:
+    df-print: paged
+    self-contained: true
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+In this project, we will be analyzing the state-by-state spending on kids, as generously provided by the Urban Institute. Specifically, we will be investigating library spending that has been adjusted for inflation. To get started, see the starter code available on Canvas.
+
+```{r set up}
+#| echo: false
+library(gsheet) 
+library(tidyverse)
+library(ggpubr)
+library(ssstats)
+
+# you may need additional packages, depending on what is asked of you throughout the project
+# you do *not* need to edit anything below this note in this code chunk!
+# - all of the data management has been done for you
+# - once you confirm that the data has pulled in properly, you are ready to begin the project
+
+all_regions <- as_tibble(gsheet2tbl("https://docs.google.com/spreadsheets/d/1ByIX8wOJKk-CjtJ6XJcg1JyxJN6cJSWbvx6vxNoviDs/edit#gid=0"))  %>%
+  mutate(Region = if_else(state %in% c("Connecticut", "Maine", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont", "New Jersey", "New York", "Pennsylvania"), "Northeast",
+               if_else(state %in% c("Illinois", "Indiana", "Michigan", "Ohio", "Wisconsin", "Iowa", "Kansas", "Minnseota", "Missouri", "Nebraska", "North Dakota", "South Dakota"), "Midwest",
+               if_else(state %in% c("Delaware", "Florida", "Georgia", "Maryland", "North Carolina", "South Carolina", "Virginia", "District of Columbia", "West Virginia", "Alabama", "Kentucky", "Mississippi", "Tennessee", "Arkansas", "Louisiana", "Oklahoma", "Texas"), "South", "West")))) # regions as defined by Census Bureau
+
+# filter to Northeast and Midwest regions
+ne_mw_only <- all_regions %>% 
+  filter(Region %in% c("Northeast", "Midwest"))
+```
+
+**1a. Find the summary statistics for library spending in all regions for the following years: 2000, 2005, 2010, and 2015.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**1b. Find the summary statistics for library spending by region for the Northeast and Midwest regions for the following years: 2000, 2005, 2010, and 2015.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**2a. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. Construct the appropriate QQ plot to check assumptions.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**2b. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). <u>Note</u>: If we do not care about the variance assumption here, leave this problem blank.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+  
+Remember to typeset your results (only if you need this test)!
+  
+**3. Use the appropriate *t*-test to determine if there is a difference in library spending between the Northeast and Midwest regions in 2010. Test at the $\alpha=0.05$ level. Remember to typeset the results.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+Remember to typeset your results! 
+  
+**4. Use the appropriate nonparametric test to determine if there is a difference in library spending between the Northeast and Midwest regions in 2010. Test at the $\alpha=0.05$ level. Remember to typeset the results.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+Remember to typeset your results!
+  
+**5. Based on your graph in Q2a, which test should be reported (the *t*-test or the Wilcoxon)? Explain why you're choosing the test you're choosing.**
+
+Replace with your answer
+
+**6a. Suppose we are interested in comparing the 2010 and 2015 spending for all states. Construct the appropriate QQ plot to check assumptions.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+**6b. Suppose we are interested in comparing the 2010 and 2015 spending for all states. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). <u>Note</u>: If we do not care about the variance assumption here, leave this problem blank.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+Remember to typeset your results (only if you need this test)!
+
+**7. Use the appropriate *t*-test to determine if there is a difference in library spending between 2010 and 2015 for all states. Test at the $\alpha=0.05$ level. Remember to typeset the results.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+Remember to typeset your results!
+  
+**8. Use the appropriate nonparametric test to determine if there is a difference in library spending between 2010 and 2015 for all states. Test at the $\alpha=0.05$ level. Remember to typeset the results.**
+
+```{r}
+# replace with necessary code
+# make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk
+```
+
+Remember to typeset your results!
+
+**9. Based on your graph in Q6a, which test should be reported (the *t*-test or the Wilcoxon)? Explain why you're choosing the test you're choosing.**
+
+Replace with your answer
+
+
+
+
+
+

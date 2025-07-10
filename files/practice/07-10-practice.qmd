@@ -1,0 +1,209 @@
+---
+title: "Practice: 07/10/2025"
+author: "your name here"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  html:
+    self-contained: true
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+```{r set up}
+# use this code chunk to call in all packages the document will need
+library(tidyverse)
+library(ssstats)
+```
+
+```{r}
+## DO NOT EDIT THIS CHUNK ##
+set.seed(917689)
+singing_data <- tibble(performer = rep(c("Mermaids", "Fish", "Crustaceans"), each = 50),
+                       volume_db = c(rnorm(50, mean = 88.5, sd = 4.2),
+                                     rnorm(50, mean = 83.1, sd = 2.1),
+                                     rnorm(50, mean = 91.2, sd = 3.7)))
+
+trill_data <- tibble(performer = c(rep("Mermaids", 60), 
+                                   rep("Fish Chorus", 60),
+                                   rep("Crustaceans", 60)),
+                     trills = c(rnorm(60, mean = 6,  sd = 3),
+                                rnorm(60, mean = 9,  sd = 3),
+                                rnorm(60, mean = 14, sd = 3)))
+## DO NOT EDIT THIS CHUNK ##
+```
+
+## Part 1
+
+**King Triton is concerned that the different sea creatures in Atlantica are not equally loud during musical rehearsals, which might be affecting the harmony of their performances. To investigate, Sebastian conducts a study (singing_data) measuring the average decibel level (volume) of singing during rehearsals from three types of performers: mermaids, fish chorus, and crustaceans.**
+
+**Each group (*performer*) includes 25 randomly selected performers, and their peak singing volumes (*volume_db*) are recorded during a standard song.**
+
+**1. Check the ANOVA assumptions graphically.**
+
+<center>
+```{r}
+
+```
+</center>
+
+**2. If necessary, formally test for the variance assumption. Test at the $\alpha=0.05$ level.**
+
+```{r}
+
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $t_0 =$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+
+**3. Draw conclusions based on your observations. (Do we meet the assumption?)**
+
+Replace with your answer
+
+**4. Which test should we use to look for differences among the performer groups? Why?**
+
+Replace with your answer
+
+**5. Perform the appropriate hypothesis test to determine if the average peak singing volume (*volume_db*) differs between performance groups (*performer*).**
+
+```{r}
+
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $F_0 =$ **OR** $\chi_0^2=$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+    
+**6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the $\alpha=0.05$ level. Assume that this is an exploratory study; do not adjust for $\alpha$.**
+
+```{r}
+
+```
+
+Pairwise differences:
+
+- List
+- Them
+- Here
+
+**7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the $\alpha=0.05$ level. Assume that this is a confirmatory study; adjust for $\alpha$.**
+
+```{r}
+
+```
+
+Pairwise differences:
+
+- List
+- Them
+- Here
+
+## Part 2
+
+**Sebastian is preparing for Atlantica's annual musical showcase, where different sections of the underwater ensemble show off their vocal prowess. One feature he's especially interested in is the number of high-note "trills" performers can hit during a 90-second rehearsal segment.**
+
+**To investigate whether certain performer groups are more impressive than others, Sebastian records (trill_data) the number of trills (*trills*) performed by randomly selected individuals from each of the following sections (*performer*): mermaids, fish chorus, and crustaceans.**
+
+**1. Check the ANOVA assumptions graphically.**
+
+<center>
+```{r}
+
+```
+</center>
+
+**2. If necessary, formally test for the variance assumption. Test at the $\alpha=0.05$ level.**
+
+```{r}
+
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $t_0 =$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+
+**3. Draw conclusions based on your observations. (Do we meet the assumption?)**
+
+Replace with your answer
+
+**4. Which test should we use to look for differences among the performer groups? Why?**
+
+Replace with your answer
+
+**5. Perform the appropriate hypothesis test to determine if the average peak singing volume (*volume_db*) differs between performance groups (*performer*).**
+
+```{r}
+
+```
+
+- **Hypotheses:**
+    - $H_0: \ $
+    - $H_1: \ $
+
+- **Test Statistic and *p*-Value**
+    - $F_0 =$ **OR** $\chi_0^2=$, $p =$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha =$
+    
+- **Conclusion and interpretation**
+    - Reject or Fail to reject $H_0$ ($p \text{ vs } \alpha \to$). There is or is not sufficient evidence to suggest (the alternative hypothesis in words, not math).
+    
+**6. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the $\alpha=0.05$ level. Assume that this is an exploratory study; do not adjust for $\alpha$.**
+
+```{r}
+
+```
+
+Pairwise differences:
+
+- List
+- Them
+- Here
+
+**7. Perform the appropriate posthoc test to determine what pairwise differences exist. Test at the $\alpha=0.05$ level. Assume that this is a confirmatory study; adjust for $\alpha$.**
+
+```{r}
+
+```
+
+Pairwise differences:
+
+- List
+- Them
+- Here
