@@ -2,27 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/schedule.html</loc>
-    <lastmod>2025-07-10T19:43:17.521Z</lastmod>
+    <lastmod>2025-07-15T13:58:16.836Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/06-24-inference-practice.html</loc>
     <lastmod>2025-06-28T23:14:08.881Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/06-17-summary-practice-KEY.html</loc>
-    <lastmod>2025-06-17T05:32:46.210Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/07-01-practice.html</loc>
+    <lastmod>2025-07-10T08:37:52.083Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/06-24-inference-practice-KEY.html</loc>
-    <lastmod>2025-06-17T05:32:54.125Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/07-10-practice-KEY.html</loc>
+    <lastmod>2025-07-10T19:42:40.698Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/07-10-practice.html</loc>
-    <lastmod>2025-07-10T19:42:26.093Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/07-01-practice-KEY.html</loc>
+    <lastmod>2025-06-30T17:22:58.941Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/syllabus.html</loc>
-    <lastmod>2025-06-21T03:18:12.015Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/06-17-summary-practice.html</loc>
+    <lastmod>2025-06-28T23:14:09.339Z</lastmod>
+  </url>
+  <url>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html</loc>
+    <lastmod>2025-07-15T05:10:08.777Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-24-T-inference-t-tests.html</loc>
@@ -41,10 +45,6 @@
     <lastmod>2025-06-30T20:08:00.439Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/07-10-practice.html</loc>
-    <lastmod>2025-07-10T19:47:51.178Z</lastmod>
-  </url>
-  <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/index.html</loc>
     <lastmod>2025-06-17T07:17:58.287Z</lastmod>
   </url>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html</loc>
-    <lastmod>2025-07-10T19:41:37.883Z</lastmod>
+    <lastmod>2025-07-14T20:26:03.875Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-06-17-T-summary-visualization.html</loc>
@@ -65,20 +65,24 @@
     <lastmod>2025-07-09T20:45:27.566Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/06-17-summary-practice.html</loc>
-    <lastmod>2025-06-28T23:14:09.339Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/syllabus.html</loc>
+    <lastmod>2025-06-21T03:18:12.015Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/07-01-practice-KEY.html</loc>
-    <lastmod>2025-06-30T17:22:58.941Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/07-10-practice.html</loc>
+    <lastmod>2025-07-15T13:35:55.850Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/07-10-practice-KEY.html</loc>
-    <lastmod>2025-07-10T19:42:40.698Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/06-24-inference-practice-KEY.html</loc>
+    <lastmod>2025-06-17T05:32:54.125Z</lastmod>
   </url>
   <url>
-    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/07-01-practice.html</loc>
-    <lastmod>2025-07-10T08:37:52.083Z</lastmod>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/key/06-17-summary-practice-KEY.html</loc>
+    <lastmod>2025-06-17T05:32:46.210Z</lastmod>
+  </url>
+  <url>
+    <loc>https://samanthaseals.github.io/STA4173Su25/files/practice/07-15-practice.html</loc>
+    <lastmod>2025-07-15T13:37:53.508Z</lastmod>
   </url>
   <url>
     <loc>https://samanthaseals.github.io/STA4173Su25/files/get_help.html</loc>
