@@ -434,13 +434,13 @@ Tuesday, July 15, 2025:
 </ul></li>
 <li>Slides:
 <ul>
-<li>.html:</li>
-<li>.qmd:</li>
+<li>.html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html">view slides</a></li>
+<li>.qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.qmd">view code</a></li>
 </ul></li>
 <li>Practice (due M 07/21):
 <ul>
-<li>.html:</li>
-<li>.qmd:</li>
+<li>.html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/07-15-practice.html">view assignment</a></li>
+<li>.qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/07-15-practice.qmd">view code</a></li>
 </ul></li>
 <li>Quiz: see Canvas</li>
 </ul>
@@ -715,7 +715,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/samanthaseals\.github\.io\/STA4173Su25\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

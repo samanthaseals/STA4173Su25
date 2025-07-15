@@ -1,0 +1,178 @@
+---
+title: "Practice: 07/15/2025"
+author: "your name here"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  html:
+    self-contained: true
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+```{r set up}
+# use this code chunk to call in all packages the document will need
+library(tidyverse)
+library(ssstats)
+```
+
+```{r data}
+#| echo: false
+## DO NOT EDIT THIS CHUNK ##
+set.seed(101)
+diet_levels <- c("HighProtein", "Balanced")
+play_levels <- c("ShortPlay", "LongPlay")
+diet_effect <- c(HighProtein = 30, Balanced = 0) # named for lookup
+play_effect <- c(ShortPlay   = 0,  LongPlay = 20)
+design_means <- expand_grid(Diet = diet_levels,
+                            Play = play_levels) %>%
+  mutate(mu = 200 + 
+           diet_effect[Diet] +
+           play_effect[Play] + 
+           if_else(Diet == "HighProtein" & Play == "LongPlay", 25, 0))
+wellness <- design_means %>%
+  uncount(25) %>% 
+  mutate(Gain = rnorm(n(), mean = mu, sd = 15)) %>%
+  select(-mu)
+
+
+set.seed(202)
+method_effect  <- c(Clicker = 1.5, Voice = 0)
+trainer_effect <- c(New = 0, Experienced = 1)
+obedience_means <- expand_grid(Method = c("Clicker", "Voice"),
+                               Trainer = c("New", "Experienced")) %>%
+  mutate(mu = 7 + 
+           method_effect[Method] +
+           trainer_effect[Trainer])
+obedience <- obedience_means %>%
+  uncount(25) %>%
+  mutate(ObedientResponses = rnorm(n(), mean = mu, sd = 1.5) %>% round(1)) %>%
+  select(-mu) %>%
+  mutate(ObedientResponses = pmin(pmax(ObedientResponses, 0), 10))
+## DO NOT EDIT THIS CHUNK ##
+```
+
+## Part 1
+
+**Pongo and Perdita have convinced Roger and Anita to run a small Puppy Wellness Study (<u>wellness</u>) to see how different diet types and daily play schedules affect the average weekly weight gain (in grams) of their rapidly growing pups.**
+
+- **Factor A (Diet Type; *Diet*): High-Protein Kibble vs. Balanced Kibble**
+
+- **Factor B (Play Schedule *Play*): Short (1 hour/day in the park) vs. Long (3 hours/day in the park).**
+
+**1. Find the appropriate summary statistics for this dataset. You will want to look at means in multiple ways: overall, by factor, and by treatment group.**
+
+```{r}
+
+```
+
+**2. Construct the appropriate two-way ANOVA table.**
+
+```{r}
+
+```
+
+**3. Is there an interaction between diet type and play schedule? Test at the $\alpha=0.05$ level. Remember to typeset your results.**
+
+```{r}
+
+```
+
+Insert your typesetting here.
+
+**4. Construct the profile plot for this analysis.**
+
+```{r}
+
+```
+
+**5. Write a brief paragraph to describe your analysis results. You have enough information to discuss the ANOVA results (Q3) using the means you computed in Q1 and the profile plot constructed in Q4.**
+
+Replace with your answer. 
+
+**6. Graphically assess the ANOVA assumptions.**
+
+```{r}
+
+```
+
+**7. Using the graphs in Q6, determine if our analysis is valid. Explain why it is valid or why it is not valid.**
+
+Replace with your answer.
+
+## Part 2
+
+**After the puppies grew a bit older, Pongo and Perdita partnered with a local dog academy to evaluate different obedience training approaches and trainer experience levels (<u>obedience</u>). They want to know how these factors affect the number of obedient responses per session (out of 10 cues). Each pup is randomly assigned to one of the following combinations for their obedience sessions:**
+
+- **Factor A (Training Method; *Method*): Clicker Training vs. Voice Commands**
+
+- **Factor B (Trainer Experience; *Trainer*): New Trainer vs. Experienced Trainer**
+
+**8. Find the appropriate summary statistics for this dataset. You will want to look at means in multiple ways: overall, by factor, and by treatment group.**
+
+```{r}
+
+```
+
+**9. Construct the appropriate two-way ANOVA table.**
+
+```{r}
+
+```
+
+**10. Use the appropriate hypothesis test to show that there is not an interaction between training method and experience of training. Test at the $\alpha=0.05$ level. Remember to typeset your results.**
+
+```{r}
+
+```
+
+Insert your typesetting here.
+
+**11. Reconstruct the two-way ANOVA table without the interaction.**
+
+```{r}
+
+```
+
+**12. Is there a main effect of training method? Test at the $\alpha=0.05$ level. Remember to typeset your results.**
+
+```{r}
+
+```
+
+Insert your typesetting here.
+
+**13. Is there a main effect of trainer experience? Test at the $\alpha=0.05$ level. Remember to typeset your results.**
+
+```{r}
+
+```
+
+Insert your typesetting here.
+
+**14. Construct the profile plot for this analysis.**
+
+```{r}
+
+```
+
+**15. Write a brief paragraph to describe your analysis results. You have enough information to discuss the ANOVA results (Q10, Q12, Q13) using the means you computed in Q8 and the profile plot constructed in Q14.**
+
+Replace with your answer. 
+
+**16. Graphically assess the ANOVA assumptions.**
+
+```{r}
+
+```
+
+**17. Using the graphs in Q16, determine if our analysis is valid. Explain why it is valid or why it is not valid.**
+
+Replace with your answer.

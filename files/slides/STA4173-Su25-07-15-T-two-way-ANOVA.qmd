@@ -1,0 +1,683 @@
+---
+title: "Two-Way ANOVA"
+subtitle: "July 15, 2025<br>Tuesday"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+## Introduction: Two-Way ANOVA
+
+- Recall that ANOVA allows us to compare the means of three or more groups.
+
+- In one-way ANOVA, we are only considering one factor (grouping variable). 
+
+- Now, we will discuss two-way ANOVA, which allows us to consider a second factor (grouping variable). 
+
+- We now partition the SS<sub>Trt</sub> into the different factors under consideration.
+    
+- Recall that SS<sub>E</sub> is the "catch all" for unexplained variance. 
+
+    - When we add factors to our model, we are moving part of the SS<sub>E</sub> into the SS<sub>Trt</sub>.
+    
+## Introduction: Two-Way ANOVA
+
+- Let's discuss some of the language used in two-way ANOVA. 
+
+- Factor A has $a$ levels.
+    
+    - Pony type: earth, pegasus, unicorn
+
+- Factor B has $b$ levels.
+
+    - Preferred apple: honeycrisp, granny
+
+- There are $ab$ treatment groups.
+
+## Introduction: Two-Way ANOVA
+
+- Now that we are including two factors, we must consider the interaction term. 
+
+    - The relationship between [outcome] and [factor 1] depends on the level of [factor 2].
+
+- In our example, suppose Pinkie Pie is testing a new apple pie recipe and has ponies taste then rate the new recipe,
+
+    - the relationship between rating and preferred apple depends on the pony type.
+    - the relationship between rating and pony type depends on the preferred apple. 
+
+## Introduction: Two-Way ANOVA
+
+- The ANOVA table that we are working to construct: 
+
+| **Source** | **Sum of Squares** | **df** | **Mean Square** | ***F*** |
+|-|-|-|-|-|
+A | SS<sub>A</sub> | df<sub>A</sub> | MS<sub>A</sub> | *F*<sub>A</sub>
+B | SS<sub>B</sub> | df<sub>B</sub> | MS<sub>B</sub> | *F*<sub>B</sub>
+AB | SS<sub>AB</sub> | df<sub>AB</sub> | MS<sub>AB</sub> | *F*<sub>AB</sub>
+Error | SS<sub>E</sub> | df<sub>E</sub> | MS<sub>E</sub> |
+Total | SS<sub>Tot</sub> | df<sub>Tot</sub> | | |   
+
+## Two-Way ANOVA: Computation
+
+- Let there be $a$ levels of factor A and $b$ levels of factor B. 
+
+    - $y_{ijk}$ is the observation on the $k^{th}$ experimental unit receiving the $i^{th}$ level of factor A and the $j^{th}$ level of factor B 
+    - $y_{i.}$ is the sum for all observations at the $i^{th}$ level of factor A,
+    - $y_{.j}$ is the sum for all observations at the $j^{th}$ level of factor B,
+    - $y_{ij}$ is the sum for observations at the $i^{th}$ level of factor A and the $j^{th}$ level of factor B,
+    - $y_{..}$ is the sum of all observations, 
+    - $(y^2)_{..}$ is the sum of the squared observations, 
+    - $n$ is the number in each group (of $a \times b$ treatments)
+
+## Two-Way ANOVA: Computation
+
+- To find the SS and df:
+$$
+\begin{align*}
+\text{SS}_{\text{A}} &= \frac{\sum_i y_{i.}^2}{bn}  - \frac{(y_{..})^2}{abn} & \text{df}_{\text{A}} &= a-1 \\
+\text{SS}_{\text{B}} &= \frac{\sum_j y_{.j}^2}{an} - \frac{(y_{..})^2}{abn} & \text{df}_{\text{B}} &= b-1 \\
+\text{SS}_{\text{AB}}&= \frac{\sum_{ij} y_{ij}^2}{n} - \frac{(y_{..})^2}{abn} - \text{SS}_{\text{A}} - \text{SS}_{\text{B}} & \text{df}_{\text{AB}} &= (a-1)(b-1) \\
+\text{SS}_{\text{E}} &= \text{SS}_{\text{Tot}} - \text{SS}_{\text{A}} - \text{SS}_{\text{B}} - \text{SS}_{\text{AB}} & \text{df}_{\text{E}} &= ab(n-1)  \\
+\text{SS}_{\text{Tot}} &= (y^2)_{..} - \frac{(y_{..})^2}{abn} & \text{df}_{\text{Tot}} &= abn-1
+\end{align*}  
+$$  
+
+## Two-Way ANOVA: Computation
+
+- To find the MS:
+
+$$\text{MS}_{\text{X}} = \frac{\text{SS}_{\text{X}}}{\text{df}_{\text{X}}}$$
+
+- To find the test statistic:
+
+$$\text{F}_{\text{X}} = \frac{\text{MS}_{\text{X}}}{\text{MS}_{\text{E}}}$$
+
+## Two-Way ANOVA: ANOVA Table (R)
+
+- We will use the `two_way_ANOVA_table()` function from `library(ssstats)` to construct the two-way ANOVA table.
+
+```{r}
+#| eval: false
+dataset_name %>% two_way_ANOVA_table(continuous = continuous_variable,
+                                     A = factor_A,
+                                     B = factor_B)
+```
+
+## Two-Way ANOVA: Example Set Up
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(ssstats)
+set.seed(421)                 # for reproducibility
+n_per_cell <- 35              # 35 students of each type in each setting
+
+# Define means that create an interaction
+means <- tribble(
+  ~type,      ~setting,     ~mu,
+  "Earth",    "Library",     78,
+  "Earth",    "Cafe",        79,
+  "Pegasus",  "Library",     75,
+  "Pegasus",  "Cafe",        85,   # big boost in café
+  "Unicorn",  "Library",     88,   # big boost in library
+  "Unicorn",  "Cafe",        80
+)
+
+sigma <- 5  # common SD
+
+# Generate the dataset
+grades <- means %>% 
+  uncount(n_per_cell, .id = "student") %>%      # expand rows
+  mutate(
+    grade = rnorm(n(), mean = mu, sd = sigma)
+  )
+```
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale):
+    - Pony Type (*type*; different innate talents and study habits): earth, pegasus, unicorn
+    - Study Setting (*setting*; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe
+    
+```{r}
+#| echo: false
+grades %>% group_by(type) %>% mean_median(grade)
+```
+
+## Two-Way ANOVA: Example Set Up
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering"(data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale):
+    - Pony Type (*type*; different innate talents and study habits): earth, pegasus, unicorn
+    - Study Setting (*setting*; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe
+    
+```{r}
+#| echo: false
+grades %>% group_by(setting) %>% mean_median(grade)
+```
+
+## Two-Way ANOVA: Example Set Up
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering."  Researchers want to know how two factors influence the overall grade (percentage scale), pony type and study setting.
+    
+```{r}
+#| echo: false
+grades %>% group_by(type, setting) %>% mean_median(grade)
+```
+
+## Two-Way ANOVA: ANOVA Table
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale):
+    - Pony Type (*type*; different innate talents and study habits): earth, pegasus, unicorn
+    - Study Setting (*setting*; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe
+
+- Let's construct the two-way ANOVA table. How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% two_way_ANOVA_table(continuous = continuous_variable,
+                                     A = factor_A,
+                                     B = factor_B)
+```
+
+## Two-Way ANOVA: ANOVA Table
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale):
+    - Pony Type (*type*; different innate talents and study habits): earth, pegasus, unicorn
+    - Study Setting (*setting*; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe
+
+- Let's construct the two-way ANOVA table. Our updated code:
+
+```{r}
+#| eval: false
+grades %>% two_way_ANOVA_table(continuous = grade,
+                               A = type,
+                               B = setting)
+```
+
+## Two-Way ANOVA: ANOVA Table
+
+- Running the code:
+
+```{r}
+#| echo: false
+grades %>% two_way_ANOVA_table(continuous = grade,
+                               A = type,
+                               B = setting)
+```
+
+## Two-Way ANOVA: Testing Interactions
+
+- **Hypotheses**
+
+    - $H_0:$ there is not an interaction between [factor A] and [factor B]
+    - $H_1:$ there is an interaction between [factor A] and [factor B]
+
+- **Test Statistic and *p*-Value**
+
+    - $F_{\text{AB}}$ 
+    - $p = P[F_{\text{df}_{\text{AB}}, \text{df}_{\text{E}}} \ge F_{\text{AB}}]$
+
+- **Rejection Region**
+
+    - Reject $H_0$ if $p<\alpha$.
+    
+## Two-Way ANOVA: Testing Interactions (R)
+
+- We will use the `two_way_ANOVA_HT()` function from `library(ssstats)` to perform the test for the interaction.
+
+```{r}
+#| eval: false
+dataset_name %>% two_way_ANOVA_HT(continuous = continuous_variable,
+                                  A = factor_A,
+                                  B = factor_B,
+                                  interaction = TRUE,
+                                  alpha = specified_alpha)
+```
+    
+## Two-Way ANOVA: Testing Interactions
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale):
+    - Pony Type (*type*; different innate talents and study habits): earth, pegasus, unicorn
+    - Study Setting (*setting*; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe
+
+- Determine if there is an interaction between pony type and study setting. Test at the $\alpha=0.01$ level. 
+
+- How should we update the following code?    
+    
+```{r}
+#| eval: false
+dataset_name %>% two_way_ANOVA_HT(continuous = continuous_variable,
+                                  A = factor_A,
+                                  B = factor_B,
+                                  interaction = TRUE,
+                                  alpha = specified_alpha)
+```  
+    
+## Two-Way ANOVA: Testing Interactions
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale):
+    - Pony Type (*type*; different innate talents and study habits): earth, pegasus, unicorn
+    - Study Setting (*setting*; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe
+
+- Determine if there is an interaction between pony type and study setting. Test at the $\alpha=0.01$ level. 
+
+- Our updated code,
+    
+```{r}
+#| eval: false
+grades %>% two_way_ANOVA_HT(continuous = grade,
+                            A = type,
+                            B = setting,
+                            interaction = TRUE,
+                            alpha = 0.01)
+```
+
+## Two-Way ANOVA: Testing Interactions
+
+- Running the code,
+    
+```{r}
+grades %>% two_way_ANOVA(continuous = grade,
+                         A = type,
+                         B = setting,
+                         interaction = TRUE,
+                         alpha = 0.01)
+```
+  
+## Two-Way ANOVA: Testing Interactions
+
+- **Hypotheses**
+
+    - $H_0:$ there is not an interaction between pony type and study setting
+    - $H_1:$ there is an interaction between pony type and study setting
+
+- **Test Statistic and *p*-Value**
+
+    - $F_{\text{AB}} = 52.45$; $p < 0.001$
+
+- **Rejection Region**
+
+    - Reject $H_0$ if $p<\alpha$; $\alpha=0.01$.
+    
+- **Conclusion/Interpretation**
+
+    - Reject $H_0$. There is sufficient evidence to suggest that the relationship between grades and study setting depends on pony type.
+
+## Two-Way ANOVA: Profile Plots
+
+- What happens after testing for an interaction? 
+    - If significant (reject $H_0$), we can construct a profile plot to visualize what's going on and help explain the effect. 
+    - If not significant (FTR $H_0$)... stay tuned.
+    
+- Profile plot: a plot of treatment group means.
+    - *y*-axis: always the average outcome
+    - *x*-axis: either factor A or B
+    - lines on the plot: the factor that was not selected for the *x*-axis
+
+- Note that this is just a graph of the means! It's valid to construct a profile plot even if the interaction is not sigificant.
+
+## Two-Way ANOVA: Profile Plots (R)
+
+- We will use the `profile_plot()` function from `library(ssstats)` to construct basic profile plots.
+
+```{r}
+#| eval: false
+dataset_name %>% profile_plot(continuous = continuous_variable,
+                              xaxis = variable_on_x,
+                              lines = variable_for_lines)
+```
+
+## Two-Way ANOVA: Profile Plots
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale).
+
+- Let's now construct the profile plot with pony type (*type*) on the *x*-axis and create the lines using study setting (*setting*).
+
+- How should we update this code?
+
+```{r}
+#| eval: false
+dataset_name %>% profile_plot(continuous = continuous_variable,
+                              xaxis = variable_on_x,
+                              lines = variable_for_lines)
+```
+
+## Two-Way ANOVA: Profile Plots
+
+- At Friendship University, college-aged ponies enroll in the introductory STEM course "Applied Equestrian Engineering" (data is collected in **grades**).  Researchers want to know how two factors influence the overall grade (percentage scale).
+
+- Let's now construct the profile plot with pony type (*type*) on the *x*-axis and create the lines using study setting (*setting*).
+
+- Our updated code,
+
+```{r}
+#| eval: false
+grades %>% profile_plot(continuous = grade,
+                        xaxis = type,
+                        lines = setting)
+```
+
+## Two-Way ANOVA: Profile Plots
+
+- Running the code,
+
+<center>
+```{r}
+grades %>% profile_plot(continuous = grade,
+                        xaxis = type,
+                        lines = setting)
+```
+</center>
+
+## Two-Way ANOVA: Profile Plots
+
+- What happens if we switch *xaxis* and *lines*?
+
+<center>
+```{r}
+grades %>% profile_plot(continuous = grade,
+                        xaxis = setting,
+                        lines = type)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+- What if the interaction *is not* significant?
+    - We want to *remove* the interaction and examine the *main effects*.
+    - That is, we want to look at the individual factors.
+    
+- We will reconstruct the ANOVA table. If we were doing this by hand:
+    1. Rewrite ANOVA table without interaction; do not change SS, df, and MS for the main effects and total.
+    2. Update the error term: add the SS<sub>AB</sub> to SS<sub>E</sub> and df<sub>AB</sub> to df<sub>E</sub>.
+    3. Recalculate MS<sub>E</sub>.
+    4. Recalculate *F*<sub>A</sub> and *F*<sub>B</sub>, then find the corresponding *p*-values.
+    
+## Two-Way ANOVA: Testing Main Effects (R)
+    
+- We will use the `two_way_ANOVA()` function from `library(ssstats)` to perform the test for main effects.
+
+```{r}
+#| eval: false
+dataset_name %>% two_way_ANOVA(continuous = continuous_variable,
+                               A = factor_A,
+                               B = factor_B,
+                               interaction = FALSE,
+                               alpha = specified_alpha)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+```{r}
+#| echo: false
+set.seed(1203)
+
+n_per_cell <- 30
+sigma <- 6
+
+# Define means with additive structure (no interaction)
+means <- tribble(
+  ~club,         ~study,     ~mu,
+  "Club",        "Solo",     85,
+  "Club",        "Group",    88,  # +3 for group study
+  "No Club",     "Solo",     80,  # -5 overall
+  "No Club",     "Group",    83   # +3 for group study
+)
+
+# Simulate scores
+quiz_scores <- means %>% 
+  uncount(n_per_cell, .id = "student") %>% 
+  mutate(
+    score = rnorm(n(), mean = mu, sd = sigma)
+  )
+```
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*).
+
+- Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Let's first check for an interaction ($\alpha=0.05$). How should we change the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% two_way_ANOVA(continuous = continuous_variable,
+                               A = factor_A,
+                               B = factor_B,
+                               interaction = TRUE or FALSE,
+                               alpha = specified_alpha)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*).
+
+- Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Let's first check for an interaction ($\alpha=0.05$). Our updated code,
+
+```{r}
+#| eval: false
+quiz_scores %>% two_way_ANOVA(continuous = score,
+                              A = club,
+                              B = study,
+                              interaction = TRUE)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+- Running the code, 
+
+```{r}
+quiz_scores %>% two_way_ANOVA(continuous = score,
+                              A = club,
+                              B = study,
+                              interaction = TRUE)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*).
+
+- Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Now let's remove the interaction. How should we update our code?
+
+```{r}
+#| eval: false
+quiz_scores %>% two_way_ANOVA(continuous = score,
+                              A = club,
+                              B = study,
+                              interaction = TRUE)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*).
+
+- Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Now let's remove the interaction. Our updated code,
+
+```{r}
+#| eval: false
+quiz_scores %>% two_way_ANOVA(continuous = score,
+                              A = club,
+                              B = study,
+                              interaction = FALSE)
+```
+
+## Two-Way ANOVA: Testing Main Effects
+
+- **Hypotheses**
+
+    - $H_0:$ $\mu_1$ = $\mu_2$ = ... = ($\mu_a$ or $\mu_b$)
+    - $H_1:$ At least one $\mu_i$ is different.
+
+- **Test Statistic and *p*-Value**
+
+    - $F_{\text{X}}$ (pull from ANOVA table)
+    - $p = P[F_{\text{df}_{\text{X}}, \text{df}_{\text{E}}} \ge F_{\text{X}}]$
+
+## Two-Way ANOVA: Testing Main Effects
+
+- Running the code,
+
+```{r}
+#| echo: false
+quiz_scores %>% two_way_ANOVA(continuous = score,
+                              A = club,
+                              B = study,
+                              interaction = FALSE)
+```
+
+
+## Two-Way ANOVA: Testing Main Effects
+
+- **Hypotheses**
+    - $H_0: \ \mu_{\text{club}} = \mu_{\text{no club}}$
+    - $H_1: \ \mu_{\text{club}} \ne \mu_{\text{no club}}$
+
+- **Test Statistic and *p*-Value**
+    - $F_{\text{club}} = 11.19$; $p = 0.001$
+
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$.
+    
+- **Conclusion/Interpretation**
+    - Reject $H_0$. There is sufficient evidence to suggest that the quiz grades between those in the science club are different from those not in the science club.    
+    
+## Two-Way ANOVA: Testing Main Effects
+
+- **Hypotheses**
+    - $H_0: \ \mu_{\text{solo}} = \mu_{\text{group}}$
+    - $H_1: \ \mu_{\text{solo}} \ne \mu_{\text{group}}$
+
+- **Test Statistic and *p*-Value**
+    - $F_{\text{study}} = 11.24$; $p = 0.001$
+
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$.
+    
+- **Conclusion/Interpretation**
+    - Reject $H_0$. There is sufficient evidence to suggest that the quiz grades between those in the science club are different from those not in the science club.       
+    
+## Two-Way ANOVA: Assumptions   
+
+- The ANOVA assumptions we learned last week hold true.
+
+- We assume that the error term follows a normal distribution with mean 0 and a constant variance, $\sigma^2$. i.e.,
+$$\varepsilon_{ij} \overset{\text{iid}}{\sim} N(0, \sigma^2)$$
+
+- Very important note: **the assumption is on the error term** and NOT on the outcome!
+
+- We will use the residual (the difference between the observed value and the predicted value) to assess assumptions:
+
+$$ e_{ij} = y_{ij} - \hat{y}_{ij} $$
+
+## Two-Way ANOVA: Assumptions (R)
+
+- We will use the `ANOVA2_assumptions()` function from `library(ssstats)` to request the graphs necessary to asssess our assumptions.
+
+```{r}
+#| eval: false
+dataset_name %>% ANOVA2_assumptions(continuous = continuous_variable,
+                                    A = factor_A,
+                                    B = factor_B,
+                                    interaction = TRUE or FALSE)
+```
+
+## Two-Way ANOVA: Assumptions
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*). Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Let's now check the ANOVA assumptions. How should we edit the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% ANOVA2_assumptions(continuous = continuous_variable,
+                                    A = factor_A,
+                                    B = factor_B,
+                                    interaction = TRUE or FALSE)
+```
+
+## Two-Way ANOVA: Assumptions
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*). Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Let's now check the ANOVA assumptions. How should we edit the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% ANOVA2_assumptions(continuous = continuous_variable,
+                                    A = factor_A,
+                                    B = factor_B,
+                                    interaction = TRUE or FALSE)
+```
+
+## Two-Way ANOVA: Assumptions
+
+- At Ponyville High, students in a general science class (**quiz_scores**) were divided based on their membership in the Science Club (yes/no; *club*) and their primary method of studying outside of school (solo/group; *study*). Researchers want to know whether these factors impact science quiz scores (out of 100 points; *score*). 
+
+- Let's now check the ANOVA assumptions. Our updated code,
+
+```{r}
+#| eval: false
+quiz_scores %>% ANOVA2_assumptions(continuous = score,
+                                  A = club,
+                                  B = study,
+                                  interaction = TRUE)
+```
+
+## Two-Way ANOVA: Assumptions
+
+- Running the code,
+
+<center>
+```{r}
+quiz_scores %>% ANOVA2_assumptions(continuous = score,
+                                  A = club,
+                                  B = study,
+                                  interaction = TRUE)
+```
+</center>
+
+## Wrap Up
+
+- Today we have covered two-way ANOVA.
+    - Two-way ANOVA table
+    - Testing interactions
+    - Testing main effects (only when interaction is not present)
+    - Profile plot (plot of group means)
+    - ANOVA assumptions
+    
+- Note about nonparametric two-way ANOVA.
+    - Methodology is "newish" - we are not covering.
+    
+- Thursday: Assignment 2    
+
+## Wrap Up    
+
+- Daily activity: .qmd is available on Canvas.
+    - Due date: Monday, July 21, 2025.
+
+- You will upload the resulting .html file on Canvas. 
+    - Please refer to the help guide on the Biostat website if you need help with submission.
+    
+- Housekeeping:
+    - Quiz at 1:15!
+    - Do you have questions for me?
+    - Do you need my help with anything from prior lectures? Practices? Project 1?

@@ -4,7 +4,7 @@
     "href": "files/schedule.html",
     "title": "Tentative Schedule",
     "section": "",
-    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23 M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\nHousekeeping from class:\n\nPlease join our Discord server if you have not already.\n\nMoving forward, all announcements will be made on Discord.\n\nWe did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today’s lab.\n\nDr. Seals has corrected all dropboxes and corresponding due dates on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nCatch up:\n\nLab from T 06/16 (summaries and graphs)\n\nNew due date: M 06/30\n\n\nTopics:\n\nLecture\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\n\nnormality\nequal variance\n\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 07/07):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nIndependence Day holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nReview topics:\n\ntwo-sample t-test\ndependent t-test\nWilcoxon rank sum test\nWilcoxon signed rank test\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nProject 1 (due M 07/14): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nNote: Dr. Seals under the weather, no live class. Please see Canvas for recorded lectures.\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due W 07/16):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/21):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nReview topics:\n\none-way ANOVA\nKruskal-Wallis\ntwo-way ANOVA\n\nSlides:\n\n.html:\n.qmd:\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nReview topics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nProject 3 (due M 07/28): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 08/04):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nReview topics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nProject 4 (due M 08/04): see Canvas\nQuiz: see Canvas"
+    "text": "Module 0: Review & R Foundations\n\n\n\n\n\n\nTuesday, June 17, 2025:\n\n\n\n\n\n\nTopics:\n\nSummary statistics\nData visualization\nIntroduction to R\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/23 M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: open at 1:15, close end of day F 06/20\n\nSee Canvas\n\nHousekeeping from class:\n\nPlease join our Discord server if you have not already.\n\nMoving forward, all announcements will be made on Discord.\n\nWe did not have enough time to get through the lab portion. We will start class on T 06/24 by completing today’s lab.\n\nDr. Seals has corrected all dropboxes and corresponding due dates on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\nThursday, June 19, 2025:\n\n\n\n\n\n\nJuneteenth holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, June 24, 2025:\n\n\n\n\n\n\nCatch up:\n\nLab from T 06/16 (summaries and graphs)\n\nNew due date: M 06/30\n\n\nTopics:\n\nLecture\nStatistical inference:\n\nConfidence intervals\nHypothesis testing\n\nOne-sample mean\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\nModule 1: Exploring Continuous Outcomes in Two Groups\n\n\n\n\n\n\nThursday, June 26, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo independent means\nTwo dependent means\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 06/30):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 1, 2025:\n\n\n\n\n\n\nTopics:\n\nt-test assumptions\n\nnormality\nequal variance\n\ntwo-sample medians\n\nWilcoxon rank sum\nWilcoxon signed rank\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 07/07):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 3, 2025:\n\n\n\n\n\n\nIndependence Day holiday - campus closed.\n\n\n\n\n\n\n\n\n\n\nTuesday, July 8, 2025:\n\n\n\n\n\n\nReview topics:\n\ntwo-sample t-test\ndependent t-test\nWilcoxon rank sum test\nWilcoxon signed rank test\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nProject 1 (due M 07/14): see Canvas\n\n\n\n\n\n\nModule 2: Exploring Continuous Outcomes in More Than Two Groups\n\n\n\n\n\n\nThursday, July 10, 2025:\n\n\n\n\n\n\nNote: Dr. Seals under the weather, no live class. Please see Canvas for recorded lectures.\nTopics:\n\nOne-way ANOVA\n\nposthoc testing\n\nANOVA assumptions\nKruskal-Wallis\n\nposthoc testing\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due W 07/16):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nTuesday, July 15, 2025:\n\n\n\n\n\n\nTopics:\n\nTwo-way ANOVA\n\nposthoc testing\nprofile plots\n\n\nSlides:\n\n.html: view slides\n.qmd: view code\n\nPractice (due M 07/21):\n\n.html: view assignment\n.qmd: view code\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 17, 2025:\n\n\n\n\n\n\nReview topics:\n\none-way ANOVA\nKruskal-Wallis\ntwo-way ANOVA\n\nSlides:\n\n.html:\n.qmd:\n\nProject 2 (due M 07/21): see Canvas\n\n\n\n\n\n\nModule 3: Exploring Regression Modeling\n\n\n\n\n\n\nTuesday, July 22, 2025:\n\n\n\n\n\n\nTopics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 07/28):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 24, 2025:\n\n\n\n\n\n\nReview topics:\n\nSimple linear regression\nBivariate correlation\nMultiple regression\nRegression diagnostics\n\nSlides:\n\n.html:\n.qmd:\n\nProject 3 (due M 07/28): see Canvas\nQuiz: see Canvas\n\n\n\n\n\n\nModule 4: Exploring Categorical Outcomes\n\n\n\n\n\n\nTuesday, July 29, 2025:\n\n\n\n\n\n\nTopics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nPractice (due M 08/04):\n\n.html:\n.qmd:\n\nQuiz: see Canvas\n\n\n\n\n\n\n\n\n\n\nThursday, July 31, 2025:\n\n\n\n\n\n\nReview topics:\n\nProportions\n\nOne sample\nTwo sample\nMore than two samples\n\nContingency tables\n\nSlides:\n\n.html:\n.qmd:\n\nProject 4 (due M 08/04): see Canvas\nQuiz: see Canvas"
   },
   {
     "objectID": "files/practice/06-24-inference-practice.html",
@@ -1137,8 +1137,8 @@
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-topics",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-topics",
     "title": "One-Way ANOVAKruskal-Wallis",
-    "section": "Introduction: Topics",
-    "text": "Introduction: Topics\n\nPrevious: two groups, continuous outcome\nNow: more than two groups, continuous outcome\nOne-way ANOVA\n\nposthoc testing\nassumptions\n\nKruskal-Wallis\n\nposthoc testing"
+    "section": "",
+    "text": "Previous: two groups, continuous outcome\nNow: more than two groups, continuous outcome\nOne-way ANOVA\n\nposthoc testing\nassumptions\n\nKruskal-Wallis\n\nposthoc testing"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-analysis-of-variance",
@@ -1166,49 +1166,49 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: ANOVA Table",
-    "text": "One-Way ANOVA: ANOVA Table\n\nThe computations for ANOVA are more involved than what we’ve seen before.\nAn ANOVA table will be constructed in order to perform the hypothesis test.\n\n\n\n\n\n\n\n\n\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\n\n\n\n\nTreatment\nSSTrt\ndfTrt\nMSTrt\nF0\n\n\nError\nSSE\ndfE\nMSE\n\n\n\nTotal\nSSTot\ndfTot\n\n\n\n\n\n\nOnce this is put together, we can perform the hypothesis test.\n\nOur test statistic is the F_0."
+    "text": "One-Way ANOVA: ANOVA Table\n\nThe computations for ANOVA are more involved than what we’ve seen before.\nAn ANOVA table will be constructed in order to perform the hypothesis test.\n\n\n\n\n\n\n\n\n\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\n\n\n\n\nTreatment\nSSTrt\ndfTrt\nMSTrt\nF0\n\n\nError\nSSE\ndfE\nMSE\n\n\n\nTotal\nSSTot\ndfTot\n\n\n\n\n\n\nOnce this is put together, we can perform the hypothesis test.\n\nOur test statistic is the \\(F_0\\)."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: (Hand) Computations",
-    "text": "One-Way ANOVA: (Hand) Computations\n\nBefore we begin our computations, it would be helpful if we know\n\n\\bar{x}, \\ \\ n_i, \\ \\ \\bar{x}_i, \\ \\ s_i^2\n\nwhere,\n\n\\bar{x} is the overall mean,\nn_i is the sample size for group i,\n\\bar{x}_i is the mean for group i, and\ns_i^2 is the variance for group i"
+    "text": "One-Way ANOVA: (Hand) Computations\n\nBefore we begin our computations, it would be helpful if we know\n\n\\[\\bar{x}, \\ \\ n_i, \\ \\ \\bar{x}_i, \\ \\ s_i^2\\]\n\nwhere,\n\n\\(\\bar{x}\\) is the overall mean,\n\\(n_i\\) is the sample size for group \\(i\\),\n\\(\\bar{x}_i\\) is the mean for group \\(i\\), and\n\\(s_i^2\\) is the variance for group \\(i\\)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: (Hand) Computations",
-    "text": "One-Way ANOVA: (Hand) Computations\n\nWe begin our computations with the sums of squares:\n\n\n\\begin{align*}\n    \\text{SS}_{\\text{Trt}} &= \\sum_{i=1}^k n_i(\\bar{x}_i-\\bar{x})^2 \\\\\n    \\text{SS}_{\\text{E}} &= \\sum_{i=1}^k (n_i-1)s_i^2 \\\\\n    \\text{SS}_{\\text{Tot}} &= \\text{SS}_{\\text{Trt}} + \\text{SS}_{\\text{E}}\n\\end{align*}"
+    "text": "One-Way ANOVA: (Hand) Computations\n\nWe begin our computations with the sums of squares:\n\n\\[\n\\begin{align*}\n    \\text{SS}_{\\text{Trt}} &= \\sum_{i=1}^k n_i(\\bar{x}_i-\\bar{x})^2 \\\\\n    \\text{SS}_{\\text{E}} &= \\sum_{i=1}^k (n_i-1)s_i^2 \\\\\n    \\text{SS}_{\\text{Tot}} &= \\text{SS}_{\\text{Trt}} + \\text{SS}_{\\text{E}}\n\\end{align*}\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-2",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-2",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: (Hand) Computations",
-    "text": "One-Way ANOVA: (Hand) Computations\n\nEach sum of squares has degrees of freedom:\n\n\n\\begin{align*}\n    \\text{df}_{\\text{Trt}} &= k-1\\\\\n    \\text{df}_{\\text{E}} &= n-k\\\\\n    \\text{df}_{\\text{Tot}} &= n-1\n\\end{align*}"
+    "text": "One-Way ANOVA: (Hand) Computations\n\nEach sum of squares has degrees of freedom:\n\n\\[\n\\begin{align*}\n    \\text{df}_{\\text{Trt}} &= k-1\\\\\n    \\text{df}_{\\text{E}} &= n-k\\\\\n    \\text{df}_{\\text{Tot}} &= n-1\n\\end{align*}\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-3",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-3",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: (Hand) Computations",
-    "text": "One-Way ANOVA: (Hand) Computations\n\nOnce we have the sum of squares and corresponding degrees of freedom, we can compute the mean squares.\nIn the case of one-way ANOVA, \n\\begin{align*}\n  \\text{MS}_{\\text{Trt}} &= \\frac{\\text{SS}_{\\text{Trt}}}{\\text{df}_{\\text{Trt}}} \\\\\n  \\text{MS}_{\\text{E}} &= \\frac{\\text{SS}_{\\text{E}}}{\\text{df}_{\\text{E}}}\n\\end{align*}\n\n\nNote that there is no \\text{MS}_{\\text{Tot}}!"
+    "text": "One-Way ANOVA: (Hand) Computations\n\nOnce we have the sum of squares and corresponding degrees of freedom, we can compute the mean squares.\nIn the case of one-way ANOVA, \\[\n\\begin{align*}\n  \\text{MS}_{\\text{Trt}} &= \\frac{\\text{SS}_{\\text{Trt}}}{\\text{df}_{\\text{Trt}}} \\\\\n  \\text{MS}_{\\text{E}} &= \\frac{\\text{SS}_{\\text{E}}}{\\text{df}_{\\text{E}}}\n\\end{align*}\n\\]\n\nNote that there is no \\(\\text{MS}_{\\text{Tot}}\\)!"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-4",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-4",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: (Hand) Computations",
-    "text": "One-Way ANOVA: (Hand) Computations\n\nA note about mean squares: they are almost always constructed the same way.\n\n\\text{MS}_X = \\frac{\\text{SS}_X}{\\text{df}_E}\n\nThis is important to know for future statistics courses that may have you calculating things by hand."
+    "text": "One-Way ANOVA: (Hand) Computations\n\nA note about mean squares: they are almost always constructed the same way.\n\n\\[\\text{MS}_X = \\frac{\\text{SS}_X}{\\text{df}_E}\\]\n\nThis is important to know for future statistics courses that may have you calculating things by hand."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-5",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-5",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: (Hand) Computations",
-    "text": "One-Way ANOVA: (Hand) Computations\n\nFinally, we have the test statistic.\nGenerally, we construct an F for ANOVA by dividing the MS of interest by MS_E_,\n\nF_X = \\frac{\\text{MS}_X}{\\text{MS}_{\\text{E}}}\n\nIn one-way ANOVA, we are only constructing the F for treatment,\n\nF_0 = \\frac{\\text{MS}_{\\text{Trt}}}{\\text{MS}_{\\text{E}}}"
+    "text": "One-Way ANOVA: (Hand) Computations\n\nFinally, we have the test statistic.\nGenerally, we construct an \\(F\\) for ANOVA by dividing the MS of interest by MS_E_,\n\n\\[F_X = \\frac{\\text{MS}_X}{\\text{MS}_{\\text{E}}}\\]\n\nIn one-way ANOVA, we are only constructing the \\(F\\) for treatment,\n\n\\[F_0 = \\frac{\\text{MS}_{\\text{Trt}}}{\\text{MS}_{\\text{E}}} \\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-hand-computations-6",
@@ -1229,7 +1229,7 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "One-Way ANOVA: ANOVA Table",
-    "text": "One-Way ANOVA: ANOVA Table\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\alpha=0.05 level.\nLet’s first create the ANOVA table. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
+    "text": "One-Way ANOVA: ANOVA Table\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\(\\alpha=0.05\\) level.\nLet’s first create the ANOVA table. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#one-way-anova-anova-table-2",
@@ -1250,14 +1250,14 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way-ANOVA",
-    "text": "Hypothesis Testing: One-Way-ANOVA\n\nIn one-way ANOVA, hypotheses always take the same form:\n\nH_0: \\ \\mu_1 = \\mu_2 = ... = \\mu_k\nH_1: at least one is different\n\nNote: you must fill in the “k” when writing hypotheses!\n\ne.g., if there are four means, your hypotheses are\n\nH_0: \\ \\mu_1 = \\mu_2 = \\mu_3 = \\mu_4\nH_1: at least one is different\n\ne.g., in our MLP example,\n\nH_0: \\ \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{alicorn}} = \\mu_{\\text{pegasus}}\nH_1: at least one is different"
+    "text": "Hypothesis Testing: One-Way-ANOVA\n\nIn one-way ANOVA, hypotheses always take the same form:\n\n\\(H_0: \\ \\mu_1 = \\mu_2 = ... = \\mu_k\\)\n\\(H_1:\\) at least one is different\n\nNote: you must fill in the “k” when writing hypotheses!\n\ne.g., if there are four means, your hypotheses are\n\n\\(H_0: \\ \\mu_1 = \\mu_2 = \\mu_3 = \\mu_4\\)\n\\(H_1:\\) at least one is different\n\ne.g., in our MLP example,\n\n\\(H_0: \\ \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{alicorn}} = \\mu_{\\text{pegasus}}\\)\n\\(H_1:\\) at least one is different"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\nTest statistic:\n\nF_0 = \\frac{\\text{MS}_{\\text{Trt}}}{\\text{MS}_{\\text{E}}}\n\np-Value:\n\np = P[F_{k-1,n-k} \\ge F_0]"
+    "text": "Hypothesis Testing: One-Way ANOVA\nTest statistic:\n\\[\nF_0 = \\frac{\\text{MS}_{\\text{Trt}}}{\\text{MS}_{\\text{E}}}\n\\]\np-Value:\n\\[\np = P[F_{k-1,n-k} \\ge F_0]\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-r",
@@ -1271,14 +1271,14 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-2",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate the hypothesis test. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-3",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-3",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. Our updated code,\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = ability_score,\n                                  grouping = pony_type, \n                                  alpha = 0.05)"
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nIn the magical land of Equestria, ponies come in different types: Unicorns, Pegasi, Earth Ponies, and Alicorns. While each group has unique abilities, some researchers in Twilight Sparkle’s lab are curious whether these pony types differ in their overall magic ability scores, a standardized measure that combines magical potential, control, and versatility.\nTo investigate this, they collect data (magical_studies) on a random sample of ponies from each pony type (pony_type). The researchers want to know if there is difference in magic ability scores (ability_score) among the four pony types. We will test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate the hypothesis test. Our updated code,\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = ability_score,\n                                  grouping = pony_type, \n                                  alpha = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-4",
@@ -1292,21 +1292,21 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-5",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nHypotheses\n\nH_0: \\ \\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{pegasus}}\nH_1: at least one \\mu_i is different\n\nTest Statistic and p-Value\n\nF_0 = 1.526\np = 0.210\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0 (p \\text{ vs } \\alpha \\to p = 0.210 &gt; 0.05). There is not sufficient evidence to suggest that there is a difference in magical ability between the types of ponies."
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nHypotheses\n\n\\(H_0: \\ \\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{pegasus}}\\)\n\\(H_1:\\) at least one \\(\\mu_i\\) is different\n\nTest Statistic and p-Value\n\n\\(F_0 = 1.526\\)\n\\(p = 0.210\\)\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); \\(\\alpha=0.05\\).\n\nConclusion/Interpretation\n\nFail to reject \\(H_0\\) (\\(p \\text{ vs } \\alpha \\to p = 0.210 &gt; 0.05\\)). There is not sufficient evidence to suggest that there is a difference in magical ability between the types of ponies."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-6",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-6",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s first create the ANOVA table. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\(\\alpha=0.05\\) level.\nLet’s first create the ANOVA table. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA_table(continuous = continuous_variable,\n                                     grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-7",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-7",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s first create the ANOVA table. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA_table(continuous = coordination_score,\n                                        grouping = pony_type)"
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\(\\alpha=0.05\\) level.\nLet’s first create the ANOVA table. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA_table(continuous = coordination_score,\n                                        grouping = pony_type)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-8",
@@ -1320,14 +1320,14 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-9",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate the hypothesis test. How should we update this code?\n\n\ndataset_name %&gt;% one_way_ANOVA(continuous = continuous_variable,\n                               grouping = grouping_variable,\n                               alpha = specified_alpha)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-10",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-10",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\alpha=0.05 level.\nLet’s now formulate the hypothesis test. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = coordination_score,\n                                  grouping = pony_type,\n                                  alpha = 0.05)"
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know if there is difference in magical coordination scores (coordination_score) among the four pony types. We will again test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate the hypothesis test. Our updated code:\n\n\nmagical_studies %&gt;% one_way_ANOVA(continuous = coordination_score,\n                                  grouping = pony_type,\n                                  alpha = 0.05)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-11",
@@ -1341,7 +1341,7 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-one-way-anova-12",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: One-Way ANOVA",
-    "text": "Hypothesis Testing: One-Way ANOVA\n\nHypotheses\n\nH_0: \\ \\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{pegasus}}\nH_1: at least one \\mu_i is different\n\nTest Statistic and p-Value\n\nF_0 = 18.396\np &lt; 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05). There is sufficient evidence to suggest that there is a difference in magical coordination between the types of ponies."
+    "text": "Hypothesis Testing: One-Way ANOVA\n\nHypotheses\n\n\\(H_0: \\ \\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} = \\mu_{\\text{earth}} = \\mu_{\\text{pegasus}}\\)\n\\(H_1:\\) at least one \\(\\mu_i\\) is different\n\nTest Statistic and p-Value\n\n\\(F_0 = 18.396\\)\n\\(p &lt; 0.001\\)\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); \\(\\alpha=0.05\\).\n\nConclusion/Interpretation\n\nReject \\(H_0\\) (\\(p \\text{ vs } \\alpha \\to p &lt; 0.001 &lt; 0.05\\)). There is sufficient evidence to suggest that there is a difference in magical coordination between the types of ponies."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing",
@@ -1355,14 +1355,14 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Introduction: Posthoc Testing",
-    "text": "Introduction: Posthoc Testing\n\nRecall our hypotheses in one-way ANOVA,\n\nH_0: \\mu_1 = \\mu_2 = ... = \\mu_k\nH_1: at least one \\mu_i is different\n\nThe F test does not tell us which mean is different… only that a difference exists.\nIn theory, we could perform repeated t tests to determine pairwise differences.\n\nRecall that ANOVA is an extension of the t test… or that the t test is a special case of ANOVA.\nHowever, this will increase the Type I error rate (\\alpha)."
+    "text": "Introduction: Posthoc Testing\n\nRecall our hypotheses in one-way ANOVA,\n\n\\(H_0: \\mu_1 = \\mu_2 = ... = \\mu_k\\)\n\\(H_1:\\) at least one \\(\\mu_i\\) is different\n\nThe \\(F\\) test does not tell us which mean is different… only that a difference exists.\nIn theory, we could perform repeated \\(t\\) tests to determine pairwise differences.\n\nRecall that ANOVA is an extension of the \\(t\\) test… or that the \\(t\\) test is a special case of ANOVA.\nHowever, this will increase the Type I error rate (\\(\\alpha\\))."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-2",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-2",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Introduction: Posthoc Testing",
-    "text": "Introduction: Posthoc Testing\n\nRecall that the Type I error rate, \\alpha, is the probability of incorrectly rejecting H_0.\n\ni.e., we are saying there is a difference between the means when there is actually not a difference.\n\nSuppose we are comparing 5 groups.\n\nThis is 10 pairwise comparisons!!\n\n1-2, 1-3, 1-4, 1-5, 2-3, 2-4, 2-5, 3-4, 3-5, 4-5\n\nIf we perform repeated t tests under \\alpha=0.05, we are inflating the Type I error to 0.40! 😵"
+    "text": "Introduction: Posthoc Testing\n\nRecall that the Type I error rate, \\(\\alpha\\), is the probability of incorrectly rejecting \\(H_0\\).\n\ni.e., we are saying there is a difference between the means when there is actually not a difference.\n\nSuppose we are comparing 5 groups.\n\nThis is 10 pairwise comparisons!!\n\n1-2, 1-3, 1-4, 1-5, 2-3, 2-4, 2-5, 3-4, 3-5, 4-5\n\nIf we perform repeated \\(t\\) tests under \\(\\alpha=0.05\\), we are inflating the Type I error to 0.40! 😵"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-3",
@@ -1376,35 +1376,35 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-posthoc-testing-4",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Introduction: Posthoc Testing",
-    "text": "Introduction: Posthoc Testing\n\nThe posthoc tests we will learn:\n\nTukey’s test\n\nPerforms all pairwise tests and controls the Type I error rate\n\nFisher’s least significant difference\n\nPerforms all pairwise tests but does not control the Type I error rate\n\n\nCaution: we should only perform posthoc tests if we have determined that a general difference exists!\n\ni.e., when we reject when looking at the F test in ANOVA"
+    "text": "Introduction: Posthoc Testing\n\nThe posthoc tests we will learn:\n\nTukey’s test\n\nPerforms all pairwise tests and controls the Type I error rate\n\nFisher’s least significant difference\n\nPerforms all pairwise tests but does not control the Type I error rate\n\n\nCaution: we should only perform posthoc tests if we have determined that a general difference exists!\n\ni.e., when we reject when looking at the \\(F\\) test in ANOVA"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Tukey’s Test",
-    "text": "Posthoc Testing: Tukey’s Test\n\nTukey’s test allows us to do all pairwise comparisons while controlling \\alpha.\nHypotheses\n\nH_0: \\ \\mu_i = \\mu_j\nH_1: \\ \\mu_i \\ne \\mu_j\n\nTest Statistic\n\n\nQ = \\frac{|\\bar{y}_i - \\bar{y}_j|}{\\sqrt{ \\frac{\\text{MS}_{\\text{E}}}{2} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}"
+    "text": "Posthoc Testing: Tukey’s Test\n\nTukey’s test allows us to do all pairwise comparisons while controlling \\(\\alpha\\).\nHypotheses\n\n\\(H_0: \\ \\mu_i = \\mu_j\\)\n\\(H_1: \\ \\mu_i \\ne \\mu_j\\)\n\nTest Statistic\n\n\\[\nQ = \\frac{|\\bar{y}_i - \\bar{y}_j|}{\\sqrt{ \\frac{\\text{MS}_{\\text{E}}}{2} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-r",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-r",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Tukey’s Test (R)",
-    "text": "Posthoc Testing: Tukey’s Test (R)\n\nWe will use the posthoc_tukey() function from library(ssstats) to perform Tukey’s posthoc test (resulting p are adjusted for multiple comparisons).\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
+    "text": "Posthoc Testing: Tukey’s Test (R)\n\nWe will use the posthoc_tukey() function from library(ssstats) to perform Tukey’s posthoc test (resulting \\(p\\) are adjusted for multiple comparisons).\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Tukey’s Test",
-    "text": "Posthoc Testing: Tukey’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Tukey’s posthoc test. How should we update this code?\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
+    "text": "Posthoc Testing: Tukey’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate Tukey’s posthoc test. How should we update this code?\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-2",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-2",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Tukey’s Test",
-    "text": "Posthoc Testing: Tukey’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Tukey’s posthoc test. Our updated code:\n\n\nmagical_studies %&gt;% posthoc_tukey(continuous = coordination_score,\n                                  grouping = pony_type)"
+    "text": "Posthoc Testing: Tukey’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate Tukey’s posthoc test. Our updated code:\n\n\nmagical_studies %&gt;% posthoc_tukey(continuous = coordination_score,\n                                  grouping = pony_type)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-3",
@@ -1418,35 +1418,35 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-test-4",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Tukey’s Test",
-    "text": "Posthoc Testing: Tukey’s Test\n\nRestating results,\n\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 12.63, p &lt; 0.001)\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 10.18, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 9.83, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 7.38, p = 0.001)\n\\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} (\\bar{x}_d = 2.80, p = 0.487)\n\\mu_{\\text{pegasus}} = \\mu_{\\text{earth}} (\\bar{x}_d = 2.44, p = 0.602)"
+    "text": "Posthoc Testing: Tukey’s Test\n\nRestating results,\n\n\\(\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{earth}}\\) (\\(\\bar{x}_d = 12.63\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{pegasus}}\\) (\\(\\bar{x}_d = 10.18\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{earth}}\\) (\\(\\bar{x}_d = 9.83\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{pegasus}}\\) (\\(\\bar{x}_d = 7.38\\), \\(p = 0.001\\))\n\\(\\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}}\\) (\\(\\bar{x}_d = 2.80\\), \\(p = 0.487\\))\n\\(\\mu_{\\text{pegasus}} = \\mu_{\\text{earth}}\\) (\\(\\bar{x}_d = 2.44\\), \\(p = 0.602\\))"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Fisher’s Test",
-    "text": "Posthoc Testing: Fisher’s Test\n\nFisher’s allows us to test all pairwise comparisons but does not control the \\alpha.\nHypotheses:\n\nH_0: \\ \\mu_i = \\mu_j\nH_1: \\ \\mu_i \\ne \\mu_j\n\nTest Statistic:\n\n\nt = \\frac{|\\bar{y}_i - \\bar{y}_j|}{\\sqrt{ \\text{MS}_{\\text{E}} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}"
+    "text": "Posthoc Testing: Fisher’s Test\n\nFisher’s allows us to test all pairwise comparisons but does not control the \\(\\alpha\\).\nHypotheses:\n\n\\(H_0: \\ \\mu_i = \\mu_j\\)\n\\(H_1: \\ \\mu_i \\ne \\mu_j\\)\n\nTest Statistic:\n\n\\[\nt = \\frac{|\\bar{y}_i - \\bar{y}_j|}{\\sqrt{ \\text{MS}_{\\text{E}} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-r",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-r",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Fisher’s Test (R)",
-    "text": "Posthoc Testing: Fisher’s Test (R)\n\nWe will use the posthoc_fisher() function from library(ssstats) to perform Tukey’s posthoc test (resulting p are not adjusted for multiple comparisons).\n\n\ndataset_name %&gt;% posthoc_fisher(continuous = continuous_variable,\n                                grouping = grouping_variable)"
+    "text": "Posthoc Testing: Fisher’s Test (R)\n\nWe will use the posthoc_fisher() function from library(ssstats) to perform Tukey’s posthoc test (resulting \\(p\\) are not adjusted for multiple comparisons).\n\n\ndataset_name %&gt;% posthoc_fisher(continuous = continuous_variable,\n                                grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Fisher’s Test",
-    "text": "Posthoc Testing: Fisher’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Fisher’s posthoc test. How should we update this code?\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
+    "text": "Posthoc Testing: Fisher’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate Fisher’s posthoc test. How should we update this code?\n\n\ndataset_name %&gt;% posthoc_tukey(continuous = continuous_variable,\n                               grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-2",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-2",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Fisher’s Test",
-    "text": "Posthoc Testing: Fisher’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\alpha=0.05 level.\nLet’s now formulate Fisher’s posthoc test. Our updated code:\n\n\nmagical_studies %&gt;% posthoc_fisher(continuous = coordination_score,\n                                   grouping = pony_type)"
+    "text": "Posthoc Testing: Fisher’s Test\n\nTwilight Sparkle is now leading a study to understand whether ponies from different types specialize in different areas of magical strength. She develops a “magical coordination” score, which reflects how well a pony can use magic to interact with objects in motion (e.g., catching falling books).\nTo investigate this, data is collected (magical_studies) on a random sample of ponies from each pony type (pony_type). Twilight Sparkle wants to know what differences exist in their magical coordination scores (coordination_score). We will again test at the \\(\\alpha=0.05\\) level.\nLet’s now formulate Fisher’s posthoc test. Our updated code:\n\n\nmagical_studies %&gt;% posthoc_fisher(continuous = coordination_score,\n                                   grouping = pony_type)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-3",
@@ -1460,7 +1460,7 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-fishers-test-4",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Fisher’s Test",
-    "text": "Posthoc Testing: Fisher’s Test\n\nRestating results,\n\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 12.63, p &lt; 0.001)\n\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 10.18, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{earth}} (\\bar{x}_d = 9.83, p &lt; 0.001)\n\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{pegasus}} (\\bar{x}_d = 7.38, p &lt; 0.001)\n\\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}} (\\bar{x}_d = 2.80, p = 0.151)\n\\mu_{\\text{pegasus}} = \\mu_{\\text{earth}} (\\bar{x}_d = 2.44, p = 0.227)"
+    "text": "Posthoc Testing: Fisher’s Test\n\nRestating results,\n\n\\(\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{earth}}\\) (\\(\\bar{x}_d = 12.63\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{alicorn}} \\ne \\mu_{\\text{pegasus}}\\) (\\(\\bar{x}_d = 10.18\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{earth}}\\) (\\(\\bar{x}_d = 9.83\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{unicorn}} \\ne \\mu_{\\text{pegasus}}\\) (\\(\\bar{x}_d = 7.38\\), \\(p &lt; 0.001\\))\n\\(\\mu_{\\text{alicorn}} = \\mu_{\\text{unicorn}}\\) (\\(\\bar{x}_d = 2.80\\), \\(p = 0.151\\))\n\\(\\mu_{\\text{pegasus}} = \\mu_{\\text{earth}}\\) (\\(\\bar{x}_d = 2.44\\), \\(p = 0.227\\))"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-vs.-fishers",
@@ -1474,7 +1474,7 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-tukeys-vs.-fishers-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Tukey’s vs. Fisher’s",
-    "text": "Posthoc Testing: Tukey’s vs. Fisher’s\n\nComparing the two side-by-side,\n\n\n\n\n\n\n\n\n\n\nPairwise Comparison\n\\bar{x}_d\nUnadjusted p\nAdjusted p\n\n\n\n\nAlicorn vs. Earth\n12.63\n&lt; 0.001\n&lt; 0.001\n\n\nAlicorn vs. Pegasus\n10.18\n&lt; 0.001\n&lt; 0.001\n\n\nUnicorn vs. Earth\n9.83\n&lt; 0.001\n&lt; 0.001\n\n\nUnicorn vs. Pegasus\n7.38\n&lt; 0.001\n0.001\n\n\nAlicorn vs. Unicorn\n2.80\n0.151\n0.487\n\n\nPegasus vs. Earth\n2.44\n0.227\n0.602"
+    "text": "Posthoc Testing: Tukey’s vs. Fisher’s\n\nComparing the two side-by-side,\n\n\n\n\n\n\n\n\n\n\nPairwise Comparison\n\\(\\bar{x}_d\\)\nUnadjusted \\(p\\)\nAdjusted \\(p\\)\n\n\n\n\nAlicorn vs. Earth\n12.63\n&lt; 0.001\n&lt; 0.001\n\n\nAlicorn vs. Pegasus\n10.18\n&lt; 0.001\n&lt; 0.001\n\n\nUnicorn vs. Earth\n9.83\n&lt; 0.001\n&lt; 0.001\n\n\nUnicorn vs. Pegasus\n7.38\n&lt; 0.001\n0.001\n\n\nAlicorn vs. Unicorn\n2.80\n0.151\n0.487\n\n\nPegasus vs. Earth\n2.44\n0.227\n0.602"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-anova-assumptions",
@@ -1488,21 +1488,21 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "ANOVA Assumptions: Definition",
-    "text": "ANOVA Assumptions: Definition\n\nWe can represent ANOVA with the following model:\n\n y_{ij} = \\mu + \\tau_i + \\varepsilon_{ij} \n\nwhere:\n\ny_{ij} is the j^{\\text{th}} observation in the i^{\\text{th}} group,\n\\mu is the overall (grand) mean,\n\\tau_i is the treatment effect for group i, and\n\\varepsilon_{ij} is the error term for the j^{\\text{th}} observation in the i^{\\text{th}} group."
+    "text": "ANOVA Assumptions: Definition\n\nWe can represent ANOVA with the following model:\n\n\\[ y_{ij} = \\mu + \\tau_i + \\varepsilon_{ij} \\]\n\nwhere:\n\n\\(y_{ij}\\) is the \\(j^{\\text{th}}\\) observation in the \\(i^{\\text{th}}\\) group,\n\\(\\mu\\) is the overall (grand) mean,\n\\(\\tau_i\\) is the treatment effect for group \\(i\\), and\n\\(\\varepsilon_{ij}\\) is the error term for the \\(j^{\\text{th}}\\) observation in the \\(i^{\\text{th}}\\) group."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-definition-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "ANOVA Assumptions: Definition",
-    "text": "ANOVA Assumptions: Definition\n\nWe assume that the error term follows a normal distribution with mean 0 and a constant variance, \\sigma^2. i.e., \\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\nVery important note: the assumption is on the error term and NOT on the outcome!\nWe will use the residual (the difference between the observed value and the predicted value) to assess assumptions:  e_{ij} = y_{ij} - \\hat{y}_{ij}"
+    "text": "ANOVA Assumptions: Definition\n\nWe assume that the error term follows a normal distribution with mean 0 and a constant variance, \\(\\sigma^2\\). i.e., \\[\\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\\]\nVery important note: the assumption is on the error term and NOT on the outcome!\nWe will use the residual (the difference between the observed value and the predicted value) to assess assumptions: \\[ e_{ij} = y_{ij} - \\hat{y}_{ij} \\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "ANOVA Assumptions: Graphical Assessment",
-    "text": "ANOVA Assumptions: Graphical Assessment\n\nNormality: quantile-quantile plot\n\nShould have points close to the 45^\\circ line\nWe will focus on the “center” portion of the plot\n\nVariance: scatterplot of the residuals against the predicted values\n\nShould be “equal spread” between the groups\nNo “pattern”"
+    "text": "ANOVA Assumptions: Graphical Assessment\n\nNormality: quantile-quantile plot\n\nShould have points close to the 45\\(^\\circ\\) line\nWe will focus on the “center” portion of the plot\n\nVariance: scatterplot of the residuals against the predicted values\n\nShould be “equal spread” between the groups\nNo “pattern”"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-graphical-assessment-r",
@@ -1537,7 +1537,7 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-r",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "ANOVA Assumptions: Test for Variance (R)",
-    "text": "ANOVA Assumptions: Test for Variance (R)\n\nWe can formally check the variance assumption with the Brown-Forsythe-Levene test (yes, from Module 1!).\nHypotheses\n\nH_0: \\ \\sigma^2_1 = \\sigma^2_2 = ... = \\sigma^2_k\nH_1: at least one \\sigma^2_i is different.\n\nRecall the variances_HT() function from library(ssstats).\n\n\ndataset_name %&gt;% variances_HT(continuous = continuous_variable,\n                              grouping = grouping_variable)"
+    "text": "ANOVA Assumptions: Test for Variance (R)\n\nWe can formally check the variance assumption with the Brown-Forsythe-Levene test (yes, from Module 1!).\nHypotheses\n\n\\(H_0: \\ \\sigma^2_1 = \\sigma^2_2 = ... = \\sigma^2_k\\)\n\\(H_1:\\) at least one \\(\\sigma^2_i\\) is different.\n\nRecall the variances_HT() function from library(ssstats).\n\n\ndataset_name %&gt;% variances_HT(continuous = continuous_variable,\n                              grouping = grouping_variable)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance",
@@ -1565,28 +1565,28 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#anova-assumptions-test-for-variance-3",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "ANOVA Assumptions: Test for Variance",
-    "text": "ANOVA Assumptions: Test for Variance\n\nHypotheses\n\nH_0: \\ \\sigma^2_{\\text{unicorn}} = \\sigma^2_{\\text{pegasus}} = \\sigma^2_{\\text{earth}} = \\sigma^2_{\\text{alicorn}}\nH_1: at least one \\sigma^2_i is different\n\nTest Statistic and p-Value\n\nF_0 = 0.734; p = 0.906\n\nRejection Region\n\nReject if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that the variances are different (i.e., the variance assumption is not broken)."
+    "text": "ANOVA Assumptions: Test for Variance\n\nHypotheses\n\n\\(H_0: \\ \\sigma^2_{\\text{unicorn}} = \\sigma^2_{\\text{pegasus}} = \\sigma^2_{\\text{earth}} = \\sigma^2_{\\text{alicorn}}\\)\n\\(H_1:\\) at least one \\(\\sigma^2_i\\) is different\n\nTest Statistic and p-Value\n\n\\(F_0 = 0.734\\); \\(p = 0.906\\)\n\nRejection Region\n\nReject if \\(p &lt; \\alpha\\); \\(\\alpha=0.05\\).\n\nConclusion/Interpretation\n\nFail to reject \\(H_0\\). There is not sufficient evidence to suggest that the variances are different (i.e., the variance assumption is not broken)."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-kruskal-wallis",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#introduction-kruskal-wallis",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Introduction: Kruskal-Wallis",
-    "text": "Introduction: Kruskal-Wallis\n\nWe just discussed the ANOVA assumptions.\n\n\\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\n\nWe also discussed how to assess the assumptions:\n\nGraphically using the ANOVA_assumptions() function.\nConfirming the variance assumption using the BFL (variances_HT()).\n\nIf we break either assumption, we will turn to the nonparametric alternative, the Kruskal-Wallis."
+    "text": "Introduction: Kruskal-Wallis\n\nWe just discussed the ANOVA assumptions.\n\n\\[\\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\\]\n\nWe also discussed how to assess the assumptions:\n\nGraphically using the ANOVA_assumptions() function.\nConfirming the variance assumption using the BFL (variances_HT()).\n\nIf we break either assumption, we will turn to the nonparametric alternative, the Kruskal-Wallis."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: Kruskal-Wallis",
-    "text": "Hypothesis Testing: Kruskal-Wallis\n\nIf we break ANOVA assumptions, we should implement the nonparametric version, the Kruskal-Wallis.\n\nThe Kruskal-Wallis is an extension of the Wilcoxon rank sum (as ANOVA is an extension of the two-sample t-test).\n\nThe Kruskal-Wallis test determines if k independent samples come from populations with the same distribution.\nHypotheses\n\nH_0: M_1 = ... = M_k\nH_1: at least one M_i is different"
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nIf we break ANOVA assumptions, we should implement the nonparametric version, the Kruskal-Wallis.\n\nThe Kruskal-Wallis is an extension of the Wilcoxon rank sum (as ANOVA is an extension of the two-sample t-test).\n\nThe Kruskal-Wallis test determines if \\(k\\) independent samples come from populations with the same distribution.\nHypotheses\n\n\\(H_0: M_1 = ... = M_k\\)\n\\(H_1:\\) at least one \\(M_i\\) is different"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: Kruskal-Wallis",
-    "text": "Hypothesis Testing: Kruskal-Wallis\n\nTest Statistic\n\n\\chi^2_0 = \\frac{12}{n(n+1)} \\sum_{i=1}^k \\frac{R_i^2}{n_i} - 3(n+1)  \\sim \\chi^2_{\\text{df}}\n\nwhere\n\nR_i is the sum of the ranks for group i,\nn_i is the sample size for group i,\nn = \\sum_{i=1}^k n_i = total sample size,\nk is the number of groups, and\n\\text{df} = k-1"
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nTest Statistic\n\n\\[\\chi^2_0 = \\frac{12}{n(n+1)} \\sum_{i=1}^k \\frac{R_i^2}{n_i} - 3(n+1)  \\sim \\chi^2_{\\text{df}}\\]\n\nwhere\n\n\\(R_i\\) is the sum of the ranks for group \\(i\\),\n\\(n_i\\) is the sample size for group \\(i\\),\n\\(n = \\sum_{i=1}^k n_i\\) = total sample size,\n\\(k\\) is the number of groups, and\n\\(\\text{df} = k-1\\)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-r",
@@ -1621,14 +1621,14 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-5",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: Kruskal-Wallis",
-    "text": "Hypothesis Testing: Kruskal-Wallis\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Let’s now perform the appropriate hypothesis test. Test at the \\alpha=0.05 level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% kruskal_HT(continuous = continuous_variable,\n                            grouping = grouping_variable,\n                            alpha = specified_alpha)"
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Let’s now perform the appropriate hypothesis test. Test at the \\(\\alpha=0.05\\) level.\nHow should we change the following code?\n\n\ndataset_name %&gt;% kruskal_HT(continuous = continuous_variable,\n                            grouping = grouping_variable,\n                            alpha = specified_alpha)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-6",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-6",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: Kruskal-Wallis",
-    "text": "Hypothesis Testing: Kruskal-Wallis\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Let’s now perform the appropriate hypothesis test. Test at the \\alpha=0.05 level.\nOur updated code,\n\n\nmagical_pulse %&gt;% kruskal_HT(continuous = pulse,\n                             grouping = pony_type)"
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Let’s now perform the appropriate hypothesis test. Test at the \\(\\alpha=0.05\\) level.\nOur updated code,\n\n\nmagical_pulse %&gt;% kruskal_HT(continuous = pulse,\n                             grouping = pony_type)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-7",
@@ -1642,42 +1642,42 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#hypothesis-testing-kruskal-wallis-8",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Hypothesis Testing: Kruskal-Wallis",
-    "text": "Hypothesis Testing: Kruskal-Wallis\n\nHypotheses\n\nH_0: \\ M_{\\text{earth}} = M_{\\text{pegasus}} = M_{\\text{unicorn}}\nH_1: at least one M_i is different\n\nTest Statistic and p-Value\n\n\\chi_0^2 = 10.616; p = 0.005\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nReject H_0 (p \\text{ vs } \\alpha \\to p = 0.005 &lt; 0.05). There is sufficient evidence to suggest that there is a difference in pulse between the pony types."
+    "text": "Hypothesis Testing: Kruskal-Wallis\n\nHypotheses\n\n\\(H_0: \\ M_{\\text{earth}} = M_{\\text{pegasus}} = M_{\\text{unicorn}}\\)\n\\(H_1:\\) at least one \\(M_i\\) is different\n\nTest Statistic and p-Value\n\n\\(\\chi_0^2 = 10.616\\); \\(p = 0.005\\)\n\nRejection Region\n\nReject \\(H_0\\) if \\(p &lt; \\alpha\\); \\(\\alpha=0.05\\).\n\nConclusion/Interpretation\n\nReject \\(H_0\\) (\\(p \\text{ vs } \\alpha \\to p = 0.005 &lt; 0.05\\)). There is sufficient evidence to suggest that there is a difference in pulse between the pony types."
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nWe can also perform posthoc testing in the Kruskal-Wallis setting using Dunn’s test.\n\nRather than compare pairwise means, it compares pairwise average ranks.\n\nHypotheses:\n\nH_0: \\ M_{i} = M_{j}\nH_1: \\ M_{i} \\ne M_{j}\n\nTest Statistic:\n\n\nz_0 = \\frac{|\\bar{R}_i - \\bar{R}_j|}{\\sqrt{ \\frac{n(n+1)}{12} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}"
+    "text": "Posthoc Testing: Dunn’s Test\n\nWe can also perform posthoc testing in the Kruskal-Wallis setting using Dunn’s test.\n\nRather than compare pairwise means, it compares pairwise average ranks.\n\nHypotheses:\n\n\\(H_0: \\ M_{i} = M_{j}\\)\n\\(H_1: \\ M_{i} \\ne M_{j}\\)\n\nTest Statistic:\n\n\\[\nz_0 = \\frac{|\\bar{R}_i - \\bar{R}_j|}{\\sqrt{ \\frac{n(n+1)}{12} \\left( \\frac{1}{n_i} + \\frac{1}{n_j} \\right) }}\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-1",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-1",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\n!! WAIT !! What about adjusting \\alpha?\nThe function we will be using allows us to turn on/off the adjustment for multiple comparison.\nTo adjust the p-value directly,\n\n\np_{\\text{B}} = \\min(p \\times m,\\ 1)\n\n\nThe adjustment can also be made directly to \\alpha (and not p),\n\n\n\\alpha_{\\text{B}} = \\frac{\\alpha}{m}"
+    "text": "Posthoc Testing: Dunn’s Test\n\n!! WAIT !! What about adjusting \\(\\alpha\\)?\nThe function we will be using allows us to turn on/off the adjustment for multiple comparison.\nTo adjust the \\(p\\)-value directly,\n\n\\[\np_{\\text{B}} = \\min(p \\times m,\\ 1)\n\\]\n\nThe adjustment can also be made directly to \\(\\alpha\\) (and not \\(p\\)),\n\n\\[\n\\alpha_{\\text{B}} = \\frac{\\alpha}{m}\n\\]"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-r",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-r",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test (R)",
-    "text": "Posthoc Testing: Dunn’s Test (R)\n\nWe will use the posthoc_dunn() function from library(ssstats) to perform Dunn’s posthoc test.\nWhen we want to adjust \\alpha (Bonferroni):\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE)\n\n\nWhen we do not want to adjust \\alpha:\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = FALSE)"
+    "text": "Posthoc Testing: Dunn’s Test (R)\n\nWe will use the posthoc_dunn() function from library(ssstats) to perform Dunn’s posthoc test.\nWhen we want to adjust \\(\\alpha\\) (Bonferroni):\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE)\n\n\nWhen we do not want to adjust \\(\\alpha\\):\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = FALSE)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-2",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-2",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we are not interested in adjusting for multiple comparisons (this is an exploratory study). How should we change this code?\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE OR FALSE)"
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\(\\alpha=0.05\\) level.\nLet’s now examine posthoc testing. Suppose we are not interested in adjusting for multiple comparisons (this is an exploratory study). How should we change this code?\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE OR FALSE)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-3",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-3",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we are not interested in adjusting for multiple comparisons (this is an exploratory study). Our updated code,\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = FALSE)"
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\(\\alpha=0.05\\) level.\nLet’s now examine posthoc testing. Suppose we are not interested in adjusting for multiple comparisons (this is an exploratory study). Our updated code,\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = FALSE)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-4",
@@ -1691,21 +1691,21 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-5",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nRestating results,\n\nM_{\\text{earth}} \\ne M_{\\text{pegasus}} (p = 0.027)\nM_{\\text{earth}} = M_{\\text{unicorn}} (p = 0.338)\nM_{\\text{pegasus}} \\ne M_{\\text{unicorn}} (p = 0.001)"
+    "text": "Posthoc Testing: Dunn’s Test\n\nRestating results,\n\n\\(M_{\\text{earth}} \\ne M_{\\text{pegasus}}\\) (\\(p = 0.027\\))\n\\(M_{\\text{earth}} = M_{\\text{unicorn}}\\) (\\(p = 0.338\\))\n\\(M_{\\text{pegasus}} \\ne M_{\\text{unicorn}}\\) (\\(p = 0.001\\))"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-6",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-6",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we do want toadjust for multiple comparisons (this is a confirmatory study). How should we change this code?\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE OR FALSE)"
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. at the \\(\\alpha=0.05\\) level.\nLet’s now examine posthoc testing. Suppose we do want toadjust for multiple comparisons (this is a confirmatory study). How should we change this code?\n\n\ndataset_name %&gt;% posthoc_dunn(continuous = continuous_variable,\n                              grouping = grouping_variable,\n                              adjust = TRUE OR FALSE)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-7",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-7",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\alpha=0.05 level.\nLet’s now examine posthoc testing. Suppose we do want toadjust for multiple comparisons (this is a confirmatory study). How should we change this code?\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = TRUE)"
+    "text": "Posthoc Testing: Dunn’s Test\n\nFor each pony, she collects data (magical_pulse) and records the number of magical pulses observed during a one-minute interval (pulse). Twilight suspects that the average number of pulses might differ slightly between groups (pony_type), but she is unsure whether any differences are meaningful. Test at the \\(\\alpha=0.05\\) level.\nLet’s now examine posthoc testing. Suppose we do want toadjust for multiple comparisons (this is a confirmatory study). How should we change this code?\n\n\nmagical_pulse %&gt;% posthoc_dunn(continuous = pulse,\n                               grouping = pony_type,\n                               adjust = TRUE)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-8",
@@ -1719,21 +1719,21 @@
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-9",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nRestating results,\n\nM_{\\text{earth}} \\ne M_{\\text{pegasus}} (p = 0.080)\nM_{\\text{earth}} = M_{\\text{unicorn}} (p = 1)\nM_{\\text{pegasus}} \\ne M_{\\text{unicorn}} (p = 0.004)"
+    "text": "Posthoc Testing: Dunn’s Test\n\nRestating results,\n\n\\(M_{\\text{earth}} \\ne M_{\\text{pegasus}}\\) (\\(p = 0.080\\))\n\\(M_{\\text{earth}} = M_{\\text{unicorn}}\\) (\\(p = 1\\))\n\\(M_{\\text{pegasus}} \\ne M_{\\text{unicorn}}\\) (\\(p = 0.004\\))"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-10",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#posthoc-testing-dunns-test-10",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Posthoc Testing: Dunn’s Test",
-    "text": "Posthoc Testing: Dunn’s Test\n\nComparing the two side by side,\n\n\n\n\nPairwise Comparison\nUnadjusted p\nAdjusted p\n\n\n\n\nEarth vs. Pegasus\n0.027\n0.080\n\n\nEarth vs. Unicorn\n0.338\n1.000\n\n\nPegasus vs. Unicorn\n0.001\n0.004"
+    "text": "Posthoc Testing: Dunn’s Test\n\nComparing the two side by side,\n\n\n\n\nPairwise Comparison\nUnadjusted \\(p\\)\nAdjusted \\(p\\)\n\n\n\n\nEarth vs. Pegasus\n0.027\n0.080\n\n\nEarth vs. Unicorn\n0.338\n1.000\n\n\nPegasus vs. Unicorn\n0.001\n0.004"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up",
     "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up",
     "title": "One-Way ANOVAKruskal-Wallis",
     "section": "Wrap Up",
-    "text": "Wrap Up\n\nToday we have covered one-way ANOVA.\n\nOne-way ANOVA table\nTest for equality among k means\nANOVA assumptions\nNonparametric alternative (Kruskal-Wallis)\nPosthoc testing\n\nTukey’s (ANOVA, ajdusted)\nFisher’s (ANOVA, unadjusted)\nDunn’s (Kruskal-Wallis, adjusted or unadjusted)"
+    "text": "Wrap Up\n\nToday we have covered one-way ANOVA.\n\nOne-way ANOVA table\nTest for equality among \\(k\\) means\nANOVA assumptions\nNonparametric alternative (Kruskal-Wallis)\nPosthoc testing\n\nTukey’s (ANOVA, ajdusted)\nFisher’s (ANOVA, unadjusted)\nDunn’s (Kruskal-Wallis, adjusted or unadjusted)"
   },
   {
     "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html#wrap-up-1",
@@ -2637,5 +2637,579 @@
     "title": "Looking for help?",
     "section": "",
     "text": "How do I typeset a hypothesis test?\n\nHere is a basic template for typesetting hypothesis tests in Quarto: template.qmd\nRemember to update subscripts when you are editing existing code.\n\nDo you need help with your assignment?\n\nDouble check the slides for necessary code. Note that the headers of slides often match language used in the assignments.\nHave you googled the error message you saw?\nHave you asked your classmates (& Dr. Seals) on Discord? Truly, others have the same question, I promise! Do not be afraid to share a screenshot of your code and any corresponding output or error message.\n\nWhy did I lose points?\n\nPlease check the rubric; I try to give enough feedback for you to determine how to fix your assignment.\nIf clarification is still needed, please do not hesitate to come see me during office hours.\n\nIs there tutoring?\n\nNo, there is no University-provided tutoring.\nHowever, my research students are great resources. Please reach out to me if you are interested in hiring one of my students for tutoring."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-topics",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-topics",
+    "title": "Two-Way ANOVA",
+    "section": "Introduction: Topics",
+    "text": "Introduction: Topics\n\nPrevious:\n\nOne-way ANOVA\nKruskal-Wallis\nPosthoc testing\n\nRecall that ANOVA allows us to compare the means of three or more groups.\nIn one-way ANOVA, we are only considering one factor (grouping variable).\nNow, we will discuss two-way ANOVA, which allows us to consider a second factor (grouping variable).\nWe now partition the SSTrt into the different factors under consideration.\nRecall that SSE is the “catch all” for unexplained variance.\n\nWhen we add factors to our model, we are moving part of the SSE into the SSTrt."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova",
+    "title": "Two-Way ANOVA",
+    "section": "Introduction: Two-Way ANOVA",
+    "text": "Introduction: Two-Way ANOVA\n\nRecall that ANOVA allows us to compare the means of three or more groups.\nIn one-way ANOVA, we are only considering one factor (grouping variable).\nNow, we will discuss two-way ANOVA, which allows us to consider a second factor (grouping variable).\nWe now partition the SSTrt into the different factors under consideration.\nRecall that SSE is the “catch all” for unexplained variance.\n\nWhen we add factors to our model, we are moving part of the SSE into the SSTrt."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova-1",
+    "title": "Two-Way ANOVA",
+    "section": "Introduction: Two-Way ANOVA",
+    "text": "Introduction: Two-Way ANOVA\n\nLet’s discuss some of the language used in two-way ANOVA.\nFactor A has a levels.\n\nPony type: earth, pegasus, unicorn\n\nFactor B has b levels.\n\nPreferred apple: honeycrisp, granny\n\nThere are ab treatment groups."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova-2",
+    "title": "Two-Way ANOVA",
+    "section": "Introduction: Two-Way ANOVA",
+    "text": "Introduction: Two-Way ANOVA\n\nNow that we are including two factors, we must consider the interaction term.\n\nThe relationship between [outcome] and [factor 1] depends on the level of [factor 2].\n\nIn our example, suppose Pinkie Pie is testing a new apple pie recipe and has ponies taste then rate the new recipe,\n\nthe relationship between rating and preferred apple depends on the pony type.\nthe relationship between rating and pony type depends on the preferred apple."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#computation",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#computation",
+    "title": "Two-Way ANOVA",
+    "section": "Computation",
+    "text": "Computation\n\nLet there be a levels of factor A and b levels of factor B.\n\ny_{ijk} is the observation on the k^{th} experimental unit receiving the i^{th} level of factor A and the j^{th} level of factor B\ny_{i.} is the sum for all observations at the i^{th} level of factor A,\ny_{.j} is the sum for all observations at the j^{th} level of factor B,\ny_{ij} is the sum for observations at the i^{th} level of factor A and the j^{th} level of factor B,\ny_{..} is the sum of all observations,\n(y^2)_{..} is the sum of the squared observations,\nn is the number in each group (of a \\times b treatments)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#computation-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#computation-1",
+    "title": "Two-Way ANOVA",
+    "section": "Computation",
+    "text": "Computation\n\nTo find the SS and df: \n\\begin{align*}\n\\text{SS}_{\\text{A}} &= \\frac{\\sum_i y_{i.}^2}{bn}  - \\frac{(y_{..})^2}{abn} & \\text{df}_{\\text{A}} &= a-1 \\\\\n\\text{SS}_{\\text{B}} &= \\frac{\\sum_j y_{.j}^2}{an} - \\frac{(y_{..})^2}{abn} & \\text{df}_{\\text{B}} &= b-1 \\\\\n\\text{SS}_{\\text{AB}}&= \\frac{\\sum_{ij} y_{ij}^2}{n} - \\frac{(y_{..})^2}{abn} - \\text{SS}_{\\text{A}} - \\text{SS}_{\\text{B}} & \\text{df}_{\\text{AB}} &= (a-1)(b-1) \\\\\n\\text{SS}_{\\text{E}} &= \\text{SS}_{\\text{Tot}} - \\text{SS}_{\\text{A}} - \\text{SS}_{\\text{B}} - \\text{SS}_{\\text{AB}} & \\text{df}_{\\text{E}} &= ab(n-1)  \\\\\n\\text{SS}_{\\text{Tot}} &= (y^2)_{..} - \\frac{(y_{..})^2}{abn} & \\text{df}_{\\text{Tot}} &= abn-1\n\\end{align*}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#computation-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#computation-2",
+    "title": "Two-Way ANOVA",
+    "section": "Computation",
+    "text": "Computation\n\nTo find the MS:\n\n\\text{MS}_{\\text{X}} = \\frac{\\text{SS}_{\\text{X}}}{\\text{df}_{\\text{X}}}\n\nTo find the test statistic:\n\n\\text{F}_{\\text{X}} = \\frac{\\text{MS}_{\\text{X}}}{\\text{MS}_{\\text{E}}}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#r-syntax",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#r-syntax",
+    "title": "Two-Way ANOVA",
+    "section": "R Syntax",
+    "text": "R Syntax\n\nWe will again use lm() and anova() OR aov() and summary() to analyze the data.\n\nFor reasons covered in one-way ANOVA, we will focus on using aov().\n\nAs we are specifying our model, we will:\n\ninclude additional terms with +\ninclude interaction terms with :\n\n\n\nm &lt;- aov(continuous_variable ~ factor_A + factor_B + factor_A:factor_B,\n         data = dataset_name)\nsummary(m)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nHypotheses\n\nH_0: there is not an interaction between pony type and study setting\nH_1: there is an interaction between pony type and study setting\n\nTest Statistic and p-Value\n\nF_{\\text{AB}} = 52.45; p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p&lt;\\alpha; \\alpha=0.01.\n\nConclusion/Interpretation\n\nReject H_0. There is sufficient evidence to suggest that the relationship between grades and study setting depends on pony type."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-1",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s now remove the interaction between diet and maternal age.\n\n\n#m &lt;- aov(birthweight ~ diet + age + diet:age, data = example)\nm &lt;- aov(birthweight ~ diet + age, data = example)\n\nError in as.data.frame.default(data, optional = TRUE): cannot coerce class '\"function\"' to a data.frame\n\nsummary(m)\n\nError: object 'm' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-2",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\ngrades %&gt;% two_way_ANOVA_table(continuous = grade,\n                               A = type,\n                               B = setting,\n                               interaction = FALSE)\n\nError in two_way_ANOVA_table(., continuous = grade, A = type, B = setting, : could not find function \"two_way_ANOVA_table\""
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-interactions",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-interactions",
+    "title": "Two-Way ANOVA",
+    "section": "Testing Interactions",
+    "text": "Testing Interactions\n\nWhat happens after testing for an interaction?\n\nIf significant (reject H_0), we can:\n\nConstruct a profile plot to visualize what’s going on and help explain the effect.\nExamine posthoc testing to further examine the interaction.\n\nIf not significant (FTR H_0), we should remove the interaction term so that we can test and interpret the main effects.\n\nRemember that we cannot look at main effects (A and B alone) when the interaction is included in the model!"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-3",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-3",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\ngrades %&gt;% two_way_ANOVA_HT(continuous = grade,\n                            A = type,\n                            B = setting,\n                            interaction = FALSE)\n\nError in two_way_ANOVA_HT(., continuous = grade, A = type, B = setting, : could not find function \"two_way_ANOVA_HT\""
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-4",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-4",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nHypotheses\n\nH_0: there is not a main effect of diet (\\mu_1 = \\mu_2 = \\mu_3)\nH_1: there is a main effect of diet (at least one \\mu_i is different)\n\nTest Statistic and p-Value\n\nF_{\\text{diet}} = 8.646\np = 0.004\n\nRejection Region\n\nReject H_0 if p&lt;\\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nReject H_0. There is sufficient evidence to suggest that at least one diet reults in a different birth weight."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-interactions-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-interactions-1",
+    "title": "Two-Way ANOVA",
+    "section": "Testing Interactions",
+    "text": "Testing Interactions\n\nWhat happens after testing for an interaction?\n\nIf significant (reject H_0), we can:\n\nConstruct a profile plot to visualize what’s going on and help explain the effect.\nExamine posthoc testing to further examine the interaction.\n\nIf not significant (FTR H_0), we should remove the interaction term so that we can test and interpret the main effects.\n\nRemember that we cannot look at main effects (A and B alone) when the interaction is included in the model!"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#removing-interactions",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#removing-interactions",
+    "title": "Two-Way ANOVA",
+    "section": "Removing Interactions",
+    "text": "Removing Interactions\n\nIf the interaction term is not significant, it should be removed from the ANOVA table so that we can test and interpret the main effects.\nHow to remove an interaction:\n\nRewrite ANOVA table without interaction; do not change SS, df, and MS for the main effects and total.\nUpdate the error term: add the SS_{\\text{AB}} to SS_{\\text{E}} and df_{\\text{AB}} to df_{\\text{E}}.\nRecalculate MS_{\\text{E}}.\nRecalculate F statistics for the main effects and perform appropriate hypothesis tests.\n\nIn R, we just literally remove the interaction term.\n\n\nm &lt;- aov(continuous_variable ~ factor_A + factor_B,\n         data = dataset_name)\nsummary(m)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-5",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-5",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nHypotheses\n\nH_0: there is not a main effect of age (\\mu_1 = \\mu_2)\nH_1: there is a main effect of age (\\mu_1 \\ne \\mu_2)\n\nTest Statistic and p-Value\n\nF_{\\text{age}} = 2.728\np = 0.121\n\nRejection Region\n\nReject H_0 if p&lt;\\alpha; \\alpha=0.05.\n\nConclusion/Interpretation\n\nFail to reject H_0. There is not sufficient evidence to suggest that there is a difference in birth weights across the age groups."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-main-effects",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-main-effects",
+    "title": "Two-Way ANOVA",
+    "section": "Testing Main Effects",
+    "text": "Testing Main Effects\n\nNow that we have removed the interaction term, we can test for main effects.\nHypotheses\n\nH_0: there is not a main effect of [factor X]\nH_1: there not a main effect of [factor X]\n\nTest Statistic and p-Value\n\nF_{\\text{X}} (pull from ANOVA table)\np = P[F_{\\text{df}_{\\text{X}}, \\text{df}_{\\text{E}}} \\ge F_{\\text{X}}]\n\nRejection Region\n\nReject H_0 if p&lt;\\alpha."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-main-effects-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#testing-main-effects-1",
+    "title": "Two-Way ANOVA",
+    "section": "Testing Main Effects",
+    "text": "Testing Main Effects\n\nA note on hypotheses – we are writing them in sentence form here, however, we can write them mathematically.\nFor Factor A with a levels,\n\nH_0: \\mu_1 = \\mu_2 = ... = \\mu_a\nH_1: at least one is different\n\nFor Factor B with b levels,\n\nH_0: \\mu_1 = \\mu_2 = ... = \\mu_b\nH_1: at least one is different"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-6",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-6",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s first find the treatment means for the birth weight data,\n\n\nmeans &lt;- example %&gt;%\n  group_by(diet, age) %&gt;%\n  summarize(mean = mean(birthweight)) %&gt;%\n  ungroup()\n\nError in UseMethod(\"group_by\"): no applicable method for 'group_by' applied to an object of class \"function\"\n\nhead(means)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-7",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-7",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nThe average birth weight will go on our y-axis.\nBecause only maternal age is ordinal, it will go on our x-axis.\nThus, the lines will represent the diet\n\nThis means I want to restructure the dataset with the means to have a column for each of the diets\n\n\n\nA &lt;- means %&gt;% filter(diet == 1) %&gt;% rename(d1 = mean) %&gt;% select(-diet)\n\nError in `filter()`:\nℹ In argument: `diet == 1`.\nCaused by error:\n! object 'diet' not found\n\nB &lt;- means %&gt;% filter(diet == 2) %&gt;% rename(d2 = mean) %&gt;% select(-diet)\n\nError in `filter()`:\nℹ In argument: `diet == 2`.\nCaused by error:\n! object 'diet' not found\n\nC &lt;- means %&gt;% filter(diet == 3) %&gt;% rename(d3 = mean) %&gt;% select(-diet)\n\nError in `filter()`:\nℹ In argument: `diet == 3`.\nCaused by error:\n! object 'diet' not found\n\ngraph &lt;- full_join(A, B, by = \"age\")\n\nError: object 'A' not found\n\ngraph &lt;- full_join(graph, C, by = \"age\")\n\nError: object 'graph' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-8",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-8",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\ngraph\n\nError: object 'graph' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-beyond-the-f-test",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-beyond-the-f-test",
+    "title": "Two-Way ANOVA",
+    "section": "Introduction: Beyond the F Test",
+    "text": "Introduction: Beyond the F Test\n\nIn this lecture, we are discussing two-way ANOVA.\nSo far, we have learned how to:\n\nCreate an ANOVA model with an interaction term\nTest the interaction term\nCreate an ANOVA model without an interaction term\nTest the main effects\n\nNow we will learn how to best communicate results, whether it’s the resulting interaction term or main effects."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#profile-plots",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#profile-plots",
+    "title": "Two-Way ANOVA",
+    "section": "Profile Plots",
+    "text": "Profile Plots\n\nIf we detect an interaction term, we must give meaning to it.\nAn easy way to do this is to plot the treatment group means to visualize the interaction. This is called a profile plot.\n\ny-axis: always the average outcome\nx-axis: either factor A or B\n\nif only one factor is ordinal, use it for the x-axis\nif there are two ordinal or two nominal factors, select the factor with the largest number of levels for the x-axis\n\nlines on the plot: the factor that was not selected for the x-axis\n\nNote that this is just a graph of the means – it’s valid to construct a profile plot even if the interaction is not sigificant."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-9",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-9",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nBuilding profile plots using ggplot() is a process.\n\nFirst, include a geom_line() for each level of the factor creating the lines.\n\n\n\ngraph %&gt;% \n  ggplot(aes(x = age, group = 1)) +\n  geom_line(aes(y = d1), color = \"pink\") + # diet 1\n  geom_line(aes(y = d2), color = \"purple\") + # diet 2\n  geom_line(aes(y = d3), color = \"blue\") + # diet 3\n  theme_bw()"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-10",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-10",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nBuilding profile plots using ggplot() is a process.\n\nFirst, include a geom_line() for each level of the factor creating the lines.\n\n\n\n\n\nError: object 'graph' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-11",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-11",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nBuilding profile plots using ggplot() is a process.\n\nThen, add geom_text() to label each line (use the line colors to make sure everything is labeled properly).\n\n\n\ngraph %&gt;% \n  ggplot(aes(x = age, group = 1)) +\n  geom_line(aes(y = d1), color = \"pink\") + # diet 1\n  geom_line(aes(y = d2), color = \"purple\") + # diet 2\n  geom_line(aes(y = d3), color = \"blue\") + # diet 3 \n  geom_text(aes(x = \"30\" , y = 137, label = \"Diet 1\"), color = \"pink\")  + # diet 1\n  geom_text(aes(x = \"30\" , y = 115, label = \"Diet 2\"), color = \"purple\")  + # diet 2\n  geom_text(aes(x = \"30\" , y = 110, label = \"Diet 3\"), color = \"blue\")  + # diet 3\n  theme_bw()"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-12",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-12",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nBuilding profile plots using ggplot() is a process.\n\nThen, add geom_text() to label each line (use the line colors to make sure everything is labeled properly).\n\n\n\n\n\nError: object 'graph' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-13",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-13",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nBuilding profile plots using ggplot() is a process.\n\nThen, clean up time: fix axis titles and change line colors to black*\n\n\n\ngraph %&gt;% \n  ggplot(aes(x = age, group = 1)) +\n  geom_line(aes(y = d1), color = \"black\") + # diet 1\n  geom_line(aes(y = d2), color = \"black\") + # diet 2\n  geom_line(aes(y = d3), color = \"black\") + # diet 3+ \n  geom_text(aes(x = \"30\" , y = 137, label = \"Diet 1\"), color = \"black\")  + # diet 1\n  geom_text(aes(x = \"30\" , y = 115, label = \"Diet 2\"), color = \"black\")  + # diet 2\n  geom_text(aes(x = \"30\" , y = 110, label = \"Diet 3\"), color = \"black\")  + # diet 3\n  labs(x = \"Maternal Age\",\n       y = \"Average Birth Weight\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-14",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-14",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\n\n\nError: object 'graph' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-15",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-15",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s apply Tukey’s to the model with the interaction term.\n\nImportant!! Remember that we are only doing this for illustration purposes - we should not perform posthoc testing on something non-significant.\n\n\n\nm &lt;- aov(birthweight ~ diet + age + diet:age, data = example)\n\nError in as.data.frame.default(data, optional = TRUE): cannot coerce class '\"function\"' to a data.frame\n\nTukeyHSD(m)$\"diet:age\"\n\nError: object 'm' not found"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-16",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-16",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s apply Tukey’s to the model without the interaction term.\n\n\nm &lt;- aov(birthweight ~ diet + age, data = example)\n\nError in as.data.frame.default(data, optional = TRUE): cannot coerce class '\"function\"' to a data.frame\n\nTukeyHSD(m)$diet\n\nError: object 'm' not found\n\n\n\nWhich diets are significantly different? Use \\alpha=0.05."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-17",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-17",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s apply Tukey’s to the model without the interaction term.\n\n\nm &lt;- aov(birthweight ~ diet + age, data = example)\n\nError in as.data.frame.default(data, optional = TRUE): cannot coerce class '\"function\"' to a data.frame\n\nTukeyHSD(m)$diet\n\nError: object 'm' not found\n\n\n\nWhich diets are significantly different? Use \\alpha=0.05."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#posthoc-tests",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#posthoc-tests",
+    "title": "Two-Way ANOVA",
+    "section": "Posthoc Tests",
+    "text": "Posthoc Tests\n\nWe can also apply posthoc testing to two-way ANOVA.\n\nIf the interaction is significant, we can compare all treatment groups.\nIf the interaction is not significant, we can look at the main effects.\n\nFor simplicity, we will only look at Tukey’s and Fisher’s.\nWhat is the difference between Tukey’s and Fisher’s?"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-18",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-18",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s apply Tukey’s to the model with the interaction term.\n\nImportant!! Remember that we are only doing this for illustration purposes - we should not perform posthoc testing on something non-significant.\n\n\n\nm &lt;- aov(birthweight ~ diet + age + diet:age, data = example)\nTukeyHSD(m)$\"diet:age\"\n\n                diff       lwr       upr      p adj\n2:20-1:20 -17.026667 -49.39499 15.341659 0.51846118\n3:20-1:20 -24.983333 -57.35166  7.384992 0.17257865\n1:30-1:20  -6.596667 -38.96499 25.771659 0.98037295\n2:30-1:20 -29.416667 -61.78499  2.951659 0.08309462\n3:30-1:20 -31.766667 -64.13499  0.601659 0.05550164\n3:20-2:20  -7.956667 -40.32499 24.411659 0.95688090\n1:30-2:20  10.430000 -21.93833 42.798326 0.87931551\n2:30-2:20 -12.390000 -44.75833 19.978326 0.78717713\n3:30-2:20 -14.740000 -47.10833 17.628326 0.65386678\n1:30-3:20  18.386667 -13.98166 50.754992 0.44210449\n2:30-3:20  -4.433333 -36.80166 27.934992 0.99674874\n3:30-3:20  -6.783333 -39.15166 25.584992 0.97786517\n2:30-1:30 -22.820000 -55.18833  9.548326 0.24087234\n3:30-1:30 -25.170000 -57.53833  7.198326 0.16754036\n3:30-2:30  -2.350000 -34.71833 30.018326 0.99984711"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-19",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#example-19",
+    "title": "Two-Way ANOVA",
+    "section": "Example",
+    "text": "Example\n\nLet’s apply Tukey’s to the model without the interaction term.\n\n\nm &lt;- aov(birthweight ~ diet + age, data = example)\nTukeyHSD(m)$diet\n\n          diff       lwr       upr      p adj\n2-1 -19.923333 -36.59450 -3.252169 0.01902981\n3-1 -25.076667 -41.74783 -8.405502 0.00397944\n3-2  -5.153333 -21.82450 11.517831 0.70372399\n\n\n\nWhich diets are significantly different? Use \\alpha=0.05."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#wrap-up",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#wrap-up",
+    "title": "Two-Way ANOVA",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nToday we have covered two-way ANOVA.\n\nTwo-way ANOVA table\nTesting interactions\nTesting main effects (only when interaction is not present)\nProfile plot (plot of group means)\nANOVA assumptions\n\nNote about nonparametric two-way ANOVA.\n\nMethodology is “newish” - we are not covering.\n\nThursday: Assignment 2"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova-3",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#introduction-two-way-anova-3",
+    "title": "Two-Way ANOVA",
+    "section": "Introduction: Two-Way ANOVA",
+    "text": "Introduction: Two-Way ANOVA\n\nThe ANOVA table that we are working to construct:\n\n\n\n\n\n\n\n\n\n\n\nSource\nSum of Squares\ndf\nMean Square\nF\n\n\n\n\nA\nSSA\ndfA\nMSA\nFA\n\n\nB\nSSB\ndfB\nMSB\nFB\n\n\nAB\nSSAB\ndfAB\nMSAB\nFAB\n\n\nError\nSSE\ndfE\nMSE\n\n\n\nTotal\nSSTot\ndfTot"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-computation",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-computation",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Computation",
+    "text": "Two-Way ANOVA: Computation\n\nLet there be a levels of factor A and b levels of factor B.\n\ny_{ijk} is the observation on the k^{th} experimental unit receiving the i^{th} level of factor A and the j^{th} level of factor B\ny_{i.} is the sum for all observations at the i^{th} level of factor A,\ny_{.j} is the sum for all observations at the j^{th} level of factor B,\ny_{ij} is the sum for observations at the i^{th} level of factor A and the j^{th} level of factor B,\ny_{..} is the sum of all observations,\n(y^2)_{..} is the sum of the squared observations,\nn is the number in each group (of a \\times b treatments)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-computation-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-computation-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Computation",
+    "text": "Two-Way ANOVA: Computation\n\nTo find the SS and df: \n\\begin{align*}\n\\text{SS}_{\\text{A}} &= \\frac{\\sum_i y_{i.}^2}{bn}  - \\frac{(y_{..})^2}{abn} & \\text{df}_{\\text{A}} &= a-1 \\\\\n\\text{SS}_{\\text{B}} &= \\frac{\\sum_j y_{.j}^2}{an} - \\frac{(y_{..})^2}{abn} & \\text{df}_{\\text{B}} &= b-1 \\\\\n\\text{SS}_{\\text{AB}}&= \\frac{\\sum_{ij} y_{ij}^2}{n} - \\frac{(y_{..})^2}{abn} - \\text{SS}_{\\text{A}} - \\text{SS}_{\\text{B}} & \\text{df}_{\\text{AB}} &= (a-1)(b-1) \\\\\n\\text{SS}_{\\text{E}} &= \\text{SS}_{\\text{Tot}} - \\text{SS}_{\\text{A}} - \\text{SS}_{\\text{B}} - \\text{SS}_{\\text{AB}} & \\text{df}_{\\text{E}} &= ab(n-1)  \\\\\n\\text{SS}_{\\text{Tot}} &= (y^2)_{..} - \\frac{(y_{..})^2}{abn} & \\text{df}_{\\text{Tot}} &= abn-1\n\\end{align*}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-computation-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-computation-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Computation",
+    "text": "Two-Way ANOVA: Computation\n\nTo find the MS:\n\n\\text{MS}_{\\text{X}} = \\frac{\\text{SS}_{\\text{X}}}{\\text{df}_{\\text{X}}}\n\nTo find the test statistic:\n\n\\text{F}_{\\text{X}} = \\frac{\\text{MS}_{\\text{X}}}{\\text{MS}_{\\text{E}}}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table-r",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table-r",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: ANOVA Table (R)",
+    "text": "Two-Way ANOVA: ANOVA Table (R)\n\nWe will use the two_way_ANOVA_table() function from library(ssstats) to construct the two-way ANOVA table.\n\n\ndataset_name %&gt;% two_way_ANOVA_table(continuous = continuous_variable,\n                                     A = factor_A,\n                                     B = factor_B)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-example-set-up",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-example-set-up",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Example Set Up",
+    "text": "Two-Way ANOVA: Example Set Up\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale):\n\nPony Type (type; different innate talents and study habits): earth, pegasus, unicorn\nStudy Setting (setting; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe\n\n\n\n\n# A tibble: 3 × 4\n  type    variable mean_sd    median_iqr \n  &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;      \n1 Earth   grade    79.3 (5.4) 79.3 (6.8) \n2 Pegasus grade    79.7 (7.1) 79.8 (11.4)\n3 Unicorn grade    84.6 (6.6) 84.0 (11.2)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: ANOVA Table",
+    "text": "Two-Way ANOVA: ANOVA Table\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale):\n\nPony Type (type; different innate talents and study habits): earth, pegasus, unicorn\nStudy Setting (setting; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe\n\nLet’s construct the two-way ANOVA table. How should we change the following code?\n\n\ndataset_name %&gt;% two_way_ANOVA_table(continuous = continuous_variable,\n                                     A = factor_A,\n                                     B = factor_B)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-example-set-up-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-example-set-up-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Example Set Up",
+    "text": "Two-Way ANOVA: Example Set Up\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering”(data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale):\n\nPony Type (type; different innate talents and study habits): earth, pegasus, unicorn\nStudy Setting (setting; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe\n\n\n\n\n# A tibble: 2 × 4\n  setting variable mean_sd    median_iqr \n  &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;      \n1 Cafe    grade    81.9 (5.5) 82.3 (8.8) \n2 Library grade    80.5 (7.8) 79.4 (10.7)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-example-set-up-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-example-set-up-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Example Set Up",
+    "text": "Two-Way ANOVA: Example Set Up\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering.” Researchers want to know how two factors influence the overall grade (percentage scale), pony type and study setting.\n\n\n\n# A tibble: 6 × 5\n  type    setting variable mean_sd    median_iqr\n  &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;     \n1 Earth   Cafe    grade    80.4 (5.5) 80.5 (7.1)\n2 Earth   Library grade    78.2 (5.0) 78.2 (6.6)\n3 Pegasus Cafe    grade    84.7 (5.1) 84.8 (6.3)\n4 Pegasus Library grade    74.8 (5.0) 73.5 (5.7)\n5 Unicorn Cafe    grade    80.6 (5.0) 80.6 (7.7)\n6 Unicorn Library grade    88.6 (5.5) 89.2 (7.9)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: ANOVA Table",
+    "text": "Two-Way ANOVA: ANOVA Table\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale):\n\nPony Type (type; different innate talents and study habits): earth, pegasus, unicorn\nStudy Setting (setting; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe\n\nLet’s construct the two-way ANOVA table. Our updated code:\n\n\ngrades %&gt;% two_way_ANOVA_table(continuous = grade,\n                               A = type,\n                               B = setting)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-anova-table-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: ANOVA Table",
+    "text": "Two-Way ANOVA: ANOVA Table\n\nRunning the code:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTwo-Way ANOVA Table\n\n\nSource\nSum of Squares\ndf\nMean Squares\nF\np\n\n\n\n\nRegression\n4158.61\n5\n\n\n\n\n\n\n\n•type\n1225.90\n2\n612.95\n22.67\n&lt; 0.001\n\n\n•setting\n96.56\n1\n96.56\n3.57\n0.060\n\n\n•Interaction\n2836.14\n2\n1418.07\n52.45\n&lt; 0.001\n\n\nError\n5515.86\n204\n27.04\n\n\n\n\n\nTotal\n9674.47\n209"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Interactions",
+    "text": "Two-Way ANOVA: Testing Interactions\n\nHypotheses\n\nH_0: there is not an interaction between [factor A] and [factor B]\nH_1: there is an interaction between [factor A] and [factor B]\n\nTest Statistic and p-Value\n\nF_{\\text{AB}}\np = P[F_{\\text{df}_{\\text{AB}}, \\text{df}_{\\text{E}}} \\ge F_{\\text{AB}}]\n\nRejection Region\n\nReject H_0 if p&lt;\\alpha."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-r",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-r",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Interactions (R)",
+    "text": "Two-Way ANOVA: Testing Interactions (R)\n\nWe will use the two_way_ANOVA_HT() function from library(ssstats) to perform the test for the interaction.\n\n\ndataset_name %&gt;% two_way_ANOVA_HT(continuous = continuous_variable,\n                                  A = factor_A,\n                                  B = factor_B,\n                                  interaction = TRUE,\n                                  alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Interactions",
+    "text": "Two-Way ANOVA: Testing Interactions\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale):\n\nPony Type (type; different innate talents and study habits): earth, pegasus, unicorn\nStudy Setting (setting; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe\n\nDetermine if there is an interaction between pony type and study setting. Test at the \\alpha=0.01 level.\nHow should we update the following code?\n\n\ndataset_name %&gt;% two_way_ANOVA_HT(continuous = continuous_variable,\n                                  A = factor_A,\n                                  B = factor_B,\n                                  interaction = TRUE,\n                                  alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Interactions",
+    "text": "Two-Way ANOVA: Testing Interactions\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale):\n\nPony Type (type; different innate talents and study habits): earth, pegasus, unicorn\nStudy Setting (setting; varied levels of background stimulation): Quiet Library or Sugarcube Corner Cafe\n\nDetermine if there is an interaction between pony type and study setting. Test at the \\alpha=0.01 level.\nOur updated code,\n\n\ngrades %&gt;% two_way_ANOVA_HT(continuous = grade,\n                            A = type,\n                            B = setting,\n                            interaction = TRUE,\n                            alpha = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-3",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-3",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Interactions",
+    "text": "Two-Way ANOVA: Testing Interactions\n\nRunning the code,\n\n\ngrades %&gt;% two_way_ANOVA(continuous = grade,\n                         A = type,\n                         B = setting,\n                         interaction = TRUE,\n                         alpha = 0.01)\n\nTest for Interaction (type × setting):\n\nH₀: The relationship between grade and type does not depend on setting.\nH₁: The relationship between grade and type depends on setting.\nTest Statistic: F(2, 204) = 52.45\np-value: p = &lt; 0.001\nConclusion: Reject the null hypothesis (p = &lt; 0.001 &lt; α = 0.01)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-4",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-interactions-4",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Interactions",
+    "text": "Two-Way ANOVA: Testing Interactions\n\nHypotheses\n\nH_0: there is not an interaction between pony type and study setting\nH_1: there is an interaction between pony type and study setting\n\nTest Statistic and p-Value\n\nF_{\\text{AB}} = 52.45; p &lt; 0.001\n\nRejection Region\n\nReject H_0 if p&lt;\\alpha; \\alpha=0.01.\n\nConclusion/Interpretation\n\nReject H_0. There is sufficient evidence to suggest that the relationship between grades and study setting depends on pony type."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Profile Plots",
+    "text": "Two-Way ANOVA: Profile Plots\n\nWhat happens after testing for an interaction?\n\nIf significant (reject H_0), we can construct a profile plot to visualize what’s going on and help explain the effect.\nIf not significant (FTR H_0)… stay tuned.\n\nProfile plot: a plot of treatment group means.\n\ny-axis: always the average outcome\nx-axis: either factor A or B\nlines on the plot: the factor that was not selected for the x-axis\n\nNote that this is just a graph of the means! It’s valid to construct a profile plot even if the interaction is not sigificant."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-r",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-r",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Profile Plots (R)",
+    "text": "Two-Way ANOVA: Profile Plots (R)\n\nWe will use the profile_plot() function from library(ssstats) to construct basic profile plots.\n\n\ndataset_name %&gt;% profile_plot(continuous = continuous_variable,\n                              xaxis = variable_on_x,\n                              lines = variable_for_lines)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Profile Plots",
+    "text": "Two-Way ANOVA: Profile Plots\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale).\nLet’s now construct the profile plot with pony type (type) on the x-axis and create the lines using study setting (setting).\nHow should we update this code?\n\n\ndataset_name %&gt;% profile_plot(continuous = continuous_variable,\n                              xaxis = variable_on_x,\n                              lines = variable_for_lines)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Profile Plots",
+    "text": "Two-Way ANOVA: Profile Plots\n\nAt Friendship University, college-aged ponies enroll in the introductory STEM course “Applied Equestrian Engineering” (data is collected in grades). Researchers want to know how two factors influence the overall grade (percentage scale).\nLet’s now construct the profile plot with pony type (type) on the x-axis and create the lines using study setting (setting).\nOur updated code,\n\n\ngrades %&gt;% profile_plot(continuous = grade,\n                        xaxis = type,\n                        lines = setting)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-3",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-3",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Profile Plots",
+    "text": "Two-Way ANOVA: Profile Plots\n\nRunning the code,\n\n\n\ngrades %&gt;% profile_plot(continuous = grade,\n                        xaxis = type,\n                        lines = setting)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-4",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-profile-plots-4",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Profile Plots",
+    "text": "Two-Way ANOVA: Profile Plots\n\nWhat happens if we switch xaxis and lines?\n\n\n\ngrades %&gt;% profile_plot(continuous = grade,\n                        xaxis = setting,\n                        lines = type)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nWhat if the interaction is not significant?\n\nWe want to remove the interaction and examine the main effects.\nThat is, we want to look at the individual factors.\n\nWe will reconstruct the ANOVA table. If we were doing this by hand:\n\nRewrite ANOVA table without interaction; do not change SS, df, and MS for the main effects and total.\nUpdate the error term: add the SSAB to SSE and dfAB to dfE.\nRecalculate MSE.\nRecalculate FA and FB, then find the corresponding p-values."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-r",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-r",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects (R)",
+    "text": "Two-Way ANOVA: Testing Main Effects (R)\n\nWe will use the two_way_ANOVA() function from library(ssstats) to perform the test for main effects.\n\n\ndataset_name %&gt;% two_way_ANOVA(continuous = continuous_variable,\n                               A = factor_A,\n                               B = factor_B,\n                               interaction = FALSE,\n                               alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study).\nResearchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nLet’s first check for an interaction (\\alpha=0.05). How should we change the following code?\n\n\ndataset_name %&gt;% two_way_ANOVA(continuous = continuous_variable,\n                               A = factor_A,\n                               B = factor_B,\n                               interaction = TRUE or FALSE,\n                               alpha = specified_alpha)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study).\nResearchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nLet’s first check for an interaction (\\alpha=0.05). Our updated code,\n\n\nquiz_scores %&gt;% two_way_ANOVA(continuous = score,\n                              A = club,\n                              B = study,\n                              interaction = TRUE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-3",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-3",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nRunning the code,\n\n\nquiz_scores %&gt;% two_way_ANOVA(continuous = score,\n                              A = club,\n                              B = study,\n                              interaction = TRUE)\n\nTest for Interaction (club × study):\n\nH₀: The relationship between score and club does not depend on study.\nH₁: The relationship between score and club depends on study.\nTest Statistic: F(1, 116) = 0\np-value: p = 0.966\nConclusion: Fail to reject the null hypothesis (p = 0.9656 ≥ α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-4",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-4",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study).\nResearchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nNow let’s remove the interaction. How should we update our code?\n\n\nquiz_scores %&gt;% two_way_ANOVA(continuous = score,\n                              A = club,\n                              B = study,\n                              interaction = TRUE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-5",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-5",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study).\nResearchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nNow let’s remove the interaction. Our updated code,\n\n\nquiz_scores %&gt;% two_way_ANOVA(continuous = score,\n                              A = club,\n                              B = study,\n                              interaction = FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-6",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-6",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nHypotheses\n\nH_0: \\mu_1 = \\mu_2 = … = (\\mu_a or \\mu_b)\nH_1: At least one \\mu_i is different.\n\nTest Statistic and p-Value\n\nF_{\\text{X}} (pull from ANOVA table)\np = P[F_{\\text{df}_{\\text{X}}, \\text{df}_{\\text{E}}} \\ge F_{\\text{X}}]"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-7",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-7",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nRunning the code,\n\n\n\nTest for Main Effect club:\n\nH₀: μ_Club = μ_No Club\nH₁: At least one mean is different.\nTest Statistic: F(1, 117) = 11.19\np-value: p = 0.001\nConclusion: Reject the null hypothesis (p = 0.0011 &lt; α = 0.05)\n\nTest for Main Effect study:\n\nH₀: μ_Group = μ_Solo\nH₁: At least one mean is different.\nTest Statistic: F(1, 117) = 11.24\np-value: p = 0.001\nConclusion: Reject the null hypothesis (p = 0.0011 &lt; α = 0.05)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-8",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-8",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nHypotheses\n\nH_0: \\ \\mu_{\\text{club}} = \\mu_{\\text{no club}}\nH_1: \\ \\mu_{\\text{club}} \\ne \\mu_{\\text{no club}}\n\nTest Statistic and p-Value\n\nF_{\\text{club}} = 11.19; p = 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05.\n\nConclusion/Interpretation\n\nReject H_0. There is sufficient evidence to suggest that the quiz grades between those in the science club are different from those not in the science club."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-9",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-testing-main-effects-9",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Testing Main Effects",
+    "text": "Two-Way ANOVA: Testing Main Effects\n\nHypotheses\n\nH_0: \\ \\mu_{\\text{solo}} = \\mu_{\\text{group}}\nH_1: \\ \\mu_{\\text{solo}} \\ne \\mu_{\\text{group}}\n\nTest Statistic and p-Value\n\nF_{\\text{study}} = 11.24; p = 0.001\n\nRejection Region\n\nReject H_0 if p &lt; \\alpha; \\alpha = 0.05.\n\nConclusion/Interpretation\n\nReject H_0. There is sufficient evidence to suggest that the quiz grades between those in the science club are different from those not in the science club."
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Assumptions",
+    "text": "Two-Way ANOVA: Assumptions\n\nThe ANOVA assumptions we learned last week hold true.\nWe assume that the error term follows a normal distribution with mean 0 and a constant variance, \\sigma^2. i.e., \\varepsilon_{ij} \\overset{\\text{iid}}{\\sim} N(0, \\sigma^2)\nVery important note: the assumption is on the error term and NOT on the outcome!\nWe will use the residual (the difference between the observed value and the predicted value) to assess assumptions:\n\n e_{ij} = y_{ij} - \\hat{y}_{ij}"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-r",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-r",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Assumptions (R)",
+    "text": "Two-Way ANOVA: Assumptions (R)\n\nWe will use the ANOVA2_assumptions() function from library(ssstats) to request the graphs necessary to asssess our assumptions.\n\n\ndataset_name %&gt;% ANOVA2_assumptions(continuous = continuous_variable,\n                                    A = factor_A,\n                                    B = factor_B,\n                                    interaction = TRUE or FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-1",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Assumptions",
+    "text": "Two-Way ANOVA: Assumptions\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study). Researchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nLet’s now check the ANOVA assumptions. How should we edit the following code?\n\n\ndataset_name %&gt;% ANOVA2_assumptions(continuous = continuous_variable,\n                                    A = factor_A,\n                                    B = factor_B,\n                                    interaction = TRUE or FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-2",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-2",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Assumptions",
+    "text": "Two-Way ANOVA: Assumptions\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study). Researchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nLet’s now check the ANOVA assumptions. How should we edit the following code?\n\n\ndataset_name %&gt;% ANOVA2_assumptions(continuous = continuous_variable,\n                                    A = factor_A,\n                                    B = factor_B,\n                                    interaction = TRUE or FALSE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-3",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-3",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Assumptions",
+    "text": "Two-Way ANOVA: Assumptions\n\nAt Ponyville High, students in a general science class (quiz_scores) were divided based on their membership in the Science Club (yes/no; club) and their primary method of studying outside of school (solo/group; study). Researchers want to know whether these factors impact science quiz scores (out of 100 points; score).\nLet’s now check the ANOVA assumptions. Our updated code,\n\n\nquiz_scores %&gt;% ANOVA2_assumptions(continuous = score,\n                                  A = club,\n                                  B = study,\n                                  interaction = TRUE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-4",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#two-way-anova-assumptions-4",
+    "title": "Two-Way ANOVA",
+    "section": "Two-Way ANOVA: Assumptions",
+    "text": "Two-Way ANOVA: Assumptions\n\nRunning the code,\n\n\n\nquiz_scores %&gt;% ANOVA2_assumptions(continuous = score,\n                                  A = club,\n                                  B = study,\n                                  interaction = TRUE)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#wrap-up-1",
+    "href": "files/slides/STA4173-Su25-07-15-T-two-way-ANOVA.html#wrap-up-1",
+    "title": "Two-Way ANOVA",
+    "section": "Wrap Up",
+    "text": "Wrap Up\n\nDaily activity: .qmd is available on Canvas.\n\nDue date: Monday, July 21, 2025.\n\nYou will upload the resulting .html file on Canvas.\n\nPlease refer to the help guide on the Biostat website if you need help with submission.\n\nHousekeeping:\n\nQuiz at 1:15!\nDo you have questions for me?\nDo you need my help with anything from prior lectures? Practices? Project 1?"
+  },
+  {
+    "objectID": "files/practice/07-15-practice.html",
+    "href": "files/practice/07-15-practice.html",
+    "title": "Practice: 07/15/2025",
+    "section": "",
+    "text": "# use this code chunk to call in all packages the document will need\nlibrary(tidyverse)\nlibrary(ssstats)"
+  },
+  {
+    "objectID": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html",
+    "href": "files/slides/STA4173-Su25-07-10-R-one-way-ANOVA.html",
+    "title": "One-Way ANOVAKruskal-Wallis",
+    "section": "",
+    "text": "Previous: two groups, continuous outcome\nNow: more than two groups, continuous outcome\nOne-way ANOVA\n\nposthoc testing\nassumptions\n\nKruskal-Wallis\n\nposthoc testing"
+  },
+  {
+    "objectID": "files/practice/07-15-practice.html#part-1",
+    "href": "files/practice/07-15-practice.html#part-1",
+    "title": "Practice: 07/15/2025",
+    "section": "Part 1",
+    "text": "Part 1\nPongo and Perdita have convinced Roger and Anita to run a small Puppy Wellness Study (wellness) to see how different diet types and daily play schedules affect the average weekly weight gain (in grams) of their rapidly growing pups.\n\nFactor A (Diet Type; Diet): High-Protein Kibble vs. Balanced Kibble\nFactor B (Play Schedule Play): Short (1 hour/day in the park) vs. Long (3 hours/day in the park).\n\n1. Find the appropriate summary statistics for this dataset. You will want to look at means in multiple ways: overall, by factor, and by treatment group.\n2. Construct the appropriate two-way ANOVA table.\n3. Is there an interaction between diet type and play schedule? Test at the \\alpha=0.05 level. Remember to typeset your results.\nInsert your typesetting here.\n4. Construct the profile plot for this analysis.\n5. Write a brief paragraph to describe your analysis results. You have enough information to discuss the ANOVA results (Q3) using the means you computed in Q1 and the profile plot constructed in Q4.\nReplace with your answer.\n6. Graphically assess the ANOVA assumptions.\n7. Using the graphs in Q6, determine if our analysis is valid. Explain why it is valid or why it is not valid.\nReplace with your answer."
+  },
+  {
+    "objectID": "files/practice/07-15-practice.html#part-2",
+    "href": "files/practice/07-15-practice.html#part-2",
+    "title": "Practice: 07/15/2025",
+    "section": "Part 2",
+    "text": "Part 2\nAfter the puppies grew a bit older, Pongo and Perdita partnered with a local dog academy to evaluate different obedience training approaches and trainer experience levels (obedience). They want to know how these factors affect the number of obedient responses per session (out of 10 cues). Each pup is randomly assigned to one of the following combinations for their obedience sessions:\n\nFactor A (Training Method; Method): Clicker Training vs. Voice Commands\nFactor B (Trainer Experience; Trainer): New Trainer vs. Experienced Trainer\n\n8. Find the appropriate summary statistics for this dataset. You will want to look at means in multiple ways: overall, by factor, and by treatment group.\n9. Construct the appropriate two-way ANOVA table.\n10. Use the appropriate hypothesis test to show that there is not an interaction between training method and experience of training. Test at the \\alpha=0.05 level. Remember to typeset your results.\nInsert your typesetting here.\n11. Reconstruct the two-way ANOVA table without the interaction.\n12. Is there a main effect of training method? Test at the \\alpha=0.05 level. Remember to typeset your results.\nInsert your typesetting here.\n13. Is there a main effect of trainer experience? Test at the \\alpha=0.05 level. Remember to typeset your results.\nInsert your typesetting here.\n14. Construct the profile plot for this analysis.\n15. Write a brief paragraph to describe your analysis results. You have enough information to discuss the ANOVA results (Q10, Q12, Q13) using the means you computed in Q8 and the profile plot constructed in Q14.\nReplace with your answer.\n16. Graphically assess the ANOVA assumptions.\n17. Using the graphs in Q16, determine if our analysis is valid. Explain why it is valid or why it is not valid.\nReplace with your answer."
   }
 ]
