@@ -1,0 +1,212 @@
+---
+title: "Assignment 2 - Summer 2025"
+author: "Your Name Here"
+format: 
+  html:
+    self-contained: true
+    message: false
+    warning: false
+    error: true
+    code-overflow: wrap
+    code-annotations: hover
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+editor: source
+---
+
+```{r setup} 
+#| echo: false
+library(tidyverse)
+library(ssstats)
+library(gsheet)
+## DO NOT EDIT BELOW
+jackson_heart <- as_tibble(gsheet2tbl("https://docs.google.com/spreadsheets/d/1H3TP-2SBMGleriJLESOe1cdCjtSj2F76bUh5iBqC8tI/edit#gid=2142000894")) %>%
+  mutate(PA3cat = as.factor(PA3cat),
+         BMI3cat = as.factor(BMI3cat),
+         everSmoker = as.factor(everSmoker)) %>%
+  select(subjid, age, weight, BMI, BMI3cat, PA3cat, sbp, everSmoker) %>%
+  na.omit()
+## DO NOT EDIT ABOVE
+```
+
+**1. Consider a sample of data from the [Jackson Heart Study](https://www.jacksonheartstudy.org/). In this problem, we will be examining body mass index (*BMI*; kg/m<sup>2</sup>) as a function of health as categorized by physical activity (*PA3cat*: Ideal Health, Intermediate Health, and Poor Health).**
+
+**1a. Find the summary statistics for BMI across the categories of physical activity (*PA3cat*).**
+
+```{r}
+
+```
+
+**1b. Construct the appropriate one-way ANOVA table to model BMI (*BMI*) as a function of physical activity (*PA3cat*).**
+
+```{r}
+
+```
+
+**1c. Use ANOVA to determine if there is a difference in BMI (*BMI*) among the levels of physical activity (*PA3cat*). Test at the $\alpha=0.01$ level.**
+
+```{r}
+
+```
+
+Remember to typeset your results!
+
+**1d. Use the Kruskal-Wallis to determine if there is a difference in BMI (*BMI*) between the three levels of health as categorized by physical activity (*PA3cat*). Test at the $\alpha=0.01$ level.**
+
+```{r}
+
+```
+
+Remember to typeset your results!
+
+**1e. Check the ANOVA assumptions graphically.**
+
+<center>
+```{r}
+
+```
+</center>
+
+**1f. If necessary, formally test for the variance assumption. Test at the $\alpha=0.01$ level. If you do not feel this step necessary, explain why. (Please don't overthink the explanation - think of it as a note to us. :))**
+
+```{r}
+
+```
+
+Remember to typeset your results! 
+
+**1g. Draw conclusions based on your observations. (Do we meet the assumption?)**
+
+Replace with your answer.
+
+**1h. Based on your responses in (1g), which test's result are you going to present to the lead scientist at the JHS? (Hint: you will pick either the analysis (1c) or (1d)).**
+
+Replace with your answer.
+
+**1i. Perform the appropriate (based on your response in (1h)) posthoc test to determine which pairwise differences exist between the three groups. Test at the $\alpha=0.01$ level; because this is a large cohort study, we should treat this as a confirmatory analysis.** <!--  If you are curious as to why we are treating this as a confirmatory analysis when this is, by definition, an "observational" study, ask me :) -->
+
+```{r}
+
+```
+
+
+Make sure that you state the resulting pairwise differences.
+
+**1j. Write a brief paragraph to describe your analysis results. You have enough information to discuss the results of analysis (1c or 1d) using the summary statistics you computed in (1a) and the posthoc test results in (1i).**
+
+Replace with your answer. 
+
+
+
+
+
+**2. Again, consider the sample of data from the JHS. In this problem, we will be examining systolic blood pressure (*sbp*; mmHg) as a function of health as categorized by body mass index (*BMI3cat*), smoking status (*everSmoker*), and the interaction between health as categorized by body mass index and smoking status.**
+
+**2a. Find the summary statistics for systolic blood pressure (*sbp*) across the categories of body mass index (*BMI3cat*).**       
+
+<!-- hint!! copy/paste/reuse code from 1a :)
+            your variables have changed, though! -->
+
+```{r}
+
+```
+
+**2b. Find the summary statistics for systolic blood pressure (*sbp*) across the categories of smoking status (*everSmoker*).**      
+
+<!-- hint!! copy/paste/reuse code from 2a :)
+            your variables have changed, though! -->
+
+```{r}
+
+```
+
+**2c. Find the summary statistics for systolic blood pressure (*sbp*) across the categories of body mass index (*BMI3cat*) and the categories of smoking status (*everSmoker*).**    
+
+<!-- hint!! copy/paste/reuse code from 2a/2b :)
+            your variables have changed, though! -->
+
+```{r}
+
+```
+
+**2d. Construct the appropriate two-way ANOVA table to model systolic blood pressure (*sbp*; mmHg) as a function of health as categorized by body mass index (*BMI3cat*), smoking status (*everSmoker*), and the interaction between health as categorized by body mass index and smoking status.**
+
+```{r}
+
+```
+
+**2e. Use the appropriate hypothesis test to show that there <u>is not</u> a significant interaction between body mass index category (*BMI3cat*) and smoking status (*everSmoker*) at the $\alpha=0.01$ level.**
+
+```{r}
+
+```
+
+Remember to typeset your results!
+
+**2f. Reconstruct the two-way ANOVA table without the interaction.**
+
+```{r}
+
+```
+
+**2g. Use the appropriate hypothesis test to determine if there a main effect of smoking status (*everSmoker*). Test at the $\alpha=0.01$ level.**
+
+```{r}
+
+```
+
+Remember to typeset your results!
+
+**2h. Use the appropriate hypothesis test to determine if there a main effect of body mass index categorization (*BMI3cat*). Test at the $\alpha=0.01$ level.**
+
+```{r}
+
+```
+
+Remember to typeset your results!
+
+**2i. Construct the appropriate profile plot for this analysis.**
+
+```{r}
+
+```
+
+**2j. Write a brief paragraph to describe your analysis results. You have enough information to discuss the ANOVA results (Q10, Q12, Q13) using the means you computed in Q8 and the profile plot constructed in Q14.**
+
+Replace with your answer. 
+
+**2k. Graphically assess the ANOVA assumptions.**
+
+```{r}
+
+```
+
+**2l. Using the graphs in (2k), determine if our analysis is valid. Explain why it is valid or why it is not valid.**
+
+Replace with your answer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

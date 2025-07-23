@@ -1,0 +1,145 @@
+---
+title: "Practice: 07/22/2025"
+author: "your name here"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  html:
+    self-contained: true
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+```{r set up}
+# use this code chunk to call in all packages the document will need
+library(tidyverse)
+library(ssstats)
+```
+
+```{r data}
+#| echo: false
+## DO NOT EDIT THIS CHUNK
+set.seed(777)
+bakeoff_data <- tibble(glitter_level = round(runif(160, 0, 20)),
+                       boom_factor = round(rnorm(160, mean = 6, sd = 2)) %>% pmax(1) %>% pmin(10),
+                       frosting_thickness = round(rnorm(160, mean = 8, sd = 3),1) %>% pmax(0.5),
+                       overall_satisfaction = round(40 + 1.8 * glitter_level +  4.2 * boom_factor - 2.0 * (frosting_thickness - 10)^2 + rnorm(160, 0, 10))) %>%
+  mutate(overall_satisfaction = pmin(pmax(overall_satisfaction, 0), 100))
+## DO NOT EDIT THIS CHUNK
+```
+
+**Tiny Tina, the explosive-loving Bunker Master, is hosting her first-ever Wonderlands Bake-Off. Contestants from across the realm, including goblins, skeletons, and glitter-loving orcs, are competing to craft the most delicious, magical baked treats.**
+
+**Each contestant submits one dessert for judging. The judging panel includes:**
+
+- **[Tiny Tina](https://playwonderlands.2k.com/game-guide/characters/tiny-tina/), who values flair and sugar explosions,**
+- **[Butt Stallion](https://playwonderlands.2k.com/game-guide/characters/butt-stallion/), who insists on elegance and frosting symmetry, and**
+- **[Paladin Mike](https://playwonderlands.2k.com/game-guide/characters/paladin-mike/), who wants practical rations that still taste divine.**
+
+**You, as the official Fateweaver Statistician, are tasked with determining what factors predict the panel's overall satisfaction rating.**
+
+**Each contestant records the following:**
+- ***glitter_level*: How much edible glitter was used (grams)**
+- ***boom_factor*: A subjective rating (1–10) of how explosive the dessert was**
+-	***frosting_thickness*: Thickness of frosting layer (mm)**
+- ***overall_satisfaction*: Combined score from all three judges (0–100 scale)**
+
+**1. Let's first summarize the data. Please use the appropriate `mean_median()` function to summarize the continuous variables in the dataset.**
+
+```{r}
+
+```
+
+**2a. Create a scatterplot with overall satisfaction (*overall_satisfaction*) on the *y*-axis and glitter level (*glitter_level*) on the *x*-axis.**
+
+```{r}
+
+```
+
+**2b. Create a scatterplot with overall satisfaction (*overall_satisfaction*) on the *y*-axis and boom factor (*boom_factor*) on the *x*-axis.**
+
+```{r}
+
+```
+
+**2c. Create a scatterplot with overall satisfaction (*overall_satisfaction*) on the *y*-axis and frosting thickness (*frosting_thickness*) on the *x*-axis.**
+
+```{r}
+
+```
+
+**3a. Find the pairwise Pearson's correlation values.**
+
+```{r}
+
+```
+
+**3b. Find the pairwise Spearman's correlation values.**
+
+```{r}
+
+```
+
+**3c. Which correlation should we report? Check the appropriate assumptions, then decide.**
+
+```{r}
+
+```
+
+**3d. Using the results from the method chosen in Q3c, which variables are significantly correlated with overall satisfaction (*overall_satisfaction*)? Test at the $\alpha=0.05$ level. You do not need to typeset your individual results, but please back up your statements statistically (using results generated).**
+
+```{r}
+
+```
+
+**3e. Are any results surprising given the graphs found in Q2 and the correlations reported in Q3d?**
+
+Replace with your answer.
+
+**4. Construct a regression model that models overall satisfaction (*overall_satisfaction*) as a function of glitter level (*glitter_level*), boom factor (*boom_factor*), and frosting thickness (*frosting_thickness*). Remember to state your resulting regression model.**
+
+```{r}
+
+```
+
+<!-- vague set up below -- check my lecture .qmd file for how I typeset the models in class. -->
+<!-- you will be plugging in values for \hat{\beta}_i based on your regression results. -->
+
+$$\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x_1 +\ ...$$
+
+**4. Is this a significant regression line? Test at the $\alpha=0.05$ level. Remember to typeset your results.**
+
+```{r}
+
+```
+
+Insert your typesetting here.
+
+**5. Which, if any, are signficant predictors of overall satisfaction (*overall_satisfaction*)? Test at the $\alpha=0.05$ level. You do not need to formally write the hypothesis tests, but please provide a statement for each predictor, backed up statistically (using results generated).**
+
+```{r}
+
+```
+
+**6a. Please provide a formal interpretation for glitter level (*glitter_level*).**
+
+Replace with your answer.
+
+**6b. Please provide a formal interpretation for boom factor (*boom_factor*).**
+
+Replace with your answer.
+
+**6c. Please provide a formal interpretation for frosting thickness (*frosting_thickness*).**
+
+Replace with your answer.
+
+**7. Please write a brief summary paragraph for Tiny Tina. Include information about your summary statistics, slope interpretations (you can be more general here -- remember that she is 13 and not a statistician/data scientist), and test results (frame this as what matters most according to the model we constructed).**
+
+Replace with your answer.
