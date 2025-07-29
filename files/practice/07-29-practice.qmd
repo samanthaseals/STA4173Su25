@@ -1,0 +1,152 @@
+---
+title: "Practice: 07/29/2025"
+author: "your name here"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  html:
+    self-contained: true
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+```{r set up}
+# use this code chunk to call in all packages the document will need
+library(tidyverse)
+library(ssstats)
+```
+
+```{r data}
+#| echo: false
+## DO NOT EDIT THIS CHUNK
+library(tidyverse)
+set.seed(82734) 
+tower_data <- tibble(guest_id = paste0("T", 1:100),
+                     smiling = sample(c("Yes", "No"), 
+                                      size = 100, 
+                                      replace = TRUE, 
+                                      prob = c(0.72, 1 - 0.72)))
+
+set.seed(53026)
+snack_data <- tibble(guest_id = paste0("S", 1:(2 * 60)),
+                     age_group = rep(c("Under 18", "18 and up"), each = 60),
+                     snack_choice = c(sample(c("Mickey Bar", "Popcorn"), 
+                                             size = 60, 
+                                             replace = TRUE, 
+                                             prob = c(0.70, 0.30)),
+                                      sample(c("Mickey Bar", "Popcorn"), 
+                                             size = 60, 
+                                             replace = TRUE, 
+                                             prob = c(0.35, 0.65))))
+set.seed(51158)
+shows_data <- tibble(guest_id = paste0("G", 1:200),
+                     favorite_show = sample(c("Musical", "Stunt", "Character", "Interactive"), 
+                                            size = 200, 
+                                            replace = TRUE, 
+                                            prob = c(0.35, 0.25, 0.20, 0.20)))
+set.seed(122880)
+ride_time_probs <- list("Thrill" = c(0.20, 0.45, 0.35),
+                        "Family" = c(0.50, 0.30, 0.20),
+                        "Dark"   = c(0.33, 0.33, 0.34))
+
+ride_data <- tibble(guest_id = paste0("R", 1:300),
+                    ride_type = sample(c("Thrill", "Family", "Dark"), 
+                                       size = 300, 
+                                       replace = TRUE)) %>%
+  rowwise() %>%
+  mutate(time_of_day = sample(c("Morning", "Afternoon", "Evening"), 
+                              size = 1, 
+                              prob = ride_time_probs[[ride_type]])) %>%
+  ungroup()
+## DO NOT EDIT THIS CHUNK
+```
+
+
+**1. The Tower of Terror is one of the most thrilling rides at Hollywood Studios, often a guest favorite. Park management believes that at least 80% of riders exit the attraction with a smile on their face. To assess this claim, the park analytics team conducts a quick observation (<u>tower_data</u>), recording whether or not each of 100 randomly selected guests is smiling (*smiling*) as they exit the attraction.**
+
+**1a. Find the appropriate frequency table for this dataset.**
+
+```{r}
+
+```
+
+**1b. Construct the 95% confidence interval for the true proportion of guests that are smiling as they exit the attraction.**
+
+```{r}
+
+```
+
+Remember to state the resulting confidence interval.
+
+**1c. Is there evidence to believe that the true proportion of smiling guests is lower than what management believes? Assume $\alpha = 0.05$.**
+
+```{r}
+
+```
+
+Typeset the results here
+
+**2. Hollywood Studios offers two iconic snacks throughout the park: Mickey Bars and fresh popcorn. The snack team lead wonders if age influences snack choice. They collect data from 120 guests (<u>snack_data</u>) asking each guest to identify their age group (*age_group*) and then choose between a Mickey Bar or popcorn (*snack_choice*).**
+
+**2a. Find the appropriate frequency table for this dataset.**
+
+```{r}
+
+```
+
+**2b. Construct the 95% confidence interval for the difference between the two age groups in the true proportion of guests that prefer Mickey Bars.**
+
+```{r}
+
+```
+
+Remember to state the resulting confidence interval.
+
+**2c. The team wants to test whether younger guests are more likely to choose Mickey Bars as compared to older guests. Could age be a factor in what guests crave at snack time?**
+
+```{r}
+
+```
+
+**3. Hollywood Studios is home to a variety of live performances. Historically, guest attendance has followed a pattern: 35% prefer Musical shows, 25% prefer Stunt shows, and both Character Meet-and-Greets and Interactive Games attract about 20% of guests. However, a recent marketing campaign may have shifted those preferences. To evaluate this, 200 guests are surveyed (<u>shows_data</u>)about their favorite type of show in the park (*favorite_show*).**
+
+**3a. Find the appropriate frequency table for this dataset.**
+
+```{r}
+
+```
+
+**3b. Do current guest preferences match the historical expectations, or have things changed? Test at the $\alpha = 0.05$ level.**
+
+```{r}
+
+```  
+
+Remember to typeset the results.
+
+**4. Guest behavior at Hollywood Studios may shift throughout the day. The park's operations team is interested in whether ride type is associated with time of day. Attractions are categorized into three types (*ride_type*): Thrill, Family, and Dark Rides. Staff record (<u>ride_data</u>) the time of day (*time_of_day*; Morning, Afternoon, or Evening) at which 300 guests enter their first ride, along with the ride type chosen. The goal is to determine if certain types of rides are more or less popular at different times, helping the team optimize staffing and operations across the day.**
+
+**4a. Find the appropriate frequency table for this dataset.**
+
+```{r}
+
+```
+
+**4b. Are certain types of rides are more or less popular at different times? Test at the $\alpha = 0.05$ level.**
+
+```{r}
+
+```
+
+Remember to typeset your results.
+
+**4c. Challenge & bonus points: write a summary paragraph of this analysis that hypothesizes what differences may exist. You should include results from both Q4a and Q4b for this.**
+
+Replace with your answer.

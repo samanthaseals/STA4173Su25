@@ -166,7 +166,7 @@ format: html
     - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-07-22-T-regression-analysis.qmd">view code</a>
 - Practice (due M 07/28):
     - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/07-22-practice.html">view assignment</a>
-    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/07-22-practice.qmd">view code</a>s  
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/07-22-practice.qmd">view code</a>
   
 :::
 
@@ -188,11 +188,11 @@ format: html
         - More than two samples 
     - Contingency tables
 - Slides:
-    - .html: 
-    - .qmd: 
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/slides/STA4173-Su25-07-29-T-categorical-analysis.html">view slides</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/slides/STA4173-Su25-07-29-T-categorical-analysis.qmd">view code</a>
 - Practice (due M 08/04):
-    - .html:
-    - .qmd:
+    - .html: <a href="https://samanthaseals.github.io/STA4173Su25/files/practice/07-29-practice.html">view assignment</a>
+    - .qmd: <a href="https://github.com/samanthaseals/STA4173Su25/blob/main/files/practice/07-29-practice.qmd">view code</a>
 - Quiz: see Canvas  
 
 :::

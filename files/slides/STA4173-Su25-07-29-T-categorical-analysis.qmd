@@ -1,0 +1,900 @@
+---
+title: "Categorical Analysis"
+subtitle: "July 29, 2025<br>Tuesday"
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+format: 
+  revealjs:
+    theme: default
+    css: mlp2.css
+    self-contained: true
+    slide-number: true
+    footer: "STA4173 - Biostatistics - Summer 2025"
+    width: 1600
+    height: 900
+    df-print: paged
+    html-math-method: katex
+    code-fold: false
+    code-tools: false
+    incremental: false
+editor: source
+---
+
+## Introduction
+
+- Before today, we have focused on continuous outcomes.
+
+- Now we will focus on categorical (or qualitative) outcomes.
+
+- We will estimate a proportion using $\hat{p}$, 
+
+$$\hat{p} = \frac{x}{n}$$
+    
+- We will estimate the difference between two proportions using $\hat{p}_1 - \hat{p}_2$, 
+
+$$\hat{p_1}- \hat{p_2} = \frac{x_1}{n_1} - \frac{x_2}{n_2}$$
+
+```{r data simulation}
+#| echo: false
+
+library(tidyverse)
+library(ssstats)
+
+###################
+# ONE SAMPLE PROP #
+###################
+
+set.seed(1228) 
+party_data <- tibble(guest_id = 1:75,
+                     preference = sample(c("Chocolate", "Vanilla"),
+                                         size = 75,
+                                         replace = TRUE,
+                                         prob = c(0.7, 1 - 0.7)))
+
+###################
+# TWO SAMPLE PROP #
+###################
+
+set.seed(1031)
+young_data <- tibble(foal_id = paste0("Y", 1:60),
+                     age_group = "Young",
+                     shared_candy = sample(c("Yes", "No"),
+                                           size = 60,
+                                           replace = TRUE,
+                                           prob = c(0.4, 1 - 0.4)))
+
+older_data <- tibble(foal_id = paste0("O", 1:60),
+                     age_group = "Older",
+                     shared_candy = sample(c("Yes", "No"),
+                                           size = 60,
+                                           replace = TRUE,
+                                           prob = c(0.65, 1 - 0.65)))
+candy_data <- bind_rows(young_data, older_data)
+
+###################
+# GOODNESS OF FIT #
+#     UNIFORM     #
+###################
+
+set.seed(1865)
+apple_toss <- tibble(toss_id = 1:200,
+                     barrel = sample(c("Barrel 1", "Barrel 2", "Barrel 3", "Barrel 4", "Barrel 5"), 
+                                     size = 200, 
+                                     replace = TRUE, 
+                                     prob = c(0.15, 0.20, 0.30, 0.20, 0.15)))
+
+###################
+# GOODNESS OF FIT #
+#   NOT UNIFORM   #
+###################
+
+set.seed(4242)
+rarity_orders <- tibble(order_id = 1:200,
+                        item_ordered = sample(c("Dress", "Cape", "Hat", "Scarf", "Hoof Accessories"),
+                                              size = 200,
+                                              replace = TRUE,
+                                              prob = c(0.40, 0.25, 0.15, 0.10, 0.10)))
+
+################
+# INDEPENDENCE #
+################
+
+set.seed(6012) 
+roles <- c("Student", "Teacher", "Community")
+materials <- c("Spells", "History", "Fiction", "Science")
+prob_matrix <- matrix(c(0.40, 0.15, 0.15, 0.30,    # Students
+                        0.35, 0.40, 0.10, 0.15,    # Teachers
+                        0.10, 0.20, 0.50, 0.20),   # Community Members
+                      nrow = 3,
+                      byrow = TRUE,
+                      dimnames = list(roles, materials))
+n_visits <- 180
+visitors_per_group <- c(60, 60, 60)
+twilight_library <- map2_dfr(roles, visitors_per_group, function(role, n) {
+  probs <- prob_matrix[role, ]
+  tibble(
+    visitor_id = paste0(substr(role, 1, 1), 1:n),
+    role = role,
+    material = sample(materials, size = n, replace = TRUE, prob = probs)
+  )
+})
+```
+
+
+## Confidence Intervals: One-Sample Proportion
+
+$(1-\alpha)100\%$ confidence interval for $\pi$:
+
+$$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
+
+- where
+    - $\hat{p}$ is the sample proportion
+    - $n$ is the sample size
+
+## Confidence Intervals: One-Sample Proportion (R)
+
+- We will use the `one_prop_CI` function from `library(ssstats)` to find the confidence interval.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% one_prop_CI(binary = categorical_variable,
+                             event = "Name of Event",
+                             confidence = confidence_level)
+```
+
+- Reminder! We can use the `n_pct()` function to create a frequency table.
+
+```{r}
+#| eval: false
+dataset_name %>% n_pct(categorical_variable,
+                       rows = number_of_rows)
+```
+
+
+## Confidence Intervals: One-Sample Proportion
+
+- Pinkie Pie is curious if partygoers prefer chocolate cake over vanilla cake. At her latest party, she surveys 75 ponies (**party_data**). Each pony is asked which flavor they prefer (*preference*).
+
+- She ultimately wants to determine if more than 50% prefer chocolate cake.
+
+- Looking at the frequency table, 
+
+```{r}
+party_data %>% n_pct(preference)
+```
+
+## Confidence Intervals: One-Sample Proportion
+
+- Pinkie Pie is curious if partygoers prefer chocolate cake over vanilla cake. At her latest party, she surveys 75 ponies (**party_data**). Each pony is asked which flavor they prefer (*preference*).
+
+- She ultimately wants to determine if more than 50% prefer chocolate cake.
+
+- Let's now find the 95% confidence interval for $\pi$, the population proportion of ponies that prefere chocolate cake. How should we edit this code?
+
+```{r}
+#| eval: false
+dataset_name %>% one_prop_CI(binary = categorical_variable,
+                             event = "Name of Event",
+                             confidence = confidence_level)
+```
+
+## Confidence Intervals: One-Sample Proportion
+
+- Pinkie Pie is curious if partygoers prefer chocolate cake over vanilla cake. At her latest party, she surveys 75 ponies (**party_data**). Each pony is asked which flavor they prefer (*preference*).
+
+- She ultimately wants to determine if more than 50% prefer chocolate cake.
+
+- Let's now find the 95% confidence interval for $\pi$, the population proportion of ponies that prefere chocolate cake. How should we edit this code?
+
+```{r}
+#| eval: false
+party_data %>% one_prop_CI(binary = preference,
+                             event = "Chocolate",
+                             confidence = 0.95)
+```
+
+## Confidence Intervals: One-Sample Proportion
+
+- Running the code,
+
+```{r}
+party_data %>% one_prop_CI(binary = preference,
+                             event = "Chocolate",
+                             confidence = 0.95)
+```
+
+- Thus, the 95% CI for $\pi$ is (0.60, 0.80).
+
+## Hypothesis Testing: One-Sample Proportion
+
+- **Hypotheses: Two Tailed**
+    - $H_0: \ \pi=\pi_0$
+    - $H_1: \ \pi \ne \pi_0$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ \pi \ge \pi_0$
+    - $H_1: \ \pi < \pi_0$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ \pi \le \pi_0$
+    - $H_1: \ \pi > \pi_0$    
+    
+## Hypothesis Testing: One-Sample Proportion
+
+- **Test Statistic**
+
+$$
+z_0 = \frac{\hat{p}-p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}
+$$
+
+- where
+    - $\hat{p}$ is the sample estimate of $\pi$,
+    - $p_0$ is the hypothesized value of $\pi$, and
+    - $n$ is the sample size.
+
+## Hypothesis Testing: One-Sample Proportion
+
+- **$p$-value: Two Tailed**
+
+$$p = 2\times P\left[z \ge |z_0|\right]$$
+
+- **$p$-value: Left Tailed**    
+
+$$p = P\left[z \le z_0\right]$$
+    
+- **$p$-value: Right Tailed**    
+
+$$p = P\left[z \ge z_0\right]$$   
+
+## Hypothesis Testing: One-Sample Proportion (R)
+
+- We will use the `one_prop_HT` function from `library(ssstats)` to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% one_prop_HT(binary = binary_variable, 
+                             event = "Name of Event"
+                             p = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+## Hypothesis Testing: One-Sample Proportion
+
+- Pinkie Pie is curious if partygoers prefer chocolate cake over vanilla cake. At her latest party, she surveys 75 ponies (**party_data**). Each pony is asked which flavor they prefer (*preference*).
+
+- She ultimately wants to determine if more than 50% prefer chocolate cake.
+
+- Let's now formally test her hypothesis at the $\alpha = 0.05$ level. How should we update this code?
+
+```{r}
+#| eval: false
+dataset_name %>% one_prop_HT(binary = binary_variable, 
+                             event = "Name of Event"
+                             p = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+## Hypothesis Testing: One-Sample Proportion
+
+- Pinkie Pie is curious if partygoers prefer chocolate cake over vanilla cake. At her latest party, she surveys 75 ponies (**party_data**). Each pony is asked which flavor they prefer (*preference*).
+
+- She ultimately wants to determine if more than 50% prefer chocolate cake.
+
+- Let's now formally test her hypothesis at the $\alpha = 0.05$ level. Our updated code,
+
+```{r}
+#| eval: false
+party_data %>% one_prop_HT(binary = preference,
+                           event = "Chocolate",
+                           p = 0.5, 
+                           alternative = "greater", 
+                           alpha = 0.05)
+```
+
+## Hypothesis Testing: One-Sample Proportion
+
+- Running the code,
+
+```{r}
+party_data %>% one_prop_HT(binary = preference,
+                           event = "Chocolate",
+                           p = 0.5, 
+                           alternative = "greater", 
+                           alpha = 0.05)
+```
+
+## Hypothesis Testing: One-Sample Proportion
+
+- **Hypotheses:**
+    - $H_0: \ \pi \le 0.5$
+    - $H_1: \ \pi > 0.5$
+
+- **Test Statistic and *p*-Value**
+    - $z_0 = 3.58$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p< 0.001 < 0.05$). There is sufficient evidence to suggest that more than half of partygoers prefer chocolate cake.
+
+## Confidence Intervals: Two-Sample Proportions
+
+$(1-\alpha)100\%$ confidence interval for $\pi_1-\pi_2$:
+
+$$(\hat{p}_1 - \hat{p}_2) \pm z_{\alpha/2} \sqrt{\frac{\hat{p}_1 (1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}$$ 
+
+- where
+    - $\hat{p}_i$ is the sample proportion for group $i$,
+    - $n_i$ is the sample size for group $i$
+
+## Confidence Intervals: Two-Sample Proportions (R)
+
+- We will use the `two_prop_CI` function from `library(ssstats)` to find the confidence interval.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% two_prop_CI(outcome = binary_variable,
+                             grouping = grouping_variable,
+                             success = "Name of Event",
+                             confidence = confidence_level)
+```
+
+- Reminder! We can use the `n_pct()` function to create a frequency table.
+
+```{r}
+#| eval: false
+dataset_name %>% n_pct(row_var = row_variable,
+                       col_var = column_variable,
+                       rows = number_of_rows)
+```
+
+## Confidence Intervals: Two-Sample Proportions
+
+- Fluttershy has a hunch: younger foals might be less likely to share their candy on Nightmare Night compared to older foals. To test this, she observes foals from each age group (*age_group*) and records whether each one shared their candy (*shared_candy*). The data is recorded in **candy_data**.
+
+- Let's first examine a frequency table.
+
+```{r}
+candy_data %>% n_pct(row_var = age_group, col_var = shared_candy)
+```
+
+## Confidence Intervals: Two-Sample Proportions
+
+- Fluttershy has a hunch: younger foals might be less likely to share their candy on Nightmare Night compared to older foals. To test this, she observes foals from each age group (*age_group*) and records whether each one shared their candy (*shared_candy*). The data is recorded in **candy_data**.
+
+- Let's now find the 90% confidence interval for $\pi_1 - \pi_2$. How should we update this code?
+
+```{r}
+#| eval: false
+dataset_name %>% two_prop_CI(binary = binary_variable,
+                             grouping = grouping_variable,
+                             event = "Name of Event",
+                             confidence = confidence_level)
+```
+
+## Confidence Intervals: Two-Sample Proportions
+
+- Fluttershy has a hunch: younger foals might be less likely to share their candy on Nightmare Night compared to older foals. To test this, she observes foals from each age group (*age_group*) and records whether each one shared their candy (*shared_candy*). The data is recorded in **candy_data**.
+
+- Let's now find the 90% confidence interval for $\pi_1 - \pi_2$. Our updated code,
+
+```{r}
+#| eval: false
+candy_data %>% two_prop_CI(binary = shared_candy,
+                           grouping = age_group,
+                           event = "Yes",
+                           confidence = 0.90)
+```
+
+## Confidence Intervals: Two-Sample Proportions
+
+- Running the code,
+
+```{r}
+candy_data %>% two_prop_CI(binary = shared_candy,
+                           grouping = age_group,
+                           event = "Yes",
+                           confidence = 0.90)
+```
+
+- Thus, the 90% CI for $\pi_1-\pi_2$ is (-0.53, -0.27).
+
+
+## Hypothesis Testing: Two-Sample Proportions
+
+- **Hypotheses: Two Tailed**
+    - $H_0: \ \pi_1-\pi_2=\pi_d$
+    - $H_1: \ \pi_1-\pi_2 \ne \pi_d$
+    
+- **Hypotheses: Left Tailed**    
+    - $H_0: \ \pi_1-\pi_2 \ge \pi_d$
+    - $H_1: \ \pi_1-\pi_2 < \pi_d$
+    
+- **Hypotheses: Right Tailed**    
+    - $H_0: \ \pi_1-\pi_2 \le \pi_d$
+    - $H_1: \ \pi_1-\pi_2 > \pi_d$   
+    
+## Hypothesis Testing: Two-Sample Proportions 
+
+- **Test Statistic**
+
+$$z_0 = \frac{\left( \hat{p}_1 - \hat{p}_2 \right)- d_0}{\sqrt{\hat{p}\left(1-\hat{p}\right)\left( \frac{1}{n_1}+\frac{1}{n_2} \right)}}$$
+
+- where 
+    - $\hat{p}_i$ is the sample proportion for group $i$,
+    - $n_i$ is the sample size for group $i$, and
+    - $\hat{p}$ is the pooled proportion, given by
+    
+$$\hat{p} = \frac{x_1+x_2}{n_1+n_2}$$
+
+## Hypothesis Testing: Two-Sample Proportions (R)
+
+- We will use the `two_prop_HT` function from `library(ssstats)` to perform the necessary calculations for the hypothesis test.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% two_prop_HT(binary = binary_variable, 
+                             grouping = grouping_variable,
+                             event = "Name of Event"
+                             p = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two-Sample Proportions
+
+- Fluttershy has a hunch: younger foals might be less likely to share their candy on Nightmare Night compared to older foals. To test this, she observes foals from each age group (*age_group*) and records whether each one shared their candy (*shared_candy*). The data is recorded in **candy_data**.
+
+- Let's now test Fluttershy's hunch at the $\alpha = 0.10$ level. How should we update this code?
+
+```{r}
+#| eval: false
+dataset_name %>% two_prop_HT(binary = binary_variable, 
+                             grouping = grouping_variable,
+                             event = "Name of Event"
+                             p = hypothesized_value, 
+                             alternative = "alternative_direction", 
+                             alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Two-Sample Proportions
+
+- Fluttershy has a hunch: younger foals might be less likely to share their candy on Nightmare Night compared to older foals. To test this, she observes foals from each age group (*age_group*) and records whether each one shared their candy (*shared_candy*). The data is recorded in **candy_data**.
+
+- Let's now test Fluttershy's hunch at the $\alpha = 0.10$ level. Our updated code,
+
+```{r}
+#| eval: false
+candy_data %>% two_prop_HT(binary = shared_candy, 
+                           grouping = age_group,
+                           event = "Yes",
+                           p = 0, 
+                           alternative = "less", 
+                           alpha = 0.1)
+```
+
+## Hypothesis Testing: Two-Sample Proportions
+
+- Running the code,
+
+```{r}
+candy_data %>% two_prop_HT(binary = shared_candy, 
+                           grouping = age_group,
+                           event = "Yes",
+                           p = 0, 
+                           alternative = "less", 
+                           alpha = 0.1)
+```
+
+## Hypothesis Testing: Two-Sample Proportions
+
+- **Hypotheses:**
+    - $H_0: \ \pi_{\text{Young}} - \pi_{\text{Old}} > 0$
+    - $H_1: \ \pi_{\text{Young}} - \pi_{\text{Old}} \le 0$
+
+- **Test Statistic and *p*-Value**
+    - $z_0 = -4.94$, $p < 0.001$
+    
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha = 0.05$
+    
+- **Conclusion and interpretation**
+    - Reject $H_0$ ($p \text{ vs } \alpha \to p< 0.001 < 0.05$). There is sufficient evidence to suggest that younger foals are less likely to share their candy.
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- The goodness-of-fit test allows us to determine if a frequency distribution follows a specific distribution.
+
+    - This could be a named distribution (e.g., normal)
+
+    - It could also be a distribution without a name (e.g., the probabilities are specified)
+
+- Before we can perform the goodness-of-fit test, we must compute expected counts.$$E_i = n p_i$$
+
+    - e.g., suppose that we expect 25\% of Skittles to be red; if we have 100 Skittles, we then expect 25 of them to be red.
+    
+## Hypothesis Testing: Goodness-of-Fit
+
+- **Hypotheses**
+
+    - $H_0:$ The random variable follows the specified distribution.
+    - $H_1:$ The random variable does not follow the specified distribution.
+
+- **Test Statistic**
+
+$$\chi^2_0 = \sum_{i=1}^k \frac{(O_i-E_i)^2}{E_i}$$ 
+
+- where $k$ = number of categories, $O_i$ = observed count and  $E_i$ = expected count
+
+- ***p*-Value**
+    - $p = P[\chi^2_{k-1} \ge \chi^2_0]$
+
+## Hypothesis Testing: Goodness-of-Fit (R)
+
+- We will use the `goodness_of_fit()` function from `library(ssstats)` to find the confidence interval.
+
+- Generic syntax (assuming uniform distribution):
+
+```{r}
+#| eval: false
+dataset_name %>% goodness_of_fit(categorical = categorical_variable,
+                                 alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- At the annual Ponyville Harvest Festival, Applejack runs a game called "Barrel Toss," where players toss apples into one of five barrels lined up across the field. Applejack believes the barrels are evenly spaced and equally likely to receive apples if the game is fair.
+
+- However, after watching several rounds, she suspects something might be off... maybe the barrels aren't truly equal. She records (**apple_toss**) the number of apples that landed in each barrel during the day (*barrel*) and wants to test whether they are uniformly distributed, as expected under fairness.
+
+- Let's first look at the frequency table.
+
+```{r}
+#| eval: false
+apple_toss %>% n_pct(barrel, rows=5)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Let's first look at the frequency table.
+
+```{r}
+apple_toss %>% n_pct(barrel, rows=5)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- At the annual Ponyville Harvest Festival, Applejack runs a game called "Barrel Toss," where players toss apples into one of five barrels lined up across the field. Applejack believes the barrels are evenly spaced and equally likely to receive apples if the game is fair.
+
+- However, after watching several rounds, she suspects something might be off... maybe the barrels aren't truly equal. She records (**apple_toss**) the number of apples that landed in each barrel during the day (*barrel*) and wants to test whether they are uniformly distributed, as expected under fairness.
+
+- How should we update the code?
+
+```{r}
+#| eval: false
+dataset_name %>% goodness_of_fit(categorical = categorical_variable,
+                                 alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- At the annual Ponyville Harvest Festival, Applejack runs a game called "Barrel Toss," where players toss apples into one of five barrels lined up across the field. Applejack believes the barrels are evenly spaced and equally likely to receive apples if the game is fair.
+
+- However, after watching several rounds, she suspects something might be off... maybe the barrels aren't truly equal. She records (**apple_toss**) the number of apples that landed in each barrel during the day (*barrel*) and wants to test whether they are uniformly distributed, as expected under fairness.
+
+- Our updated code,
+
+```{r}
+#| eval: false
+apple_toss %>% goodness_of_fit(categorical = barrel)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Running the code,
+
+```{r}
+apple_toss %>% goodness_of_fit(categorical = barrel)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- **Hypotheses**
+    - $H_0:$ \ \pi_1 = \pi_2 = \pi_3 = \pi_4 = \pi_5 = 0.20.$
+    - $H_1:$ At least one $\pi_i$ is different.
+
+- **Test Statistic and *p*-Value**
+    - $\chi^2_0 = 17.1$; $p = 0.002$
+    
+- **Rejection Region**
+  - Reject $H_0$ if $p < \alpha$; $\alpha=0.05$
+
+- **Conclusion/Interpretation**
+    - Reject $H_0$. There is sufficient evidence to suggest that at least one proportion is different.
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Rarity tracks customer orders from her boutique (**rarity_orders**) across five product categories. She knows that sales typically follow this distribution:
+
+| Product | Proportion |
+|:---|--:|
+| Dresses | 0.40 |
+| Capes | 0.25 |
+| Hats | 0.15 |
+| Scarves | 0.10 |
+| Hoof Accessories | 0.10 |
+
+- This season, something feels off. Rarity reviews 200 orders from this season and wants to determine if the sales (*item_ordered*) are deviating from the historic pattern. 
+
+- Let's first look at a frequency table.
+
+```{r}
+#| eval: false
+rarity_orders %>% n_pct(item_ordered, rows=5)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Let's first look at a frequency table.
+
+```{r}
+rarity_orders %>% n_pct(item_ordered, rows=5)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Rarity tracks customer orders from her boutique (**rarity_orders**) across five product categories. She knows that sales typically follow this distribution:
+
+| Product | Proportion |
+|:---|--:|
+| Dresses | 0.40 |
+| Capes | 0.25 |
+| Hats | 0.15 |
+| Scarves | 0.10 |
+| Hoof Accessories | 0.10 |
+
+- This season, something feels off. Rarity reviews 200 orders from this season and wants to determine if the sales (*item_ordered*) are deviating from the historic pattern. 
+
+- Let's now consider the hypothesis test. Except... this is not a uniform distribution.
+
+## Hypothesis Testing: Goodness-of-Fit (R)
+
+- We will use the `goodness_of_fit()` function from `library(ssstats)` to find the confidence interval.
+
+- Generic syntax (not assuming uniform distribution):
+
+```{r}
+#| eval: false
+dataset_name %>% goodness_of_fit(categorical = categorical_variable,
+                                 expected(c = ("Category 1" = proportion_1,
+                                               "Category 2" = proportion_2,
+                                               ... etc ...))
+                                 alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Rarity tracks customer orders from her boutique (**rarity_orders**) across five product categories (*item_ordered*). 
+
+- Rarity reviews 200 orders from this season and wants to determine if the sales are deviating from the historic pattern. 
+
+- How should we update the following code?
+
+```{r}
+#| eval: false
+dataset_name %>% goodness_of_fit(categorical = categorical_variable,
+                                 expected(c = ("Category 1" = proportion_1,
+                                               "Category 2" = proportion_2,
+                                               ... etc ...))
+                                 alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Rarity tracks customer orders from her boutique (**rarity_orders**) across five product categories (*item_ordered*). 
+
+- Rarity reviews 200 orders from this season and wants to determine if the sales are deviating from the historic pattern. 
+
+- Our updated code,
+
+```{r}
+#| eval: false
+rarity_orders %>% goodness_of_fit(categorical = item_ordered,
+                                  expected = c("Dress" = 0.40,
+                                               "Cape" = 0.25,
+                                               "Hat" = 0.15,
+                                               "Scarf" = 0.10,
+                                               "Hoof Accessories" = 0.10))
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- Running the code,
+
+```{r}
+rarity_orders %>% goodness_of_fit(categorical = item_ordered,
+                                  expected = c("Dress" = 0.40,
+                                               "Cape" = 0.25,
+                                               "Hat" = 0.15,
+                                               "Scarf" = 0.10,
+                                               "Hoof Accessories" = 0.10))
+```
+
+## Hypothesis Testing: Goodness-of-Fit
+
+- **Hypotheses**
+    - $H_0:$ This year's sales follow the historical pattern.
+    - $H_1:$ This year's sales do not follow the historical pattern.
+
+- **Test Statistic and *p*-Value**
+    - $\chi^2_0 = 3.51$; $p = 0.476$
+    
+- **Rejection Region**
+  - Reject $H_0$ if $p < \alpha$; $\alpha=0.05$
+
+- **Conclusion/Interpretation**
+    - Fail to reject $H_0$. There is not sufficient evidence to suggest that this year's sales do not follow the historical pattern.
+
+## Hypothesis Testing: Test for Independence
+
+- Let us now discuss testing two categorical variables to determine if a relationship exists. 
+    - This involves using a contingency table.
+    - We can generate them using `n_pct(row_var, col_var)`.
+
+- Like in the goodness-of-fit test, we will first compute expected values,
+
+$$E_{ij} = \frac{R_i C_j}{n}$$ 
+
+- where 
+    - $R_i$ is the total for row $i$, 
+    - $C_j$ is the total for column $j$, and 
+    - $n$ is the total sample size
+    
+## Hypothesis Testing: Test for Independence
+
+- **Hypotheses**
+    - $H_0$: There is not a relationship between [var 1] and [var 2].
+    - $H_1$: There is a relationship between [var 1] and [var 2].
+
+- **Test Statistic**
+
+$$\chi_0^2 = \sum_{i=1}^k \frac{(O_i-E_i)^2}{E_i}$$
+
+- **p-Value**
+    - $p = \text{P}[\chi^2_{(r-1)(c-1)} \ge \chi^2_0]$
+
+## Hypothesis Testing: Test for Independence (R)
+
+- We will use the `goodness_of_fit()` function from `library(ssstats)` to find the confidence interval.
+
+- Generic syntax:
+
+```{r}
+#| eval: false
+dataset_name %>% independence_test(var1 = first_variable,
+                                   var2 = second_variable,
+                                   alpha = specified_alpha)
+```
+
+
+## Hypothesis Testing: Test for Independence
+
+- Twilight Sparkle notices that her public library in Ponyville is visited by a variety of ponies: students, teachers, and general community members. She's curious whether the type of reading material ponies check out depends on their role in the community.
+
+- She records each visitor's role (*role*; student, teacher, and community member) and the type of material they check out (*material*; spells, history, fiction, and science). 
+
+- Twilight wants to test whether the type of material checked out is independent of visitor role, or if certain roles are more likely to favor particular genres.
+
+- Let's first construct a contingency table,
+
+```{r}
+#| eval: false
+twilight_library %>% n_pct(role, material)
+twilight_library %>% n_pct(material, role)
+```
+
+## Hypothesis Testing: Test for Independence
+
+- Looking at the contingency tables,
+```{r}
+twilight_library %>% n_pct(role, material)
+twilight_library %>% n_pct(material, role)
+```
+
+## Hypothesis Testing: Test for Independence
+
+- Twilight Sparkle notices that her public library in Ponyville is visited by a variety of ponies: students, teachers, and general community members. She's curious whether the type of reading material ponies check out depends on their role in the community.
+
+- She records each visitor's role (*role*; student, teacher, and community member) and the type of material they check out (*material*; spells, history, fiction, and science). 
+
+- Twilight wants to test whether the type of material checked out is independent of visitor role, or if certain roles are more likely to favor particular genres. Assume $\alpha = 0.05$. How should we edit the following code? 
+
+```{r}
+#| eval: false
+dataset_name %>% independence_test(var1 = first_variable,
+                                   var2 = second_variable,
+                                   alpha = specified_alpha)
+```
+
+## Hypothesis Testing: Test for Independence
+
+- Twilight wants to test whether the type of material checked out is independent of visitor role, or if certain roles are more likely to favor particular genres. Assume $\alpha = 0.05$. How should we edit the following code? 
+
+```{r}
+#| eval: false
+twilight_library %>% independence_test(var1 = role,
+                                       var2 = material,
+                                       alpha = 0.05)
+```
+
+```{r}
+#| eval: false
+twilight_library %>% independence_test(var1 = material,
+                                       var2 = role,
+                                       alpha = 0.05)
+```
+
+## Hypothesis Testing: Test for Independence
+
+- Running the code,
+
+```{r}
+twilight_library %>% independence_test(var1 = role,
+                                       var2 = material,
+                                       alpha = 0.05)
+```
+
+## Hypothesis Testing: Test for Independence
+
+- Running the code & switching the variable order,
+
+```{r}
+twilight_library %>% independence_test(var1 = material,
+                                       var2 = role,
+                                       alpha = 0.05)
+```
+
+## Hypothesis Testing: Test for Independence
+
+- **Hypotheses**
+    - $H_0:$ Material and role are independent of one another.
+    - $H_1:$ Material and role depend on one another.
+
+- **Test Statistic and *p*-Value**
+    - $\chi^2_0 = 57.55$; $p < 0.001$
+
+- **Rejection Region**
+    - Reject $H_0$ if $p < \alpha$; $\alpha=0.05$
+
+- **Conclusion/Interpretation**
+    - Reject $H_0$. There is sufficient evidence to suggest that the what type of material is checked out depends on the role of the visitor.
+    
+## Wrap Up
+
+- Today we have reviewed the most common analyses used in categorical data. 
+    - One proportion $\to$ $z$ test
+    - Two proportions $\to$ $z$ test
+    - Distribution fit $\to$ goodness-of-fit
+    - Two categorical variables $\to$ test for independence
+    
+- Not covered this semester: logistic regression
+    - Gist: we can model categorical outcomes using logistic regression
+        - Binary logistic
+        - Ordinal logistic
+        - Nominal logistic
+        
+
