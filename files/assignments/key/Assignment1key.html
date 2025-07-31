@@ -6187,10 +6187,7 @@ box-shadow: 0 0 0px rgba(0, 0, 0, 0.02);
 <!-- NOTE 2 -- you do *not* need to edit anything below this note in the code chunk. All of the data management has been done for you. Once you confirm that the data has pulled in properly, you are ready to begin the project. -->
 <p><strong>1a. Find the summary statistics for library spending in all regions for the following years: 2000, 2005, 2010, and 2015.</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># replace with necessary code</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>all_regions <span class="sc">%&gt;%</span> <span class="fu">mean_median</span>(y2000, y2005, y2010, y2015)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>all_regions <span class="sc">%&gt;%</span> <span class="fu">mean_median</span>(y2000, y2005, y2010, y2015)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
   variable mean_sd             median_iqr         
@@ -6201,12 +6198,9 @@ box-shadow: 0 0 0px rgba(0, 0, 0, 0.02);
 4 y2015    206475.8 (237210.8) 131088.0 (211980.5)</code></pre>
 </div>
 </div>
-<p><strong>1b. Find the summary statistics for library spending by region for the following years: 2000, 2005, 2010, and 2015.</strong></p>
+<p><strong>1b. Find the summary statistics for library spending for the Northeast and Midwest regions for the following years: 2000, 2005, 2010, and 2015.</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># replace with necessary code</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ne_mw_only <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Region) <span class="sc">%&gt;%</span> <span class="fu">mean_median</span>(y2000, y2005, y2010, y2015)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ne_mw_only <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(Region) <span class="sc">%&gt;%</span> <span class="fu">mean_median</span>(y2000, y2005, y2010, y2015)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 4
   Region    variable mean_sd             median_iqr         
@@ -6223,11 +6217,8 @@ box-shadow: 0 0 0px rgba(0, 0, 0, 0.02);
 </div>
 <p><strong>2a. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. Construct the appropriate QQ plot to check assumptions.</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># replace with necessary code</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>ne_mw_only <span class="sc">%&gt;%</span> <span class="fu">independent_qq</span>(<span class="at">continuous =</span> y2010,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">grouping =</span> Region)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>ne_mw_only <span class="sc">%&gt;%</span> <span class="fu">independent_qq</span>(<span class="at">continuous =</span> y2010,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                              <span class="at">grouping =</span> Region)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -6238,11 +6229,8 @@ box-shadow: 0 0 0px rgba(0, 0, 0, 0.02);
 </div>
 <p><strong>2b. Suppose we are interested in comparing the 2010 spending between the Northeast and Midwest regions. If appropriate, examine the variance assumption. Do we violate the variance assumption? Remember to draw your final conclusion about the assumption (did we violate the assumption?). <u>Note</u>: If we do not care about the variance assumption here, leave this problem blank.</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># replace with necessary code</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure that any corresponding package has been called in in the setup chunk; if not, please add the package to that chunk</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>ne_mw_only <span class="sc">%&gt;%</span> <span class="fu">variances_HT</span>(<span class="at">continuous =</span> y2010,</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">grouping =</span> Region)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ne_mw_only <span class="sc">%&gt;%</span> <span class="fu">variances_HT</span>(<span class="at">continuous =</span> y2010,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                              <span class="at">grouping =</span> Region)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Brown-Forsythe-Levene test for equality of variances:
 Null: σ²_Northeast = σ²_Midwest 
